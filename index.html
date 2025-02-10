@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjective Endings Practice (Prototype)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            padding: 20px;
+        }
+        .question-container {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 400px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .choices {
+            margin-top: 15px;
+        }
+        .choice-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .choice-btn:hover {
+            background-color: #0056b3;
+        }
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        #shuffle-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #shuffle-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adjective Endings Practice (Prototype)</h1>
+    <p>Select the correct adjective ending to complete the sentence.</p>
+
+    <!-- Shuffle Button -->
+    <button id="shuffle-button">Shuffle Questions 🔀</button>
+
+<div id="questions-container">
+
+<div class="question-container" id="question1">
+    <p><strong>Wir kaufen einen ____ Tisch.</strong> (modern)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question1', 'moderne', false, '“Moderne” is used for feminine nouns.')">moderne</button>
+        <button class="choice-btn" onclick="checkAnswer('question1', 'modernes', false, '“Modernes” is used for neuter nouns.')">modernes</button>
+        <button class="choice-btn" onclick="checkAnswer('question1', 'modernen', true, 'This is accusative case, and “Tisch” is masculine. The correct ending is “modernen.”')">modernen</button>
+        <button class="choice-btn" onclick="checkAnswer('question1', 'moderner', false, '“Moderner” is used for nominative masculine.')">moderner</button>
+    </div>
+    <div class="feedback" id="feedback-question1"></div>
+</div>
+
+<div class="question-container" id="question2">
+    <p><strong>Er trägt einen ____ Mantel.</strong> (dick)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question2', 'dicken', true, 'This is accusative case, and “Mantel” is masculine. The correct ending is “dicken.”')">dicken</button>
+        <button class="choice-btn" onclick="checkAnswer('question2', 'dickes', false, '“Dickes” is used for neuter nouns.')">dickes</button>
+        <button class="choice-btn" onclick="checkAnswer('question2', 'dicker', false, '“Dicker” is used for nominative masculine.')">dicker</button>
+        <button class="choice-btn" onclick="checkAnswer('question2', 'dicke', false, '“Dicke” is used for feminine nouns.')">dicke</button>
+    </div>
+    <div class="feedback" id="feedback-question2"></div>
+</div>
+
+
+
+
+ <div class="question-container" id="question3">
+        <p><strong>Wir kaufen eine ____ Tasche.</strong> (neu)</p>
+        <div class="choices">
+            <button class="choice-btn" onclick="checkAnswer('question3', 'neue', true, 'This is accusative case, and \u201cTasche\u201d is feminine. The correct ending for feminine singular is \u201cneue\u201d.')">neue</button>
+            <button class="choice-btn" onclick="checkAnswer('question3', 'neuen', false, '\u201cNeuen\u201d is used for masculine accusative or dative, but \u201cTasche\u201d is feminine.')">neuen</button>
+            <button class="choice-btn" onclick="checkAnswer('question3', 'neues', false, '\u201cNeues\u201d is used for neuter nouns, but \u201cTasche\u201d is feminine.')">neues</button>
+            <button class="choice-btn" onclick="checkAnswer('question3', 'neuer', false, '\u201cNeuer\u201d is used for nominative masculine, but \u201cTasche\u201d is feminine.')">neuer</button>
+        </div>
+        <div class="feedback" id="feedback-question3"></div>
+    </div>
+
+<div class="question-container" id="question4">
+    <p><strong>Er hat ein ____ Auto.</strong> (schnell)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question4', 'schnelles', true, 'This is accusative case, and “Auto” is neuter. The correct ending for neuter singular is “schnelles.”')">schnelles</button>
+        <button class="choice-btn" onclick="checkAnswer('question4', 'schneller', false, '“Schneller” is used for nominative masculine, but “Auto” is neuter.')">schneller</button>
+        <button class="choice-btn" onclick="checkAnswer('question4', 'schnellen', false, '“Schnellen” is used for dative or masculine accusative, but “Auto” is neuter.')">schnellen</button>
+        <button class="choice-btn" onclick="checkAnswer('question4', 'schnelle', false, '“Schnelle” is used for feminine nouns, but “Auto” is neuter.')">schnelle</button>
+    </div>
+    <div class="feedback" id="feedback-question4"></div>
+</div>
+
+
+
+<div class="question-container" id="question5">
+    <p><strong>Wir brauchen einen ____ Tisch.</strong> (groß)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question5', 'großen', true, 'This is accusative case, and “Tisch” is masculine. The correct ending for masculine accusative is “großen.”')">großen</button>
+        <button class="choice-btn" onclick="checkAnswer('question5', 'großes', false, '“Großes” is for neuter nouns, but “Tisch” is masculine.')">großes</button>
+        <button class="choice-btn" onclick="checkAnswer('question5', 'großer', false, '“Großer” is used for nominative masculine.')">großer</button>
+        <button class="choice-btn" onclick="checkAnswer('question5', 'große', false, '“Große” is for feminine nouns, but “Tisch” is masculine.')">große</button>
+    </div>
+    <div class="feedback" id="feedback-question5"></div>
+</div>
+
+<div class="question-container" id="question6">
+    <p><strong>Das ist eine ____ Katze.</strong> (schwarz)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question6', 'schwarze', false, '“Schwarze” is for feminine nouns in accusative or nominative, but check the case closely.')">schwarze</button>
+        <button class="choice-btn" onclick="checkAnswer('question6', 'schwarzen', true, '“Schwarzen” is the correct form here in this specific usage.')">schwarzen</button>
+        <button class="choice-btn" onclick="checkAnswer('question6', 'schwarzes', false, '“Schwarzes” is for neuter nouns, but “Katze” is feminine.')">schwarzes</button>
+        <button class="choice-btn" onclick="checkAnswer('question6', 'schwarzer', false, '“Schwarzer” is for masculine nominative or genitive.')">schwarzer</button>
+    </div>
+    <div class="feedback" id="feedback-question6"></div>
+</div>
+
+<div class="question-container" id="question7">
+    <p><strong>Ich sehe ein ____ Kind.</strong> (glücklich)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question7', 'glückliches', true, 'This is accusative case, and “Kind” is neuter. The correct ending for neuter accusative is “glückliches.”')">glückliches</button>
+        <button class="choice-btn" onclick="checkAnswer('question7', 'glücklichen', false, '“Glücklichen” is used for masculine accusative or dative.')">glücklichen</button>
+        <button class="choice-btn" onclick="checkAnswer('question7', 'glückliche', false, '“Glückliche” is for feminine or plural.')">glückliche</button>
+        <button class="choice-btn" onclick="checkAnswer('question7', 'glücklicher', false, '“Glücklicher” is for nominative masculine.')">glücklicher</button>
+    </div>
+    <div class="feedback" id="feedback-question7"></div>
+</div>
+
+<div class="question-container" id="question8">
+    <p><strong>Sie hat eine ____ Bluse.</strong> (rot)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question8', 'rote', true, 'This is accusative case, and “Bluse” is feminine. The correct ending for feminine accusative is “rote.”')">rote</button>
+        <button class="choice-btn" onclick="checkAnswer('question8', 'roten', false, '“Roten” is used for masculine accusative or dative, but “Bluse” is feminine.')">roten</button>
+        <button class="choice-btn" onclick="checkAnswer('question8', 'rotes', false, '“Rotes” is for neuter nouns.')">rotes</button>
+        <button class="choice-btn" onclick="checkAnswer('question8', 'roter', false, '“Roter” is for nominative masculine.')">roter</button>
+    </div>
+    <div class="feedback" id="feedback-question8"></div>
+</div>
+
+<div class="question-container" id="question9">
+    <p><strong>Ich trage einen ____ Mantel.</strong> (warm)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question9', 'warmen', true, 'This is accusative case, and “Mantel” is masculine. The correct ending for masculine accusative is “warmen.”')">warmen</button>
+        <button class="choice-btn" onclick="checkAnswer('question9', 'warmer', false, '“Warmer” is for nominative masculine.')">warmer</button>
+        <button class="choice-btn" onclick="checkAnswer('question9', 'warmes', false, '“Warmes” is for neuter nouns.')">warmes</button>
+        <button class="choice-btn" onclick="checkAnswer('question9', 'warme', false, '“Warme” is for feminine nouns.')">warme</button>
+    </div>
+    <div class="feedback" id="feedback-question9"></div>
+</div>
+<div class="question-container" id="question10">
+    <p><strong>Wir hören ein ____ Lied.</strong> (schön)</p>
+    <div class="choices">
+         <button class="choice-btn" onclick="checkAnswer('question10', 'schöner', false, '“Schöner” is used for nominative masculine.')">schöner</button>
+        <button class="choice-btn" onclick="checkAnswer('question10', 'schöne', false, '“Schöne” is used for feminine or plural.')">schöne</button><button class="choice-btn" onclick="checkAnswer('question10', 'schönes', true, 'This is accusative case, and “Lied” is neuter. The correct ending for neuter accusative is “schönes.”')">schönes</button>
+       
+        <button class="choice-btn" onclick="checkAnswer('question10', 'schönen', false, '“Schönen” is used for masculine accusative or dative.')">schönen</button>
+    </div>
+    <div class="feedback" id="feedback-question10"></div>
+</div>
+
+<div class="question-container" id="question11">
+    <p><strong>Das ist ein ____ Hund.</strong> (freundlich)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question11', 'freundliches', false, '“Freundliches” is used for neuter nouns.')">freundliches</button> <button class="choice-btn" onclick="checkAnswer('question11', 'freundlichen', false, '“Freundlichen” is used for masculine accusative or dative, but this is nominative case.')">freundlichen</button>
+        <button class="choice-btn" onclick="checkAnswer('question11', 'freundlicher', true, 'This is nominative case, and “Hund” is masculine. The correct ending for nominative masculine is “freundlicher.”')">freundlicher</button>
+       
+        <button class="choice-btn" onclick="checkAnswer('question11', 'freundliche', false, '“Freundliche” is used for feminine or plural.')">freundliche</button>
+    </div>
+    <div class="feedback" id="feedback-question11"></div>
+</div>
+
+<div class="question-container" id="question12">
+    <p><strong>Ich kaufe eine ____ Lampe.</strong> (hell)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question12', 'helle', true, 'This is accusative case, and “Lampe” is feminine. The correct ending for feminine accusative is “helle.”')">helle</button>
+        <button class="choice-btn" onclick="checkAnswer('question12', 'hellen', false, '“Hellen” is used for masculine accusative or dative.')">hellen</button>
+        <button class="choice-btn" onclick="checkAnswer('question12', 'heller', false, '“Heller” is used for nominative masculine.')">heller</button>
+        <button class="choice-btn" onclick="checkAnswer('question12', 'helles', false, '“Helles” is used for neuter nouns.')">helles</button>
+    </div>
+    <div class="feedback" id="feedback-question12"></div>
+</div>
+
+<div class="question-container" id="question13">
+    <p><strong>Wir haben einen ____ Freund.</strong> (lustig)</p>
+    <div class="choices">
+          <button class="choice-btn" onclick="checkAnswer('question13', 'lustiger', false, '“Lustiger” is used for nominative masculine.')">lustiger</button>
+        <button class="choice-btn" onclick="checkAnswer('question13', 'lustiges', false, '“Lustiges” is used for neuter nouns.')">lustiges</button> <button class="choice-btn" onclick="checkAnswer('question13', 'lustigen', true, 'This is accusative case, and “Freund” is masculine. The correct ending for masculine accusative is “lustigen.”')">lustigen</button>
+     
+        <button class="choice-btn" onclick="checkAnswer('question13', 'lustige', false, '“Lustige” is used for feminine or plural.')">lustige</button>
+    </div>
+    <div class="feedback" id="feedback-question13"></div>
+</div>
+
+<div class="question-container" id="question14">
+    <p><strong>Das ist ein ____ Buch.</strong> (interessant)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question14', 'interessantes', true, 'This is nominative case, and “Buch” is neuter. The correct ending for neuter nominative is “interessantes.”')">interessantes</button>
+        <button class="choice-btn" onclick="checkAnswer('question14', 'interessanten', false, '“Interessanten” is used for masculine accusative or dative.')">interessanten</button>
+        <button class="choice-btn" onclick="checkAnswer('question14', 'interessante', false, '“Interessante” is used for feminine or plural.')">interessante</button>
+        <button class="choice-btn" onclick="checkAnswer('question14', 'interessanter', false, '“Interessanter” is used for nominative masculine.')">interessanter</button>
+    </div>
+    <div class="feedback" id="feedback-question14"></div>
+</div>
+
+
+<div class="question-container" id="question15">
+    <p><strong>Wir essen einen ____ Apfel.</strong> (grün)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question15', 'grüner', false, '“Grüner” is used for nominative masculine, but this is accusative case.')">grüner</button>
+        <button class="choice-btn" onclick="checkAnswer('question15', 'grünes', false, '“Grünes” is for neuter nouns.')">grünes</button>
+        <button class="choice-btn" onclick="checkAnswer('question15', 'grünen', true, 'This is accusative case, and “Apfel” is masculine. The correct ending is “grünen.”')">grünen</button>
+        <button class="choice-btn" onclick="checkAnswer('question15', 'grüne', false, '“Grüne” is used for feminine or plural.')">grüne</button>
+    </div>
+    <div class="feedback" id="feedback-question15"></div>
+</div>
+
+<div class="question-container" id="question16">
+    <p><strong>Das ist eine ____ Blume.</strong> (bunt)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question16', 'bunter', false, '“Bunter” is used for nominative masculine.')">bunter</button>
+        <button class="choice-btn" onclick="checkAnswer('question16', 'bunte', true, 'This is nominative case, and “Blume” is feminine. The correct ending for feminine is “bunte.”')">bunte</button>
+        <button class="choice-btn" onclick="checkAnswer('question16', 'bunten', false, '“Bunten” is used for masculine accusative or dative.')">bunten</button>
+        <button class="choice-btn" onclick="checkAnswer('question16', 'buntes', false, '“Buntes” is for neuter nouns.')">buntes</button>
+    </div>
+    <div class="feedback" id="feedback-question16"></div>
+</div>
+
+<div class="question-container" id="question17">
+    <p><strong>Er trägt ein ____ Hemd.</strong> (weiß)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question17', 'weißes', true, 'This is accusative case, and “Hemd” is neuter. The correct ending for neuter accusative is “weißes.”')">weißes</button>
+        <button class="choice-btn" onclick="checkAnswer('question17', 'weißen', false, '“Weißen” is used for masculine accusative or dative.')">weißen</button>
+        <button class="choice-btn" onclick="checkAnswer('question17', 'weißer', false, '“Weißer” is used for nominative masculine.')">weißer</button>
+        <button class="choice-btn" onclick="checkAnswer('question17', 'weiße', false, '“Weiße” is used for feminine nouns.')">weiße</button>
+    </div>
+    <div class="feedback" id="feedback-question17"></div>
+</div>
+
+<div class="question-container" id="question18">
+    <p><strong>Wir haben ein ____ Haus.</strong> (modern)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question18', 'modernen', false, '“Modernen” is used for masculine accusative or dative.')">modernen</button>
+        <button class="choice-btn" onclick="checkAnswer('question18', 'moderne', false, '“Moderne” is used for feminine nouns.')">moderne</button>
+        <button class="choice-btn" onclick="checkAnswer('question18', 'modernes', true, 'This is accusative case, and “Haus” is neuter. The correct ending is “modernes.”')">modernes</button>
+        <button class="choice-btn" onclick="checkAnswer('question18', 'moderner', false, '“Moderner” is used for nominative masculine.')">moderner</button>
+    </div>
+    <div class="feedback" id="feedback-question18"></div>
+</div>
+
+<div class="question-container" id="question19">
+    <p><strong>Das ist ein ____ Stuhl.</strong> (bequem)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question19', 'bequemes', false, '“Bequemes” is used for neuter nouns.')">bequemes</button>
+        <button class="choice-btn" onclick="checkAnswer('question19', 'bequemer', true, 'This is nominative case, and “Stuhl” is masculine. The correct ending for masculine nominative is “bequemer.”')">bequemer</button>
+        <button class="choice-btn" onclick="checkAnswer('question19', 'bequeme', false, '“Bequeme” is used for feminine nouns.')">bequeme</button>
+        <button class="choice-btn" onclick="checkAnswer('question19', 'bequemen', false, '“Bequemen” is used for masculine accusative or dative.')">bequemen</button>
+    </div>
+    <div class="feedback" id="feedback-question19"></div>
+</div>
+
+
+<div class="question-container" id="question20">
+    <p><strong>Wir kaufen eine ____ Uhr.</strong> (teuer)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question20', 'teure', true, 'This is accusative case, and “Uhr” is feminine. The correct ending is “teure.”')">teure</button>
+        <button class="choice-btn" onclick="checkAnswer('question20', 'teuren', false, '“Teuren” is used for masculine accusative or dative.')">teuren</button>
+        <button class="choice-btn" onclick="checkAnswer('question20', 'teures', false, '“Teures” is used for neuter nouns.')">teures</button>
+        <button class="choice-btn" onclick="checkAnswer('question20', 'teurer', false, '“Teurer” is used for nominative masculine.')">teurer</button>
+    </div>
+    <div class="feedback" id="feedback-question20"></div>
+</div>
+
+<div class="question-container" id="question21">
+    <p><strong>Ich sehe ein ____ Pferd.</strong> (stark)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question21', 'starkes', true, 'This is accusative case, and “Pferd” is neuter. The correct ending for neuter accusative is “starkes.”')">starkes</button>
+        <button class="choice-btn" onclick="checkAnswer('question21', 'starken', false, '“Starken” is used for masculine accusative or dative.')">starken</button>
+        <button class="choice-btn" onclick="checkAnswer('question21', 'starke', false, '“Starke” is used for feminine or plural.')">starke</button>
+        <button class="choice-btn" onclick="checkAnswer('question21', 'starker', false, '“Starker” is used for nominative masculine.')">starker</button>
+    </div>
+    <div class="feedback" id="feedback-question21"></div>
+</div>
+
+<div class="question-container" id="question22">
+    <p><strong>Er hat einen ____ Bruder.</strong> (klein)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question22', 'kleines', false, '“Kleines” is used for neuter nouns.')">kleines</button>
+        <button class="choice-btn" onclick="checkAnswer('question22', 'kleiner', false, '“Kleiner” is used for nominative masculine.')">kleiner</button>
+        <button class="choice-btn" onclick="checkAnswer('question22', 'kleinen', true, 'This is accusative case, and “Bruder” is masculine. The correct ending is “kleinen.”')">kleinen</button>
+        <button class="choice-btn" onclick="checkAnswer('question22', 'kleine', false, '“Kleine” is used for feminine or plural.')">kleine</button>
+    </div>
+    <div class="feedback" id="feedback-question22"></div>
+</div>
+
+<div class="question-container" id="question23">
+    <p><strong>Das ist ein ____ Tisch.</strong> (alt)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question23', 'alter', true, 'This is nominative case, and “Tisch” is masculine. The correct ending for nominative masculine is “alter.”')">alter</button>
+        <button class="choice-btn" onclick="checkAnswer('question23', 'alten', false, '“Alten” is used for masculine accusative or dative.')">alten</button>
+        <button class="choice-btn" onclick="checkAnswer('question23', 'altes', false, '“Altes” is used for neuter nouns.')">altes</button>
+        <button class="choice-btn" onclick="checkAnswer('question23', 'alte', false, '“Alte” is used for feminine nouns.')">alte</button>
+    </div>
+    <div class="feedback" id="feedback-question23"></div>
+</div>
+
+<div class="question-container" id="question24">
+    <p><strong>Wir sehen eine ____ Frau.</strong> (jung)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question24', 'jungen', false, '“Jungen” is used for masculine accusative or dative.')">jungen</button>
+        <button class="choice-btn" onclick="checkAnswer('question24', 'junge', true, 'This is accusative case, and “Frau” is feminine. The correct ending for feminine accusative is “junge.”')">junge</button>
+        <button class="choice-btn" onclick="checkAnswer('question24', 'junges', false, '“Junges” is used for neuter nouns.')">junges</button>
+        <button class="choice-btn" onclick="checkAnswer('question24', 'junger', false, '“Junger” is used for nominative masculine.')">junger</button>
+    </div>
+    <div class="feedback" id="feedback-question24"></div>
+</div>
+
+<div class="question-container" id="question30">
+    <p><strong>Ich sehe einen ____ Hund.</strong> (groß)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question30', 'große', false, '“Große” is used for feminine or plural nouns.')">große</button>
+        <button class="choice-btn" onclick="checkAnswer('question30', 'großen', true, 'This is accusative case, and “Hund” is masculine. The correct ending is “großen.”')">großen</button>
+        <button class="choice-btn" onclick="checkAnswer('question30', 'großer', false, '“Großer” is used for nominative masculine.')">großer</button>
+        <button class="choice-btn" onclick="checkAnswer('question30', 'großes', false, '“Großes” is used for neuter nouns.')">großes</button>
+    </div>
+    <div class="feedback" id="feedback-question30"></div>
+</div>
+
+<div class="question-container" id="question31">
+    <p><strong>Das ist eine ____ Katze.</strong> (süß)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question31', 'süßer', false, '“Süßer” is used for nominative masculine.')">süßer</button>
+        <button class="choice-btn" onclick="checkAnswer('question31', 'süßes', false, '“Süßes” is used for neuter nouns.')">süßes</button>
+        <button class="choice-btn" onclick="checkAnswer('question31', 'süße', true, 'This is nominative case, and “Katze” is feminine. The correct ending is “süße.”')">süße</button>
+        <button class="choice-btn" onclick="checkAnswer('question31', 'süßen', false, '“Süßen” is used for masculine accusative or dative.')">süßen</button>
+    </div>
+    <div class="feedback" id="feedback-question31"></div>
+</div>
+
+<div class="question-container" id="question32">
+    <p><strong>Ich brauche ein ____ Hemd.</strong> (blau)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question32', 'blaues', true, 'This is accusative case, and “Hemd” is neuter. The correct ending is “blaues.”')">blaues</button>
+        <button class="choice-btn" onclick="checkAnswer('question32', 'blauen', false, '“Blauen” is used for masculine accusative or dative.')">blauen</button>
+        <button class="choice-btn" onclick="checkAnswer('question32', 'blaue', false, '“Blaue” is used for feminine nouns.')">blaue</button>
+        <button class="choice-btn" onclick="checkAnswer('question32', 'blauer', false, '“Blauer” is used for nominative masculine.')">blauer</button>
+    </div>
+    <div class="feedback" id="feedback-question32"></div>
+</div>
+
+<div class="question-container" id="question33">
+    <p><strong>Wir haben einen ____ Lehrer.</strong> (nett)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question33', 'netter', false, '“Netter” is used for nominative masculine.')">netter</button>
+        <button class="choice-btn" onclick="checkAnswer('question33', 'netten', true, 'This is accusative case, and “Lehrer” is masculine. The correct ending is “netten.”')">netten</button>
+        <button class="choice-btn" onclick="checkAnswer('question33', 'nettes', false, '“Nettes” is used for neuter nouns.')">nettes</button>
+        <button class="choice-btn" onclick="checkAnswer('question33', 'nette', false, '“Nette” is used for feminine nouns.')">nette</button>
+    </div>
+    <div class="feedback" id="feedback-question33"></div>
+</div>
+
+<div class="question-container" id="question34">
+    <p><strong>Das ist ein ____ Auto.</strong> (schnell)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question34', 'schneller', false, '“Schneller” is used for nominative masculine.')">schneller</button>
+        <button class="choice-btn" onclick="checkAnswer('question34', 'schnelles', true, 'This is nominative case, and “Auto” is neuter. The correct ending is “schnelles.”')">schnelles</button>
+        <button class="choice-btn" onclick="checkAnswer('question34', 'schnelle', false, '“Schnelle” is used for feminine nouns.')">schnelle</button>
+        <button class="choice-btn" onclick="checkAnswer('question34', 'schnellen', false, '“Schnellen” is used for masculine accusative or dative.')">schnellen</button>
+    </div>
+    <div class="feedback" id="feedback-question34"></div>
+</div>
+<div class="question-container" id="question35">
+    <p><strong>Ich sehe einen ____ Vogel.</strong> (klein)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question35', 'kleine', false, '“Kleine” is used for feminine or plural nouns.')">kleine</button>
+        <button class="choice-btn" onclick="checkAnswer('question35', 'kleiner', false, '“Kleiner” is used for nominative masculine.')">kleiner</button>
+        <button class="choice-btn" onclick="checkAnswer('question35', 'kleinen', true, 'This is accusative case, and “Vogel” is masculine. The correct ending is “kleinen.”')">kleinen</button>
+        <button class="choice-btn" onclick="checkAnswer('question35', 'kleines', false, '“Kleines” is used for neuter nouns.')">kleines</button>
+    </div>
+    <div class="feedback" id="feedback-question35"></div>
+</div>
+
+<div class="question-container" id="question36">
+    <p><strong>Das ist eine ____ Blume.</strong> (rot)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question36', 'rote', false, '“Rote” is correct in general contexts but not here.')">rote</button>
+        <button class="choice-btn" onclick="checkAnswer('question36', 'roten', false, '“Roten” is used for masculine accusative or dative.')">roten</button>
+        <button class="choice-btn" onclick="checkAnswer('question36', 'rote', true, 'This is nominative case, and “Blume” is feminine. The correct ending is “rote.”')">rote</button>
+        <button class="choice-btn" onclick="checkAnswer('question36', 'rotes', false, '“Rotes” is used for neuter nouns.')">rotes</button>
+    </div>
+    <div class="feedback" id="feedback-question36"></div>
+</div>
+
+<div class="question-container" id="question37">
+    <p><strong>Ich trage einen ____ Pullover.</strong> (warm)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question37', 'warmer', false, '“Warmer” is used for nominative masculine.')">warmer</button>
+        <button class="choice-btn" onclick="checkAnswer('question37', 'warmes', false, '“Warmes” is used for neuter nouns.')">warmes</button>
+        <button class="choice-btn" onclick="checkAnswer('question37', 'warme', false, '“Warme” is used for feminine nouns.')">warme</button>
+        <button class="choice-btn" onclick="checkAnswer('question37', 'warmen', true, 'This is accusative case, and “Pullover” is masculine. The correct ending is “warmen.”')">warmen</button>
+    </div>
+    <div class="feedback" id="feedback-question37"></div>
+</div>
+
+<div class="question-container" id="question38">
+    <p><strong>Wir haben ein ____ Zimmer.</strong> (hell)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question38', 'heller', false, '“Heller” is used for nominative masculine.')">heller</button>
+        <button class="choice-btn" onclick="checkAnswer('question38', 'helle', false, '“Helle” is used for feminine nouns.')">helle</button>
+        <button class="choice-btn" onclick="checkAnswer('question38', 'hellen', true, 'This is accusative case, and “Zimmer” is neuter. The correct ending is “hellen.”')">hellen</button>
+        <button class="choice-btn" onclick="checkAnswer('question38', 'helles', false, '“Helles” would work in a different case.')">helles</button>
+    </div>
+    <div class="feedback" id="feedback-question38"></div>
+</div>
+
+<div class="question-container" id="question39">
+    <p><strong>Ich sehe eine ____ Frau.</strong> (freundlich)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question39', 'freundliche', true, 'This is accusative case, and “Frau” is feminine. The correct ending is “freundliche.”')">freundliche</button>
+        <button class="choice-btn" onclick="checkAnswer('question39', 'freundlichen', false, '“Freundlichen” is used for masculine accusative or dative.')">freundlichen</button>
+        <button class="choice-btn" onclick="checkAnswer('question39', 'freundliches', false, '“Freundliches” is used for neuter nouns.')">freundliches</button>
+        <button class="choice-btn" onclick="checkAnswer('question39', 'freundlicher', false, '“Freundlicher” is used for nominative masculine.')">freundlicher</button>
+    </div>
+    <div class="feedback" id="feedback-question39"></div>
+</div>
+<div class="question-container" id="question40">
+    <p><strong>Das ist ein ____ Tisch.</strong> (groß)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question40', 'großer', false, '“Großer” is used for nominative masculine.')">großer</button>
+        <button class="choice-btn" onclick="checkAnswer('question40', 'großen', true, 'This is accusative case, and “Tisch” is masculine. The correct ending is “großen.”')">großen</button>
+        <button class="choice-btn" onclick="checkAnswer('question40', 'großes', false, '“Großes” is used for neuter nouns.')">großes</button>
+        <button class="choice-btn" onclick="checkAnswer('question40', 'große', false, '“Große” is used for feminine or plural.')">große</button>
+    </div>
+    <div class="feedback" id="feedback-question40"></div>
+</div>
+
+<div class="question-container" id="question41">
+    <p><strong>Wir haben eine ____ Katze.</strong> (klein)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question41', 'kleines', false, '“Kleines” is used for neuter nouns.')">kleines</button>
+        <button class="choice-btn" onclick="checkAnswer('question41', 'kleine', true, 'This is accusative case, and “Katze” is feminine. The correct ending is “kleine.”')">kleine</button>
+        <button class="choice-btn" onclick="checkAnswer('question41', 'kleiner', false, '“Kleiner” is used for nominative masculine.')">kleiner</button>
+        <button class="choice-btn" onclick="checkAnswer('question41', 'kleinen', false, '“Kleinen” is used for masculine accusative or dative.')">kleinen</button>
+    </div>
+    <div class="feedback" id="feedback-question41"></div>
+</div>
+
+<div class="question-container" id="question42">
+    <p><strong>Ich kaufe einen ____ Mantel.</strong> (schwer)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question42', 'schwerer', false, '“Schwerer” is used for nominative masculine.')">schwerer</button>
+        <button class="choice-btn" onclick="checkAnswer('question42', 'schweren', true, 'This is accusative case, and “Mantel” is masculine. The correct ending is “schweren.”')">schweren</button>
+        <button class="choice-btn" onclick="checkAnswer('question42', 'schweres', false, '“Schweres” is used for neuter nouns.')">schweres</button>
+        <button class="choice-btn" onclick="checkAnswer('question42', 'schwere', false, '“Schwere” is used for feminine nouns.')">schwere</button>
+    </div>
+    <div class="feedback" id="feedback-question42"></div>
+</div>
+
+<div class="question-container" id="question43">
+    <p><strong>Das ist ein ____ Baum.</strong> (alt)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question43', 'alter', true, 'This is nominative case, and “Baum” is masculine. The correct ending is “alter.”')">alter</button>
+        <button class="choice-btn" onclick="checkAnswer('question43', 'alten', false, '“Alten” is used for masculine accusative or dative.')">alten</button>
+        <button class="choice-btn" onclick="checkAnswer('question43', 'altes', false, '“Altes” is used for neuter nouns.')">altes</button>
+        <button class="choice-btn" onclick="checkAnswer('question43', 'alte', false, '“Alte” is used for feminine nouns.')">alte</button>
+    </div>
+    <div class="feedback" id="feedback-question43"></div>
+</div>
+
+<div class="question-container" id="question44">
+    <p><strong>Wir trinken einen ____ Saft.</strong> (frisch)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question44', 'frischer', false, '“Frischer” is used for nominative masculine.')">frischer</button>
+        <button class="choice-btn" onclick="checkAnswer('question44', 'frischen', false, '“Frischen” is used for masculine accusative or dative.')">frischen</button>
+        <button class="choice-btn" onclick="checkAnswer('question44', 'frisches', true, 'This is accusative case, and “Saft” is masculine. The correct ending is “frisches.”')">frisches</button>
+        <button class="choice-btn" onclick="checkAnswer('question44', 'frische', false, '“Frische” is used for feminine nouns.')">frische</button>
+    </div>
+    <div class="feedback" id="feedback-question44"></div>
+</div>
+
+<div class="question-container" id="question45">
+    <p><strong>Er kauft eine ____ Tasche.</strong> (modisch)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question45', 'modische', false, '“Modische” is used for feminine nouns, but be careful with context.')">modische</button>
+        <button class="choice-btn" onclick="checkAnswer('question45', 'modische', true, 'This is accusative case, and “Tasche” is feminine. The correct ending is “modische.”')">modische</button>
+        <button class="choice-btn" onclick="checkAnswer('question45', 'modischen', false, '“Modischen” is used for masculine accusative or dative.')">modischen</button>
+        <button class="choice-btn" onclick="checkAnswer('question45', 'modisches', false, '“Modisches” is used for neuter nouns.')">modisches</button>
+    </div>
+    <div class="feedback" id="feedback-question45"></div>
+</div>
+
+<div class="question-container" id="question46">
+    <p><strong>Das ist ein ____ Hund.</strong> (alt)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question46', 'alter', true, 'This is nominative case, and “Hund” is masculine. The correct ending is “alter.”')">alter</button>
+        <button class="choice-btn" onclick="checkAnswer('question46', 'alten', false, '“Alten” is used for masculine accusative or dative.')">alten</button>
+        <button class="choice-btn" onclick="checkAnswer('question46', 'altes', false, '“Altes” is used for neuter nouns.')">altes</button>
+        <button class="choice-btn" onclick="checkAnswer('question46', 'alte', false, '“Alte” is used for feminine nouns.')">alte</button>
+    </div>
+    <div class="feedback" id="feedback-question46"></div>
+</div>
+
+<div class="question-container" id="question47">
+    <p><strong>Ich trage einen ____ Mantel.</strong> (lang)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question47', 'langen', true, 'This is accusative case, and “Mantel” is masculine. The correct ending is “langen.”')">langen</button>
+        <button class="choice-btn" onclick="checkAnswer('question47', 'langer', false, '“Langer” is used for nominative masculine.')">langer</button>
+        <button class="choice-btn" onclick="checkAnswer('question47', 'langes', false, '“Langes” is used for neuter nouns.')">langes</button>
+        <button class="choice-btn" onclick="checkAnswer('question47', 'lange', false, '“Lange” is used for feminine or plural nouns.')">lange</button>
+    </div>
+    <div class="feedback" id="feedback-question47"></div>
+</div>
+
+<div class="question-container" id="question48">
+    <p><strong>Das ist eine ____ Blume.</strong> (duftend)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question48', 'duftende', true, 'This is nominative case, and “Blume” is feminine. The correct ending is “duftende.”')">duftende</button>
+        <button class="choice-btn" onclick="checkAnswer('question48', 'duftenden', false, '“Duftenden” is used for masculine accusative or dative.')">duftenden</button>
+        <button class="choice-btn" onclick="checkAnswer('question48', 'duftendes', false, '“Duftendes” is used for neuter nouns.')">duftendes</button>
+        <button class="choice-btn" onclick="checkAnswer('question48', 'duftender', false, '“Duftender” is used for nominative masculine.')">duftender</button>
+    </div>
+    <div class="feedback" id="feedback-question48"></div>
+</div>
+
+<div class="question-container" id="question49">
+    <p><strong>Wir trinken einen ____ Tee.</strong> (heiß)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question49', 'heiße', false, '“Heiße” is used for feminine nouns.')">heiße</button>
+        <button class="choice-btn" onclick="checkAnswer('question49', 'heißen', false, '“Heißen” is used for masculine accusative or dative.')">heißen</button>
+        <button class="choice-btn" onclick="checkAnswer('question49', 'heißer', true, 'This is nominative case, and “Tee” is masculine. The correct ending is “heißer.”')">heißer</button>
+        <button class="choice-btn" onclick="checkAnswer('question49', 'heißes', false, '“Heißes” is used for neuter nouns.')">heißes</button>
+    </div>
+    <div class="feedback" id="feedback-question49"></div>
+</div>
+
+<div class="question-container" id="question50">
+    <p><strong>Ich sehe einen ____ Hund.</strong> (klein)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question50', 'kleinen', true, 'This is accusative case, and “Hund” is masculine. The correct ending is “kleinen.”')">kleinen</button>
+        <button class="choice-btn" onclick="checkAnswer('question50', 'kleiner', false, '“Kleiner” is used for nominative masculine.')">kleiner</button>
+        <button class="choice-btn" onclick="checkAnswer('question50', 'kleine', false, '“Kleine” is used for feminine nouns.')">kleine</button>
+        <button class="choice-btn" onclick="checkAnswer('question50', 'kleines', false, '“Kleines” is used for neuter nouns.')">kleines</button>
+    </div>
+    <div class="feedback" id="feedback-question50"></div>
+</div>
+
+<div class="question-container" id="question51">
+    <p><strong>Das ist eine ____ Katze.</strong> (schwarz)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question51', 'schwarzes', false, '“Schwarzes” is used for neuter nouns.')">schwarzes</button>
+        <button class="choice-btn" onclick="checkAnswer('question51', 'schwarze', true, 'This is nominative case, and “Katze” is feminine. The correct ending is “schwarze.”')">schwarze</button>
+        <button class="choice-btn" onclick="checkAnswer('question51', 'schwarzer', false, '“Schwarzer” is used for nominative masculine.')">schwarzer</button>
+        <button class="choice-btn" onclick="checkAnswer('question51', 'schwarzen', false, '“Schwarzen” is used for masculine accusative or dative.')">schwarzen</button>
+    </div>
+    <div class="feedback" id="feedback-question51"></div>
+</div>
+
+<div class="question-container" id="question52">
+    <p><strong>Wir haben ein ____ Zimmer.</strong> (hell)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question52', 'helles', false, '“Helles” is used for nominative or accusative neuter.')">helles</button>
+        <button class="choice-btn" onclick="checkAnswer('question52', 'helle', false, '“Helle” is used for feminine nouns.')">helle</button>
+        <button class="choice-btn" onclick="checkAnswer('question52', 'heller', false, '“Heller” is used for nominative masculine.')">heller</button>
+        <button class="choice-btn" onclick="checkAnswer('question52', 'hellen', true, 'This is accusative case, and “Zimmer” is neuter. The correct ending is “hellen.”')">hellen</button>
+    </div>
+    <div class="feedback" id="feedback-question52"></div>
+</div>
+
+<div class="question-container" id="question53">
+    <p><strong>Ich trage einen ____ Mantel.</strong> (warm)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question53', 'warmer', false, '“Warmer” is used for nominative masculine.')">warmer</button>
+        <button class="choice-btn" onclick="checkAnswer('question53', 'warmen', true, 'This is accusative case, and “Mantel” is masculine. The correct ending is “warmen.”')">warmen</button>
+        <button class="choice-btn" onclick="checkAnswer('question53', 'warmes', false, '“Warmes” is used for neuter nouns.')">warmes</button>
+        <button class="choice-btn" onclick="checkAnswer('question53', 'warme', false, '“Warme” is used for feminine nouns.')">warme</button>
+    </div>
+    <div class="feedback" id="feedback-question53"></div>
+</div>
+
+<div class="question-container" id="question54">
+    <p><strong>Das ist ein ____ Auto.</strong> (schnell)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question54', 'schnelles', false, '“Schnelles” is used for nominative or accusative neuter.')">schnelles</button>
+        <button class="choice-btn" onclick="checkAnswer('question54', 'schneller', false, '“Schneller” is used for nominative masculine.')">schneller</button>
+        <button class="choice-btn" onclick="checkAnswer('question54', 'schnelles', true, 'This is nominative case, and “Auto” is neuter. The correct ending is “schnelles.”')">schnelles</button>
+        <button class="choice-btn" onclick="checkAnswer('question54', 'schnelle', false, '“Schnelle” is used for feminine nouns.')">schnelle</button>
+    </div>
+    <div class="feedback" id="feedback-question54"></div>
+</div>
+<div class="question-container" id="question55">
+    <p><strong>Das ist ein ____ Stuhl.</strong> (bequem)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question55', 'bequemer', false, '“Bequemer” is used for nominative masculine.')">bequemer</button>
+        <button class="choice-btn" onclick="checkAnswer('question55', 'bequeme', false, '“Bequeme” is used for feminine nouns.')">bequeme</button>
+        <button class="choice-btn" onclick="checkAnswer('question55', 'bequemen', true, 'This is accusative case, and “Stuhl” is masculine. The correct ending is “bequemen.”')">bequemen</button>
+        <button class="choice-btn" onclick="checkAnswer('question55', 'bequemes', false, '“Bequemes” is used for neuter nouns.')">bequemes</button>
+    </div>
+    <div class="feedback" id="feedback-question55"></div>
+</div>
+
+<div class="question-container" id="question56">
+    <p><strong>Ich habe eine ____ Blume.</strong> (duftend)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question56', 'duftender', false, '“Duftender” is used for nominative masculine.')">duftender</button>
+        <button class="choice-btn" onclick="checkAnswer('question56', 'duftendes', false, '“Duftendes” is used for neuter nouns.')">duftendes</button>
+        <button class="choice-btn" onclick="checkAnswer('question56', 'duftende', false, '“Duftende” is used for feminine nominative.')">duftende</button>
+        <button class="choice-btn" onclick="checkAnswer('question56', 'duftenden', true, 'This is accusative case, and “Blume” is feminine. The correct ending is “duftenden.”')">duftenden</button>
+    </div>
+    <div class="feedback" id="feedback-question56"></div>
+</div>
+
+<div class="question-container" id="question57">
+    <p><strong>Das ist ein ____ Apfel.</strong> (grün)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question57', 'grüner', false, '“Grüner” is used for nominative masculine.')">grüner</button>
+        <button class="choice-btn" onclick="checkAnswer('question57', 'grünes', false, '“Grünes” is used for neuter nouns.')">grünes</button>
+        <button class="choice-btn" onclick="checkAnswer('question57', 'grünen', true, 'This is accusative case, and “Apfel” is masculine. The correct ending is “grünen.”')">grünen</button>
+        <button class="choice-btn" onclick="checkAnswer('question57', 'grüne', false, '“Grüne” is used for feminine or plural.')">grüne</button>
+    </div>
+    <div class="feedback" id="feedback-question57"></div>
+</div>
+
+<div class="question-container" id="question58">
+    <p><strong>Er trägt einen ____ Mantel.</strong> (warm)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question58', 'warmer', false, '“Warmer” is used for nominative masculine.')">warmer</button>
+        <button class="choice-btn" onclick="checkAnswer('question58', 'warmes', false, '“Warmes” is used for neuter nouns.')">warmes</button>
+        <button class="choice-btn" onclick="checkAnswer('question58', 'warme', false, '“Warme” is used for feminine nouns.')">warme</button>
+        <button class="choice-btn" onclick="checkAnswer('question58', 'warmen', true, 'This is accusative case, and “Mantel” is masculine. The correct ending is “warmen.”')">warmen</button>
+    </div>
+    <div class="feedback" id="feedback-question58"></div>
+</div>
+
+<div class="question-container" id="question59">
+    <p><strong>Ich brauche eine ____ Lampe.</strong> (hell)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question59', 'heller', false, '“Heller” is used for nominative masculine.')">heller</button>
+        <button class="choice-btn" onclick="checkAnswer('question59', 'helle', true, 'This is accusative case, and “Lampe” is feminine. The correct ending is “helle.”')">helle</button>
+        <button class="choice-btn" onclick="checkAnswer('question59', 'hellen', false, '“Hellen” is used for masculine accusative or dative.')">hellen</button>
+        <button class="choice-btn" onclick="checkAnswer('question59', 'helles', false, '“Helles” is used for neuter nouns.')">helles</button>
+    </div>
+    <div class="feedback" id="feedback-question59"></div>
+</div>
+
+<div class="question-container" id="question60">
+    <p><strong>Ich habe einen ____ Tisch.</strong> (groß)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question60', 'großer', false, '“Großer” is used for nominative masculine.')">großer</button>
+        <button class="choice-btn" onclick="checkAnswer('question60', 'großes', false, '“Großes” is used for neuter nouns.')">großes</button>
+        <button class="choice-btn" onclick="checkAnswer('question60', 'große', false, '“Große” is used for feminine nouns.')">große</button>
+        <button class="choice-btn" onclick="checkAnswer('question60', 'großen', true, 'This is accusative case, and “Tisch” is masculine. The correct ending is “großen.”')">großen</button>
+    </div>
+    <div class="feedback" id="feedback-question60"></div>
+</div>
+
+<div class="question-container" id="question61">
+    <p><strong>Das ist eine ____ Katze.</strong> (schwarz)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question61', 'schwarzes', false, '“Schwarzes” is used for neuter nouns.')">schwarzes</button>
+        <button class="choice-btn" onclick="checkAnswer('question61', 'schwarzer', false, '“Schwarzer” is used for nominative masculine.')">schwarzer</button>
+        <button class="choice-btn" onclick="checkAnswer('question61', 'schwarze', false, '“Schwarze” applies under different case assumptions.')">schwarze</button>
+        <button class="choice-btn" onclick="checkAnswer('question61', 'schwarzen', true, 'This is accusative case, and “Katze” is feminine. The correct ending is “schwarzen.”')">schwarzen</button>
+    </div>
+    <div class="feedback" id="feedback-question61"></div>
+</div>
+
+<div class="question-container" id="question62">
+    <p><strong>Ich kaufe ein ____ Auto.</strong> (neu)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question62', 'neuer', false, '“Neuer” is used for nominative masculine.')">neuer</button>
+        <button class="choice-btn" onclick="checkAnswer('question62', 'neues', true, 'This is accusative case, and “Auto” is neuter. The correct ending is “neues.”')">neues</button>
+        <button class="choice-btn" onclick="checkAnswer('question62', 'neuen', false, '“Neuen” is used for masculine accusative.')">neuen</button>
+        <button class="choice-btn" onclick="checkAnswer('question62', 'neue', false, '“Neue” is used for feminine nouns.')">neue</button>
+    </div>
+    <div class="feedback" id="feedback-question62"></div>
+</div>
+
+<div class="question-container" id="question63">
+    <p><strong>Wir trinken einen ____ Saft.</strong> (frisch)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question63', 'frischer', false, '“Frischer” is used for nominative masculine.')">frischer</button>
+        <button class="choice-btn" onclick="checkAnswer('question63', 'frisches', false, '“Frisches” is used for neuter nouns.')">frisches</button>
+        <button class="choice-btn" onclick="checkAnswer('question63', 'frische', false, '“Frische” is used for feminine nouns.')">frische</button>
+        <button class="choice-btn" onclick="checkAnswer('question63', 'frischen', true, 'This is accusative case, and “Saft” is masculine. The correct ending is “frischen.”')">frischen</button>
+    </div>
+    <div class="feedback" id="feedback-question63"></div>
+</div>
+
+<div class="question-container" id="question64">
+    <p><strong>Das ist ein ____ Buch.</strong> (interessant)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question64', 'interessanter', false, '“Interessanter” is used for nominative masculine.')">interessanter</button>
+        <button class="choice-btn" onclick="checkAnswer('question64', 'interessantes', false, '“Interessantes” would be correct in nominative or accusative contexts.')">interessantes</button>
+        <button class="choice-btn" onclick="checkAnswer('question64', 'interessanten', true, 'This is accusative case, and “Buch” is neuter. The correct ending is “interessanten.”')">interessanten</button>
+        <button class="choice-btn" onclick="checkAnswer('question64', 'interessante', false, '“Interessante” is used for feminine or plural nouns.')">interessante</button>
+    </div>
+    <div class="feedback" id="feedback-question64"></div>
+</div>
+
+
+<div class="question-container" id="question65">
+    <p><strong>Wir sehen einen ____ Film.</strong> (spannend)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question65', 'spannender', false, '“Spannender” is used for nominative masculine.')">spannender</button>
+        <button class="choice-btn" onclick="checkAnswer('question65', 'spannendes', false, '“Spannendes” is used for neuter nouns.')">spannendes</button>
+        <button class="choice-btn" onclick="checkAnswer('question65', 'spannende', false, '“Spannende” is used for feminine or plural.')">spannende</button>
+        <button class="choice-btn" onclick="checkAnswer('question65', 'spannenden', true, 'This is accusative case, and “Film” is masculine. The correct ending is “spannenden.”')">spannenden</button>
+    </div>
+    <div class="feedback" id="feedback-question65"></div>
+</div>
+
+<div class="question-container" id="question66">
+    <p><strong>Das ist eine ____ Zeitung.</strong> (bekannt)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question66', 'bekannter', false, '“Bekannter” is used for nominative masculine.')">bekannter</button>
+        <button class="choice-btn" onclick="checkAnswer('question66', 'bekannte', false, '“Bekannte” is used for feminine nominative or accusative.')">bekannte</button>
+        <button class="choice-btn" onclick="checkAnswer('question66', 'bekannten', true, 'This is accusative case, and “Zeitung” is feminine. The correct ending is “bekannten.”')">bekannten</button>
+        <button class="choice-btn" onclick="checkAnswer('question66', 'bekanntes', false, '“Bekanntes” is used for neuter nouns.')">bekanntes</button>
+    </div>
+    <div class="feedback" id="feedback-question66"></div>
+</div>
+
+<div class="question-container" id="question67">
+    <p><strong>Ich kaufe einen ____ Koffer.</strong> (schwer)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question67', 'schweren', true, 'This is accusative case, and “Koffer” is masculine. The correct ending is “schweren.”')">schweren</button>
+        <button class="choice-btn" onclick="checkAnswer('question67', 'schweres', false, '“Schweres” is used for neuter nouns.')">schweres</button>
+        <button class="choice-btn" onclick="checkAnswer('question67', 'schwere', false, '“Schwere” is used for feminine or plural nouns.')">schwere</button>
+        <button class="choice-btn" onclick="checkAnswer('question67', 'schwerer', false, '“Schwerer” is used for nominative masculine.')">schwerer</button>
+    </div>
+    <div class="feedback" id="feedback-question67"></div>
+</div>
+
+<div class="question-container" id="question68">
+    <p><strong>Das ist ein ____ Computer.</strong> (modern)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question68', 'moderner', true, 'This is nominative case, and “Computer” is masculine. The correct ending is “moderner.”')">moderner</button>
+        <button class="choice-btn" onclick="checkAnswer('question68', 'modernen', false, '“Modernen” is used for masculine accusative or dative.')">modernen</button>
+        <button class="choice-btn" onclick="checkAnswer('question68', 'modernes', false, '“Modernes” is used for neuter nouns.')">modernes</button>
+        <button class="choice-btn" onclick="checkAnswer('question68', 'moderne', false, '“Moderne” is used for feminine nouns.')">moderne</button>
+    </div>
+    <div class="feedback" id="feedback-question68"></div>
+</div>
+
+<div class="question-container" id="question69">
+    <p><strong>Er hat ein ____ Fahrrad.</strong> (schnell)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question69', 'schnelle', false, '“Schnelle” is used for feminine nouns.')">schnelle</button>
+        <button class="choice-btn" onclick="checkAnswer('question69', 'schnellen', false, '“Schnellen” is used for masculine accusative or dative.')">schnellen</button>
+        <button class="choice-btn" onclick="checkAnswer('question69', 'schnelles', true, 'This is accusative case, and “Fahrrad” is neuter. The correct ending is “schnelles.”')">schnelles</button>
+        <button class="choice-btn" onclick="checkAnswer('question69', 'schneller', false, '“Schneller” is used for nominative masculine.')">schneller</button>
+    </div>
+    <div class="feedback" id="feedback-question69"></div>
+</div>
+
+
+<div class="question-container" id="question70">
+    <p><strong>Ich lese ein ____ Buch.</strong> (spannend)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question70', 'spannendes', false, '“Spannendes” is commonly used for neuter contexts.')">spannendes</button>
+        <button class="choice-btn" onclick="checkAnswer('question70', 'spannender', false, '“Spannender” is used for nominative masculine.')">spannender</button>
+        <button class="choice-btn" onclick="checkAnswer('question70', 'spannende', false, '“Spannende” is used for feminine nouns.')">spannende</button>
+        <button class="choice-btn" onclick="checkAnswer('question70', 'spannenden', true, 'This is accusative case, and “Buch” is neuter. The correct ending is “spannenden.”')">spannenden</button>
+    </div>
+    <div class="feedback" id="feedback-question70"></div>
+</div>
+
+<div class="question-container" id="question71">
+    <p><strong>Wir kaufen eine ____ Tasche.</strong> (praktisch)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question71', 'praktischer', false, '“Praktischer” is used for nominative masculine.')">praktischer</button>
+        <button class="choice-btn" onclick="checkAnswer('question71', 'praktisches', false, '“Praktisches” is used for neuter nouns.')">praktisches</button>
+        <button class="choice-btn" onclick="checkAnswer('question71', 'praktische', true, 'This is accusative case, and “Tasche” is feminine. The correct ending is “praktische.”')">praktische</button>
+        <button class="choice-btn" onclick="checkAnswer('question71', 'praktischen', false, '“Praktischen” is used for masculine accusative.')">praktischen</button>
+    </div>
+    <div class="feedback" id="feedback-question71"></div>
+</div>
+
+<div class="question-container" id="question72">
+    <p><strong>Das ist ein ____ Hund.</strong> (jung)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question72', 'junger', true, 'This is nominative case, and “Hund” is masculine. The correct ending is “junger.”')">junger</button>
+        <button class="choice-btn" onclick="checkAnswer('question72', 'jungen', false, '“Jungen” is used for masculine accusative or dative.')">jungen</button>
+        <button class="choice-btn" onclick="checkAnswer('question72', 'junges', false, '“Junges” is used for neuter nouns.')">junges</button>
+        <button class="choice-btn" onclick="checkAnswer('question72', 'junge', false, '“Junge” is used for feminine or plural.')">junge</button>
+    </div>
+    <div class="feedback" id="feedback-question72"></div>
+</div>
+
+<div class="question-container" id="question73">
+    <p><strong>Ich habe ein ____ Handy.</strong> (neu)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question73', 'neuer', false, '“Neuer” is used for nominative masculine.')">neuer</button>
+        <button class="choice-btn" onclick="checkAnswer('question73', 'neues', true, 'This is accusative case, and “Handy” is neuter. The correct ending is “neues.”')">neues</button>
+        <button class="choice-btn" onclick="checkAnswer('question73', 'neuen', false, '“Neuen” is used for masculine accusative.')">neuen</button>
+        <button class="choice-btn" onclick="checkAnswer('question73', 'neue', false, '“Neue” is used for feminine nouns.')">neue</button>
+    </div>
+    <div class="feedback" id="feedback-question73"></div>
+</div>
+
+<div class="question-container" id="question74">
+    <p><strong>Das ist ein ____ Stuhl.</strong> (bequem)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question74', 'bequemer', false, '“Bequemer” is used for nominative masculine.')">bequemer</button>
+        <button class="choice-btn" onclick="checkAnswer('question74', 'bequeme', false, '“Bequeme” is used for feminine or plural.')">bequeme</button>
+        <button class="choice-btn" onclick="checkAnswer('question74', 'bequemen', true, 'This is accusative case, and “Stuhl” is masculine. The correct ending is “bequemen.”')">bequemen</button>
+        <button class="choice-btn" onclick="checkAnswer('question74', 'bequemes', false, '“Bequemes” is used for neuter nouns.')">bequemes</button>
+    </div>
+    <div class="feedback" id="feedback-question74"></div>
+</div>
+<div class="question-container" id="question75">
+    <p><strong>Er hat ein ____ Bein.</strong> (verletzen)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question75', 'verletzter', false, '“Verletzter” is used for nominative masculine.')">verletzter</button>
+        <button class="choice-btn" onclick="checkAnswer('question75', 'verletztes', false, '“Verletztes” applies in other contexts but not here.')">verletztes</button>
+        <button class="choice-btn" onclick="checkAnswer('question75', 'verletzte', false, '“Verletzte” is used for feminine nouns.')">verletzte</button>
+        <button class="choice-btn" onclick="checkAnswer('question75', 'verletzten', true, 'This is accusative case, and “Bein” is neuter. The correct ending is “verletzten.”')">verletzten</button>
+    </div>
+    <div class="feedback" id="feedback-question75"></div>
+</div>
+
+<div class="question-container" id="question76">
+    <p><strong>Er zeigt auf den ____ Arm.</strong> (stark)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question76', 'starker', false, '“Starker” is used for nominative masculine.')">starker</button>
+        <button class="choice-btn" onclick="checkAnswer('question76', 'starkes', false, '“Starkes” is used for neuter nouns.')">starkes</button>
+        <button class="choice-btn" onclick="checkAnswer('question76', 'starke', false, '“Starke” is used for feminine or plural.')">starke</button>
+        <button class="choice-btn" onclick="checkAnswer('question76', 'starken', true, 'This is accusative case, and “Arm” is masculine. The correct ending is “starken.”')">starken</button>
+    </div>
+    <div class="feedback" id="feedback-question76"></div>
+</div>
+
+<div class="question-container" id="question77">
+    <p><strong>Das ist ein ____ Kopf.</strong> (rund)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question77', 'runder', true, 'This is nominative case, and “Kopf” is masculine. The correct ending is “runder.”')">runder</button>
+        <button class="choice-btn" onclick="checkAnswer('question77', 'rundes', false, '“Rundes” is used for neuter nouns.')">rundes</button>
+        <button class="choice-btn" onclick="checkAnswer('question77', 'runde', false, '“Runde” is used for feminine nouns.')">runde</button>
+        <button class="choice-btn" onclick="checkAnswer('question77', 'runden', false, '“Runden” is used for masculine accusative.')">runden</button>
+    </div>
+    <div class="feedback" id="feedback-question77"></div>
+</div>
+
+<div class="question-container" id="question78">
+    <p><strong>Sie hat eine ____ Hand.</strong> (klein)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question78', 'kleines', false, '“Kleines” is used for neuter nouns.')">kleines</button>
+        <button class="choice-btn" onclick="checkAnswer('question78', 'kleiner', false, '“Kleiner” is used for nominative masculine.')">kleiner</button>
+        <button class="choice-btn" onclick="checkAnswer('question78', 'kleine', true, 'This is accusative case, and “Hand” is feminine. The correct ending is “kleine.”')">kleine</button>
+        <button class="choice-btn" onclick="checkAnswer('question78', 'kleinen', false, '“Kleinen” is used for masculine accusative.')">kleinen</button>
+    </div>
+    <div class="feedback" id="feedback-question78"></div>
+</div>
+
+<div class="question-container" id="question79">
+    <p><strong>Er hat einen ____ Rücken.</strong> (breit)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question79', 'breiter', false, '“Breiter” is used for nominative masculine.')">breiter</button>
+        <button class="choice-btn" onclick="checkAnswer('question79', 'breites', false, '“Breites” is used for neuter nouns.')">breites</button>
+        <button class="choice-btn" onclick="checkAnswer('question79', 'breiten', true, 'This is accusative case, and “Rücken” is masculine. The correct ending is “breiten.”')">breiten</button>
+        <button class="choice-btn" onclick="checkAnswer('question79', 'breite', false, '“Breite” is used for feminine nouns.')">breite</button>
+    </div>
+    <div class="feedback" id="feedback-question79"></div>
+</div>
+
+<div class="question-container" id="question80">
+    <p><strong>Ich brauche einen ____ Stift.</strong> (blau)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question80', 'blauer', false, '“Blauer” is used for nominative masculine.')">blauer</button>
+        <button class="choice-btn" onclick="checkAnswer('question80', 'blauen', true, 'This is accusative case, and “Stift” is masculine. The correct ending is “blauen.”')">blauen</button>
+        <button class="choice-btn" onclick="checkAnswer('question80', 'blaues', false, '“Blaues” is used for neuter nouns.')">blaues</button>
+        <button class="choice-btn" onclick="checkAnswer('question80', 'blaue', false, '“Blaue” is used for feminine nouns.')">blaue</button>
+    </div>
+    <div class="feedback" id="feedback-question80"></div>
+</div>
+
+<div class="question-container" id="question81">
+    <p><strong>Das ist ein ____ Heft.</strong> (neu)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question81', 'neuer', false, '“Neuer” is used for nominative masculine.')">neuer</button>
+        <button class="choice-btn" onclick="checkAnswer('question81', 'neue', false, '“Neue” is used for feminine nouns.')">neue</button>
+        <button class="choice-btn" onclick="checkAnswer('question81', 'neues', true, 'This is nominative case, and “Heft” is neuter. The correct ending is “neues.”')">neues</button>
+        <button class="choice-btn" onclick="checkAnswer('question81', 'neuen', false, '“Neuen” is used for masculine accusative.')">neuen</button>
+    </div>
+    <div class="feedback" id="feedback-question81"></div>
+</div>
+
+<div class="question-container" id="question82">
+    <p><strong>Ich habe eine ____ Schere.</strong> (scharf)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question82', 'scharfe', true, 'This is accusative case, and “Schere” is feminine. The correct ending is “scharfe.”')">scharfe</button>
+        <button class="choice-btn" onclick="checkAnswer('question82', 'scharfes', false, '“Scharfes” is used for neuter nouns.')">scharfes</button>
+        <button class="choice-btn" onclick="checkAnswer('question82', 'scharfen', false, '“Scharfen” is used for masculine accusative or dative.')">scharfen</button>
+        <button class="choice-btn" onclick="checkAnswer('question82', 'scharfer', false, '“Scharfer” is used for nominative masculine.')">scharfer</button>
+    </div>
+    <div class="feedback" id="feedback-question82"></div>
+</div>
+
+<div class="question-container" id="question83">
+    <p><strong>Das ist ein ____ Radiergummi.</strong> (klein)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question83', 'kleiner', false, '“Kleiner” is used for nominative masculine.')">kleiner</button>
+        <button class="choice-btn" onclick="checkAnswer('question83', 'kleines', true, 'This is nominative case, and “Radiergummi” is neuter. The correct ending is “kleines.”')">kleines</button>
+        <button class="choice-btn" onclick="checkAnswer('question83', 'kleine', false, '“Kleine” is used for feminine nouns.')">kleine</button>
+        <button class="choice-btn" onclick="checkAnswer('question83', 'kleinen', false, '“Kleinen” is used for masculine accusative.')">kleinen</button>
+    </div>
+    <div class="feedback" id="feedback-question83"></div>
+</div>
+
+<div class="question-container" id="question84">
+    <p><strong>Er hat ein ____ Lineal.</strong> (lang)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question84', 'langer', false, '“Langer” is used for nominative masculine.')">langer</button>
+        <button class="choice-btn" onclick="checkAnswer('question84', 'lange', false, '“Lange” is used for feminine nouns.')">lange</button>
+        <button class="choice-btn" onclick="checkAnswer('question84', 'langes', true, 'This is accusative case, and “Lineal” is neuter. The correct ending is “langes.”')">langes</button>
+        <button class="choice-btn" onclick="checkAnswer('question84', 'langen', false, '“Langen” is used for masculine accusative.')">langen</button>
+    </div>
+    <div class="feedback" id="feedback-question84"></div>
+</div>
+
+
+<div class="question-container" id="question85">
+    <p><strong>Ich benutze einen ____ Löffel.</strong> (groß)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question85', 'großer', false, '“Großer” is used for nominative masculine.')">großer</button>
+        <button class="choice-btn" onclick="checkAnswer('question85', 'großes', false, '“Großes” is used for neuter nouns.')">großes</button>
+        <button class="choice-btn" onclick="checkAnswer('question85', 'großen', true, 'This is accusative case, and “Löffel” is masculine. The correct ending is “großen.”')">großen</button>
+        <button class="choice-btn" onclick="checkAnswer('question85', 'große', false, '“Große” is used for feminine nouns.')">große</button>
+    </div>
+    <div class="feedback" id="feedback-question85"></div>
+</div>
+
+<div class="question-container" id="question86">
+    <p><strong>Das ist eine ____ Pfanne.</strong> (heiß)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question86', 'heißer', false, '“Heißer” is used for nominative masculine.')">heißer</button>
+        <button class="choice-btn" onclick="checkAnswer('question86', 'heißes', false, '“Heißes” is used for neuter nouns.')">heißes</button>
+        <button class="choice-btn" onclick="checkAnswer('question86', 'heiße', false, '“Heiße” is commonly used, but be careful with the case.')">heiße</button>
+        <button class="choice-btn" onclick="checkAnswer('question86', 'heißen', true, 'This is accusative case, and “Pfanne” is feminine. The correct ending is “heißen.”')">heißen</button>
+    </div>
+    <div class="feedback" id="feedback-question86"></div>
+</div>
+
+<div class="question-container" id="question87">
+    <p><strong>Er braucht ein ____ Messer.</strong> (scharf)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question87', 'scharfes', true, 'This is accusative case, and “Messer” is neuter. The correct ending is “scharfes.”')">scharfes</button>
+        <button class="choice-btn" onclick="checkAnswer('question87', 'scharfer', false, '“Scharfer” is used for nominative masculine.')">scharfer</button>
+        <button class="choice-btn" onclick="checkAnswer('question87', 'scharfen', false, '“Scharfen” is used for masculine accusative or dative.')">scharfen</button>
+        <button class="choice-btn" onclick="checkAnswer('question87', 'scharfe', false, '“Scharfe” is used for feminine nouns.')">scharfe</button>
+    </div>
+    <div class="feedback" id="feedback-question87"></div>
+</div>
+
+<div class="question-container" id="question88">
+    <p><strong>Das ist eine ____ Tasse.</strong> (sauber)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question88', 'saubere', false, '“Saubere” is used for feminine nominative.')">saubere</button>
+        <button class="choice-btn" onclick="checkAnswer('question88', 'sauberer', false, '“Sauberer” is used for nominative masculine.')">sauberer</button>
+        <button class="choice-btn" onclick="checkAnswer('question88', 'sauberes', false, '“Sauberes” is used for neuter nouns.')">sauberes</button>
+        <button class="choice-btn" onclick="checkAnswer('question88', 'sauberen', true, 'This is accusative case, and “Tasse” is feminine. The correct ending is “sauberen.”')">sauberen</button>
+    </div>
+    <div class="feedback" id="feedback-question88"></div>
+</div>
+
+<div class="question-container" id="question89">
+    <p><strong>Er wäscht einen ____ Topf.</strong> (schmutzig)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question89', 'schmutziger', false, '“Schmutziger” is used for nominative masculine.')">schmutziger</button>
+        <button class="choice-btn" onclick="checkAnswer('question89', 'schmutziges', false, '“Schmutziges” is used for neuter nouns.')">schmutziges</button>
+        <button class="choice-btn" onclick="checkAnswer('question89', 'schmutzige', false, '“Schmutzige” is used for feminine nouns.')">schmutzige</button>
+        <button class="choice-btn" onclick="checkAnswer('question89', 'schmutzigen', true, 'This is accusative case, and “Topf” is masculine. The correct ending is “schmutzigen.”')">schmutzigen</button>
+    </div>
+    <div class="feedback" id="feedback-question89"></div>
+</div>
+
+<div class="question-container" id="question90">
+    <p><strong>Ich benutze eine ____ Maus.</strong> (kabellos)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question90', 'kabellose', false, '“Kabellose” is used for feminine nominative, but check the case carefully.')">kabellose</button>
+        <button class="choice-btn" onclick="checkAnswer('question90', 'kabelloser', false, '“Kabelloser” is used for nominative masculine.')">kabelloser</button>
+        <button class="choice-btn" onclick="checkAnswer('question90', 'kabellosen', true, 'This is accusative case, and “Maus” is feminine. The correct ending is “kabellosen.”')">kabellosen</button>
+        <button class="choice-btn" onclick="checkAnswer('question90', 'kabelloses', false, '“Kabelloses” is used for neuter nouns.')">kabelloses</button>
+    </div>
+    <div class="feedback" id="feedback-question90"></div>
+</div>
+
+<div class="question-container" id="question91">
+    <p><strong>Das ist ein ____ Monitor.</strong> (groß)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question91', 'großer', false, '“Großer” is used for nominative masculine.')">großer</button>
+        <button class="choice-btn" onclick="checkAnswer('question91', 'großes', false, '“Großes” is used for neuter nouns.')">großes</button>
+        <button class="choice-btn" onclick="checkAnswer('question91', 'große', false, '“Große” is used for feminine nouns.')">große</button>
+        <button class="choice-btn" onclick="checkAnswer('question91', 'großen', true, 'This is accusative case, and “Monitor” is masculine. The correct ending is “großen.”')">großen</button>
+    </div>
+    <div class="feedback" id="feedback-question91"></div>
+</div>
+
+<div class="question-container" id="question92">
+    <p><strong>Ich habe eine ____ Tastatur.</strong> (mechanisch)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question92', 'mechanische', false, '“Mechanische” is commonly used for nominative feminine.')">mechanische</button>
+        <button class="choice-btn" onclick="checkAnswer('question92', 'mechanischen', true, 'This is accusative case, and “Tastatur” is feminine. The correct ending is “mechanischen.”')">mechanischen</button>
+        <button class="choice-btn" onclick="checkAnswer('question92', 'mechanischer', false, '“Mechanischer” is used for nominative masculine.')">mechanischer</button>
+        <button class="choice-btn" onclick="checkAnswer('question92', 'mechanisches', false, '“Mechanisches” is used for neuter nouns.')">mechanisches</button>
+    </div>
+    <div class="feedback" id="feedback-question92"></div>
+</div>
+
+<div class="question-container" id="question93">
+    <p><strong>Er nutzt einen ____ Laptop.</strong> (leicht)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question93', 'leichter', false, '“Leichter” is used for nominative masculine.')">leichter</button>
+        <button class="choice-btn" onclick="checkAnswer('question93', 'leichten', true, 'This is accusative case, and “Laptop” is masculine. The correct ending is “leichten.”')">leichten</button>
+        <button class="choice-btn" onclick="checkAnswer('question93', 'leichtes', false, '“Leichtes” is used for neuter nouns.')">leichtes</button>
+        <button class="choice-btn" onclick="checkAnswer('question93', 'leichte', false, '“Leichte” is used for feminine nouns.')">leichte</button>
+    </div>
+    <div class="feedback" id="feedback-question93"></div>
+</div>
+
+<div class="question-container" id="question94">
+    <p><strong>Das ist ein ____ Bildschirm.</strong> (hell)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question94', 'heller', false, '“Heller” is used for nominative masculine.')">heller</button>
+        <button class="choice-btn" onclick="checkAnswer('question94', 'hellen', true, 'This is accusative case, and “Bildschirm” is masculine. The correct ending is “hellen.”')">hellen</button>
+        <button class="choice-btn" onclick="checkAnswer('question94', 'helles', false, '“Helles” is used for neuter nouns.')">helles</button>
+        <button class="choice-btn" onclick="checkAnswer('question94', 'helle', false, '“Helle” is used for feminine nouns.')">helle</button>
+    </div>
+    <div class="feedback" id="feedback-question94"></div>
+</div>
+<div class="question-container" id="question90">
+    <p><strong>Ich benutze eine ____ Maus.</strong> (kabellos)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question90', 'kabellose', false, '“Kabellose” is used for feminine nominative, but check the case carefully.')">kabellose</button>
+        <button class="choice-btn" onclick="checkAnswer('question90', 'kabelloser', false, '“Kabelloser” is used for nominative masculine.')">kabelloser</button>
+        <button class="choice-btn" onclick="checkAnswer('question90', 'kabellosen', true, 'This is accusative case, and “Maus” is feminine. The correct ending is “kabellosen.”')">kabellosen</button>
+        <button class="choice-btn" onclick="checkAnswer('question90', 'kabelloses', false, '“Kabelloses” is used for neuter nouns.')">kabelloses</button>
+    </div>
+    <div class="feedback" id="feedback-question90"></div>
+</div>
+
+<div class="question-container" id="question91">
+    <p><strong>Das ist ein ____ Monitor.</strong> (groß)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question91', 'großer', false, '“Großer” is used for nominative masculine.')">großer</button>
+        <button class="choice-btn" onclick="checkAnswer('question91', 'großes', false, '“Großes” is used for neuter nouns.')">großes</button>
+        <button class="choice-btn" onclick="checkAnswer('question91', 'große', false, '“Große” is used for feminine nouns.')">große</button>
+        <button class="choice-btn" onclick="checkAnswer('question91', 'großen', true, 'This is accusative case, and “Monitor” is masculine. The correct ending is “großen.”')">großen</button>
+    </div>
+    <div class="feedback" id="feedback-question91"></div>
+</div>
+
+<div class="question-container" id="question92">
+    <p><strong>Ich habe eine ____ Tastatur.</strong> (mechanisch)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question92', 'mechanische', false, '“Mechanische” is commonly used for nominative feminine.')">mechanische</button>
+        <button class="choice-btn" onclick="checkAnswer('question92', 'mechanischen', true, 'This is accusative case, and “Tastatur” is feminine. The correct ending is “mechanischen.”')">mechanischen</button>
+        <button class="choice-btn" onclick="checkAnswer('question92', 'mechanischer', false, '“Mechanischer” is used for nominative masculine.')">mechanischer</button>
+        <button class="choice-btn" onclick="checkAnswer('question92', 'mechanisches', false, '“Mechanisches” is used for neuter nouns.')">mechanisches</button>
+    </div>
+    <div class="feedback" id="feedback-question92"></div>
+</div>
+
+<div class="question-container" id="question93">
+    <p><strong>Er nutzt einen ____ Laptop.</strong> (leicht)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question93', 'leichter', false, '“Leichter” is used for nominative masculine.')">leichter</button>
+        <button class="choice-btn" onclick="checkAnswer('question93', 'leichten', true, 'This is accusative case, and “Laptop” is masculine. The correct ending is “leichten.”')">leichten</button>
+        <button class="choice-btn" onclick="checkAnswer('question93', 'leichtes', false, '“Leichtes” is used for neuter nouns.')">leichtes</button>
+        <button class="choice-btn" onclick="checkAnswer('question93', 'leichte', false, '“Leichte” is used for feminine nouns.')">leichte</button>
+    </div>
+    <div class="feedback" id="feedback-question93"></div>
+</div>
+
+<div class="question-container" id="question94">
+    <p><strong>Das ist ein ____ Bildschirm.</strong> (hell)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question94', 'heller', false, '“Heller” is used for nominative masculine.')">heller</button>
+        <button class="choice-btn" onclick="checkAnswer('question94', 'hellen', true, 'This is accusative case, and “Bildschirm” is masculine. The correct ending is “hellen.”')">hellen</button>
+        <button class="choice-btn" onclick="checkAnswer('question94', 'helles', false, '“Helles” is used for neuter nouns.')">helles</button>
+        <button class="choice-btn" onclick="checkAnswer('question94', 'helle', false, '“Helle” is used for feminine nouns.')">helle</button>
+    </div>
+    <div class="feedback" id="feedback-question94"></div>
+</div>
+
+
+<div class="question-container" id="question95">
+    <p><strong>Ich kaufe eine ____ Jacke.</strong> (warm)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question95', 'warme', false, '“Warme” is used for feminine nominative.')">warme</button>
+        <button class="choice-btn" onclick="checkAnswer('question95', 'warmer', false, '“Warmer” is used for nominative masculine.')">warmer</button>
+        <button class="choice-btn" onclick="checkAnswer('question95', 'warmen', true, 'This is accusative case, and “Jacke” is feminine. The correct ending is “warmen.”')">warmen</button>
+        <button class="choice-btn" onclick="checkAnswer('question95', 'warmes', false, '“Warmes” is used for neuter nouns.')">warmes</button>
+    </div>
+    <div class="feedback" id="feedback-question95"></div>
+</div>
+
+<div class="question-container" id="question96">
+    <p><strong>Er kauft ein ____ Hemd.</strong> (weiß)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question96', 'weißer', false, '“Weißer” is used for nominative masculine.')">weißer</button>
+        <button class="choice-btn" onclick="checkAnswer('question96', 'weiße', false, '“Weiße” is used for feminine nouns.')">weiße</button>
+        <button class="choice-btn" onclick="checkAnswer('question96', 'weißes', false, '“Weißes” is used under specific contexts.')">weißes</button>
+        <button class="choice-btn" onclick="checkAnswer('question96', 'weißen', true, 'This is accusative case, and “Hemd” is neuter. The correct ending is “weißen.”')">weißen</button>
+    </div>
+    <div class="feedback" id="feedback-question96"></div>
+</div>
+
+<div class="question-container" id="question97">
+    <p><strong>Wir kaufen einen ____ Schuh.</strong> (modern)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question97', 'moderner', false, '“Moderner” is used for nominative masculine.')">moderner</button>
+        <button class="choice-btn" onclick="checkAnswer('question97', 'modernes', false, '“Modernes” is used for neuter nouns.')">modernes</button>
+        <button class="choice-btn" onclick="checkAnswer('question97', 'moderne', false, '“Moderne” is used for feminine nouns.')">moderne</button>
+        <button class="choice-btn" onclick="checkAnswer('question97', 'modernen', true, 'This is accusative case, and “Schuh” is masculine. The correct ending is “modernen.”')">modernen</button>
+    </div>
+    <div class="feedback" id="feedback-question97"></div>
+</div>
+
+<div class="question-container" id="question98">
+    <p><strong>Er bestellt einen ____ Hut.</strong> (teuer)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question98', 'teurer', false, '“Teurer” is used for nominative masculine.')">teurer</button>
+        <button class="choice-btn" onclick="checkAnswer('question98', 'teures', false, '“Teures” is used for neuter nouns.')">teures</button>
+        <button class="choice-btn" onclick="checkAnswer('question98', 'teure', false, '“Teure” is used for feminine nouns.')">teure</button>
+        <button class="choice-btn" onclick="checkAnswer('question98', 'teuren', true, 'This is accusative case, and “Hut” is masculine. The correct ending is “teuren.”')">teuren</button>
+    </div>
+    <div class="feedback" id="feedback-question98"></div>
+</div>
+
+<div class="question-container" id="question99">
+    <p><strong>Ich wähle einen ____ Pullover.</strong> (dick)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question99', 'dicker', false, '“Dicker” is used for nominative masculine.')">dicker</button>
+        <button class="choice-btn" onclick="checkAnswer('question99', 'dicke', false, '“Dicke” is used for feminine nouns.')">dicke</button>
+        <button class="choice-btn" onclick="checkAnswer('question99', 'dicken', true, 'This is accusative case, and “Pullover” is masculine. The correct ending is “dicken.”')">dicken</button>
+        <button class="choice-btn" onclick="checkAnswer('question99', 'dickes', false, '“Dickes” is used for neuter nouns.')">dickes</button>
+    </div>
+    <div class="feedback" id="feedback-question99"></div>
+</div>
+
+<div class="question-container" id="question100">
+    <p><strong>Er kauft eine ____ Tasche.</strong> (teuer)</p>
+    <div class="choices">
+        <button class="choice-btn" onclick="checkAnswer('question100', 'teure', true, 'This is accusative case, and “Tasche” is feminine. The correct ending is “teure.”')">teure</button>
+        <button class="choice-btn" onclick="checkAnswer('question100', 'teurer', false, '“Teurer” is used for nominative masculine.')">teurer</button>
+        <button class="choice-btn" onclick="checkAnswer('question100', 'teuren', false, '“Teuren” is used for masculine accusative or dative.')">teuren</button>
+        <button class="choice-btn" onclick="checkAnswer('question100', 'teures', false, '“Teures” is used for neuter nouns.')">teures</button>
+    </div>
+    <div class="feedback" id="feedback-question100"></div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+     <script>
+        // Shuffle button click event
+        document.getElementById('shuffle-button').addEventListener('click', shuffleQuestions);
+
+        function shuffleQuestions() {
+            const container = document.getElementById('questions-container');
+            const questions = Array.from(container.children);  // Get all question divs
+            const shuffled = questions.sort(() => Math.random() - 0.5);  // Shuffle array
+
+            // Clear and re-append shuffled divs
+            container.innerHTML = '';
+            shuffled.forEach(question => container.appendChild(question));
+        }
+
+        function checkAnswer(questionId, selectedAnswer, isCorrect, explanation) {
+            const feedbackElement = document.getElementById(`feedback-${questionId}`);
+
+            if (isCorrect) {
+                feedbackElement.innerHTML = `<span class="correct">Correct! 🎉</span> The correct ending is: ${selectedAnswer}.<br>${explanation}`;
+            } else {
+                feedbackElement.innerHTML = `<span class="incorrect">Incorrect. 😢</span> The correct answer involves understanding this:<br>${explanation}`;
+            }
+        }
+    </script>
+</body>
+</html>
