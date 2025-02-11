@@ -92,12 +92,18 @@
 
             hintButton.addEventListener('click', () => {
                 hintClicks++;
+
                 if (hintClicks === 1) {
+                    // Show gender
                     document.getElementById(`hint-text-${index}`).textContent = `Geschlecht: ${questions[index].gender}`;
                 } else if (hintClicks === 2) {
+                    // Show case
                     document.getElementById(`hint-text-${index}`).textContent += ` | Fall: ${questions[index].case}`;
-                    hintButton.disabled = true;
-                    hintButton.style.opacity = 0.5;
+                } else if (hintClicks === 3) {
+                    // Show translation
+                    document.getElementById(`hint-text-${index}`).textContent += ` | Übersetzung: ${questions[index].translations[selectedLanguage]}`;
+                    hintButton.disabled = true;  // Disable button after the third hint
+                    hintButton.style.opacity = 0.5;  // Grey it out
                 }
             });
         });
