@@ -1,0 +1,168 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #e0e4fa);
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Container Styles */
+.question-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid #b3c6ff;
+}
+
+/* Button Styles */
+.choice-btn {
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.choice-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.choice-btn:disabled {
+    cursor: not-allowed;
+    background-color: #ccc;
+}
+
+/* Selected Button Outline */
+.choice-btn.selected {
+    outline: 3px solid #17a2b8;
+    outline-offset: 2px;
+}
+
+/* Correct / Incorrect Outlines */
+.choice-btn.correct.selected {
+    outline-color: #28a745;
+}
+
+.choice-btn.incorrect.selected {
+    outline-color: #dc3545;
+}
+
+/* Hint Button */
+.hint-btn {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hint-btn:hover {
+    background-color: #ff9800;
+}
+
+/* Feedback Text */
+.feedback {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.correct {
+    color: #28a745;
+}
+
+.incorrect {
+    color: #dc3545;
+}
+
+/* Score Section */
+#score-display {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 2px solid #b3c6ff;
+}
+
+/* Try Again Button */
+/* Center the try-again button */
+.try-again-btn {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.4rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.language-container {
+    margin-top: 20px; /* Space above the language select menu */
+}
+/* Container that centers the button properly */
+.try-again-container {
+    text-align: center;
+    padding: 50px 50px;
+    margin-bottom: 20px; /* Space below the button */
+}
+
+.try-again-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .choice-btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .question-container {
+        width: 90%;
+    }
+
+    .try-again-btn {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}

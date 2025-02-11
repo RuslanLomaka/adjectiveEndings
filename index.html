@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutsches Adjektivendungen-Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Deutsches Adjektivendungen-Quiz</h1>
+<p>Wählen Sie die richtige Adjektivendung, um den Satz zu vervollständigen.</p>
+
+<!-- Try Again Button (initially hidden) -->
+<button id="try-again-button" class="try-again-btn" style="display: none;" onclick="location.reload()">🔄 Versuchen Sie es erneut</button>
+
+<!-- Language selection dropdown -->
+<div style="text-align: center; margin-bottom: 20px;">
+    <label for="language-select" style="font-size: 1.2rem;">Sprache auswählen:</label>
+    <select id="language-select" style="font-size: 1.2rem; padding: 10px;">
+        <option value="en">Englisch</option>
+        <option value="uk">Ukrainisch</option>
+        <option value="ro">Rumänisch</option>
+        <option value="ar">Arabisch</option>
+    </select>
+</div>
+
+<!-- Container where questions will be dynamically added -->
+<div id="questions-container"></div>
+
+<!-- Score Display -->
+<div id="score-display" style="display: none; text-align: center; margin-top: 30px;">
+    <h2>Quiz abgeschlossen! 🎉</h2>
+    <p id="final-score"></p>
+    <p id="final-feedback"></p>
+</div>
+
+<script>
+    let selectedLanguage = 'en';  // Default language is English
+    let score = 0;  // To track correct answers
+    let answeredQuestions = 0;  // To check when all questions are completed
+    const userAnswers = [];  // Store user selections temporarily
+
+    // Handle language selection change
+    document.getElementById('language-select').addEventListener('change', (event) => {
+        selectedLanguage = event.target.value;
+    });
+
+    // Load JSON and dynamically generate all question containers
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            const selectedQuestions = getRandomSubset(data, 10);
+            displayAllQuestions(selectedQuestions);
+        })
+        .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
+
+    function displayAllQuestions(questions) {
+        const container = document.getElementById('questions-container');
+
+        questions.forEach((question, index) => {
+            shuffleArray(question.answers);
+
+            const questionHTML = `
+                <div class="question-container">
+                    <strong>${question.question}</strong>
+                    <div class="choices">
+                        ${question.answers.map((answer) => `
+                            <button class="choice-btn" data-correct="${answer.correct}" data-index="${index}">
+                                ${answer.text}
+                            </button>
+                        `).join('')}
+                    </div>
+                    <div class="feedback" id="feedback-${index}"></div>
+                </div>
+            `;
+            container.innerHTML += questionHTML;
+        });
+
+        const buttons = document.querySelectorAll('.choice-btn');
+        buttons.forEach(button => {
+            button.addEventListener('click', (e) => handleAnswerSelection(e.target, questions));
+        });
+    }
+
+    function handleAnswerSelection(button, questions) {
+        const isCorrect = button.getAttribute('data-correct') === 'true';
+        const questionIndex = button.getAttribute('data-index');
+        const parentContainer = button.closest('.question-container');
+        const buttons = parentContainer.querySelectorAll('.choice-btn');
+
+        userAnswers[questionIndex] = {
+            selectedButton: button,
+            isCorrect: isCorrect,
+            question: questions[questionIndex]
+        };
+
+        button.classList.add('selected');
+        button.style.backgroundColor = '#17a2b8';  // Blue for selection
+        buttons.forEach(b => {
+            b.disabled = true;
+            if (b !== button) {
+                b.style.backgroundColor = '#ccc';  // Grey out unselected buttons
+            }
+        });
+
+        answeredQuestions++;
+        if (answeredQuestions === questions.length) {
+            setTimeout(() => {
+                revealResults();
+                enableTryAgainButton();
+            }, 1000);
+        }
+    }
+
+    function revealResults() {
+        score = 0;
+
+        userAnswers.forEach((answer, index) => {
+            const selectedButton = answer.selectedButton;
+            const feedbackElement = document.getElementById(`feedback-${index}`);
+            const correctButton = Array.from(selectedButton.parentNode.children)
+                .find(b => b.getAttribute('data-correct') === 'true');
+
+            if (answer.isCorrect) {
+                score++;
+                selectedButton.style.backgroundColor = '#28a745';  // Green for correct
+                feedbackElement.innerHTML = `<span class="correct">Richtig! 🎉 ${answer.question.explanation}</span>`;
+            } else {
+                selectedButton.style.backgroundColor = '#dc3545';  // Red for incorrect
+                correctButton.style.backgroundColor = '#28a745';  // Green for correct answer
+                feedbackElement.innerHTML = `
+                    <span class="incorrect">Falsch! 😢 ${answer.question.explanation}</span>
+                    <br><strong>Übersetzung:</strong> ${answer.question.translations[selectedLanguage]}
+                `;
+            }
+        });
+
+        document.getElementById('final-score').textContent = `Ihre Punktzahl: ${Math.min(score, 10)} / 10`;
+        document.getElementById('final-feedback').textContent = "Scrollen Sie nach oben, um die Übersetzungen und Erklärungen zu sehen!";
+        document.getElementById('score-display').style.display = 'block';
+    }
+
+    function enableTryAgainButton() {
+        const tryAgainButton = document.getElementById('try-again-button');
+        tryAgainButton.style.display = 'block';
+
+        // Show button when user scrolls near the top
+        window.addEventListener('scroll', () => {
+            if (window.scrollY < 100) {
+                tryAgainButton.classList.add('visible');
+            } else {
+                tryAgainButton.classList.remove('visible');
+            }
+        });
+    }
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    function getRandomSubset(array, n) {
+        const shuffled = [...array];
+        shuffleArray(shuffled);
+        return shuffled.slice(0, n);
+    }
+</script>
+</body>
+</html>

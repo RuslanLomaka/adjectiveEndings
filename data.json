@@ -1,0 +1,351 @@
+[
+  {
+    "id": 1,
+    "question": "Das ist ein ____ Buch. (interessant)",
+    "translations": {
+      "en": "This is an interesting book.",
+      "uk": "Це цікава книга.",
+      "ro": "Aceasta este o carte interesantă.",
+      "ar": "هذا كتاب مثير للاهتمام."
+    },
+    "answers": [
+      { "text": "interessanter", "correct": false },
+      { "text": "interessanten", "correct": false },
+      { "text": "interessantes", "correct": true },
+      { "text": "interessante", "correct": false }
+    ],
+    "explanation": "Akkusativ + Neutrum → interessantes",
+    "hint": "neuter",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "interessante Bücher",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 2,
+    "question": "Er kauft eine ____ Tasche. (modisch)",
+    "translations": {
+      "en": "He is buying a fashionable bag.",
+      "uk": "Він купує модну сумку.",
+      "ro": "El cumpără o geantă la modă.",
+      "ar": "إنه يشتري حقيبة عصرية."
+    },
+    "answers": [
+      { "text": "modische", "correct": true },
+      { "text": "modisches", "correct": false },
+      { "text": "modischen", "correct": false },
+      { "text": "modisch", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → modische",
+    "hint": "feminine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "modische Taschen",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 3,
+    "question": "Das ist ein ____ Hund. (klein)",
+    "translations": {
+      "en": "This is a small dog.",
+      "uk": "Це маленький собака.",
+      "ro": "Acesta este un câine mic.",
+      "ar": "هذا كلب صغير."
+    },
+    "answers": [
+      { "text": "kleiner", "correct": true },
+      { "text": "kleinen", "correct": false },
+      { "text": "kleines", "correct": false },
+      { "text": "kleine", "correct": false }
+    ],
+    "explanation": "Nominativ + Maskulin → kleiner",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "kleine Hunde",
+    "case": "nominativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 4,
+    "question": "Ich sehe den ____ Baum. (grün)",
+    "translations": {
+      "en": "I see the green tree.",
+      "uk": "Я бачу зелене дерево.",
+      "ro": "Văd copacul verde.",
+      "ar": "أرى الشجرة الخضراء."
+    },
+    "answers": [
+      { "text": "grünen", "correct": true },
+      { "text": "grüner", "correct": false },
+      { "text": "grünes", "correct": false },
+      { "text": "grüne", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → grünen",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "grüne Bäume",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 5,
+    "question": "Wir kaufen neue ____ Stühle. (modern)",
+    "translations": {
+      "en": "We are buying new modern chairs.",
+      "uk": "Ми купуємо нові сучасні стільці.",
+      "ro": "Cumpărăm scaune noi și moderne.",
+      "ar": "نشتري كراسي حديثة جديدة."
+    },
+    "answers": [
+      { "text": "moderne", "correct": true },
+      { "text": "moderner", "correct": false },
+      { "text": "modernes", "correct": false },
+      { "text": "modernen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural → moderne",
+    "hint": "plural",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "moderne Stühle",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 6,
+    "question": "Ich trage einen ____ Mantel. (lang)",
+    "translations": {
+      "en": "I am wearing a long coat.",
+      "uk": "Я ношу довге пальто.",
+      "ro": "Port un palton lung.",
+      "ar": "أرتدي معطفًا طويلًا."
+    },
+    "answers": [
+      { "text": "langen", "correct": true },
+      { "text": "langer", "correct": false },
+      { "text": "langes", "correct": false },
+      { "text": "lange", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → langen",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "lange Mäntel",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 7,
+    "question": "Wir sehen die ____ Katzen. (schwarz)",
+    "translations": {
+      "en": "We see the black cats.",
+      "uk": "Ми бачимо чорних котів.",
+      "ro": "Vedem pisicile negre.",
+      "ar": "نرى القطط السوداء."
+    },
+    "answers": [
+      { "text": "schwarze", "correct": true },
+      { "text": "schwarzer", "correct": false },
+      { "text": "schwarzen", "correct": false },
+      { "text": "schwarzes", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural → schwarze",
+    "hint": "plural",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "schwarze Katzen",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 8,
+    "question": "Ich gebe dem ____ Kind ein Geschenk. (brav)",
+    "translations": {
+      "en": "I am giving the well-behaved child a gift.",
+      "uk": "Я даю подарунок слухняній дитині.",
+      "ro": "Dau un cadou copilului cuminte.",
+      "ar": "أعطي الطفل المؤدب هدية."
+    },
+    "answers": [
+      { "text": "braven", "correct": false },
+      { "text": "braves", "correct": false },
+      { "text": "bravem", "correct": true },
+      { "text": "braver", "correct": false }
+    ],
+    "explanation": "Dativ + Neutrum → bravem",
+    "hint": "neuter",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "brave Kinder",
+    "case": "dativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 9,
+    "question": "Das sind ____ Bücher. (alt)",
+    "translations": {
+      "en": "These are old books.",
+      "uk": "Це старі книги.",
+      "ro": "Acestea sunt cărți vechi.",
+      "ar": "هذه كتب قديمة."
+    },
+    "answers": [
+      { "text": "alte", "correct": true },
+      { "text": "alter", "correct": false },
+      { "text": "alten", "correct": false },
+      { "text": "altes", "correct": false }
+    ],
+    "explanation": "Nominativ + Plural → alte",
+    "hint": "plural",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "alte Bücher",
+    "case": "nominativ",
+    "gender": "plural"
+  },
+  {
+    "id": 10,
+    "question": "Die Schüler lernen mit einem ____ Lehrer. (erfahren)",
+    "translations": {
+      "en": "The students are learning with an experienced teacher.",
+      "uk": "Учні навчаються з досвідченим учителем.",
+      "ro": "Elevii învață cu un profesor experimentat.",
+      "ar": "يتعلم الطلاب مع معلم ذو خبرة."
+    },
+    "answers": [
+      { "text": "erfahrenen", "correct": true },
+      { "text": "erfahrener", "correct": false },
+      { "text": "erfahrenes", "correct": false },
+      { "text": "erfahrene", "correct": false }
+    ],
+    "explanation": "Dativ + Maskulin → erfahrenen",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "erfahrene Lehrer",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+
+  {
+    "id": 11,
+    "question": "Der ____ Regen hat die Straßen überflutet. (stark)",
+    "translations": {
+      "en": "The heavy rain has flooded the streets.",
+      "uk": "Сильний дощ затопив вулиці.",
+      "ro": "Ploaia puternică a inundat străzile.",
+      "ar": "الأمطار الغزيرة غمرت الشوارع."
+    },
+    "answers": [
+      { "text": "starke", "correct": true },
+      { "text": "starker", "correct": false },
+      { "text": "starkes", "correct": false },
+      { "text": "starken", "correct": false }
+    ],
+    "explanation": "Nominativ + Maskulin → starke",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "starke Regenfälle",
+    "case": "nominativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 12,
+    "question": "Ich mag die ____ Luft nach dem Regen. (frisch)",
+    "translations": {
+      "en": "I like the fresh air after the rain.",
+      "uk": "Мені подобається свіже повітря після дощу.",
+      "ro": "Îmi place aerul proaspăt după ploaie.",
+      "ar": "أحب الهواء النقي بعد المطر."
+    },
+    "answers": [
+      { "text": "frische", "correct": true },
+      { "text": "frischer", "correct": false },
+      { "text": "frisches", "correct": false },
+      { "text": "frischen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → frische",
+    "hint": "feminine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "frische Lüfte",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 13,
+    "question": "Die ____ Sonne scheint am Himmel. (hell)",
+    "translations": {
+      "en": "The bright sun is shining in the sky.",
+      "uk": "Яскраве сонце світить на небі.",
+      "ro": "Soarele strălucitor strălucește pe cer.",
+      "ar": "الشمس الساطعة تشرق في السماء."
+    },
+    "answers": [
+      { "text": "helle", "correct": true },
+      { "text": "heller", "correct": false },
+      { "text": "helles", "correct": false },
+      { "text": "hellen", "correct": false }
+    ],
+    "explanation": "Nominativ + Feminin → helle",
+    "hint": "feminine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "helle Sonnen",
+    "case": "nominativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 14,
+    "question": "Der ____ Himmel verspricht einen schönen Tag. (klar)",
+    "translations": {
+      "en": "The clear sky promises a beautiful day.",
+      "uk": "Чисте небо обіцяє гарний день.",
+      "ro": "Cerul clar promite o zi frumoasă.",
+      "ar": "السماء الصافية تبشر بيوم جميل."
+    },
+    "answers": [
+      { "text": "klarer", "correct": true },
+      { "text": "klaren", "correct": false },
+      { "text": "klare", "correct": false },
+      { "text": "klares", "correct": false }
+    ],
+    "explanation": "Nominativ + Maskulin → klarer",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "klare Himmel",
+    "case": "nominativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 15,
+    "question": "Wir wandern durch den ____ Wald. (dunkel)",
+    "translations": {
+      "en": "We are hiking through the dark forest.",
+      "uk": "Ми йдемо через темний ліс.",
+      "ro": "Facem drumeții prin pădurea întunecată.",
+      "ar": "نحن نتجول في الغابة المظلمة."
+    },
+    "answers": [
+      { "text": "dunklen", "correct": true },
+      { "text": "dunkler", "correct": false },
+      { "text": "dunkles", "correct": false },
+      { "text": "dunkle", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → dunklen",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "dunkle Wälder",
+    "case": "akkusativ",
+    "gender": "masculine"
+  }
+
+
+
+]
