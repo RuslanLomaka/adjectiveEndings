@@ -70,6 +70,10 @@
                             </button>
                         `).join('')}
                     </div>
+                    <div class="hint-section">
+                        <button class="hint-btn" id="hint-btn-${index}">Hinweis</button>
+                        <span id="hint-text-${index}" style="margin-left: 10px; font-size: 1.1rem;"></span>
+                    </div>
                     <div class="feedback" id="feedback-${index}"></div>
                 </div>
             `;
@@ -80,6 +84,23 @@
         buttons.forEach(button => {
             button.addEventListener('click', (e) => handleAnswerSelection(e.target, questions));
         });
+
+        // Add event listeners for hint buttons
+        questions.forEach((_, index) => {
+            const hintButton = document.getElementById(`hint-btn-${index}`);
+            let hintClicks = 0;
+
+            hintButton.addEventListener('click', () => {
+                hintClicks++;
+                if (hintClicks === 1) {
+                    document.getElementById(`hint-text-${index}`).textContent = `Geschlecht: ${questions[index].gender}`;
+                } else if (hintClicks === 2) {
+                    document.getElementById(`hint-text-${index}`).textContent += ` | Fall: ${questions[index].case}`;
+                    hintButton.disabled = true;
+                    hintButton.style.opacity = 0.5;
+                }
+            });
+        });
     }
 
     function handleAnswerSelection(button, questions) {
@@ -88,6 +109,10 @@
         const parentContainer = button.closest('.question-container');
         const buttons = parentContainer.querySelectorAll('.choice-btn');
 
+        // Disable the hint button after the answer is selected
+        document.getElementById(`hint-btn-${questionIndex}`).disabled = true;
+        document.getElementById(`hint-btn-${questionIndex}`).style.opacity = 0.5;
+
         userAnswers[questionIndex] = {
             selectedButton: button,
             isCorrect: isCorrect,
@@ -95,11 +120,11 @@
         };
 
         button.classList.add('selected');
-        button.style.backgroundColor = '#17a2b8';  // Blue for selection
+        button.style.backgroundColor = '#17a2b8';
         buttons.forEach(b => {
             b.disabled = true;
             if (b !== button) {
-                b.style.backgroundColor = '#ccc';  // Grey out unselected buttons
+                b.style.backgroundColor = '#ccc';
             }
         });
 
@@ -123,11 +148,11 @@
 
             if (answer.isCorrect) {
                 score++;
-                selectedButton.style.backgroundColor = '#28a745';  // Green for correct
+                selectedButton.style.backgroundColor = '#28a745';
                 feedbackElement.innerHTML = `<span class="correct">Richtig! 🎉 ${answer.question.explanation}</span>`;
             } else {
-                selectedButton.style.backgroundColor = '#dc3545';  // Red for incorrect
-                correctButton.style.backgroundColor = '#28a745';  // Green for correct answer
+                selectedButton.style.backgroundColor = '#dc3545';
+                correctButton.style.backgroundColor = '#28a745';
                 feedbackElement.innerHTML = `
                     <span class="incorrect">Falsch! 😢 ${answer.question.explanation}</span>
                     <br><strong>Übersetzung:</strong> ${answer.question.translations[selectedLanguage]}
