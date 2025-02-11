@@ -10,8 +10,8 @@
 <h1>Deutsches Adjektivendungen-Quiz</h1>
 <p>Wählen Sie die richtige Adjektivendung, um den Satz zu vervollständigen.</p>
 
-<!-- Try Again Button (initially hidden) -->
-<button id="try-again-button" class="try-again-btn" style="display: none;" onclick="location.reload()">🔄 Versuchen Sie es erneut</button>
+<!-- Try Again Button -->
+<button id="try-again-button" class="try-again-btn" style="display: none;">🔄 Versuchen Sie es erneut</button>
 
 <!-- Language selection dropdown -->
 <div style="text-align: center; margin-bottom: 20px;">
@@ -170,6 +170,31 @@
         document.getElementById('final-feedback').textContent = "Scrollen Sie nach oben, um die Übersetzungen und Erklärungen zu sehen!";
         document.getElementById('score-display').style.display = 'block';
     }
+
+    document.getElementById('try-again-button').addEventListener('click', resetQuiz);
+
+    function resetQuiz() {
+        // Clear existing data and reset variables
+        document.getElementById('questions-container').innerHTML = '';
+        document.getElementById('final-score').textContent = '';
+        document.getElementById('final-feedback').textContent = '';
+        document.getElementById('score-display').style.display = 'none';
+
+        score = 0;
+        answeredQuestions = 0;
+        userAnswers.length = 0;  // Clear previous answers
+
+        // Reshuffle and display the quiz
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const selectedQuestions = getRandomSubset(data, 10);
+                displayAllQuestions(selectedQuestions);
+            })
+            .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
+    }
+
+
 
     function enableTryAgainButton() {
         const tryAgainButton = document.getElementById('try-again-button');
