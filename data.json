@@ -1428,9 +1428,838 @@
     "plural_form": "neue Drucker",
     "case": "nominativ",
     "gender": "masculine"
+  },
+
+  {
+    "id": 63,
+    "question": "Wir essen frische ____ Äpfel. (rot)",
+    "translations": {
+      "en": "We are eating fresh red apples.",
+      "uk": "Ми їмо свіжі червоні яблука.",
+      "ro": "Mâncăm mere roșii proaspete.",
+      "ar": "نأكل التفاح الأحمر الطازج."
+    },
+    "answers": [
+      { "text": "rote", "correct": true },
+      { "text": "roter", "correct": false },
+      { "text": "roten", "correct": false },
+      { "text": "rotes", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural → rote",
+    "hint": "plural",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "rote Äpfel",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 64,
+    "question": "Das ist ein ____ Brot. (frisch)",
+    "translations": {
+      "en": "This is fresh bread.",
+      "uk": "Це свіжий хліб.",
+      "ro": "Acesta este pâine proaspătă.",
+      "ar": "هذا خبز طازج."
+    },
+    "answers": [
+      { "text": "frisches", "correct": true },
+      { "text": "frischer", "correct": false },
+      { "text": "frische", "correct": false },
+      { "text": "frischen", "correct": false }
+    ],
+    "explanation": "Nominativ + Neutrum → frisches",
+    "hint": "neuter",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "frische Brote",
+    "case": "nominativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 65,
+    "question": "Ich trinke kalte ____ Milch. (süß)",
+    "translations": {
+      "en": "I am drinking sweet cold milk.",
+      "uk": "Я п’ю солодке холодне молоко.",
+      "ro": "Beau lapte dulce și rece.",
+      "ar": "أشرب الحليب الحلو البارد."
+    },
+    "answers": [
+      { "text": "süße", "correct": true },
+      { "text": "süßer", "correct": false },
+      { "text": "süßes", "correct": false },
+      { "text": "süßen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → süße",
+    "hint": "feminine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "süße Milchgetränke",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 66,
+    "question": "Die ____ Suppe ist lecker. (warm)",
+    "translations": {
+      "en": "The warm soup is delicious.",
+      "uk": "Теплий суп дуже смачний.",
+      "ro": "Supă caldă este delicioasă.",
+      "ar": "الحساء الدافئ لذيذ."
+    },
+    "answers": [
+      { "text": "warme", "correct": true },
+      { "text": "warmer", "correct": false },
+      { "text": "warmes", "correct": false },
+      { "text": "warmen", "correct": false }
+    ],
+    "explanation": "Nominativ + Feminin → warme",
+    "hint": "feminine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "warme Suppen",
+    "case": "nominativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 67,
+    "question": "Ich bestelle einen ____ Kaffee. (stark)",
+    "translations": {
+      "en": "I am ordering a strong coffee.",
+      "uk": "Я замовляю міцну каву.",
+      "ro": "Comand o cafea tare.",
+      "ar": "أطلب قهوة قوية."
+    },
+    "answers": [
+      { "text": "starken", "correct": true },
+      { "text": "starker", "correct": false },
+      { "text": "starkes", "correct": false },
+      { "text": "starke", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → starken",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "starke Kaffees",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 68,
+    "question": "Die Kinder essen ____ Kuchen. (lecker)",
+    "translations": {
+      "en": "The children are eating delicious cake.",
+      "uk": "Діти їдять смачний торт.",
+      "ro": "Copiii mănâncă un tort delicios.",
+      "ar": "الأطفال يأكلون كعكة لذيذة."
+    },
+    "answers": [
+      { "text": "leckeren", "correct": true },
+      { "text": "leckerer", "correct": false },
+      { "text": "leckeres", "correct": false },
+      { "text": "leckere", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → leckeren",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "leckere Kuchen",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 69,
+    "question": "Wir sehen einen ____ Film. (spannend)",
+    "translations": {
+      "en": "We are watching an exciting movie.",
+      "uk": "Ми дивимося захоплюючий фільм.",
+      "ro": "Vizionăm un film captivant.",
+      "ar": "نشاهد فيلماً مشوقاً."
+    },
+    "answers": [
+      { "text": "spannenden", "correct": true },
+      { "text": "spannender", "correct": false },
+      { "text": "spannendes", "correct": false },
+      { "text": "spannende", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → spannenden",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "spannende Filme",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 70,
+    "question": "Das ist ein ____ Buch. (lustig)",
+    "translations": {
+      "en": "This is a funny book.",
+      "uk": "Це смішна книга.",
+      "ro": "Aceasta este o carte amuzantă.",
+      "ar": "هذا كتاب مضحك."
+    },
+    "answers": [
+      { "text": "lustiges", "correct": true },
+      { "text": "lustiger", "correct": false },
+      { "text": "lustige", "correct": false },
+      { "text": "lustigen", "correct": false }
+    ],
+    "explanation": "Nominativ + Neutrum → lustiges",
+    "hint": "neuter",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "lustige Bücher",
+    "case": "nominativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 71,
+    "question": "Wir hören ein ____ Lied. (schön)",
+    "translations": {
+      "en": "We are listening to a beautiful song.",
+      "uk": "Ми слухаємо гарну пісню.",
+      "ro": "Ascultăm o melodie frumoasă.",
+      "ar": "نستمع إلى أغنية جميلة."
+    },
+    "answers": [
+      { "text": "schönes", "correct": true },
+      { "text": "schöner", "correct": false },
+      { "text": "schöne", "correct": false },
+      { "text": "schönen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Neutrum → schönes",
+    "hint": "neuter",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "schöne Lieder",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 72,
+    "question": "Die Kinder spielen mit einem ____ Ball. (bunt)",
+    "translations": {
+      "en": "The children are playing with a colorful ball.",
+      "uk": "Діти грають із яскравим м’ячем.",
+      "ro": "Copiii se joacă cu o minge colorată.",
+      "ar": "الأطفال يلعبون بكرة ملونة."
+    },
+    "answers": [
+      { "text": "bunten", "correct": true },
+      { "text": "bunter", "correct": false },
+      { "text": "buntes", "correct": false },
+      { "text": "bunte", "correct": false }
+    ],
+    "explanation": "Dativ + Maskulin → bunten",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "bunte Bälle",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 73,
+    "question": "Die ____ Show hat allen gefallen. (unterhaltsam)",
+    "translations": {
+      "en": "The entertaining show was enjoyed by everyone.",
+      "uk": "Розважальне шоу сподобалося всім.",
+      "ro": "Spectacolul de divertisment a fost pe placul tuturor.",
+      "ar": "استمتع الجميع بالعرض الترفيهي."
+    },
+    "answers": [
+      { "text": "unterhaltsame", "correct": true },
+      { "text": "unterhaltsamer", "correct": false },
+      { "text": "unterhaltsames", "correct": false },
+      { "text": "unterhaltsamen", "correct": false }
+    ],
+    "explanation": "Nominativ + Feminin → unterhaltsame",
+    "hint": "feminine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "unterhaltsame Shows",
+    "case": "nominativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 74,
+    "question": "Wir besuchen einen ____ Zirkus. (berühmt)",
+    "translations": {
+      "en": "We are visiting a famous circus.",
+      "uk": "Ми відвідуємо відомий цирк.",
+      "ro": "Vizităm un circ faimos.",
+      "ar": "نحن نزور سيركاً مشهوراً."
+    },
+    "answers": [
+      { "text": "berühmten", "correct": true },
+      { "text": "berühmter", "correct": false },
+      { "text": "berühmtes", "correct": false },
+      { "text": "berühmte", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → berühmten",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "berühmte Zirkusse",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 75,
+    "question": "Ich habe eine ____ Diät begonnen. (gesund)",
+    "translations": {
+      "en": "I have started a healthy diet.",
+      "uk": "Я почав здорову дієту.",
+      "ro": "Am început o dietă sănătoasă.",
+      "ar": "لقد بدأت نظامًا غذائيًا صحيًا."
+    },
+    "answers": [
+      { "text": "gesunde", "correct": true },
+      { "text": "gesunder", "correct": false },
+      { "text": "gesundes", "correct": false },
+      { "text": "gesunden", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → gesunde",
+    "hint": "feminine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "gesunde Diäten",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 76,
+    "question": "Ich trage bequeme ____ Schuhe beim Laufen. (leicht)",
+    "translations": {
+      "en": "I wear comfortable lightweight shoes while running.",
+      "uk": "Я ношу зручне легке взуття під час бігу.",
+      "ro": "Port pantofi ușori confortabili la alergat.",
+      "ar": "أرتدي أحذية خفيفة ومريحة أثناء الجري."
+    },
+    "answers": [
+      { "text": "leichte", "correct": true },
+      { "text": "leichter", "correct": false },
+      { "text": "leichtes", "correct": false },
+      { "text": "leichten", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural → leichte",
+    "hint": "plural",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "leichte Schuhe",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 77,
+    "question": "Wir trainieren in einem ____ Fitnessstudio. (modern)",
+    "translations": {
+      "en": "We are training in a modern gym.",
+      "uk": "Ми тренуємося в сучасному тренажерному залі.",
+      "ro": "Ne antrenăm într-o sală de sport modernă.",
+      "ar": "نحن نتدرب في صالة رياضية حديثة."
+    },
+    "answers": [
+      { "text": "modernen", "correct": true },
+      { "text": "moderner", "correct": false },
+      { "text": "modernes", "correct": false },
+      { "text": "moderne", "correct": false }
+    ],
+    "explanation": "Dativ + Neutrum → modernen",
+    "hint": "neuter",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "moderne Fitnessstudios",
+    "case": "dativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 78,
+    "question": "Das ist ein ____ Getränk nach dem Training. (kalt)",
+    "translations": {
+      "en": "This is a cold drink after training.",
+      "uk": "Це холодний напій після тренування.",
+      "ro": "Acesta este o băutură rece după antrenament.",
+      "ar": "هذا مشروب بارد بعد التمرين."
+    },
+    "answers": [
+      { "text": "kaltes", "correct": true },
+      { "text": "kalter", "correct": false },
+      { "text": "kalte", "correct": false },
+      { "text": "kalten", "correct": false }
+    ],
+    "explanation": "Nominativ + Neutrum → kaltes",
+    "hint": "neuter",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "kalte Getränke",
+    "case": "nominativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 79,
+    "question": "Er macht eine ____ Übung für die Muskeln. (schwer)",
+    "translations": {
+      "en": "He is doing a difficult exercise for the muscles.",
+      "uk": "Він виконує важку вправу для м’язів.",
+      "ro": "Face un exercițiu greu pentru mușchi.",
+      "ar": "يقوم بتمرين صعب للعضلات."
+    },
+    "answers": [
+      { "text": "schwere", "correct": true },
+      { "text": "schwerer", "correct": false },
+      { "text": "schweres", "correct": false },
+      { "text": "schweren", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → schwere",
+    "hint": "feminine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "schwere Übungen",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 80,
+    "question": "Wir machen einen ____ Spaziergang im Park. (langsam)",
+    "translations": {
+      "en": "We are taking a slow walk in the park.",
+      "uk": "Ми здійснюємо повільну прогулянку в парку.",
+      "ro": "Facem o plimbare lentă în parc.",
+      "ar": "نقوم بنزهة بطيئة في الحديقة."
+    },
+    "answers": [
+      { "text": "langsamen", "correct": true },
+      { "text": "langsamer", "correct": false },
+      { "text": "langsame", "correct": false },
+      { "text": "langsames", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → langsamen",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "langsame Spaziergänge",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 87,
+    "question": "Wir wandern durch einen ____ Wald. (grün)",
+    "translations": {
+      "en": "We are hiking through a green forest.",
+      "uk": "Ми йдемо через зелений ліс.",
+      "ro": "Facem drumeții printr-o pădure verde.",
+      "ar": "نحن نتجول في غابة خضراء."
+    },
+    "answers": [
+      { "text": "grünen", "correct": true },
+      { "text": "grüner", "correct": false },
+      { "text": "grünes", "correct": false },
+      { "text": "grüne", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → grünen",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "grüne Wälder",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 88,
+    "question": "Das ist ein ____ Berg. (hoch)",
+    "translations": {
+      "en": "This is a high mountain.",
+      "uk": "Це висока гора.",
+      "ro": "Acesta este un munte înalt.",
+      "ar": "هذا جبل مرتفع."
+    },
+    "answers": [
+      { "text": "hoher", "correct": true },
+      { "text": "hohen", "correct": false },
+      { "text": "hohes", "correct": false },
+      { "text": "hohe", "correct": false }
+    ],
+    "explanation": "Nominativ + Maskulin → hoher",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "hohe Berge",
+    "case": "nominativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 89,
+    "question": "Wir genießen die ____ Landschaft. (wunderschön)",
+    "translations": {
+      "en": "We are enjoying the beautiful landscape.",
+      "uk": "Ми насолоджуємося красивим пейзажем.",
+      "ro": "Ne bucurăm de peisajul frumos.",
+      "ar": "نستمتع بالمناظر الطبيعية الجميلة."
+    },
+    "answers": [
+      { "text": "wunderschöne", "correct": true },
+      { "text": "wunderschöner", "correct": false },
+      { "text": "wunderschönes", "correct": false },
+      { "text": "wunderschönen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → wunderschöne",
+    "hint": "feminine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "wunderschöne Landschaften",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 90,
+    "question": "Wir sitzen an einem ____ Fluss. (ruhig)",
+    "translations": {
+      "en": "We are sitting by a calm river.",
+      "uk": "Ми сидимо біля спокійної річки.",
+      "ro": "Stăm lângă un râu liniștit.",
+      "ar": "نجلس بجانب نهر هادئ."
+    },
+    "answers": [
+      { "text": "ruhigen", "correct": true },
+      { "text": "ruhiger", "correct": false },
+      { "text": "ruhiges", "correct": false },
+      { "text": "ruhige", "correct": false }
+    ],
+    "explanation": "Dativ + Maskulin → ruhigen",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "ruhige Flüsse",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 91,
+    "question": "Die ____ Strände sind beliebt bei Touristen. (weiß)",
+    "translations": {
+      "en": "The white beaches are popular with tourists.",
+      "uk": "Білі пляжі популярні серед туристів.",
+      "ro": "Plajele albe sunt populare printre turiști.",
+      "ar": "الشواطئ البيضاء مشهورة بين السياح."
+    },
+    "answers": [
+      { "text": "weißen", "correct": false },
+      { "text": "weißer", "correct": false },
+      { "text": "weiße", "correct": true },
+      { "text": "weißes", "correct": false }
+    ],
+    "explanation": "Nominativ + Plural → weiße",
+    "hint": "plural",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "weiße Strände",
+    "case": "nominativ",
+    "gender": "plural"
+  },
+  {
+    "id": 92,
+    "question": "Wir bewundern die ____ Blumen im Garten. (bunt)",
+    "translations": {
+      "en": "We admire the colorful flowers in the garden.",
+      "uk": "Ми захоплюємося яскравими квітами в саду.",
+      "ro": "Admirăm florile colorate din grădină.",
+      "ar": "نحن نعجب بالزهور الملونة في الحديقة."
+    },
+    "answers": [
+      { "text": "bunten", "correct": false },
+      { "text": "bunter", "correct": false },
+      { "text": "bunte", "correct": true },
+      { "text": "buntes", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural → bunte",
+    "hint": "plural",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "bunte Blumen",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+
+  {
+    "id": 93,
+    "question": "Ich habe einen ____ Bruder. (älter)",
+    "translations": {
+      "en": "I have an older brother.",
+      "uk": "У мене є старший брат.",
+      "ro": "Am un frate mai mare.",
+      "ar": "لدي أخ أكبر."
+    },
+    "answers": [
+      { "text": "älteren", "correct": true },
+      { "text": "älterer", "correct": false },
+      { "text": "älteres", "correct": false },
+      { "text": "ältere", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → älteren",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "ältere Brüder",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 94,
+    "question": "Sie hat eine ____ Schwester. (jünger)",
+    "translations": {
+      "en": "She has a younger sister.",
+      "uk": "У неї є молодша сестра.",
+      "ro": "Ea are o soră mai mică.",
+      "ar": "لديها أخت أصغر."
+    },
+    "answers": [
+      { "text": "jüngere", "correct": true },
+      { "text": "jüngerer", "correct": false },
+      { "text": "jüngeres", "correct": false },
+      { "text": "jüngeren", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → jüngere",
+    "hint": "feminine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "jüngere Schwestern",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 95,
+    "question": "Das sind unsere ____ Großeltern. (lieb)",
+    "translations": {
+      "en": "These are our lovely grandparents.",
+      "uk": "Це наші люблячі дідусь і бабуся.",
+      "ro": "Aceștia sunt bunicii noștri iubitori.",
+      "ar": "هؤلاء هم أجدادنا المحبون."
+    },
+    "answers": [
+      { "text": "lieben", "correct": false },
+      { "text": "liebe", "correct": true },
+      { "text": "lieber", "correct": false },
+      { "text": "liebes", "correct": false }
+    ],
+    "explanation": "Nominativ + Plural → liebe",
+    "hint": "plural",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "liebe Großeltern",
+    "case": "nominativ",
+    "gender": "plural"
+  },
+  {
+    "id": 96,
+    "question": "Mein Vater ist ein ____ Mann. (stark)",
+    "translations": {
+      "en": "My father is a strong man.",
+      "uk": "Мій батько — сильний чоловік.",
+      "ro": "Tatăl meu este un bărbat puternic.",
+      "ar": "والدي رجل قوي."
+    },
+    "answers": [
+      { "text": "starker", "correct": true },
+      { "text": "starken", "correct": false },
+      { "text": "starkes", "correct": false },
+      { "text": "starke", "correct": false }
+    ],
+    "explanation": "Nominativ + Maskulin → starker",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "starke Männer",
+    "case": "nominativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 97,
+    "question": "Ich habe eine ____ Tante. (freundlich)",
+    "translations": {
+      "en": "I have a friendly aunt.",
+      "uk": "У мене є дружня тітка.",
+      "ro": "Am o mătușă prietenoasă.",
+      "ar": "لدي عمة ودودة."
+    },
+    "answers": [
+      { "text": "freundliche", "correct": true },
+      { "text": "freundlicher", "correct": false },
+      { "text": "freundliches", "correct": false },
+      { "text": "freundlichen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → freundliche",
+    "hint": "feminine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "freundliche Tanten",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 98,
+    "question": "Das ist mein ____ Cousin. (witzig)",
+    "translations": {
+      "en": "This is my funny cousin.",
+      "uk": "Це мій смішний двоюрідний брат.",
+      "ro": "Acesta este vărul meu amuzant.",
+      "ar": "هذا ابن عمي المضحك."
+    },
+    "answers": [
+      { "text": "witziger", "correct": true },
+      { "text": "witzigen", "correct": false },
+      { "text": "witziges", "correct": false },
+      { "text": "witzige", "correct": false }
+    ],
+    "explanation": "Nominativ + Maskulin → witziger",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "witzige Cousins",
+    "case": "nominativ",
+    "gender": "masculine"
+  },
+
+  {
+    "id": 99,
+    "question": "Wir haben einen ____ Lehrer. (kompetent)",
+    "translations": {
+      "en": "We have a competent teacher.",
+      "uk": "У нас є компетентний учитель.",
+      "ro": "Avem un profesor competent.",
+      "ar": "لدينا معلم كفء."
+    },
+    "answers": [
+      { "text": "kompetenten", "correct": true },
+      { "text": "kompetenter", "correct": false },
+      { "text": "kompetentes", "correct": false },
+      { "text": "kompetente", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → kompetenten",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "kompetente Lehrer",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 100,
+    "question": "Sie liest ein ____ Buch. (interessant)",
+    "translations": {
+      "en": "She is reading an interesting book.",
+      "uk": "Вона читає цікаву книгу.",
+      "ro": "Ea citește o carte interesantă.",
+      "ar": "تقرأ كتابًا مثيرًا للاهتمام."
+    },
+    "answers": [
+      { "text": "interessantes", "correct": true },
+      { "text": "interessanter", "correct": false },
+      { "text": "interessante", "correct": false },
+      { "text": "interessanten", "correct": false }
+    ],
+    "explanation": "Akkusativ + Neutrum → interessantes",
+    "hint": "neuter",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "interessante Bücher",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 101,
+    "question": "Das sind unsere ____ Schüler. (fleißig)",
+    "translations": {
+      "en": "These are our hardworking students.",
+      "uk": "Це наші старанні учні.",
+      "ro": "Aceștia sunt elevii noștri harnici.",
+      "ar": "هؤلاء طلابنا المجتهدون."
+    },
+    "answers": [
+      { "text": "fleißigen", "correct": false },
+      { "text": "fleißiger", "correct": false },
+      { "text": "fleißige", "correct": true },
+      { "text": "fleißiges", "correct": false }
+    ],
+    "explanation": "Nominativ + Plural → fleißige",
+    "hint": "plural",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "fleißige Schüler",
+    "case": "nominativ",
+    "gender": "plural"
+  },
+  {
+    "id": 102,
+    "question": "Wir sitzen in einem ____ Klassenzimmer. (sauber)",
+    "translations": {
+      "en": "We are sitting in a clean classroom.",
+      "uk": "Ми сидимо в чистій класній кімнаті.",
+      "ro": "Stăm într-o sală de clasă curată.",
+      "ar": "نحن نجلس في فصل دراسي نظيف."
+    },
+    "answers": [
+      { "text": "sauberen", "correct": true },
+      { "text": "sauberer", "correct": false },
+      { "text": "sauberes", "correct": false },
+      { "text": "saubere", "correct": false }
+    ],
+    "explanation": "Dativ + Neutrum → sauberen",
+    "hint": "neuter",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "saubere Klassenzimmer",
+    "case": "dativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 103,
+    "question": "Wir schreiben einen ____ Aufsatz. (lang)",
+    "translations": {
+      "en": "We are writing a long essay.",
+      "uk": "Ми пишемо довгий твір.",
+      "ro": "Scriem un eseu lung.",
+      "ar": "نكتب مقالاً طويلاً."
+    },
+    "answers": [
+      { "text": "langen", "correct": true },
+      { "text": "langer", "correct": false },
+      { "text": "langes", "correct": false },
+      { "text": "lange", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → langen",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "lange Aufsätze",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 104,
+    "question": "Das ist eine ____ Prüfung. (wichtig)",
+    "translations": {
+      "en": "This is an important exam.",
+      "uk": "Це важливий іспит.",
+      "ro": "Acesta este un examen important.",
+      "ar": "هذا اختبار مهم."
+    },
+    "answers": [
+      { "text": "wichtige", "correct": true },
+      { "text": "wichtiger", "correct": false },
+      { "text": "wichtiges", "correct": false },
+      { "text": "wichtigen", "correct": false }
+    ],
+    "explanation": "Nominativ + Feminin → wichtige",
+    "hint": "feminine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "wichtige Prüfungen",
+    "case": "nominativ",
+    "gender": "feminine"
   }
-
-
 
 
 
