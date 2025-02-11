@@ -1151,7 +1151,154 @@
     "plural_form": "bunte Blumen",
     "case": "akkusativ",
     "gender": "plural"
+  },
+  {
+    "id": 51,
+    "question": "Wir spielen auf einem ____ Feld. (groß)",
+    "translations": {
+      "en": "We are playing on a large field.",
+      "uk": "Ми граємо на великому полі.",
+      "ro": "Jucăm pe un teren mare.",
+      "ar": "نلعب في ملعب كبير."
+    },
+    "answers": [
+      { "text": "großen", "correct": true },
+      { "text": "großer", "correct": false },
+      { "text": "großes", "correct": false },
+      { "text": "große", "correct": false }
+    ],
+    "explanation": "Dativ + Neutrum → großen",
+    "hint": "neuter",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "große Felder",
+    "case": "dativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 52,
+    "question": "Der ____ Ball ist schwer zu werfen. (schwer)",
+    "translations": {
+      "en": "The heavy ball is difficult to throw.",
+      "uk": "Важкий м'яч важко кинути.",
+      "ro": "Mingea grea este dificil de aruncat.",
+      "ar": "من الصعب رمي الكرة الثقيلة."
+    },
+    "answers": [
+      { "text": "schwere", "correct": false },
+      { "text": "schwerer", "correct": true },
+      { "text": "schweres", "correct": false },
+      { "text": "schweren", "correct": false }
+    ],
+    "explanation": "Nominativ + Maskulin → schwerer",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "schwere Bälle",
+    "case": "nominativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 53,
+    "question": "Ich kaufe neue ____ Schuhe. (sportlich)",
+    "translations": {
+      "en": "I am buying new sporty shoes.",
+      "uk": "Я купую нові спортивні черевики.",
+      "ro": "Cumpăr pantofi sport noi.",
+      "ar": "أشتري أحذية رياضية جديدة."
+    },
+    "answers": [
+      { "text": "sportliche", "correct": true },
+      { "text": "sportlicher", "correct": false },
+      { "text": "sportliches", "correct": false },
+      { "text": "sportlichen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural → sportliche",
+    "hint": "plural",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "sportliche Schuhe",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 54,
+    "question": "Die Spieler tragen ____ Trikots. (bunt)",
+    "translations": {
+      "en": "The players are wearing colorful jerseys.",
+      "uk": "Гравці носять яскраві футболки.",
+      "ro": "Jucătorii poartă tricouri colorate.",
+      "ar": "يرتدي اللاعبون قمصانًا ملونة."
+    },
+    "answers": [
+      { "text": "bunte", "correct": true },
+      { "text": "bunter", "correct": false },
+      { "text": "buntes", "correct": false },
+      { "text": "bunten", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural → bunte",
+    "hint": "plural",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "bunte Trikots",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 55,
+    "question": "Das ist ein ____ Wettbewerb. (spannend)",
+    "translations": {
+      "en": "This is an exciting competition.",
+      "uk": "Це захоплюючий конкурс.",
+      "ro": "Acesta este un concurs captivant.",
+      "ar": "هذه مسابقة مشوقة."
+    },
+    "answers": [
+      { "text": "spannender", "correct": false },
+      { "text": "spannendes", "correct": true },
+      { "text": "spannende", "correct": false },
+      { "text": "spannenden", "correct": false }
+    ],
+    "explanation": "Nominativ + Neutrum → spannendes",
+    "hint": "neuter",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "spannende Wettbewerbe",
+    "case": "nominativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 56,
+    "question": "Wir laufen durch den ____ Park. (grün)",
+    "translations": {
+      "en": "We are running through the green park.",
+      "uk": "Ми бігаємо через зелений парк.",
+      "ro": "Alergăm prin parc verde.",
+      "ar": "نركض في الحديقة الخضراء."
+    },
+    "answers": [
+      { "text": "grünen", "correct": true },
+      { "text": "grüner", "correct": false },
+      { "text": "grünes", "correct": false },
+      { "text": "grüne", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → grünen",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "grüne Parks",
+    "case": "akkusativ",
+    "gender": "masculine"
   }
+
+
+
+
+
+
+
+
+
 
 
 
