@@ -1289,8 +1289,146 @@
     "plural_form": "grüne Parks",
     "case": "akkusativ",
     "gender": "masculine"
-  }
+  },
 
+  {
+    "id": 57,
+    "question": "Ich schreibe einen ____ Bericht. (wichtig)",
+    "translations": {
+      "en": "I am writing an important report.",
+      "uk": "Я пишу важливий звіт.",
+      "ro": "Scriu un raport important.",
+      "ar": "أكتب تقريرًا مهمًا."
+    },
+    "answers": [
+      { "text": "wichtigen", "correct": true },
+      { "text": "wichtiger", "correct": false },
+      { "text": "wichtiges", "correct": false },
+      { "text": "wichtige", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → wichtigen",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "wichtige Berichte",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 58,
+    "question": "Das ist ein ____ Schreibtisch. (groß)",
+    "translations": {
+      "en": "This is a large desk.",
+      "uk": "Це великий письмовий стіл.",
+      "ro": "Aceasta este un birou mare.",
+      "ar": "هذا مكتب كبير."
+    },
+    "answers": [
+      { "text": "großer", "correct": true },
+      { "text": "großes", "correct": false },
+      { "text": "großen", "correct": false },
+      { "text": "große", "correct": false }
+    ],
+    "explanation": "Nominativ + Maskulin → großer",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "große Schreibtische",
+    "case": "nominativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 59,
+    "question": "Wir haben ein ____ Meeting. (langweilig)",
+    "translations": {
+      "en": "We have a boring meeting.",
+      "uk": "У нас нудна зустріч.",
+      "ro": "Avem o întâlnire plictisitoare.",
+      "ar": "لدينا اجتماع ممل."
+    },
+    "answers": [
+      { "text": "langweiliges", "correct": true },
+      { "text": "langweiliger", "correct": false },
+      { "text": "langweilige", "correct": false },
+      { "text": "langweiligen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Neutrum → langweiliges",
+    "hint": "neuter",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "langweilige Meetings",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 60,
+    "question": "Sie arbeitet mit einem ____ Computer. (modern)",
+    "translations": {
+      "en": "She is working with a modern computer.",
+      "uk": "Вона працює з сучасним комп’ютером.",
+      "ro": "Lucrează cu un computer modern.",
+      "ar": "إنها تعمل على جهاز كمبيوتر حديث."
+    },
+    "answers": [
+      { "text": "modernen", "correct": true },
+      { "text": "moderner", "correct": false },
+      { "text": "modernes", "correct": false },
+      { "text": "moderne", "correct": false }
+    ],
+    "explanation": "Dativ + Maskulin → modernen",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "moderne Computer",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 61,
+    "question": "Die Mitarbeiter haben eine ____ Besprechung. (täglich)",
+    "translations": {
+      "en": "The employees have a daily meeting.",
+      "uk": "Співробітники мають щоденну зустріч.",
+      "ro": "Angajații au o întâlnire zilnică.",
+      "ar": "الموظفون لديهم اجتماع يومي."
+    },
+    "answers": [
+      { "text": "tägliche", "correct": true },
+      { "text": "täglicher", "correct": false },
+      { "text": "tägliches", "correct": false },
+      { "text": "täglichen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → tägliche",
+    "hint": "feminine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "tägliche Besprechungen",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 62,
+    "question": "Das ist ein ____ Drucker. (neu)",
+    "translations": {
+      "en": "This is a new printer.",
+      "uk": "Це новий принтер.",
+      "ro": "Acesta este un imprimantă nouă.",
+      "ar": "هذه طابعة جديدة."
+    },
+    "answers": [
+      { "text": "neuer", "correct": true },
+      { "text": "neues", "correct": false },
+      { "text": "neuen", "correct": false },
+      { "text": "neue", "correct": false }
+    ],
+    "explanation": "Nominativ + Maskulin → neuer",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "neue Drucker",
+    "case": "nominativ",
+    "gender": "masculine"
+  }
 
 
 
