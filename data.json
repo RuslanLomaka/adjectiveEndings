@@ -344,8 +344,824 @@
     "plural_form": "dunkle Wälder",
     "case": "akkusativ",
     "gender": "masculine"
+  },
+  {
+    "id": 16,
+    "question": "Ich kaufe einen ____ Kühlschrank. (neu)",
+    "translations": {
+      "en": "I am buying a new refrigerator.",
+      "uk": "Я купую новий холодильник.",
+      "ro": "Cumpăr un frigider nou.",
+      "ar": "أشتري ثلاجة جديدة."
+    },
+    "answers": [
+      { "text": "neuen", "correct": true },
+      { "text": "neuer", "correct": false },
+      { "text": "neues", "correct": false },
+      { "text": "neue", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → neuen",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "neue Kühlschränke",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 17,
+    "question": "Die ____ Waschmaschine ist kaputt. (alt)",
+    "translations": {
+      "en": "The old washing machine is broken.",
+      "uk": "Стара пральна машина зламана.",
+      "ro": "Mașina de spălat veche este stricată.",
+      "ar": "الغسالة القديمة معطلة."
+    },
+    "answers": [
+      { "text": "alte", "correct": true },
+      { "text": "alter", "correct": false },
+      { "text": "altes", "correct": false },
+      { "text": "alten", "correct": false }
+    ],
+    "explanation": "Nominativ + Feminin → alte",
+    "hint": "feminine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "alte Waschmaschinen",
+    "case": "nominativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 18,
+    "question": "Er benutzt einen ____ Staubsauger. (stark)",
+    "translations": {
+      "en": "He is using a powerful vacuum cleaner.",
+      "uk": "Він користується потужним пилососом.",
+      "ro": "Folosește un aspirator puternic.",
+      "ar": "يستخدم مكنسة كهربائية قوية."
+    },
+    "answers": [
+      { "text": "starken", "correct": true },
+      { "text": "starker", "correct": false },
+      { "text": "starkes", "correct": false },
+      { "text": "starke", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → starken",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "starke Staubsauger",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 19,
+    "question": "Das ____ Bügeleisen funktioniert nicht. (kaputt)",
+    "translations": {
+      "en": "The broken iron does not work.",
+      "uk": "Зламана праска не працює.",
+      "ro": "Fierul de călcat stricat nu funcționează.",
+      "ar": "المكواة المعطلة لا تعمل."
+    },
+    "answers": [
+      { "text": "kaputte", "correct": false },
+      { "text": "kaputtes", "correct": true },
+      { "text": "kaputten", "correct": false },
+      { "text": "kaputter", "correct": false }
+    ],
+    "explanation": "Nominativ + Neutrum → kaputtes",
+    "hint": "neuter",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "kaputte Bügeleisen",
+    "case": "nominativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 20,
+    "question": "Ich brauche eine ____ Lampe für das Wohnzimmer. (hell)",
+    "translations": {
+      "en": "I need a bright lamp for the living room.",
+      "uk": "Мені потрібна яскрава лампа для вітальні.",
+      "ro": "Am nevoie de o lampă strălucitoare pentru sufragerie.",
+      "ar": "أحتاج إلى مصباح ساطع لغرفة المعيشة."
+    },
+    "answers": [
+      { "text": "helle", "correct": true },
+      { "text": "heller", "correct": false },
+      { "text": "helles", "correct": false },
+      { "text": "hellen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → helle",
+    "hint": "feminine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "helle Lampen",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+
+
+    {
+      "id": 21,
+      "question": "Sie trägt ein ____ Kleid. (rot)",
+      "translations": {
+        "en": "She is wearing a red dress.",
+        "uk": "Вона одягнена в червону сукню.",
+        "ro": "Ea poartă o rochie roșie.",
+        "ar": "هي ترتدي فستانًا أحمر."
+      },
+      "answers": [
+        { "text": "rotes", "correct": true },
+        { "text": "roter", "correct": false },
+        { "text": "rote", "correct": false },
+        { "text": "roten", "correct": false }
+      ],
+      "explanation": "Akkusativ + Neutrum → rotes",
+      "hint": "neuter",
+      "difficulty": "medium",
+      "category": "adjective endings",
+      "plural_form": "rote Kleider",
+      "case": "akkusativ",
+      "gender": "neuter"
+    },
+    {
+      "id": 22,
+      "question": "Ich kaufe eine ____ Tasche. (schön)",
+      "translations": {
+        "en": "I am buying a beautiful bag.",
+        "uk": "Я купую гарну сумку.",
+        "ro": "Cumpăr o geantă frumoasă.",
+        "ar": "أشتري حقيبة جميلة."
+      },
+      "answers": [
+        { "text": "schöne", "correct": true },
+        { "text": "schöner", "correct": false },
+        { "text": "schönes", "correct": false },
+        { "text": "schönen", "correct": false }
+      ],
+      "explanation": "Akkusativ + Feminin → schöne",
+      "hint": "feminine",
+      "difficulty": "easy",
+      "category": "adjective endings",
+      "plural_form": "schöne Taschen",
+      "case": "akkusativ",
+      "gender": "feminine"
+    },
+    {
+      "id": 23,
+      "question": "Der ____ Hut gehört mir. (alt)",
+      "translations": {
+        "en": "The old hat belongs to me.",
+        "uk": "Старий капелюх належить мені.",
+        "ro": "Pălăria veche îmi aparține.",
+        "ar": "القبعة القديمة تخصني."
+      },
+      "answers": [
+        { "text": "alte", "correct": false },
+        { "text": "alter", "correct": false },
+        { "text": "alter Hut", "correct": true },
+        { "text": "alten", "correct": false }
+      ],
+      "explanation": "Nominativ + Maskulin → alter",
+      "hint": "masculine",
+      "difficulty": "medium",
+      "category": "adjective endings",
+      "plural_form": "alte Hüte",
+      "case": "nominativ",
+      "gender": "masculine"
+    },
+    {
+      "id": 24,
+      "question": "Er trägt ein ____ Hemd. (weiß)",
+      "translations": {
+        "en": "He is wearing a white shirt.",
+        "uk": "Він носить білу сорочку.",
+        "ro": "Poartă o cămașă albă.",
+        "ar": "يرتدي قميصًا أبيض."
+      },
+      "answers": [
+        { "text": "weißes", "correct": true },
+        { "text": "weißer", "correct": false },
+        { "text": "weiße", "correct": false },
+        { "text": "weißen", "correct": false }
+      ],
+      "explanation": "Nominativ + Neutrum → weißes",
+      "hint": "neuter",
+      "difficulty": "easy",
+      "category": "adjective endings",
+      "plural_form": "weiße Hemden",
+      "case": "nominativ",
+      "gender": "neuter"
+    },
+    {
+      "id": 25,
+      "question": "Ich ziehe meine ____ Schuhe an. (neu)",
+      "translations": {
+        "en": "I am putting on my new shoes.",
+        "uk": "Я одягаю свої нові черевики.",
+        "ro": "Îmi pun pantofii noi.",
+        "ar": "أرتدي حذائي الجديد."
+      },
+      "answers": [
+        { "text": "neuen", "correct": true },
+        { "text": "neue", "correct": false },
+        { "text": "neuer", "correct": false },
+        { "text": "neues", "correct": false }
+      ],
+      "explanation": "Akkusativ + Plural → neuen",
+      "hint": "plural",
+      "difficulty": "medium",
+      "category": "adjective endings",
+      "plural_form": "neue Schuhe",
+      "case": "akkusativ",
+      "gender": "plural"
+    },
+    {
+      "id": 26,
+      "question": "Sie trägt eine ____ Jacke. (warm)",
+      "translations": {
+        "en": "She is wearing a warm jacket.",
+        "uk": "Вона носить теплу куртку.",
+        "ro": "Poartă o geacă caldă.",
+        "ar": "ترتدي سترة دافئة."
+      },
+      "answers": [
+        { "text": "warme", "correct": true },
+        { "text": "warmer", "correct": false },
+        { "text": "warmes", "correct": false },
+        { "text": "warmen", "correct": false }
+      ],
+      "explanation": "Akkusativ + Feminin → warme",
+      "hint": "feminine",
+      "difficulty": "medium",
+      "category": "adjective endings",
+      "plural_form": "warme Jacken",
+      "case": "akkusativ",
+      "gender": "feminine"
+    },
+  {
+    "id": 27,
+    "question": "Ich esse einen ____ Apfel. (grün)",
+    "translations": {
+      "en": "I am eating a green apple.",
+      "uk": "Я їм зелене яблуко.",
+      "ro": "Mănânc un măr verde.",
+      "ar": "أنا آكل تفاحة خضراء."
+    },
+    "answers": [
+      { "text": "grünen", "correct": true },
+      { "text": "grüner", "correct": false },
+      { "text": "grünes", "correct": false },
+      { "text": "grüne", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → grünen",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "grüne Äpfel",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 28,
+    "question": "Wir trinken einen ____ Saft. (kalt)",
+    "translations": {
+      "en": "We are drinking a cold juice.",
+      "uk": "Ми п'ємо холодний сік.",
+      "ro": "Bem un suc rece.",
+      "ar": "نشرب عصيرًا باردًا."
+    },
+    "answers": [
+      { "text": "kalten", "correct": true },
+      { "text": "kalter", "correct": false },
+      { "text": "kaltes", "correct": false },
+      { "text": "kalte", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → kalten",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "kalte Säfte",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 29,
+    "question": "Das ist ein ____ Brot. (frisch)",
+    "translations": {
+      "en": "This is fresh bread.",
+      "uk": "Це свіжий хліб.",
+      "ro": "Aceasta este pâine proaspătă.",
+      "ar": "هذا خبز طازج."
+    },
+    "answers": [
+      { "text": "frisches", "correct": true },
+      { "text": "frischer", "correct": false },
+      { "text": "frische", "correct": false },
+      { "text": "frischen", "correct": false }
+    ],
+    "explanation": "Nominativ + Neutrum → frisches",
+    "hint": "neuter",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "frische Brote",
+    "case": "nominativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 30,
+    "question": "Wir kaufen frische ____ Tomaten. (rot)",
+    "translations": {
+      "en": "We are buying fresh red tomatoes.",
+      "uk": "Ми купуємо свіжі червоні помідори.",
+      "ro": "Cumpărăm roșii roșii proaspete.",
+      "ar": "نشتري طماطم حمراء طازجة."
+    },
+    "answers": [
+      { "text": "rote", "correct": true },
+      { "text": "roter", "correct": false },
+      { "text": "rotes", "correct": false },
+      { "text": "roten", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural → rote",
+    "hint": "plural",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "rote Tomaten",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 31,
+    "question": "Er isst eine ____ Suppe. (heiß)",
+    "translations": {
+      "en": "He is eating a hot soup.",
+      "uk": "Він їсть гарячий суп.",
+      "ro": "El mănâncă o supă fierbinte.",
+      "ar": "إنه يأكل حساءً ساخنًا."
+    },
+    "answers": [
+      { "text": "heiße", "correct": true },
+      { "text": "heißer", "correct": false },
+      { "text": "heißes", "correct": false },
+      { "text": "heißen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → heiße",
+    "hint": "feminine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "heiße Suppen",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 32,
+    "question": "Ich nehme ein ____ Ei zum Frühstück. (gekocht)",
+    "translations": {
+      "en": "I am having a boiled egg for breakfast.",
+      "uk": "Я їм варене яйце на сніданок.",
+      "ro": "Ia un ou fiert la micul dejun.",
+      "ar": "أتناول بيضة مسلوقة على الإفطار."
+    },
+    "answers": [
+      { "text": "gekochtes", "correct": true },
+      { "text": "gekochter", "correct": false },
+      { "text": "gekochte", "correct": false },
+      { "text": "gekochten", "correct": false }
+    ],
+    "explanation": "Akkusativ + Neutrum → gekochtes",
+    "hint": "neuter",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "gekochte Eier",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 33,
+    "question": "Wir fahren mit einem ____ Zug. (schnell)",
+    "translations": {
+      "en": "We are traveling by a fast train.",
+      "uk": "Ми їдемо швидким поїздом.",
+      "ro": "Călătorim cu un tren rapid.",
+      "ar": "نسافر بقطار سريع."
+    },
+    "answers": [
+      { "text": "schnellen", "correct": true },
+      { "text": "schneller", "correct": false },
+      { "text": "schnelles", "correct": false },
+      { "text": "schnelle", "correct": false }
+    ],
+    "explanation": "Dativ + Maskulin → schnellen",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "schnelle Züge",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 34,
+    "question": "Ich miete ein ____ Auto. (neu)",
+    "translations": {
+      "en": "I am renting a new car.",
+      "uk": "Я орендую нову машину.",
+      "ro": "Închiriez o mașină nouă.",
+      "ar": "أستأجر سيارة جديدة."
+    },
+    "answers": [
+      { "text": "neues", "correct": true },
+      { "text": "neuer", "correct": false },
+      { "text": "neue", "correct": false },
+      { "text": "neuen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Neutrum → neues",
+    "hint": "neuter",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "neue Autos",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 35,
+    "question": "Das ____ Flugzeug landet bald. (groß)",
+    "translations": {
+      "en": "The large airplane is landing soon.",
+      "uk": "Великий літак скоро приземлиться.",
+      "ro": "Avionul mare aterizează în curând.",
+      "ar": "الطائرة الكبيرة ستهبط قريبًا."
+    },
+    "answers": [
+      { "text": "großes", "correct": true },
+      { "text": "großer", "correct": false },
+      { "text": "große", "correct": false },
+      { "text": "großen", "correct": false }
+    ],
+    "explanation": "Nominativ + Neutrum → großes",
+    "hint": "neuter",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "große Flugzeuge",
+    "case": "nominativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 36,
+    "question": "Die ____ Fähre überquert den Fluss. (schnell)",
+    "translations": {
+      "en": "The fast ferry is crossing the river.",
+      "uk": "Швидкий пором перетинає річку.",
+      "ro": "Feribotul rapid traversează râul.",
+      "ar": "العبّارة السريعة تعبر النهر."
+    },
+    "answers": [
+      { "text": "schnelle", "correct": true },
+      { "text": "schneller", "correct": false },
+      { "text": "schnelles", "correct": false },
+      { "text": "schnellen", "correct": false }
+    ],
+    "explanation": "Nominativ + Feminin → schnelle",
+    "hint": "feminine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "schnelle Fähren",
+    "case": "nominativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 37,
+    "question": "Wir steigen in einen ____ Bus ein. (leer)",
+    "translations": {
+      "en": "We are boarding an empty bus.",
+      "uk": "Ми сідаємо в порожній автобус.",
+      "ro": "Ne urcăm într-un autobuz gol.",
+      "ar": "نستقل حافلة فارغة."
+    },
+    "answers": [
+      { "text": "leeren", "correct": true },
+      { "text": "leerer", "correct": false },
+      { "text": "leeres", "correct": false },
+      { "text": "leere", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → leeren",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "leere Busse",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 38,
+    "question": "Ich buche einen ____ Flug. (international)",
+    "translations": {
+      "en": "I am booking an international flight.",
+      "uk": "Я бронюю міжнародний рейс.",
+      "ro": "Rezerv un zbor internațional.",
+      "ar": "أحجز رحلة دولية."
+    },
+    "answers": [
+      { "text": "internationalen", "correct": true },
+      { "text": "internationaler", "correct": false },
+      { "text": "internationales", "correct": false },
+      { "text": "internationale", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin → internationalen",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "internationale Flüge",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 39,
+    "question": "Ich lese ein ____ Buch. (spannend)",
+    "translations": {
+      "en": "I am reading an exciting book.",
+      "uk": "Я читаю захоплюючу книгу.",
+      "ro": "Citesc o carte captivantă.",
+      "ar": "أقرأ كتابًا مشوقًا."
+    },
+    "answers": [
+      { "text": "spannendes", "correct": true },
+      { "text": "spannender", "correct": false },
+      { "text": "spannende", "correct": false },
+      { "text": "spannenden", "correct": false }
+    ],
+    "explanation": "Akkusativ + Neutrum → spannendes",
+    "hint": "neuter",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "spannende Bücher",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 40,
+    "question": "Der Lehrer gibt eine ____ Aufgabe. (schwer)",
+    "translations": {
+      "en": "The teacher gives a difficult task.",
+      "uk": "Учитель дає важке завдання.",
+      "ro": "Profesorul dă o sarcină dificilă.",
+      "ar": "المعلم يعطي مهمة صعبة."
+    },
+    "answers": [
+      { "text": "schwere", "correct": true },
+      { "text": "schwerer", "correct": false },
+      { "text": "schweres", "correct": false },
+      { "text": "schweren", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → schwere",
+    "hint": "feminine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "schwere Aufgaben",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 41,
+    "question": "Ich schreibe mit einem ____ Stift. (blau)",
+    "translations": {
+      "en": "I am writing with a blue pen.",
+      "uk": "Я пишу синьою ручкою.",
+      "ro": "Scriu cu un stilou albastru.",
+      "ar": "أكتب بقلم أزرق."
+    },
+    "answers": [
+      { "text": "blauen", "correct": true },
+      { "text": "blauer", "correct": false },
+      { "text": "blaues", "correct": false },
+      { "text": "blaue", "correct": false }
+    ],
+    "explanation": "Dativ + Maskulin → blauen",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "blaue Stifte",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 42,
+    "question": "Das ist eine ____ Tafel. (groß)",
+    "translations": {
+      "en": "This is a large blackboard.",
+      "uk": "Це велика дошка.",
+      "ro": "Aceasta este o tablă mare.",
+      "ar": "هذه سبورة كبيرة."
+    },
+    "answers": [
+      { "text": "große", "correct": true },
+      { "text": "großer", "correct": false },
+      { "text": "großes", "correct": false },
+      { "text": "großen", "correct": false }
+    ],
+    "explanation": "Nominativ + Feminin → große",
+    "hint": "feminine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "große Tafeln",
+    "case": "nominativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 43,
+    "question": "Die Schüler schreiben eine ____ Prüfung. (wichtig)",
+    "translations": {
+      "en": "The students are taking an important exam.",
+      "uk": "Учні складають важливий іспит.",
+      "ro": "Elevii susțin un examen important.",
+      "ar": "الطلاب يقدمون امتحانًا مهمًا."
+    },
+    "answers": [
+      { "text": "wichtige", "correct": true },
+      { "text": "wichtiger", "correct": false },
+      { "text": "wichtiges", "correct": false },
+      { "text": "wichtigen", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin → wichtige",
+    "hint": "feminine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "wichtige Prüfungen",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 44,
+    "question": "Das ____ Klassenzimmer ist sauber. (hell)",
+    "translations": {
+      "en": "The bright classroom is clean.",
+      "uk": "Світлий клас чистий.",
+      "ro": "Clasa luminoasă este curată.",
+      "ar": "الفصل المشرق نظيف."
+    },
+    "answers": [
+      { "text": "helle", "correct": false },
+      { "text": "helles", "correct": true },
+      { "text": "heller", "correct": false },
+      { "text": "hellen", "correct": false }
+    ],
+    "explanation": "Nominativ + Neutrum → helles",
+    "hint": "neuter",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "helle Klassenzimmer",
+    "case": "nominativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 45,
+    "question": "Der ____ Fluss fließt schnell. (breit)",
+    "translations": {
+      "en": "The wide river flows quickly.",
+      "uk": "Широка річка тече швидко.",
+      "ro": "Râul larg curge rapid.",
+      "ar": "النهر العريض يتدفق بسرعة."
+    },
+    "answers": [
+      { "text": "breite", "correct": false },
+      { "text": "breiter", "correct": false },
+      { "text": "breiter Fluss", "correct": true },
+      { "text": "breiten", "correct": false }
+    ],
+    "explanation": "Nominativ + Maskulin → breiter",
+    "hint": "masculine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "breite Flüsse",
+    "case": "nominativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 46,
+    "question": "Wir bewundern die ____ Berge. (hoch)",
+    "translations": {
+      "en": "We admire the high mountains.",
+      "uk": "Ми милуємося високими горами.",
+      "ro": "Admirăm munții înalți.",
+      "ar": "نحن نعجب بالجبال العالية."
+    },
+    "answers": [
+      { "text": "hohen", "correct": true },
+      { "text": "hoher", "correct": false },
+      { "text": "hohes", "correct": false },
+      { "text": "hohe", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural → hohen",
+    "hint": "plural",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "hohe Berge",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 47,
+    "question": "Ich sitze unter einem ____ Baum. (alt)",
+    "translations": {
+      "en": "I am sitting under an old tree.",
+      "uk": "Я сиджу під старим деревом.",
+      "ro": "Stau sub un copac bătrân.",
+      "ar": "أنا جالس تحت شجرة قديمة."
+    },
+    "answers": [
+      { "text": "alten", "correct": true },
+      { "text": "alter", "correct": false },
+      { "text": "altes", "correct": false },
+      { "text": "alte", "correct": false }
+    ],
+    "explanation": "Dativ + Maskulin → alten",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "alte Bäume",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 48,
+    "question": "Das ist eine ____ Wüste. (heiß)",
+    "translations": {
+      "en": "This is a hot desert.",
+      "uk": "Це гаряча пустеля.",
+      "ro": "Aceasta este o deșert fierbinte.",
+      "ar": "هذه صحراء حارة."
+    },
+    "answers": [
+      { "text": "heiße", "correct": true },
+      { "text": "heißer", "correct": false },
+      { "text": "heißes", "correct": false },
+      { "text": "heißen", "correct": false }
+    ],
+    "explanation": "Nominativ + Feminin → heiße",
+    "hint": "feminine",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "heiße Wüsten",
+    "case": "nominativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 49,
+    "question": "Der ____ See ist bekannt für seine Schönheit. (tief)",
+    "translations": {
+      "en": "The deep lake is known for its beauty.",
+      "uk": "Глибоке озеро відоме своєю красою.",
+      "ro": "Lacul adânc este cunoscut pentru frumusețea sa.",
+      "ar": "البحيرة العميقة معروفة بجمالها."
+    },
+    "answers": [
+      { "text": "tiefe", "correct": false },
+      { "text": "tiefer", "correct": false },
+      { "text": "tiefer See", "correct": true },
+      { "text": "tiefen", "correct": false }
+    ],
+    "explanation": "Nominativ + Maskulin → tiefer",
+    "hint": "masculine",
+    "difficulty": "easy",
+    "category": "adjective endings",
+    "plural_form": "tiefe Seen",
+    "case": "nominativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 50,
+    "question": "Ich fotografiere die ____ Blumen. (bunt)",
+    "translations": {
+      "en": "I am photographing the colorful flowers.",
+      "uk": "Я фотографую яскраві квіти.",
+      "ro": "Fotografiez florile colorate.",
+      "ar": "أقوم بتصوير الأزهار الملونة."
+    },
+    "answers": [
+      { "text": "bunten", "correct": true },
+      { "text": "bunter", "correct": false },
+      { "text": "buntes", "correct": false },
+      { "text": "bunte", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural → bunten",
+    "hint": "plural",
+    "difficulty": "medium",
+    "category": "adjective endings",
+    "plural_form": "bunte Blumen",
+    "case": "akkusativ",
+    "gender": "plural"
   }
 
 
 
+
+
+
+
+
 ]
+
+
+
+
