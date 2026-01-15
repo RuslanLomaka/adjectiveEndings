@@ -1,227 +1,50 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deutsches Adjektivendungen-Quiz</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deutsches Adjektivendungen-Quiz</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Deutsches Adjektivendungen-Quiz</h1>
-<p>Wählen Sie die richtige Adjektivendung, um den Satz zu vervollständigen.</p>
 
-<!-- Try Again Button -->
-<button id="try-again-button" class="try-again-btn" style="display: none;">🔄 Versuchen Sie es erneut</button>
+  <h1>Deutsches Adjektivendungen-Quiz</h1>
+  <p>Wählen Sie die richtige Adjektivendung, um den Satz zu vervollständigen.</p>
 
-<!-- Language selection dropdown -->
-<div style="text-align: center; margin-bottom: 20px;">
-    <label for="language-select" style="font-size: 1.2rem;">Sprache auswählen:</label>
-    <select id="language-select" style="font-size: 1.2rem; padding: 10px;">
-        <option value="en">Englisch</option>
-        <option value="uk">Ukrainisch</option>
-        <option value="ro">Rumänisch</option>
-        <option value="ar">Arabisch</option>
+  <!-- Try Again Button -->
+  <button id="try-again-button"
+          class="try-again-btn"
+          style="display: none;">
+    🔄 Versuchen Sie es erneut
+  </button>
+
+  <!-- Language selection -->
+  <div style="text-align: center; margin-bottom: 20px;">
+    <label for="language-select" style="font-size: 1.2rem;">
+      Sprache auswählen:
+    </label>
+    <select id="language-select"
+            style="font-size: 1.2rem; padding: 10px;">
+      <option value="en">Englisch</option>
+      <option value="uk">Ukrainisch</option>
+      <option value="ro">Rumänisch</option>
+      <option value="ar">Arabisch</option>
     </select>
-</div>
+  </div>
 
-<!-- Container where questions will be dynamically added -->
-<div id="questions-container"></div>
+  <!-- Questions -->
+  <div id="questions-container"></div>
 
-<!-- Score Display -->
-<div id="score-display" style="display: none; text-align: center; margin-top: 30px;">
+  <!-- Score Display -->
+  <div id="score-display"
+       style="display: none; text-align: center; margin-top: 30px;">
     <h2>Quiz abgeschlossen! 🎉</h2>
     <p id="final-score"></p>
     <p id="final-feedback"></p>
-</div>
+  </div>
 
-<script>
-    let selectedLanguage = 'en';  // Default language is English
-    let score = 0;  // To track correct answers
-    let answeredQuestions = 0;  // To check when all questions are completed
-    const userAnswers = [];  // Store user selections temporarily
+  <!-- App logic -->
+  <script src="app.js" defer></script>
 
-    // Handle language selection change
-    document.getElementById('language-select').addEventListener('change', (event) => {
-        selectedLanguage = event.target.value;
-    });
-
-    // Load JSON and dynamically generate all question containers
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            const selectedQuestions = getRandomSubset(data, 10);
-            displayAllQuestions(selectedQuestions);
-        })
-        .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
-
-    function displayAllQuestions(questions) {
-        const container = document.getElementById('questions-container');
-
-        questions.forEach((question, index) => {
-            shuffleArray(question.answers);
-
-            const questionHTML = `
-                <div class="question-container">
-                    <strong>${question.question}</strong>
-                    <div class="choices">
-                        ${question.answers.map((answer) => `
-                            <button class="choice-btn" data-correct="${answer.correct}" data-index="${index}">
-                                ${answer.text}
-                            </button>
-                        `).join('')}
-                    </div>
-                    <div class="hint-section">
-                        <button class="hint-btn" id="hint-btn-${index}">Hinweis</button>
-                        <span id="hint-text-${index}" style="margin-left: 10px; font-size: 1.1rem;"></span>
-                    </div>
-                    <div class="feedback" id="feedback-${index}"></div>
-                </div>
-            `;
-            container.innerHTML += questionHTML;
-        });
-
-        const buttons = document.querySelectorAll('.choice-btn');
-        buttons.forEach(button => {
-            button.addEventListener('click', (e) => handleAnswerSelection(e.target, questions));
-        });
-
-        // Add event listeners for hint buttons
-        questions.forEach((_, index) => {
-            const hintButton = document.getElementById(`hint-btn-${index}`);
-            let hintClicks = 0;
-
-            hintButton.addEventListener('click', () => {
-                hintClicks++;
-
-                if (hintClicks === 1) {
-                    // Show gender
-                    document.getElementById(`hint-text-${index}`).textContent = `Geschlecht: ${questions[index].gender}`;
-                } else if (hintClicks === 2) {
-                    // Show case
-                    document.getElementById(`hint-text-${index}`).textContent += ` | Fall: ${questions[index].case}`;
-                } else if (hintClicks === 3) {
-                    // Show translation
-                    document.getElementById(`hint-text-${index}`).textContent += ` | Übersetzung: ${questions[index].translations[selectedLanguage]}`;
-                    hintButton.disabled = true;  // Disable button after the third hint
-                    hintButton.style.opacity = 0.5;  // Grey it out
-                }
-            });
-        });
-    }
-
-    function handleAnswerSelection(button, questions) {
-        const isCorrect = button.getAttribute('data-correct') === 'true';
-        const questionIndex = button.getAttribute('data-index');
-        const parentContainer = button.closest('.question-container');
-        const buttons = parentContainer.querySelectorAll('.choice-btn');
-
-        // Disable the hint button after the answer is selected
-        document.getElementById(`hint-btn-${questionIndex}`).disabled = true;
-        document.getElementById(`hint-btn-${questionIndex}`).style.opacity = 0.5;
-
-        userAnswers[questionIndex] = {
-            selectedButton: button,
-            isCorrect: isCorrect,
-            question: questions[questionIndex]
-        };
-
-        button.classList.add('selected');
-        button.style.backgroundColor = '#17a2b8';
-        buttons.forEach(b => {
-            b.disabled = true;
-            if (b !== button) {
-                b.style.backgroundColor = '#ccc';
-            }
-        });
-
-        answeredQuestions++;
-        if (answeredQuestions === questions.length) {
-            setTimeout(() => {
-                revealResults();
-                enableTryAgainButton();
-            }, 1000);
-        }
-    }
-
-    function revealResults() {
-        score = 0;
-
-        userAnswers.forEach((answer, index) => {
-            const selectedButton = answer.selectedButton;
-            const feedbackElement = document.getElementById(`feedback-${index}`);
-            const correctButton = Array.from(selectedButton.parentNode.children)
-                .find(b => b.getAttribute('data-correct') === 'true');
-
-            if (answer.isCorrect) {
-                score++;
-                selectedButton.style.backgroundColor = '#28a745';
-                feedbackElement.innerHTML = `<span class="correct">Richtig! 🎉 ${answer.question.explanation}</span>`;
-            } else {
-                selectedButton.style.backgroundColor = '#dc3545';
-                correctButton.style.backgroundColor = '#28a745';
-                feedbackElement.innerHTML = `
-                    <span class="incorrect">Falsch! 😢 ${answer.question.explanation}</span>
-                    <br><strong>Übersetzung:</strong> ${answer.question.translations[selectedLanguage]}
-                `;
-            }
-        });
-
-        document.getElementById('final-score').textContent = `Ihre Punktzahl: ${Math.min(score, 10)} / 10`;
-        document.getElementById('final-feedback').textContent = "Scrollen Sie nach oben, um die Übersetzungen und Erklärungen zu sehen!";
-        document.getElementById('score-display').style.display = 'block';
-    }
-
-    document.getElementById('try-again-button').addEventListener('click', resetQuiz);
-
-    function resetQuiz() {
-        // Clear existing data and reset variables
-        document.getElementById('questions-container').innerHTML = '';
-        document.getElementById('final-score').textContent = '';
-        document.getElementById('final-feedback').textContent = '';
-        document.getElementById('score-display').style.display = 'none';
-
-        score = 0;
-        answeredQuestions = 0;
-        userAnswers.length = 0;  // Clear previous answers
-
-        // Reshuffle and display the quiz
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                const selectedQuestions = getRandomSubset(data, 10);
-                displayAllQuestions(selectedQuestions);
-            })
-            .catch(error => console.error('Fehler beim Laden der JSON-Daten:', error));
-    }
-
-
-
-    function enableTryAgainButton() {
-        const tryAgainButton = document.getElementById('try-again-button');
-        tryAgainButton.style.display = 'block';
-
-        // Show button when user scrolls near the top
-        window.addEventListener('scroll', () => {
-            if (window.scrollY < 100) {
-                tryAgainButton.classList.add('visible');
-            } else {
-                tryAgainButton.classList.remove('visible');
-            }
-        });
-    }
-
-    function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-    }
-
-    function getRandomSubset(array, n) {
-        const shuffled = [...array];
-        shuffleArray(shuffled);
-        return shuffled.slice(0, n);
-    }
-</script>
 </body>
 </html>
