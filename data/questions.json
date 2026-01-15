@@ -1,1 +1,105 @@
 
+{
+  "version": 1,
+  "language": "de",
+  "topic": "adjective-endings-articles-cases-gender",
+  "questions": [
+    {
+      "id": "q001",
+      "prompt": "Wir kaufen einen ____ Tisch.",
+      "base": "modern",
+      "meta": { "case": "Akkusativ", "gender": "maskulin", "article": "einen" },
+      "choices": [
+        { "key": "A", "text": "moderne",  "explain": "Feminine form; doesn't match 'einen Tisch'." },
+        { "key": "B", "text": "modernes", "explain": "Neuter form; doesn't match 'Tisch'." },
+        { "key": "C", "text": "modernen", "explain": "✅ 'einen' + maskulin Akkusativ → -en." },
+        { "key": "D", "text": "moderner", "explain": "Often nominative masculine with no article/other context." }
+      ],
+      "answer": "C"
+    },
+
+    {
+      "id": "q002",
+      "prompt": "Das ist eine ____ Katze.",
+      "base": "schwarz",
+      "meta": { "case": "Nominativ", "gender": "feminin", "article": "eine" },
+      "choices": [
+        { "key": "A", "text": "schwarze",  "explain": "✅ 'eine' + feminin Nominativ → -e." },
+        { "key": "B", "text": "schwarzen", "explain": "Would fit many -en contexts (plural / dativ / weak), but not here." },
+        { "key": "C", "text": "schwarzes", "explain": "Neuter form." },
+        { "key": "D", "text": "schwarzer", "explain": "Masculine nominative without/other article contexts." }
+      ],
+      "answer": "A"
+    },
+
+    {
+      "id": "q003",
+      "prompt": "Ich helfe meinem ____ Nachbarn.",
+      "base": "alt",
+      "meta": { "case": "Dativ", "gender": "maskulin", "article": "meinem" },
+      "choices": [
+        { "key": "A", "text": "alter",   "explain": "Strong-ish form; doesn't match 'meinem' pattern." },
+        { "key": "B", "text": "alten",   "explain": "✅ 'meinem' + maskulin Dativ → -en." },
+        { "key": "C", "text": "altes",   "explain": "Neuter." },
+        { "key": "D", "text": "alte",    "explain": "Often feminine/plural." }
+      ],
+      "answer": "B"
+    },
+
+    {
+      "id": "q004",
+      "prompt": "Wir sprechen mit einer ____ Lehrerin.",
+      "base": "nett",
+      "meta": { "case": "Dativ", "gender": "feminin", "article": "einer", "preposition": "mit" },
+      "choices": [
+        { "key": "A", "text": "nette",   "explain": "Would fit 'eine nette Lehrerin' (nom/akk), not dativ with 'einer'." },
+        { "key": "B", "text": "netten",  "explain": "✅ 'mit' → Dativ, and 'einer' → feminin Dativ → -en." },
+        { "key": "C", "text": "nettes",  "explain": "Neuter." },
+        { "key": "D", "text": "netter",  "explain": "Often nominative masculine without/other article contexts." }
+      ],
+      "answer": "B"
+    },
+
+    {
+      "id": "q005",
+      "prompt": "Das ist die Tasche eines ____ Mannes.",
+      "base": "jung",
+      "meta": { "case": "Genitiv", "gender": "maskulin", "article": "eines" },
+      "choices": [
+        { "key": "A", "text": "junger",   "explain": "Not genitive masculine with 'eines'." },
+        { "key": "B", "text": "jungen",   "explain": "✅ 'eines' + maskulin Genitiv → -en." },
+        { "key": "C", "text": "junges",   "explain": "Neuter form, not masculine here." },
+        { "key": "D", "text": "junge",    "explain": "Feminine/plural vibe." }
+      ],
+      "answer": "B"
+    },
+
+    {
+      "id": "q006",
+      "prompt": "Ich habe kein ____ Geld.",
+      "base": "genug",
+      "meta": { "case": "Akkusativ", "gender": "neutrum", "article": "kein" },
+      "choices": [
+        { "key": "A", "text": "genuger",  "explain": "Not used like this." },
+        { "key": "B", "text": "genuges",  "explain": "✅ 'kein' behaves like 'ein' → neuter (nom/akk) often -es." },
+        { "key": "C", "text": "genugen",  "explain": "Wrong ending here." },
+        { "key": "D", "text": "genuge",   "explain": "Not for neuter here." }
+      ],
+      "answer": "B"
+    },
+
+    {
+      "id": "q007",
+      "prompt": "Wir gehen über den ____ Platz.",
+      "base": "groß",
+      "meta": { "case": "Akkusativ", "gender": "maskulin", "article": "den", "preposition": "über" },
+      "choices": [
+        { "key": "A", "text": "großer",   "explain": "Not accusative with 'den'." },
+        { "key": "B", "text": "großes",   "explain": "Neuter." },
+        { "key": "C", "text": "großen",   "explain": "✅ 'über + den' → Akkusativ maskulin → -en." },
+        { "key": "D", "text": "große",    "explain": "Feminine/plural." }
+      ],
+      "answer": "C"
+    }
+  ]
+}
