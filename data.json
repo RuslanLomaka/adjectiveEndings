@@ -1,178 +1,346 @@
 [
   {
     "id": 1,
-    "question": "Das ist ein ____ Auto. (neu)",
+    "question": "Ich sehe den ____ Mann. (alt)",
     "translations": {
-      "en": "This is a new car."
+      "en": "I see the old man.",
+      "uk": "Я бачу старого чоловіка."
     },
     "answers": [
-      { "text": "neuer", "correct": false },
-      { "text": "neues", "correct": true },
-      { "text": "neuen", "correct": false },
-      { "text": "neue", "correct": false }
+      { "text": "alte", "correct": false },
+      { "text": "alten", "correct": true },
+      { "text": "altes", "correct": false },
+      { "text": "alter", "correct": false }
     ],
-    "explanation": "Nominativ + Neutrum → neues",
-    "case": "nominativ",
-    "gender": "neuter"
+    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "case": "akkusativ",
+    "gender": "masculine"
   },
   {
     "id": 2,
-    "question": "Ich kaufe eine ____ Banane. (frisch)",
+    "question": "Sie kauft die ____ Tasche. (neu)",
     "translations": {
-      "en": "I am buying a fresh banana."
+      "en": "She is buying the new bag.",
+      "uk": "Вона купує нову сумку."
     },
     "answers": [
-      { "text": "frische", "correct": true },
-      { "text": "frischer", "correct": false },
-      { "text": "frisches", "correct": false },
-      { "text": "frischen", "correct": false }
+      { "text": "neue", "correct": true },
+      { "text": "neuen", "correct": false },
+      { "text": "neues", "correct": false },
+      { "text": "neuer", "correct": false }
     ],
-    "explanation": "Akkusativ + Feminin → frische",
+    "explanation": "Akkusativ + Feminin + bestimmter Artikel (die) → Endung -e",
     "case": "akkusativ",
     "gender": "feminine"
   },
   {
     "id": 3,
-    "question": "Er liest ein ____ Buch. (interessant)",
+    "question": "Wir trinken das ____ Wasser. (kalt)",
     "translations": {
-      "en": "He is reading an interesting book."
+      "en": "We drink the cold water.",
+      "uk": "Ми п'ємо холодну воду."
     },
     "answers": [
-      { "text": "interessanter", "correct": false },
-      { "text": "interessantes", "correct": true },
-      { "text": "interessante", "correct": false },
-      { "text": "interessanten", "correct": false }
+      { "text": "kalte", "correct": true },
+      { "text": "kalten", "correct": false },
+      { "text": "kaltes", "correct": false },
+      { "text": "kalter", "correct": false }
     ],
-    "explanation": "Akkusativ + Neutrum → interessantes",
+    "explanation": "Akkusativ + Neutrum + bestimmter Artikel (das) → Endung -e",
     "case": "akkusativ",
     "gender": "neuter"
   },
   {
     "id": 4,
-    "question": "Wir trinken ____ Kaffee. (kalt)",
+    "question": "Er findet den ____ Weg. (richtig)",
     "translations": {
-      "en": "We are drinking cold coffee."
+      "en": "He finds the right way.",
+      "uk": "Він знаходить правильний шлях."
     },
     "answers": [
-      { "text": "kalten", "correct": true },
-      { "text": "kalter", "correct": false },
-      { "text": "kaltes", "correct": false },
-      { "text": "kalte", "correct": false }
+      { "text": "richtige", "correct": false },
+      { "text": "richtigen", "correct": true },
+      { "text": "richtiges", "correct": false },
+      { "text": "richtiger", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin → kalten",
+    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
     "case": "akkusativ",
     "gender": "masculine"
   },
   {
     "id": 5,
-    "question": "Sie hat einen ____ Laptop. (alt)",
+    "question": "Ich mag die ____ Äpfel. (frisch)",
     "translations": {
-      "en": "She has an old laptop."
+      "en": "I like the fresh apples.",
+      "uk": "Мені подобаються свіжі яблука."
     },
     "answers": [
-      { "text": "alten", "correct": true },
-      { "text": "alter", "correct": false },
-      { "text": "altes", "correct": false },
-      { "text": "alte", "correct": false }
+      { "text": "frische", "correct": true },
+      { "text": "frischen", "correct": false },
+      { "text": "frisches", "correct": false },
+      { "text": "frischer", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin → alten",
-    "case": "akkusativ",
-    "gender": "masculine"
-  },
-  {
-    "id": 6,
-    "question": "Ich sehe die ____ Blumen. (schön)",
-    "translations": {
-      "en": "I see the beautiful flowers."
-    },
-    "answers": [
-      { "text": "schönen", "correct": false },
-      { "text": "schöner", "correct": false },
-      { "text": "schöne", "correct": true },
-      { "text": "schönes", "correct": false }
-    ],
-    "explanation": "Akkusativ + Plural → schöne",
+    "explanation": "Akkusativ + Plural + bestimmter Artikel (die) → Endung -e",
     "case": "akkusativ",
     "gender": "plural"
   },
   {
-    "id": 7,
-    "question": "Wir arbeiten in einem ____ Büro. (groß)",
+    "id": 6,
+    "question": "Sie hört die ____ Musik. (laut)",
     "translations": {
-      "en": "We work in a large office."
+      "en": "She listens to the loud music.",
+      "uk": "Вона слухає гучну музику."
     },
     "answers": [
-      { "text": "großen", "correct": true },
-      { "text": "großer", "correct": false },
-      { "text": "großes", "correct": false },
-      { "text": "große", "correct": false }
+      { "text": "laute", "correct": true },
+      { "text": "lauten", "correct": false },
+      { "text": "lautes", "correct": false },
+      { "text": "lauter", "correct": false }
     ],
-    "explanation": "Dativ + Neutrum → großen",
-    "case": "dativ",
-    "gender": "neuter"
-  },
-  {
-    "id": 8,
-    "question": "Er spricht mit einer ____ Kollegin. (nett)",
-    "translations": {
-      "en": "He is talking to a nice colleague."
-    },
-    "answers": [
-      { "text": "nette", "correct": false },
-      { "text": "netter", "correct": false },
-      { "text": "nettes", "correct": false },
-      { "text": "netten", "correct": true }
-    ],
-    "explanation": "Dativ + Feminin → netten",
-    "case": "dativ",
+    "explanation": "Akkusativ + Feminin + bestimmter Artikel (die) → Endung -e",
+    "case": "akkusativ",
     "gender": "feminine"
   },
   {
-    "id": 9,
-    "question": "Ich sitze auf einem ____ Stuhl. (bequem)",
+    "id": 7,
+    "question": "Wir besuchen den ____ Freund. (krank)",
     "translations": {
-      "en": "I am sitting on a comfortable chair."
+      "en": "We visit the sick friend.",
+      "uk": "Ми відвідуємо хворого друга."
     },
     "answers": [
-      { "text": "bequemer", "correct": false },
-      { "text": "bequemen", "correct": true },
-      { "text": "bequemes", "correct": false },
-      { "text": "bequeme", "correct": false }
+      { "text": "kranke", "correct": false },
+      { "text": "kranken", "correct": true },
+      { "text": "krankes", "correct": false },
+      { "text": "kranker", "correct": false }
     ],
-    "explanation": "Dativ + Maskulin → bequemen",
-    "case": "dativ",
+    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "case": "akkusativ",
     "gender": "masculine"
   },
   {
-    "id": 10,
-    "question": "Sie trägt ein ____ Kleid. (warm)",
+    "id": 8,
+    "question": "Er liest das ____ Buch. (interessant)",
     "translations": {
-      "en": "She is wearing a warm dress."
+      "en": "He reads the interesting book.",
+      "uk": "Він читає цікаву книгу."
     },
     "answers": [
-      { "text": "warmer", "correct": false },
-      { "text": "warmes", "correct": true },
-      { "text": "warme", "correct": false },
-      { "text": "warmen", "correct": false }
+      { "text": "interessante", "correct": true },
+      { "text": "interessanten", "correct": false },
+      { "text": "interessantes", "correct": false },
+      { "text": "interessanter", "correct": false }
     ],
-    "explanation": "Akkusativ + Neutrum → warmes",
+    "explanation": "Akkusativ + Neutrum + bestimmter Artikel (das) → Endung -e",
     "case": "akkusativ",
     "gender": "neuter"
   },
   {
-    "id": 11,
-    "question": "Wir lernen mit einem ____ Lehrer. (gut)",
+    "id": 9,
+    "question": "Ich putze den ____ Tisch. (schmutzig)",
     "translations": {
-      "en": "We are learning with a good teacher."
+      "en": "I clean the dirty table.",
+      "uk": "Я прибираю брудний стіл."
     },
     "answers": [
-      { "text": "guter", "correct": false },
-      { "text": "guten", "correct": true },
-      { "text": "gutes", "correct": false },
-      { "text": "gute", "correct": false }
+      { "text": "schmutzige", "correct": false },
+      { "text": "schmutzigen", "correct": true },
+      { "text": "schmutziges", "correct": false },
+      { "text": "schmutziger", "correct": false }
     ],
-    "explanation": "Dativ + Maskulin → guten",
-    "case": "dativ",
+    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "case": "akkusativ",
     "gender": "masculine"
+  },
+  {
+    "id": 10,
+    "question": "Sie trägt die ____ Jacke. (schwarz)",
+    "translations": {
+      "en": "She is wearing the black jacket.",
+      "uk": "Вона носить чорну куртку."
+    },
+    "answers": [
+      { "text": "schwarze", "correct": true },
+      { "text": "schwarzen", "correct": false },
+      { "text": "schwarzes", "correct": false },
+      { "text": "schwarzer", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin + bestimmter Artikel (die) → Endung -e",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 11,
+    "question": "Wir öffnen das ____ Fenster. (groß)",
+    "translations": {
+      "en": "We open the big window.",
+      "uk": "Ми відкриваємо велике вікно."
+    },
+    "answers": [
+      { "text": "große", "correct": true },
+      { "text": "großen", "correct": false },
+      { "text": "großes", "correct": false },
+      { "text": "großer", "correct": false }
+    ],
+    "explanation": "Akkusativ + Neutrum + bestimmter Artikel (das) → Endung -e",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 12,
+    "question": "Er repariert den ____ Computer. (kaputt)",
+    "translations": {
+      "en": "He repairs the broken computer.",
+      "uk": "Він ремонтує зламаний комп’ютер."
+    },
+    "answers": [
+      { "text": "kaputte", "correct": false },
+      { "text": "kaputten", "correct": true },
+      { "text": "kaputtes", "correct": false },
+      { "text": "kaputter", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 13,
+    "question": "Ich sehe die ____ Blumen. (schön)",
+    "translations": {
+      "en": "I see the beautiful flowers.",
+      "uk": "Я бачу гарні квіти."
+    },
+    "answers": [
+      { "text": "schöne", "correct": true },
+      { "text": "schönen", "correct": false },
+      { "text": "schönes", "correct": false },
+      { "text": "schöner", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural + bestimmter Artikel (die) → Endung -e",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 14,
+    "question": "Sie bestellt das ____ Essen. (heiß)",
+    "translations": {
+      "en": "She orders the hot food.",
+      "uk": "Вона замовляє гарячу їжу."
+    },
+    "answers": [
+      { "text": "heiße", "correct": true },
+      { "text": "heißen", "correct": false },
+      { "text": "heißes", "correct": false },
+      { "text": "heißer", "correct": false }
+    ],
+    "explanation": "Akkusativ + Neutrum + bestimmter Artikel (das) → Endung -e",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 15,
+    "question": "Wir suchen den ____ Platz. (frei)",
+    "translations": {
+      "en": "We are looking for the free seat.",
+      "uk": "Ми шукаємо вільне місце."
+    },
+    "answers": [
+      { "text": "freie", "correct": false },
+      { "text": "freien", "correct": true },
+      { "text": "freies", "correct": false },
+      { "text": "freier", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 16,
+    "question": "Er kauft die ____ Schuhe. (billig)",
+    "translations": {
+      "en": "He buys the cheap shoes.",
+      "uk": "Він купує дешеві черевики."
+    },
+    "answers": [
+      { "text": "billige", "correct": true },
+      { "text": "billigen", "correct": false },
+      { "text": "billiges", "correct": false },
+      { "text": "billiger", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural + bestimmter Artikel (die) → Endung -e",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 17,
+    "question": "Ich nehme das ____ Paket. (schwer)",
+    "translations": {
+      "en": "I take the heavy package.",
+      "uk": "Я беру важку посилку."
+    },
+    "answers": [
+      { "text": "schwere", "correct": true },
+      { "text": "schweren", "correct": false },
+      { "text": "schweres", "correct": false },
+      { "text": "schwerer", "correct": false }
+    ],
+    "explanation": "Akkusativ + Neutrum + bestimmter Artikel (das) → Endung -e",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 18,
+    "question": "Sie schließt die ____ Tür. (alt)",
+    "translations": {
+      "en": "She closes the old door.",
+      "uk": "Вона зачиняє старі двері."
+    },
+    "answers": [
+      { "text": "alte", "correct": true },
+      { "text": "alten", "correct": false },
+      { "text": "altes", "correct": false },
+      { "text": "alter", "correct": false }
+    ],
+    "explanation": "Akkusativ + Feminin + bestimmter Artikel (die) → Endung -e",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 19,
+    "question": "Wir hören den ____ Podcast. (neu)",
+    "translations": {
+      "en": "We listen to the new podcast.",
+      "uk": "Ми слухаємо новий подкаст."
+    },
+    "answers": [
+      { "text": "neue", "correct": false },
+      { "text": "neuen", "correct": true },
+      { "text": "neues", "correct": false },
+      { "text": "neuer", "correct": false }
+    ],
+    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 20,
+    "question": "Er fotografiert die ____ Gebäude. (hoch)",
+    "translations": {
+      "en": "He photographs the tall buildings.",
+      "uk": "Він фотографує високі будівлі."
+    },
+    "answers": [
+      { "text": "hohe", "correct": true },
+      { "text": "hohen", "correct": false },
+      { "text": "hohes", "correct": false },
+      { "text": "hoher", "correct": false }
+    ],
+    "explanation": "Akkusativ + Plural + bestimmter Artikel (die) → Endung -e",
+    "case": "akkusativ",
+    "gender": "plural"
   }
+
+  //////////////////////////////////////////////////////////////////////
+  /////////////////  PASTE NEXT 20 SENTENCES JSON HERE  /////////////////
+  //////////////////////////////////////////////////////////////////////
 ]
