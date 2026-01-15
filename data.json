@@ -2045,312 +2045,349 @@
   "gender": "neuter"
 },
 
+  {
+  "id": 181,
+  "question": "Ich habe ____ freien Termin heute. (kein)",
+  "translations": {
+    "en": "I have no free appointment today.",
+    "uk": "У мене сьогодні немає вільного прийому."
+  },
+  "answers": [
+    { "text": "keinen", "correct": true },
+    { "text": "kein", "correct": false },
+    { "text": "keine", "correct": false },
+    { "text": "keinem", "correct": false }
+  ],
+  "explanation": "Akkusativ Maskulin + Negativartikel → keinen",
+  "case": "akkusativ",
+  "gender": "masculine"
+},
+{
+  "id": 182,
+  "question": "Sie sucht ____ neuen Job in der Stadt. (ein)",
+  "translations": {
+    "en": "She is looking for a new job in the city.",
+    "uk": "Вона шукає нову роботу в місті."
+  },
+  "answers": [
+    { "text": "einen", "correct": true },
+    { "text": "ein", "correct": false },
+    { "text": "eine", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ Maskulin + unbestimmter Artikel → einen",
+  "case": "akkusativ",
+  "gender": "masculine"
+},
+{
+  "id": 183,
+  "question": "Wir finden ____ passende Lösung für das Problem. (kein)",
+  "translations": {
+    "en": "We find no suitable solution to the problem.",
+    "uk": "Ми не знаходимо відповідного рішення для проблеми."
+  },
+  "answers": [
+    { "text": "keine", "correct": true },
+    { "text": "keinen", "correct": false },
+    { "text": "kein", "correct": false },
+    { "text": "keiner", "correct": false }
+  ],
+  "explanation": "Akkusativ Feminin + Negativartikel → keine",
+  "case": "akkusativ",
+  "gender": "feminine"
+},
+{
+  "id": 184,
+  "question": "Er bringt ____ eigenen Laptop zur Arbeit. (sein)",
+  "translations": {
+    "en": "He brings his own laptop to work.",
+    "uk": "Він приносить свій власний ноутбук на роботу."
+  },
+  "answers": [
+    { "text": "seinen", "correct": true },
+    { "text": "sein", "correct": false },
+    { "text": "seine", "correct": false },
+    { "text": "seinem", "correct": false }
+  ],
+  "explanation": "Akkusativ Maskulin + Possessivartikel → seinen",
+  "case": "akkusativ",
+  "gender": "masculine"
+},
+{
+  "id": 185,
+  "question": "Ich sehe ____ großen Unterschied. (kein)",
+  "translations": {
+    "en": "I see no big difference.",
+    "uk": "Я не бачу великої різниці."
+  },
+  "answers": [
+    { "text": "keinen", "correct": true },
+    { "text": "kein", "correct": false },
+    { "text": "keine", "correct": false },
+    { "text": "keinem", "correct": false }
+  ],
+  "explanation": "Akkusativ Maskulin + Negativartikel → keinen",
+  "case": "akkusativ",
+  "gender": "masculine"
+},
+{
+  "id": 186,
+  "question": "Sie kauft ____ frisches Brot beim Bäcker. (ein)",
+  "translations": {
+    "en": "She buys fresh bread at the bakery.",
+    "uk": "Вона купує свіжий хліб у пекаря."
+  },
+  "answers": [
+    { "text": "ein", "correct": true },
+    { "text": "einen", "correct": false },
+    { "text": "eine", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ Neutrum + unbestimmter Artikel → ein",
+  "case": "akkusativ",
+  "gender": "neuter"
+},
+{
+  "id": 187,
+  "question": "Wir haben ____ wichtigen Informationen bekommen. (kein)",
+  "translations": {
+    "en": "We received no important information.",
+    "uk": "Ми не отримали важливої інформації."
+  },
+  "answers": [
+    { "text": "keine", "correct": true },
+    { "text": "keinen", "correct": false },
+    { "text": "kein", "correct": false },
+    { "text": "keiner", "correct": false }
+  ],
+  "explanation": "Akkusativ Plural + Negativartikel → keine",
+  "case": "akkusativ",
+  "gender": "plural"
+},
+{
+  "id": 188,
+  "question": "Er nutzt ____ privaten Parkplatz. (sein)",
+  "translations": {
+    "en": "He uses his private parking space.",
+    "uk": "Він користується своїм приватним паркувальним місцем."
+  },
+  "answers": [
+    { "text": "seinen", "correct": true },
+    { "text": "sein", "correct": false },
+    { "text": "seine", "correct": false },
+    { "text": "seinem", "correct": false }
+  ],
+  "explanation": "Akkusativ Maskulin + Possessivartikel → seinen",
+  "case": "akkusativ",
+  "gender": "masculine"
+},
+{
+  "id": 189,
+  "question": "Ich trinke ____ heißen Kaffee am Abend. (kein)",
+  "translations": {
+    "en": "I do not drink hot coffee in the evening.",
+    "uk": "Я не п’ю гарячу каву ввечері."
+  },
+  "answers": [
+    { "text": "keinen", "correct": true },
+    { "text": "kein", "correct": false },
+    { "text": "keine", "correct": false },
+    { "text": "keinem", "correct": false }
+  ],
+  "explanation": "Akkusativ Maskulin + Negativartikel → keinen",
+  "case": "akkusativ",
+  "gender": "masculine"
+},
+{
+  "id": 190,
+  "question": "Sie liest ____ interessantes Fachbuch. (ein)",
+  "translations": {
+    "en": "She is reading an interesting technical book.",
+    "uk": "Вона читає цікаву фахову книгу."
+  },
+  "answers": [
+    { "text": "ein", "correct": true },
+    { "text": "eine", "correct": false },
+    { "text": "einen", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ Neutrum + unbestimmter Artikel → ein",
+  "case": "akkusativ",
+  "gender": "neuter"
+},
+{
+  "id": 201,
+  "question": "Ich sehe ____ neuen Vertrag auf dem Tisch. (der)",
+  "translations": {
+    "en": "I see the new contract on the table.",
+    "uk": "Я бачу новий договір на столі."
+  },
+  "answers": [
+    { "text": "den", "correct": true },
+    { "text": "dem", "correct": false },
+    { "text": "des", "correct": false },
+    { "text": "der", "correct": false }
+  ],
+  "explanation": "Akkusativ Maskulin + bestimmter Artikel → den",
+  "case": "akkusativ",
+  "gender": "masculine"
+},
+{
+  "id": 202,
+  "question": "Sie gibt ____ Kollegen die wichtigen Unterlagen. (ein)",
+  "translations": {
+    "en": "She gives a colleague the important documents.",
+    "uk": "Вона передає колезі важливі документи."
+  },
+  "answers": [
+    { "text": "einem", "correct": true },
+    { "text": "einen", "correct": false },
+    { "text": "eine", "correct": false },
+    { "text": "ein", "correct": false }
+  ],
+  "explanation": "Dativ Maskulin + unbestimmter Artikel → einem",
+  "case": "dativ",
+  "gender": "masculine"
+},
+{
+  "id": 203,
+  "question": "Wir kennen den Namen ____ zuständigen Managers. (der)",
+  "translations": {
+    "en": "We know the name of the responsible manager.",
+    "uk": "Ми знаємо ім’я відповідального менеджера."
+  },
+  "answers": [
+    { "text": "des", "correct": true },
+    { "text": "der", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Genitiv Maskulin + bestimmter Artikel → des",
+  "case": "genitiv",
+  "gender": "masculine"
+},
+{
+  "id": 204,
+  "question": "Er hat ____ klare Antwort auf die Frage. (kein)",
+  "translations": {
+    "en": "He has no clear answer to the question.",
+    "uk": "У нього немає чіткої відповіді на питання."
+  },
+  "answers": [
+    { "text": "keine", "correct": true },
+    { "text": "keinen", "correct": false },
+    { "text": "kein", "correct": false },
+    { "text": "keiner", "correct": false }
+  ],
+  "explanation": "Akkusativ Feminin + Negativartikel → keine",
+  "case": "akkusativ",
+  "gender": "feminine"
+},
+{
+  "id": 205,
+  "question": "Ich spreche mit ____ direkten Vorgesetzten. (mein)",
+  "translations": {
+    "en": "I speak with my direct supervisor.",
+    "uk": "Я розмовляю зі своїм безпосереднім керівником."
+  },
+  "answers": [
+    { "text": "meiner", "correct": true },
+    { "text": "meine", "correct": false },
+    { "text": "meinen", "correct": false },
+    { "text": "mein", "correct": false }
+  ],
+  "explanation": "Dativ Feminin + Possessivartikel → meiner",
+  "case": "dativ",
+  "gender": "feminine"
+},
+{
+  "id": 206,
+  "question": "Sie kauft ____ neues Handy für die Arbeit. (ein)",
+  "translations": {
+    "en": "She buys a new phone for work.",
+    "uk": "Вона купує новий телефон для роботи."
+  },
+  "answers": [
+    { "text": "ein", "correct": true },
+    { "text": "eine", "correct": false },
+    { "text": "einen", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ Neutrum + unbestimmter Artikel → ein",
+  "case": "akkusativ",
+  "gender": "neuter"
+},
+{
+  "id": 207,
+  "question": "Wir warten auf die Entscheidung ____ Firma. (die)",
+  "translations": {
+    "en": "We are waiting for the decision of the company.",
+    "uk": "Ми чекаємо на рішення компанії."
+  },
+  "answers": [
+    { "text": "der", "correct": true },
+    { "text": "des", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Genitiv Feminin + bestimmter Artikel → der",
+  "case": "genitiv",
+  "gender": "feminine"
+},
+{
+  "id": 208,
+  "question": "Er hilft ____ alten Freund bei dem Umzug. (sein)",
+  "translations": {
+    "en": "He helps his old friend with the move.",
+    "uk": "Він допомагає своєму старому другові з переїздом."
+  },
+  "answers": [
+    { "text": "seinem", "correct": true },
+    { "text": "seinen", "correct": false },
+    { "text": "sein", "correct": false },
+    { "text": "seiner", "correct": false }
+  ],
+  "explanation": "Dativ Maskulin + Possessivartikel → seinem",
+  "case": "dativ",
+  "gender": "masculine"
+},
+{
+  "id": 209,
+  "question": "Ich finde ____ passenden Termin diese Woche. (kein)",
+  "translations": {
+    "en": "I find no suitable appointment this week.",
+    "uk": "Я не знаходжу підходящого часу цього тижня."
+  },
+  "answers": [
+    { "text": "keinen", "correct": true },
+    { "text": "kein", "correct": false },
+    { "text": "keine", "correct": false },
+    { "text": "keinem", "correct": false }
+  ],
+  "explanation": "Akkusativ Maskulin + Negativartikel → keinen",
+  "case": "akkusativ",
+  "gender": "masculine"
+},
+{
+  "id": 210,
+  "question": "Sie arbeitet an dem Projekt ____ Teams. (ihr)",
+  "translations": {
+    "en": "She works on her team’s project.",
+    "uk": "Вона працює над проєктом своєї команди."
+  },
+  "answers": [
+    { "text": "ihres", "correct": true },
+    { "text": "ihrer", "correct": false },
+    { "text": "ihrem", "correct": false },
+    { "text": "ihren", "correct": false }
+  ],
+  "explanation": "Genitiv Neutrum + Possessivartikel → ihres",
+  "case": "genitiv",
+  "gender": "neuter"
+}
 
-  {
-    "id": 181,
-    "question": "Ich habe ____ freien Termin heute. (kein)",
-    "translations": {
-      "en": "I have no free appointment today.",
-      "uk": "У мене сьогодні немає вільного прийому."
-    },
-    "answers": [
-      { "text": "keinen", "correct": true },
-      { "text": "kein", "correct": false },
-      { "text": "keine", "correct": false },
-      { "text": "keinem", "correct": false }
-    ],
-    "explanation": "Akkusativ Maskulin + Negativartikel → keinen"
-  },
-  {
-    "id": 182,
-    "question": "Sie sucht ____ neuen Job in der Stadt. (ein)",
-    "translations": {
-      "en": "She is looking for a new job in the city.",
-      "uk": "Вона шукає нову роботу в місті."
-    },
-    "answers": [
-      { "text": "einen", "correct": true },
-      { "text": "ein", "correct": false },
-      { "text": "eine", "correct": false },
-      { "text": "einem", "correct": false }
-    ],
-    "explanation": "Akkusativ Maskulin + unbestimmter Artikel → einen"
-  },
-  {
-    "id": 183,
-    "question": "Wir finden ____ passende Lösung für das Problem. (kein)",
-    "translations": {
-      "en": "We find no suitable solution to the problem.",
-      "uk": "Ми не знаходимо відповідного рішення для проблеми."
-    },
-    "answers": [
-      { "text": "keine", "correct": true },
-      { "text": "keinen", "correct": false },
-      { "text": "kein", "correct": false },
-      { "text": "keiner", "correct": false }
-    ],
-    "explanation": "Akkusativ Feminin + Negativartikel → keine"
-  },
-  {
-    "id": 184,
-    "question": "Er bringt ____ eigenen Laptop zur Arbeit. (sein)",
-    "translations": {
-      "en": "He brings his own laptop to work.",
-      "uk": "Він приносить свій власний ноутбук на роботу."
-    },
-    "answers": [
-      { "text": "seinen", "correct": true },
-      { "text": "sein", "correct": false },
-      { "text": "seine", "correct": false },
-      { "text": "seinem", "correct": false }
-    ],
-    "explanation": "Akkusativ Maskulin + Possessivartikel → seinen"
-  },
-  {
-    "id": 185,
-    "question": "Ich sehe ____ großen Unterschied. (kein)",
-    "translations": {
-      "en": "I see no big difference.",
-      "uk": "Я не бачу великої різниці."
-    },
-    "answers": [
-      { "text": "keinen", "correct": true },
-      { "text": "kein", "correct": false },
-      { "text": "keine", "correct": false },
-      { "text": "keinem", "correct": false }
-    ],
-    "explanation": "Akkusativ Maskulin + Negativartikel → keinen"
-  },
-  {
-    "id": 186,
-    "question": "Sie kauft ____ frisches Brot beim Bäcker. (ein)",
-    "translations": {
-      "en": "She buys fresh bread at the bakery.",
-      "uk": "Вона купує свіжий хліб у пекаря."
-    },
-    "answers": [
-      { "text": "ein", "correct": true },
-      { "text": "einen", "correct": false },
-      { "text": "eine", "correct": false },
-      { "text": "einem", "correct": false }
-    ],
-    "explanation": "Akkusativ Neutrum + unbestimmter Artikel → ein"
-  },
-  {
-    "id": 187,
-    "question": "Wir haben ____ wichtigen Informationen bekommen. (kein)",
-    "translations": {
-      "en": "We received no important information.",
-      "uk": "Ми не отримали важливої інформації."
-    },
-    "answers": [
-      { "text": "keine", "correct": true },
-      { "text": "keinen", "correct": false },
-      { "text": "kein", "correct": false },
-      { "text": "keiner", "correct": false }
-    ],
-    "explanation": "Akkusativ Plural + Negativartikel → keine"
-  },
-  {
-    "id": 188,
-    "question": "Er nutzt ____ privaten Parkplatz. (sein)",
-    "translations": {
-      "en": "He uses his private parking space.",
-      "uk": "Він користується своїм приватним паркувальним місцем."
-    },
-    "answers": [
-      { "text": "seinen", "correct": true },
-      { "text": "sein", "correct": false },
-      { "text": "seine", "correct": false },
-      { "text": "seinem", "correct": false }
-    ],
-    "explanation": "Akkusativ Maskulin + Possessivartikel → seinen"
-  },
-  {
-    "id": 189,
-    "question": "Ich trinke ____ heißen Kaffee am Abend. (kein)",
-    "translations": {
-      "en": "I do not drink hot coffee in the evening.",
-      "uk": "Я не п’ю гарячу каву ввечері."
-    },
-    "answers": [
-      { "text": "keinen", "correct": true },
-      { "text": "kein", "correct": false },
-      { "text": "keine", "correct": false },
-      { "text": "keinem", "correct": false }
-    ],
-    "explanation": "Akkusativ Maskulin + Negativartikel → keinen"
-  },
-  {
-    "id": 190,
-    "question": "Sie liest ____ interessantes Fachbuch. (ein)",
-    "translations": {
-      "en": "She is reading an interesting technical book.",
-      "uk": "Вона читає цікаву фахову книгу."
-    },
-    "answers": [
-      { "text": "ein", "correct": true },
-      { "text": "eine", "correct": false },
-      { "text": "einen", "correct": false },
-      { "text": "einem", "correct": false }
-    ],
-    "explanation": "Akkusativ Neutrum + unbestimmter Artikel → ein"
-  }
-,
-  {
-    "id": 201,
-    "question": "Ich sehe ____ neuen Vertrag auf dem Tisch. (der)",
-    "translations": {
-      "en": "I see the new contract on the table.",
-      "uk": "Я бачу новий договір на столі."
-    },
-    "answers": [
-      { "text": "den", "correct": true },
-      { "text": "dem", "correct": false },
-      { "text": "des", "correct": false },
-      { "text": "der", "correct": false }
-    ],
-    "explanation": "Akkusativ Maskulin + bestimmter Artikel → den"
-  },
-  {
-    "id": 202,
-    "question": "Sie gibt ____ Kollegen die wichtigen Unterlagen. (ein)",
-    "translations": {
-      "en": "She gives an colleague the important documents.",
-      "uk": "Вона передає колезі важливі документи."
-    },
-    "answers": [
-      { "text": "einem", "correct": true },
-      { "text": "einen", "correct": false },
-      { "text": "eine", "correct": false },
-      { "text": "ein", "correct": false }
-    ],
-    "explanation": "Dativ Maskulin + unbestimmter Artikel → einem"
-  },
-  {
-    "id": 203,
-    "question": "Wir kennen den Namen ____ zuständigen Managers. (der)",
-    "translations": {
-      "en": "We know the name of the responsible manager.",
-      "uk": "Ми знаємо ім’я відповідального менеджера."
-    },
-    "answers": [
-      { "text": "des", "correct": true },
-      { "text": "der", "correct": false },
-      { "text": "dem", "correct": false },
-      { "text": "den", "correct": false }
-    ],
-    "explanation": "Genitiv Maskulin + bestimmter Artikel → des"
-  },
-  {
-    "id": 204,
-    "question": "Er hat ____ klare Antwort auf die Frage. (kein)",
-    "translations": {
-      "en": "He has no clear answer to the question.",
-      "uk": "У нього немає чіткої відповіді на питання."
-    },
-    "answers": [
-      { "text": "keine", "correct": true },
-      { "text": "keinen", "correct": false },
-      { "text": "kein", "correct": false },
-      { "text": "keiner", "correct": false }
-    ],
-    "explanation": "Akkusativ Feminin + Negativartikel → keine"
-  },
-  {
-    "id": 205,
-    "question": "Ich spreche mit ____ direkten Vorgesetzten. (mein)",
-    "translations": {
-      "en": "I speak with my direct supervisor.",
-      "uk": "Я розмовляю зі своїм безпосереднім керівником."
-    },
-    "answers": [
-      { "text": "meiner", "correct": true },
-      { "text": "meine", "correct": false },
-      { "text": "meinen", "correct": false },
-      { "text": "mein", "correct": false }
-    ],
-    "explanation": "Dativ Feminin + Possessivartikel → meiner"
-  },
-  {
-    "id": 206,
-    "question": "Sie kauft ____ neues Handy für die Arbeit. (ein)",
-    "translations": {
-      "en": "She buys a new phone for work.",
-      "uk": "Вона купує новий телефон для роботи."
-    },
-    "answers": [
-      { "text": "ein", "correct": true },
-      { "text": "eine", "correct": false },
-      { "text": "einen", "correct": false },
-      { "text": "einem", "correct": false }
-    ],
-    "explanation": "Akkusativ Neutrum + unbestimmter Artikel → ein"
-  },
-  {
-    "id": 207,
-    "question": "Wir warten auf die Entscheidung ____ Firma. (die)",
-    "translations": {
-      "en": "We are waiting for the decision of the company.",
-      "uk": "Ми чекаємо на рішення компанії."
-    },
-    "answers": [
-      { "text": "der", "correct": true },
-      { "text": "des", "correct": false },
-      { "text": "dem", "correct": false },
-      { "text": "den", "correct": false }
-    ],
-    "explanation": "Genitiv Feminin + bestimmter Artikel → der"
-  },
-  {
-    "id": 208,
-    "question": "Er hilft ____ alten Freund bei dem Umzug. (sein)",
-    "translations": {
-      "en": "He helps his old friend with the move.",
-      "uk": "Він допомагає своєму старому другові з переїздом."
-    },
-    "answers": [
-      { "text": "seinem", "correct": true },
-      { "text": "seinen", "correct": false },
-      { "text": "sein", "correct": false },
-      { "text": "seiner", "correct": false }
-    ],
-    "explanation": "Dativ Maskulin + Possessivartikel → seinem"
-  },
-  {
-    "id": 209,
-    "question": "Ich finde ____ passenden Termin diese Woche. (kein)",
-    "translations": {
-      "en": "I find no suitable appointment this week.",
-      "uk": "Я не знаходжу підходящого часу цього тижня."
-    },
-    "answers": [
-      { "text": "keinen", "correct": true },
-      { "text": "kein", "correct": false },
-      { "text": "keine", "correct": false },
-      { "text": "keinem", "correct": false }
-    ],
-    "explanation": "Akkusativ Maskulin + Negativartikel → keinen"
-  },
-  {
-    "id": 210,
-    "question": "Sie arbeitet an dem Projekt ____ Teams. (ihr)",
-    "translations": {
-      "en": "She works on her team’s project.",
-      "uk": "Вона працює над проєктом своєї команди."
-    },
-    "answers": [
-      { "text": "ihres", "correct": true },
-      { "text": "ihrer", "correct": false },
-      { "text": "ihrem", "correct": false },
-      { "text": "ihren", "correct": false }
-    ],
-    "explanation": "Genitiv Neutrum + Possessivartikel → ihres"
-  }
 
 
-
-
-
+ 
   
 ]
