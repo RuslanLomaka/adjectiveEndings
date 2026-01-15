@@ -340,4 +340,176 @@
     "gender": "plural"
   }
 
+{
+  "id": 21,
+  "question": "Ich sehe ____ neuen Film im Kino. (neu)",
+  "translations": {
+    "en": "I see a new movie at the cinema.",
+    "uk": "Я бачу новий фільм у кіно."
+  },
+  "answers": [
+    { "text": "einen", "correct": true },
+    { "text": "eine", "correct": false },
+    { "text": "ein", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ + Maskulin + unbestimmter Artikel (ein → einen)",
+  "case": "akkusativ",
+  "gender": "masculine"
+},
+{
+  "id": 22,
+  "question": "Sie kauft ____ frische Zeitung am Morgen. (frisch)",
+  "translations": {
+    "en": "She buys a fresh newspaper in the morning.",
+    "uk": "Вона купує свіжу газету вранці."
+  },
+  "answers": [
+    { "text": "eine", "correct": true },
+    { "text": "einen", "correct": false },
+    { "text": "ein", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ + Feminin + unbestimmter Artikel (eine)",
+  "case": "akkusativ",
+  "gender": "feminine"
+},
+{
+  "id": 23,
+  "question": "Er sucht ____ guten Arzt in der Stadt. (gut)",
+  "translations": {
+    "en": "He is looking for a good doctor in the city.",
+    "uk": "Він шукає хорошого лікаря в місті."
+  },
+  "answers": [
+    { "text": "einen", "correct": true },
+    { "text": "eine", "correct": false },
+    { "text": "ein", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ + Maskulin + unbestimmter Artikel (einen)",
+  "case": "akkusativ",
+  "gender": "masculine"
+},
+{
+  "id": 24,
+  "question": "Wir brauchen ____ größere Wohnung. (groß)",
+  "translations": {
+    "en": "We need a bigger apartment.",
+    "uk": "Нам потрібна більша квартира."
+  },
+  "answers": [
+    { "text": "eine", "correct": true },
+    { "text": "einen", "correct": false },
+    { "text": "ein", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ + Feminin + unbestimmter Artikel (eine)",
+  "case": "akkusativ",
+  "gender": "feminine"
+},
+{
+  "id": 25,
+  "question": "Ich trinke ____ heißen Kaffee. (heiß)",
+  "translations": {
+    "en": "I drink a hot coffee.",
+    "uk": "Я п’ю гарячу каву."
+  },
+  "answers": [
+    { "text": "einen", "correct": true },
+    { "text": "eine", "correct": false },
+    { "text": "ein", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ + Maskulin + unbestimmter Artikel (einen)",
+  "case": "akkusativ",
+  "gender": "masculine"
+},
+{
+  "id": 26,
+  "question": "Sie hört ____ interessante Geschichte. (interessant)",
+  "translations": {
+    "en": "She listens to an interesting story.",
+    "uk": "Вона слухає цікаву історію."
+  },
+  "answers": [
+    { "text": "eine", "correct": true },
+    { "text": "einen", "correct": false },
+    { "text": "ein", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ + Feminin + unbestimmter Artikel (eine)",
+  "case": "akkusativ",
+  "gender": "feminine"
+},
+{
+  "id": 27,
+  "question": "Ich lese ____ spannendes Buch. (spannend)",
+  "translations": {
+    "en": "I read an exciting book.",
+    "uk": "Я читаю захопливу книгу."
+  },
+  "answers": [
+    { "text": "ein", "correct": true },
+    { "text": "eine", "correct": false },
+    { "text": "einen", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ + Neutrum + unbestimmter Artikel (ein)",
+  "case": "akkusativ",
+  "gender": "neuter"
+},
+{
+  "id": 28,
+  "question": "Sie trägt ____ schöne Jacke. (schön)",
+  "translations": {
+    "en": "She is wearing a beautiful jacket.",
+    "uk": "Вона носить гарну куртку."
+  },
+  "answers": [
+    { "text": "eine", "correct": true },
+    { "text": "einen", "correct": false },
+    { "text": "ein", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ + Feminin + unbestimmter Artikel (eine)",
+  "case": "akkusativ",
+  "gender": "feminine"
+},
+{
+  "id": 29,
+  "question": "Er bestellt ____ kalten Saft. (kalt)",
+  "translations": {
+    "en": "He orders a cold juice.",
+    "uk": "Він замовляє холодний сік."
+  },
+  "answers": [
+    { "text": "einen", "correct": true },
+    { "text": "eine", "correct": false },
+    { "text": "ein", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ + Maskulin + unbestimmter Artikel (einen)",
+  "case": "akkusativ",
+  "gender": "masculine"
+},
+{
+  "id": 30,
+  "question": "Wir planen ____ lange Reise. (lang)",
+  "translations": {
+    "en": "We are planning a long trip.",
+    "uk": "Ми плануємо довгу подорож."
+  },
+  "answers": [
+    { "text": "eine", "correct": true },
+    { "text": "einen", "correct": false },
+    { "text": "ein", "correct": false },
+    { "text": "einem", "correct": false }
+  ],
+  "explanation": "Akkusativ + Feminin + unbestimmter Artikel (eine)",
+  "case": "akkusativ",
+  "gender": "feminine"
+}
+
+  
 ]
