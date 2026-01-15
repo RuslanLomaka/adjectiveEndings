@@ -509,7 +509,179 @@
   "explanation": "Akkusativ + Feminin + unbestimmter Artikel (eine)",
   "case": "akkusativ",
   "gender": "feminine"
+},
+
+  {
+  "id": 61,
+  "question": "Ich spreche mit ____ neuen Kollegen. (neu)",
+  "translations": {
+    "en": "I am talking to the new colleague.",
+    "uk": "Я розмовляю з новим колегою."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Dativ nach Präposition „mit“ + bestimmter Artikel Maskulin → dem",
+  "case": "dativ",
+  "gender": "masculine"
+},
+{
+  "id": 62,
+  "question": "Sie arbeitet bei ____ großen Firma. (groß)",
+  "translations": {
+    "en": "She works at the big company.",
+    "uk": "Вона працює у великій компанії."
+  },
+  "answers": [
+    { "text": "der", "correct": true },
+    { "text": "die", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Dativ nach Präposition „bei“ + bestimmter Artikel Feminin → der",
+  "case": "dativ",
+  "gender": "feminine"
+},
+{
+  "id": 63,
+  "question": "Er kommt aus ____ kleinen Dorf. (klein)",
+  "translations": {
+    "en": "He comes from the small village.",
+    "uk": "Він родом з маленького села."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Dativ nach Präposition „aus“ + Neutrum → dem",
+  "case": "dativ",
+  "gender": "neuter"
+},
+{
+  "id": 64,
+  "question": "Wir fahren mit ____ alten Zug. (alt)",
+  "translations": {
+    "en": "We are traveling by the old train.",
+    "uk": "Ми їдемо старим поїздом."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Dativ nach Präposition „mit“ + Maskulin → dem",
+  "case": "dativ",
+  "gender": "masculine"
+},
+{
+  "id": 65,
+  "question": "Ich lerne von ____ erfahrenen Lehrer. (erfahren)",
+  "translations": {
+    "en": "I am learning from the experienced teacher.",
+    "uk": "Я навчаюся у досвідченого вчителя."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Dativ nach Präposition „von“ + Maskulin → dem",
+  "case": "dativ",
+  "gender": "masculine"
+},
+{
+  "id": 66,
+  "question": "Sie wohnt bei ____ netten Nachbarin. (nett)",
+  "translations": {
+    "en": "She lives with the nice neighbor.",
+    "uk": "Вона живе у приємної сусідки."
+  },
+  "answers": [
+    { "text": "der", "correct": true },
+    { "text": "die", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Dativ nach Präposition „bei“ + Feminin → der",
+  "case": "dativ",
+  "gender": "feminine"
+},
+{
+  "id": 67,
+  "question": "Er geht zu ____ wichtigen Termin. (wichtig)",
+  "translations": {
+    "en": "He is going to the important appointment.",
+    "uk": "Він іде на важливу зустріч."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Dativ nach Präposition „zu“ + Maskulin → dem",
+  "case": "dativ",
+  "gender": "masculine"
+},
+{
+  "id": 68,
+  "question": "Wir essen bei ____ bekannten Bäcker. (bekannt)",
+  "translations": {
+    "en": "We eat at the well-known baker.",
+    "uk": "Ми їмо у відомого пекаря."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Dativ nach Präposition „bei“ + Maskulin → dem",
+  "case": "dativ",
+  "gender": "masculine"
+},
+{
+  "id": 69,
+  "question": "Ich telefoniere mit ____ Ärztin.",
+  "translations": {
+    "en": "I am talking to the doctor.",
+    "uk": "Я розмовляю з лікаркою."
+  },
+  "answers": [
+    { "text": "der", "correct": true },
+    { "text": "die", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Dativ nach Präposition „mit“ + Feminin → der",
+  "case": "dativ",
+  "gender": "feminine"
+},
+{
+  "id": 70,
+  "question": "Wir arbeiten bei ____ internationalen Organisation. (international)",
+  "translations": {
+    "en": "We work at the international organization.",
+    "uk": "Ми працюємо в міжнародній організації."
+  },
+  "answers": [
+    { "text": "der", "correct": true },
+    { "text": "die", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Dativ nach Präposition „bei“ + Feminin → der",
+  "case": "dativ",
+  "gender": "feminine"
 }
+
 
   
 ]
