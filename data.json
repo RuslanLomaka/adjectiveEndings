@@ -680,7 +680,349 @@
   "explanation": "Dativ nach Präposition „bei“ + Feminin → der",
   "case": "dativ",
   "gender": "feminine"
+},
+
+  {
+  "id": 71,
+  "question": "Ich helfe ____ neuen Kollegen. (neu)",
+  "translations": {
+    "en": "I help the new colleague.",
+    "uk": "Я допомагаю новому колезі."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Dativ + bestimmter Artikel Maskulin → dem",
+  "case": "dativ",
+  "gender": "masculine"
+},
+{
+  "id": 72,
+  "question": "Sie antwortet ____ freundlichen Kundin. (freundlich)",
+  "translations": {
+    "en": "She answers the friendly customer.",
+    "uk": "Вона відповідає привітній клієнтці."
+  },
+  "answers": [
+    { "text": "der", "correct": true },
+    { "text": "die", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Dativ + bestimmter Artikel Feminin → der",
+  "case": "dativ",
+  "gender": "feminine"
+},
+{
+  "id": 73,
+  "question": "Wir danken ____ Lehrer für die Hilfe.",
+  "translations": {
+    "en": "We thank the teacher for the help.",
+    "uk": "Ми дякуємо вчителю за допомогу."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Verb „danken“ requires Dativ → dem",
+  "case": "dativ",
+  "gender": "masculine"
+},
+{
+  "id": 74,
+  "question": "Er gibt ____ Nachbarin den Schlüssel.",
+  "translations": {
+    "en": "He gives the neighbor the key.",
+    "uk": "Він дає сусідці ключ."
+  },
+  "answers": [
+    { "text": "der", "correct": true },
+    { "text": "die", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Dativ + bestimmter Artikel Feminin → der",
+  "case": "dativ",
+  "gender": "feminine"
+},
+{
+  "id": 75,
+  "question": "Ich vertraue ____ erfahrenen Arzt. (erfahren)",
+  "translations": {
+    "en": "I trust the experienced doctor.",
+    "uk": "Я довіряю досвідченому лікарю."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Verb „vertrauen“ requires Dativ → dem",
+  "case": "dativ",
+  "gender": "masculine"
+},
+{
+  "id": 76,
+  "question": "Sie folgt ____ klaren Anleitung. (klar)",
+  "translations": {
+    "en": "She follows the clear instructions.",
+    "uk": "Вона дотримується чіткої інструкції."
+  },
+  "answers": [
+    { "text": "der", "correct": true },
+    { "text": "die", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Verb „folgen“ + Dativ Feminin → der",
+  "case": "dativ",
+  "gender": "feminine"
+},
+{
+  "id": 77,
+  "question": "Wir begegnen ____ bekannten Autor. (bekannt)",
+  "translations": {
+    "en": "We meet the well-known author.",
+    "uk": "Ми зустрічаємо відомого автора."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Verb „begegnen“ requires Dativ → dem",
+  "case": "dativ",
+  "gender": "masculine"
+},
+{
+  "id": 78,
+  "question": "Er gehört ____ großen Familie an. (groß)",
+  "translations": {
+    "en": "He belongs to the big family.",
+    "uk": "Він належить до великої родини."
+  },
+  "answers": [
+    { "text": "der", "correct": true },
+    { "text": "die", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Verb „gehören“ + Dativ Feminin → der",
+  "case": "dativ",
+  "gender": "feminine"
+},
+{
+  "id": 79,
+  "question": "Ich erzähle ____ Kind eine Geschichte.",
+  "translations": {
+    "en": "I tell the child a story.",
+    "uk": "Я розповідаю дитині історію."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Dativ + bestimmter Artikel Neutrum → dem",
+  "case": "dativ",
+  "gender": "neuter"
+},
+{
+  "id": 80,
+  "question": "Sie schickt ____ Chefin eine E-Mail.",
+  "translations": {
+    "en": "She sends the boss an email.",
+    "uk": "Вона надсилає керівниці лист."
+  },
+  "answers": [
+    { "text": "der", "correct": true },
+    { "text": "die", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Dativ + bestimmter Artikel Feminin → der",
+  "case": "dativ",
+  "gender": "feminine"
+},
+{
+  "id": 81,
+  "question": "Wir danken ____ hilfsbereiten Mitarbeitern. (hilfsbereit)",
+  "translations": {
+    "en": "We thank the helpful employees.",
+    "uk": "Ми дякуємо корисним працівникам."
+  },
+  "answers": [
+    { "text": "den", "correct": true },
+    { "text": "dem", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "die", "correct": false }
+  ],
+  "explanation": "Dativ Plural + bestimmter Artikel → den",
+  "case": "dativ",
+  "gender": "plural"
+},
+{
+  "id": 82,
+  "question": "Er hilft ____ neuen Kollegen. (neu)",
+  "translations": {
+    "en": "He helps the new colleagues.",
+    "uk": "Він допомагає новим колегам."
+  },
+  "answers": [
+    { "text": "den", "correct": true },
+    { "text": "dem", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "die", "correct": false }
+  ],
+  "explanation": "Dativ Plural → den",
+  "case": "dativ",
+  "gender": "plural"
+},
+{
+  "id": 83,
+  "question": "Ich spreche mit ____ freundlichen Gästen. (freundlich)",
+  "translations": {
+    "en": "I talk to the friendly guests.",
+    "uk": "Я розмовляю з привітними гостями."
+  },
+  "answers": [
+    { "text": "den", "correct": true },
+    { "text": "dem", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "die", "correct": false }
+  ],
+  "explanation": "Dativ Plural nach „mit“ → den",
+  "case": "dativ",
+  "gender": "plural"
+},
+{
+  "id": 84,
+  "question": "Sie vertraut ____ alten Freunden. (alt)",
+  "translations": {
+    "en": "She trusts the old friends.",
+    "uk": "Вона довіряє старим друзям."
+  },
+  "answers": [
+    { "text": "den", "correct": true },
+    { "text": "dem", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "die", "correct": false }
+  ],
+  "explanation": "Dativ Plural → den",
+  "case": "dativ",
+  "gender": "plural"
+},
+{
+  "id": 85,
+  "question": "Wir folgen ____ wichtigen Regeln. (wichtig)",
+  "translations": {
+    "en": "We follow the important rules.",
+    "uk": "Ми дотримуємося важливих правил."
+  },
+  "answers": [
+    { "text": "den", "correct": true },
+    { "text": "dem", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "die", "correct": false }
+  ],
+  "explanation": "Verb „folgen“ + Dativ Plural → den",
+  "case": "dativ",
+  "gender": "plural"
+},
+{
+  "id": 86,
+  "question": "Er antwortet ____ offenen Fragen. (offen)",
+  "translations": {
+    "en": "He answers the open questions.",
+    "uk": "Він відповідає на відкриті питання."
+  },
+  "answers": [
+    { "text": "den", "correct": true },
+    { "text": "dem", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "die", "correct": false }
+  ],
+  "explanation": "Verb „antworten“ + Dativ Plural → den",
+  "case": "dativ",
+  "gender": "plural"
+},
+{
+  "id": 87,
+  "question": "Ich gratuliere ____ erfolgreichen Team. (erfolgreich)",
+  "translations": {
+    "en": "I congratulate the successful team.",
+    "uk": "Я вітаю успішну команду."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Verb „gratulieren“ + Dativ → dem",
+  "case": "dativ",
+  "gender": "neuter"
+},
+{
+  "id": 88,
+  "question": "Sie hilft ____ kranken Nachbarin. (krank)",
+  "translations": {
+    "en": "She helps the sick neighbor.",
+    "uk": "Вона допомагає хворій сусідці."
+  },
+  "answers": [
+    { "text": "der", "correct": true },
+    { "text": "die", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Dativ Feminin → der",
+  "case": "dativ",
+  "gender": "feminine"
+},
+{
+  "id": 89,
+  "question": "Wir hören ____ erfahrenen Trainer zu. (erfahren)",
+  "translations": {
+    "en": "We listen to the experienced coach.",
+    "uk": "Ми слухаємо досвідченого тренера."
+  },
+  "answers": [
+    { "text": "dem", "correct": true },
+    { "text": "den", "correct": false },
+    { "text": "der", "correct": false },
+    { "text": "das", "correct": false }
+  ],
+  "explanation": "Verb „zuhören“ + Dativ Maskulin → dem",
+  "case": "dativ",
+  "gender": "masculine"
+},
+{
+  "id": 90,
+  "question": "Er schreibt ____ Mutter eine Nachricht.",
+  "translations": {
+    "en": "He writes the mother a message.",
+    "uk": "Він пише матері повідомлення."
+  },
+  "answers": [
+    { "text": "der", "correct": true },
+    { "text": "die", "correct": false },
+    { "text": "dem", "correct": false },
+    { "text": "den", "correct": false }
+  ],
+  "explanation": "Dativ Feminin → der",
+  "case": "dativ",
+  "gender": "feminine"
 }
+
 
 
   
