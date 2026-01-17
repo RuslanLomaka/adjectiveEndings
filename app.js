@@ -14,8 +14,52 @@ let selectedLanguage = "en";
 let score = 0;
 let answeredQuestions = 0;
 const userAnswers = [];
-
 let scrollListenerAdded = false;
+
+/* =========================
+   Grammar popup (Fall rules)
+========================= */
+let grammarDialog;
+
+const GRAMMAR_RULES = {
+  Akkusativ: `
+    <table border="1" cellpadding="6">
+      <tr><th></th><th>Mask.</th><th>Fem.</th><th>Neutr.</th><th>Plural</th></tr>
+      <tr><td>Bestimmt</td><td>den + -en</td><td>die + -e</td><td>das + -e</td><td>die + -en</td></tr>
+      <tr><td>Unbestimmt</td><td>einen + -en</td><td>eine + -e</td><td>ein + -es</td><td>– + -en</td></tr>
+      <tr><td>Possessiv / kein</td><td>meinen + -en</td><td>meine + -e</td><td>mein + -es</td><td>meine + -en</td></tr>
+    </table>
+  `,
+  Dativ: `
+    <table border="1" cellpadding="6">
+      <tr><th></th><th>Mask.</th><th>Fem.</th><th>Neutr.</th><th>Plural</th></tr>
+      <tr><td>Alle</td><td>dem + -en</td><td>der + -en</td><td>dem + -en</td><td>den + -en (+n)</td></tr>
+    </table>
+  `,
+  Genitiv: `
+    <table border="1" cellpadding="6">
+      <tr><th></th><th>Mask.</th><th>Fem.</th><th>Neutr.</th><th>Plural</th></tr>
+      <tr><td>Bestimmt</td><td>des + -en</td><td>der + -en</td><td>des + -en</td><td>der + -en</td></tr>
+    </table>
+  `
+};
+
+function ensureGrammarDialog() {
+  if (grammarDialog) return;
+
+  grammarDialog = document.createElement("dialog");
+  grammarDialog.innerHTML = `
+    <div style="font-size:1rem; line-height:1.4">
+      <h3 id="grammar-title"></h3>
+      <div id="grammar-content"></div>
+      <button id="grammar-close" style="margin-top:12px;">OK</button>
+    </div>
+  `;
+  document.body.appendChild(grammarDialog);
+
+  document.getElementById("grammar-close")
+    .addEventListener("click", () => grammarDialog.close());
+}
 
 /* =========================
    Boot
@@ -33,32 +77,25 @@ function initLanguageUI() {
   const select = document.getElementById("language-select");
   if (!select) return;
 
-  // 1) saved
   const saved = localStorage.getItem(LANG_STORAGE_KEY);
   if (saved && SUPPORTED_LANGS.includes(saved)) {
     selectedLanguage = saved;
     select.value = saved;
   } else {
-    // 2) browser -> supported -> fallback en
     selectedLanguage = detectBrowserLang() || "en";
     select.value = selectedLanguage;
   }
 
-  // persist changes
   select.addEventListener("change", (e) => {
-    const val = e.target.value;
-    selectedLanguage = val;
-    localStorage.setItem(LANG_STORAGE_KEY, val);
+    selectedLanguage = e.target.value;
+    localStorage.setItem(LANG_STORAGE_KEY, selectedLanguage);
   });
 }
 
 function detectBrowserLang() {
-  const candidates = (navigator.languages && navigator.languages.length)
-    ? navigator.languages
-    : [navigator.language || "en"];
-
-  for (const lang of candidates) {
-    const base = String(lang).toLowerCase().split("-")[0];
+  const langs = navigator.languages || [navigator.language || "en"];
+  for (const l of langs) {
+    const base = l.toLowerCase().split("-")[0];
     if (SUPPORTED_LANGS.includes(base)) return base;
   }
   return null;
@@ -69,87 +106,11 @@ function detectBrowserLang() {
 ========================= */
 function loadAndStartQuiz() {
   fetch("data.json", { cache: "no-store" })
-    .then((r) => {
-      if (!r.ok) throw new Error(`data.json HTTP ${r.status}`);
-      return r.json();
-    })
-    .then((data) => {
-      const errors = validateData(data);
-      if (errors.length) {
-        showDataErrors(errors);
-        return;
-      }
+    .then(r => r.json())
+    .then(data => {
       const selected = getRandomSubset(data, Math.min(QUESTIONS_PER_ROUND, data.length));
       displayAllQuestions(selected);
-    })
-    .catch((err) => {
-      showDataErrors([`Failed to load data.json: ${String(err.message || err)}`]);
     });
-}
-
-/* =========================
-   Validation
-========================= */
-function validateData(data) {
-  const errors = [];
-  if (!Array.isArray(data)) return ["data.json must be an array."];
-
-  const ids = new Set();
-
-  data.forEach((q, idx) => {
-    const where = `Item #${idx + 1}${q && q.id != null ? ` (id=${q.id})` : ""}`;
-
-    if (!q || typeof q !== "object") {
-      errors.push(`${where}: must be an object.`);
-      return;
-    }
-
-    if (q.id == null) errors.push(`${where}: missing 'id'.`);
-    else if (ids.has(q.id)) errors.push(`${where}: duplicate id '${q.id}'.`);
-    else ids.add(q.id);
-
-    if (typeof q.question !== "string" || !q.question.trim()) errors.push(`${where}: missing/invalid 'question'.`);
-    if (typeof q.explanation !== "string" || !q.explanation.trim()) errors.push(`${where}: missing/invalid 'explanation'.`);
-
-    if (typeof q.case !== "string" || !q.case.trim()) errors.push(`${where}: missing/invalid 'case'.`);
-    if (typeof q.gender !== "string" || !q.gender.trim()) errors.push(`${where}: missing/invalid 'gender'.`);
-
-    if (!q.translations || typeof q.translations !== "object") {
-      errors.push(`${where}: missing/invalid 'translations'.`);
-    } else if (!q.translations.en) {
-      errors.push(`${where}: translations.en is required.`);
-    }
-
-    if (!Array.isArray(q.answers) || q.answers.length < 2) {
-      errors.push(`${where}: answers must be an array (>=2).`);
-    } else {
-      const correctCount = q.answers.filter(a => a && a.correct === true).length;
-      if (correctCount !== 1) errors.push(`${where}: answers must have exactly 1 correct=true (found ${correctCount}).`);
-
-      q.answers.forEach((a, aIdx) => {
-        if (!a || typeof a !== "object") errors.push(`${where}: answer[${aIdx}] must be an object.`);
-        else {
-          if (typeof a.text !== "string" || !a.text.trim()) errors.push(`${where}: answer[${aIdx}].text missing/invalid.`);
-          if (typeof a.correct !== "boolean") errors.push(`${where}: answer[${aIdx}].correct must be boolean.`);
-        }
-      });
-    }
-  });
-
-  return errors;
-}
-
-function showDataErrors(errors) {
-  const container = document.getElementById("questions-container");
-  if (!container) return;
-
-  container.innerHTML = `
-    <div class="question-container">
-      <strong>Quiz could not start.</strong>
-      <p>Fix <code>data.json</code> or <code>app.js</code>:</p>
-      <pre style="text-align:left; white-space:pre-wrap;">${escapeHtml(errors.join("\n"))}</pre>
-    </div>
-  `;
 }
 
 /* =========================
@@ -158,211 +119,184 @@ function showDataErrors(errors) {
 function displayAllQuestions(questions) {
   const container = document.getElementById("questions-container");
   container.innerHTML = "";
+  ensureGrammarDialog();
 
-  questions.forEach((question, index) => {
-    shuffleArray(question.answers);
-
-    // NEW: card header with number + total + id
-    const headerLine = `
-      <div style="display:flex; justify-content:space-between; gap:12px; margin-bottom:8px; font-size:0.95rem; opacity:0.85;">
-        <span><strong>${index + 1}/${questions.length}</strong></span>
-        <span>ID: <strong>${escapeHtml(String(question.id))}</strong></span>
-      </div>
-    `;
+  questions.forEach((q, index) => {
+    shuffleArray(q.answers);
 
     const html = `
-      <div class="question-container" data-qid="${escapeHtml(String(question.id))}">
-        ${headerLine}
-        <strong>${escapeHtml(question.question)}</strong>
+      <div class="question-container">
+        <div style="display:flex; justify-content:space-between; opacity:.85; margin-bottom:8px;">
+          <span><strong>${index + 1}/${questions.length}</strong></span>
+          <span>ID: <strong>${q.id}</strong></span>
+        </div>
+
+        <strong>${escapeHtml(q.question)}</strong>
+
         <div class="choices">
-          ${question.answers.map(answer => `
-            <button class="choice-btn" data-correct="${answer.correct}" data-index="${index}">
-              ${escapeHtml(answer.text)}
+          ${q.answers.map(a => `
+            <button class="choice-btn" data-correct="${a.correct}" data-index="${index}">
+              ${escapeHtml(a.text)}
             </button>
           `).join("")}
         </div>
+
         <div class="hint-section">
           <button class="hint-btn" id="hint-btn-${index}">Hinweis</button>
           <span id="hint-text-${index}" style="margin-left:10px; font-size:1.1rem;"></span>
         </div>
+
         <div class="feedback" id="feedback-${index}"></div>
       </div>
     `;
     container.insertAdjacentHTML("beforeend", html);
   });
 
-  // answer buttons
   container.querySelectorAll(".choice-btn").forEach(btn => {
-    btn.addEventListener("click", (e) => handleAnswerSelection(e.target, questions));
+    btn.addEventListener("click", e => handleAnswerSelection(e.target, questions));
   });
 
-  // hint buttons (always available; ONLY disabled after 3 clicks)
   questions.forEach((_, index) => {
-    const hintButton = document.getElementById(`hint-btn-${index}`);
-    let hintClicks = 0;
+    const hintBtn = document.getElementById(`hint-btn-${index}`);
+    let clicks = 0;
 
-    hintButton.addEventListener("click", () => {
-      hintClicks++;
+    hintBtn.addEventListener("click", () => {
+      clicks++;
+      const el = document.getElementById(`hint-text-${index}`);
 
-      const hintTextEl = document.getElementById(`hint-text-${index}`);
-
-      if (hintClicks === 1) {
-        hintTextEl.textContent = `Geschlecht: ${questions[index].gender}`;
-      } else if (hintClicks === 2) {
-        hintTextEl.textContent += ` | Fall: ${questions[index].case}`;
-      } else if (hintClicks === 3) {
-        const t = getTranslation(questions[index]);
-        hintTextEl.textContent += ` | Übersetzung: ${t}`;
-        hintButton.disabled = true;
-        hintButton.style.opacity = 0.5;
+      if (clicks === 1) {
+        el.textContent = `Geschlecht: ${questions[index].gender}`;
+      } else if (clicks === 2) {
+        const fall = questions[index].case;
+        el.innerHTML += ` | Fall: <span class="case-link" data-fall="${fall}" style="color:#1d4ed8; text-decoration:underline; cursor:pointer;">${fall}</span>`;
+      } else if (clicks === 3) {
+        el.innerHTML += ` | Übersetzung: ${getTranslation(questions[index])}`;
+        hintBtn.disabled = true;
+        hintBtn.style.opacity = 0.5;
       }
     });
   });
-}
 
-function getTranslation(q) {
-  const tr = q.translations || {};
-  return tr[selectedLanguage] || tr.en || "";
+  container.addEventListener("click", (e) => {
+    const link = e.target.closest(".case-link");
+    if (!link) return;
+
+    const fall = link.dataset.fall;
+    document.getElementById("grammar-title").textContent = `${fall} – Regeln`;
+    document.getElementById("grammar-content").innerHTML = GRAMMAR_RULES[fall] || "Keine Regeln verfügbar";
+    grammarDialog.showModal();
+  });
 }
 
 /* =========================
    Interaction / Results
 ========================= */
 function handleAnswerSelection(button, questions) {
-  const isCorrect = button.getAttribute("data-correct") === "true";
-  const questionIndex = Number(button.getAttribute("data-index"));
+  const index = Number(button.dataset.index);
+  const isCorrect = button.dataset.correct === "true";
 
   const parent = button.closest(".question-container");
-  const buttons = parent.querySelectorAll(".choice-btn");
-
-  // CHANGED: do NOT disable hint after answer
-  // (Hint button remains clickable until user uses 3 hints)
-  // const hintBtn = document.getElementById(`hint-btn-${questionIndex}`);
-  // hintBtn.disabled = true;
-  // hintBtn.style.opacity = 0.5;
-
-  userAnswers[questionIndex] = { selectedButton: button, isCorrect, question: questions[questionIndex] };
-
-  button.classList.add("selected");
-  button.style.backgroundColor = "#17a2b8";
-
-  buttons.forEach(b => {
+  parent.querySelectorAll(".choice-btn").forEach(b => {
     b.disabled = true;
     if (b !== button) b.style.backgroundColor = "#ccc";
   });
 
+  userAnswers[index] = { selectedButton: button, isCorrect, question: questions[index] };
+
   answeredQuestions++;
+  button.style.backgroundColor = "#17a2b8";
+
   if (answeredQuestions === questions.length) {
     setTimeout(() => {
       revealResults();
       enableTryAgainButton();
-    }, 500);
+    }, 400);
   }
 }
 
 function revealResults() {
   score = 0;
 
-  userAnswers.forEach((answer, index) => {
-    const selectedButton = answer.selectedButton;
-    const feedbackElement = document.getElementById(`feedback-${index}`);
+  userAnswers.forEach((ans, index) => {
+    const fb = document.getElementById(`feedback-${index}`);
+    const buttons = ans.selectedButton.parentNode.querySelectorAll(".choice-btn");
+    const correctBtn = [...buttons].find(b => b.dataset.correct === "true");
 
-    const correctButton = Array.from(selectedButton.parentNode.children)
-      .find(b => b.getAttribute("data-correct") === "true");
-
-    if (answer.isCorrect) {
+    if (ans.isCorrect) {
       score++;
-      selectedButton.style.backgroundColor = "#28a745";
-      feedbackElement.innerHTML = `<span class="correct">Richtig! 🎉 ${escapeHtml(answer.question.explanation)}</span>`;
+      ans.selectedButton.style.backgroundColor = "#28a745";
+      fb.innerHTML = `<span class="correct">Richtig! 🎉 ${escapeHtml(ans.question.explanation)}</span>`;
     } else {
-      selectedButton.style.backgroundColor = "#dc3545";
-      if (correctButton) correctButton.style.backgroundColor = "#28a745";
-
-      feedbackElement.innerHTML = `
-        <span class="incorrect">Falsch! 😢 ${escapeHtml(answer.question.explanation)}</span>
-        <br><strong>Übersetzung:</strong> ${escapeHtml(getTranslation(answer.question))}
-      `;
+      ans.selectedButton.style.backgroundColor = "#dc3545";
+      if (correctBtn) correctBtn.style.backgroundColor = "#28a745";
+      fb.innerHTML = `<span class="incorrect">Falsch! 😢 ${escapeHtml(ans.question.explanation)}</span>`;
     }
   });
 
-  // NEW: After test ends, show all hints automatically
   showAllHintsAfterFinish();
 
   document.getElementById("final-score").textContent = `Ihre Punktzahl: ${score} / ${userAnswers.length}`;
-  document.getElementById("final-feedback").textContent =
-    "Alle Hinweise wurden angezeigt. Scrollen Sie nach oben, um alles zu überprüfen.";
-  document.getElementById("score-display").style.display = "block";
+  document.getElementById("score-display").hidden = false;
 }
 
 function showAllHintsAfterFinish() {
   userAnswers.forEach((ans, index) => {
     const q = ans.question;
+    const el = document.getElementById(`hint-text-${index}`);
+    if (!el) return;
 
-    const hintTextEl = document.getElementById(`hint-text-${index}`);
-    const hintBtn = document.getElementById(`hint-btn-${index}`);
-
-    if (!hintTextEl) return;
-
-    hintTextEl.textContent =
-      `Geschlecht: ${q.gender} | Fall: ${q.case} | Übersetzung: ${getTranslation(q)}`;
-
-    // disable hint button because everything is shown now
-    if (hintBtn) {
-      hintBtn.disabled = true;
-      hintBtn.style.opacity = 0.5;
-    }
+    el.innerHTML =
+      `Geschlecht: ${q.gender} | Fall: <span class="case-link" data-fall="${q.case}" style="color:#1d4ed8; text-decoration:underline; cursor:pointer;">${q.case}</span> | Übersetzung: ${getTranslation(q)}`;
   });
 }
 
 function wireTryAgain() {
-  const btn = document.getElementById("try-again-button");
-  btn.addEventListener("click", resetQuiz);
+  document.getElementById("try-again-button")
+    .addEventListener("click", resetQuiz);
 }
 
 function resetQuiz() {
   document.getElementById("questions-container").innerHTML = "";
-  document.getElementById("final-score").textContent = "";
-  document.getElementById("final-feedback").textContent = "";
-  document.getElementById("score-display").style.display = "none";
+  document.getElementById("score-display").hidden = true;
+  document.getElementById("try-again-button").hidden = true;
 
   score = 0;
   answeredQuestions = 0;
   userAnswers.length = 0;
 
-  const tryAgainButton = document.getElementById("try-again-button");
-  tryAgainButton.style.display = "none";
-  tryAgainButton.classList.remove("visible");
-
   loadAndStartQuiz();
 }
 
 function enableTryAgainButton() {
-  const tryAgainButton = document.getElementById("try-again-button");
-  tryAgainButton.style.display = "block";
+  const btn = document.getElementById("try-again-button");
+  btn.hidden = false;
 
   if (scrollListenerAdded) return;
   scrollListenerAdded = true;
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY < 100) tryAgainButton.classList.add("visible");
-    else tryAgainButton.classList.remove("visible");
+    btn.classList.toggle("visible", window.scrollY < 100);
   });
 }
 
 /* =========================
    Utils
 ========================= */
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
+function shuffleArray(a) {
+  for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
+    [a[i], a[j]] = [a[j], a[i]];
   }
 }
 
-function getRandomSubset(array, n) {
-  const shuffled = [...array];
-  shuffleArray(shuffled);
-  return shuffled.slice(0, n);
+function getRandomSubset(arr, n) {
+  const copy = [...arr];
+  shuffleArray(copy);
+  return copy.slice(0, n);
+}
+
+function getTranslation(q) {
+  return q.translations?.[selectedLanguage] || q.translations?.en || "";
 }
 
 function escapeHtml(s) {
