@@ -162,8 +162,17 @@ function displayAllQuestions(questions) {
   questions.forEach((question, index) => {
     shuffleArray(question.answers);
 
+    // NEW: card header with number + total + id
+    const headerLine = `
+      <div style="display:flex; justify-content:space-between; gap:12px; margin-bottom:8px; font-size:0.95rem; opacity:0.85;">
+        <span><strong>${index + 1}/${questions.length}</strong></span>
+        <span>ID: <strong>${escapeHtml(String(question.id))}</strong></span>
+      </div>
+    `;
+
     const html = `
-      <div class="question-container">
+      <div class="question-container" data-qid="${escapeHtml(String(question.id))}">
+        ${headerLine}
         <strong>${escapeHtml(question.question)}</strong>
         <div class="choices">
           ${question.answers.map(answer => `
@@ -187,7 +196,7 @@ function displayAllQuestions(questions) {
     btn.addEventListener("click", (e) => handleAnswerSelection(e.target, questions));
   });
 
-  // hint buttons
+  // hint buttons (always available; ONLY disabled after 3 clicks)
   questions.forEach((_, index) => {
     const hintButton = document.getElementById(`hint-btn-${index}`);
     let hintClicks = 0;
@@ -226,10 +235,11 @@ function handleAnswerSelection(button, questions) {
   const parent = button.closest(".question-container");
   const buttons = parent.querySelectorAll(".choice-btn");
 
-  // disable hint after answer
-  const hintBtn = document.getElementById(`hint-btn-${questionIndex}`);
-  hintBtn.disabled = true;
-  hintBtn.style.opacity = 0.5;
+  // CHANGED: do NOT disable hint after answer
+  // (Hint button remains clickable until user uses 3 hints)
+  // const hintBtn = document.getElementById(`hint-btn-${questionIndex}`);
+  // hintBtn.disabled = true;
+  // hintBtn.style.opacity = 0.5;
 
   userAnswers[questionIndex] = { selectedButton: button, isCorrect, question: questions[questionIndex] };
 
@@ -275,10 +285,33 @@ function revealResults() {
     }
   });
 
+  // NEW: After test ends, show all hints automatically
+  showAllHintsAfterFinish();
+
   document.getElementById("final-score").textContent = `Ihre Punktzahl: ${score} / ${userAnswers.length}`;
   document.getElementById("final-feedback").textContent =
-    "Scrollen Sie nach oben, um die Übersetzungen und Erklärungen zu sehen!";
+    "Alle Hinweise wurden angezeigt. Scrollen Sie nach oben, um alles zu überprüfen.";
   document.getElementById("score-display").style.display = "block";
+}
+
+function showAllHintsAfterFinish() {
+  userAnswers.forEach((ans, index) => {
+    const q = ans.question;
+
+    const hintTextEl = document.getElementById(`hint-text-${index}`);
+    const hintBtn = document.getElementById(`hint-btn-${index}`);
+
+    if (!hintTextEl) return;
+
+    hintTextEl.textContent =
+      `Geschlecht: ${q.gender} | Fall: ${q.case} | Übersetzung: ${getTranslation(q)}`;
+
+    // disable hint button because everything is shown now
+    if (hintBtn) {
+      hintBtn.disabled = true;
+      hintBtn.style.opacity = 0.5;
+    }
+  });
 }
 
 function wireTryAgain() {
