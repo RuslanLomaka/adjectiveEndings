@@ -42,6 +42,26 @@
     <p id="final-feedback"></p>
   </section>
 
+
+<div id="grammar-modal" class="modal" aria-hidden="true">
+  <div class="modal__backdrop" data-close="1"></div>
+
+  <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__header">
+      <h3 id="modal-title" class="modal__title">Akkusativ – Regeln</h3>
+      <button class="modal__close" type="button" data-close="1" aria-label="Close">✕</button>
+    </div>
+
+    <div id="grammar-content" class="modal__body">
+      <!-- filled by JS -->
+    </div>
+
+    <div class="modal__footer">
+      <button class="modal__ok" type="button" data-close="1">OK</button>
+    </div>
+  </div>
+</div>
+  
   <!-- App logic -->
   <script src="app.js" defer></script>
 
