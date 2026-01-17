@@ -181,7 +181,8 @@ function displayAllQuestions(questions) {
     const link = e.target.closest(".case-link");
     if (!link) return;
 
-    const fall = link.dataset.fall;
+    const rawFall = link.dataset.fall;
+    const fall =  rawFall.charAt(0).toUpperCase() + rawFall.slice(1).toLowerCase();
     document.getElementById("grammar-title").textContent = `${fall} – Regeln`;
     document.getElementById("grammar-content").innerHTML = GRAMMAR_RULES[fall] || "Keine Regeln verfügbar";
     grammarDialog.showModal();
