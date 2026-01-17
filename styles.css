@@ -1,190 +1,56 @@
-/* General body and page layout styles */
-body {
-    font-family: 'Poppins', Arial, sans-serif;
-    background: linear-gradient(135deg, #d8eaff, #b0d6f0);
-    padding: 20px;
-    margin: 0;
-    color: #333;
+/* ===== Page header ===== */
+.page-header {
+  text-align: center;
+  margin-bottom: 12px;
 }
 
-h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #1d4ed8;
-    margin-bottom: 10px;
+.page-header h1 {
+  margin-bottom: 6px;
 }
 
-p {
-    text-align: center;
-    font-size: 1.2rem;
+.page-header p {
+  margin-top: 0;
 }
 
-/* Language selection section */
-#language-select {
-    font-size: 1.3rem;
-    padding: 8px 12px;
-    border: 2px solid #007bff;
-    border-radius: 5px;
-    background-color: #ffffff;
+/* ===== Language bar ===== */
+.language-bar {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-label {
-    font-size: 1.2rem;
+.language-bar label {
+  font-size: 1.2rem;
+  margin-right: 8px;
 }
 
-/* Container for questions */
-#questions-container {
-    margin-top: 20px;
+.language-bar select {
+  font-size: 1.2rem;
+  padding: 10px;
 }
 
-/* Styling for question containers */
-.question-container {
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-    max-width: 500px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+/* ===== Meta bar (optional) ===== */
+.meta-bar {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0.9;
 }
 
-.question-container:hover {
-    transform: scale(1.02);
+/* ===== Score section ===== */
+.score {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
 }
 
-/* Answer buttons */
-.choice-btn {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    background-color: #007bff;
-    color: white;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.choice-btn:hover {
-    background-color: #0056b3;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Disabled button */
-.choice-btn:disabled {
-    cursor: not-allowed;
-    background-color: #d3d3d3;
-    color: #333;
-}
-
-/* Selected button styles (outline logic) */
-.choice-btn.selected {
-    outline: 3px solid #1d4ed8;
-    outline-offset: 2px;
-}
-
-/* Green outline for correct selection */
-.choice-btn.correct.selected {
-    outline-color: #28a745;
-}
-
-/* Red outline for incorrect selection */
-.choice-btn.incorrect.selected {
-    outline-color: #dc3545;
-}
-
-/* Feedback section below each question */
-.feedback {
-    margin-top: 10px;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-/* Correct and incorrect feedback text */
-.correct {
-    color: green;
-}
-
-.incorrect {
-    color: red;
-}
-
-/* Hint button */
-.hint-btn {
-    padding: 10px 15px;
-    font-size: 1rem;
-    background-color: #17a2b8;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.hint-btn:hover {
-    background-color: #117a8b;
-}
-
-.hint-btn:disabled {
-    background-color: #d3d3d3;
-    color: #777;
-    cursor: not-allowed;
-}
-
-/* Final score section */
-#score-display {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 500px;
-    margin: 30px auto;
-    text-align: center;
-}
-
-/* Try Again button */
-.try-again-btn {
-    padding: 12px 20px;
-    font-size: 1.3rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto 15px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.try-again-btn:hover {
-    background-color: #0056b3;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.try-again-btn.visible {
-    display: block;
-}
-
-/* Responsive design for mobile */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    .choice-btn {
-        font-size: 1rem;
-        padding: 12px;
-    }
-
-    .question-container {
-        width: 90%;
-    }
-
-    #language-select {
-        font-size: 1.1rem;
-    }
+/* Optional: ensure hidden always wins */
+[hidden] {
+  display: none !important;
 }
