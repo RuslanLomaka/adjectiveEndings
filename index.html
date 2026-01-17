@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deutsches Adjektivendungen-Quiz</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Artikel & Adjektivendungen – Trainer</title>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <h1>Deutsches Adjektivendungen-Quiz</h1>
-  <p>Wählen Sie die richtige Adjektivendung, um den Satz zu vervollständigen.</p>
+  <header class="page-header">
+    <h1>Artikel & Adjektivendungen</h1>
+    <p>Wählen Sie die richtige Form (Artikel/Endung), um den Satz zu vervollständigen.</p>
+  </header>
 
   <!-- Try Again Button -->
-  <button id="try-again-button"
-          class="try-again-btn"
-          style="display: none;">
+  <button id="try-again-button" class="try-again-btn" type="button" hidden>
     🔄 Versuchen Sie es erneut
   </button>
 
   <!-- Language selection -->
-  <div style="text-align: center; margin-bottom: 20px;">
-    <label for="language-select" style="font-size: 1.2rem;">
-      Sprache auswählen:
-    </label>
-    <select id="language-select"
-            style="font-size: 1.2rem; padding: 10px;">
+  <div class="language-bar">
+    <label for="language-select">Hilfssprache:</label>
+    <select id="language-select">
       <option value="en">Englisch</option>
       <option value="uk">Ukrainisch</option>
     </select>
   </div>
 
+  <!-- Optional: place for global info (leave empty for now) -->
+  <div id="meta-bar" class="meta-bar" aria-live="polite"></div>
+
   <!-- Questions -->
-  <div id="questions-container"></div>
+  <main id="questions-container"></main>
 
   <!-- Score Display -->
-  <div id="score-display"
-       style="display: none; text-align: center; margin-top: 30px;">
-    <h2>Quiz abgeschlossen! 🎉</h2>
+  <section id="score-display" class="score" hidden aria-live="polite">
+    <h2>Runde abgeschlossen 🎉</h2>
     <p id="final-score"></p>
     <p id="final-feedback"></p>
-  </div>
+  </section>
 
   <!-- App logic -->
   <script src="app.js" defer></script>
