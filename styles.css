@@ -1,18 +1,58 @@
-/* ===== Page header ===== */
+/* =========================
+   Base
+========================= */
+
+:root {
+  --bg1: #d8eaff;
+  --bg2: #b0d6f0;
+  --primary: #007bff;
+  --primary-dark: #0056b3;
+  --accent: #17a2b8;
+  --accent-dark: #117a8b;
+  --ok: #28a745;
+  --bad: #dc3545;
+  --text: #333;
+  --card: #fff;
+  --border: #ccc;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  padding: 20px;
+  margin: 0;
+  color: var(--text);
+}
+
+/* Hide elements using the HTML hidden attribute */
+[hidden] {
+  display: none !important;
+}
+
+/* =========================
+   Header
+========================= */
+
 .page-header {
   text-align: center;
   margin-bottom: 12px;
 }
 
 .page-header h1 {
-  margin-bottom: 6px;
+  font-size: 2.5rem;
+  color: #1d4ed8;
+  margin: 0 0 10px 0;
 }
 
 .page-header p {
-  margin-top: 0;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
-/* ===== Language bar ===== */
+/* =========================
+   Language bar
+========================= */
+
 .language-bar {
   text-align: center;
   margin-bottom: 20px;
@@ -26,9 +66,12 @@
 .language-bar select {
   font-size: 1.2rem;
   padding: 10px;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  background-color: var(--card);
 }
 
-/* ===== Meta bar (optional) ===== */
+/* Optional meta bar (IDs, progress, etc.) */
 .meta-bar {
   width: 80%;
   max-width: 500px;
@@ -38,9 +81,113 @@
   opacity: 0.9;
 }
 
-/* ===== Score section ===== */
+/* =========================
+   Questions layout
+========================= */
+
+#questions-container {
+  margin-top: 20px;
+}
+
+.question-container {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  background-color: var(--card);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.question-container:hover {
+  transform: scale(1.01);
+}
+
+/* =========================
+   Buttons (answers)
+========================= */
+
+.choice-btn {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: var(--primary);
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.choice-btn:hover {
+  background-color: var(--primary-dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.choice-btn:disabled {
+  cursor: not-allowed;
+  background-color: #d3d3d3;
+  color: #333;
+}
+
+/* Selected outline */
+.choice-btn.selected {
+  outline: 3px solid #1d4ed8;
+  outline-offset: 2px;
+}
+
+/* =========================
+   Hint
+========================= */
+
+.hint-btn {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.hint-btn:hover {
+  background-color: var(--accent-dark);
+}
+
+.hint-btn:disabled {
+  background-color: #d3d3d3;
+  color: #777;
+  cursor: not-allowed;
+}
+
+/* =========================
+   Feedback
+========================= */
+
+.feedback {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+
+.correct {
+  color: var(--ok);
+}
+
+.incorrect {
+  color: var(--bad);
+}
+
+/* =========================
+   Score section
+========================= */
+
 .score {
-  background-color: #ffffff;
+  background-color: var(--card);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
@@ -50,7 +197,63 @@
   text-align: center;
 }
 
-/* Optional: ensure hidden always wins */
-[hidden] {
-  display: none !important;
+/* Backward compatibility if you still use #score-display somewhere */
+#score-display {
+  background-color: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* =========================
+   Try again button
+========================= */
+
+.try-again-btn {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 15px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.try-again-btn:hover {
+  background-color: var(--primary-dark);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.try-again-btn.visible {
+  display: block;
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media screen and (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .choice-btn {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .question-container {
+    width: 90%;
+  }
+
+  .language-bar select {
+    font-size: 1.1rem;
+  }
 }
