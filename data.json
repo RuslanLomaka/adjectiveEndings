@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "question": "Ich sehe den ____ Mann. (alt)",
+    "question": "Ich sehe den ____ Mann.",
     "translations": {
       "en": "I see the old man.",
       "uk": "Я бачу старого чоловіка."
@@ -18,7 +18,7 @@
   },
   {
     "id": 2,
-    "question": "Sie kauft die ____ Tasche. (neu)",
+    "question": "Sie kauft die ____ Tasche.",
     "translations": {
       "en": "She is buying the new bag.",
       "uk": "Вона купує нову сумку."
@@ -35,7 +35,7 @@
   },
   {
     "id": 3,
-    "question": "Wir trinken das ____ Wasser. (kalt)",
+    "question": "Wir trinken das ____ Wasser.",
     "translations": {
       "en": "We drink the cold water.",
       "uk": "Ми п'ємо холодну воду."
@@ -52,7 +52,7 @@
   },
   {
     "id": 4,
-    "question": "Er findet den ____ Weg. (richtig)",
+    "question": "Er findet den ____ Weg.",
     "translations": {
       "en": "He finds the right way.",
       "uk": "Він знаходить правильний шлях."
@@ -69,7 +69,7 @@
   },
   {
     "id": 5,
-    "question": "Ich mag die ____ Äpfel. (frisch)",
+    "question": "Ich mag die ____ Äpfel.",
     "translations": {
       "en": "I like the fresh apples.",
       "uk": "Мені подобаються свіжі яблука."
@@ -86,7 +86,7 @@
   },
   {
     "id": 6,
-    "question": "Sie hört die ____ Musik. (laut)",
+    "question": "Sie hört die ____ Musik.",
     "translations": {
       "en": "She listens to the loud music.",
       "uk": "Вона слухає гучну музику."
@@ -103,7 +103,7 @@
   },
   {
     "id": 7,
-    "question": "Wir besuchen den ____ Freund. (krank)",
+    "question": "Wir besuchen den ____ Freund.",
     "translations": {
       "en": "We visit the sick friend.",
       "uk": "Ми відвідуємо хворого друга."
@@ -120,7 +120,7 @@
   },
   {
     "id": 8,
-    "question": "Er liest das ____ Buch. (interessant)",
+    "question": "Er liest das ____ Buch.",
     "translations": {
       "en": "He reads the interesting book.",
       "uk": "Він читає цікаву книгу."
@@ -137,7 +137,7 @@
   },
   {
     "id": 9,
-    "question": "Ich putze den ____ Tisch. (schmutzig)",
+    "question": "Ich putze den ____ Tisch.",
     "translations": {
       "en": "I clean the dirty table.",
       "uk": "Я прибираю брудний стіл."
@@ -154,7 +154,7 @@
   },
   {
     "id": 10,
-    "question": "Sie trägt die ____ Jacke. (schwarz)",
+    "question": "Sie trägt die ____ Jacke.",
     "translations": {
       "en": "She is wearing the black jacket.",
       "uk": "Вона носить чорну куртку."
@@ -171,7 +171,7 @@
   },
   {
     "id": 11,
-    "question": "Wir öffnen das ____ Fenster. (groß)",
+    "question": "Wir öffnen das ____ Fenster.",
     "translations": {
       "en": "We open the big window.",
       "uk": "Ми відкриваємо велике вікно."
@@ -188,7 +188,7 @@
   },
   {
     "id": 12,
-    "question": "Er repariert den ____ Computer. (kaputt)",
+    "question": "Er repariert den ____ Computer.",
     "translations": {
       "en": "He repairs the broken computer.",
       "uk": "Він ремонтує зламаний комп’ютер."
@@ -205,7 +205,7 @@
   },
   {
     "id": 13,
-    "question": "Ich sehe die ____ Blumen. (schön)",
+    "question": "Ich sehe die ____ Blumen.",
     "translations": {
       "en": "I see the beautiful flowers.",
       "uk": "Я бачу гарні квіти."
@@ -222,7 +222,7 @@
   },
   {
     "id": 14,
-    "question": "Sie bestellt das ____ Essen. (heiß)",
+    "question": "Sie bestellt das ____ Essen.",
     "translations": {
       "en": "She orders the hot food.",
       "uk": "Вона замовляє гарячу їжу."
@@ -239,7 +239,7 @@
   },
   {
     "id": 15,
-    "question": "Wir suchen den ____ Platz. (frei)",
+    "question": "Wir suchen den ____ Platz.",
     "translations": {
       "en": "We are looking for the free seat.",
       "uk": "Ми шукаємо вільне місце."
@@ -256,7 +256,7 @@
   },
   {
     "id": 16,
-    "question": "Er kauft die ____ Schuhe. (billig)",
+    "question": "Er kauft die ____ Schuhe.",
     "translations": {
       "en": "He buys the cheap shoes.",
       "uk": "Він купує дешеві черевики."
@@ -273,7 +273,7 @@
   },
   {
     "id": 17,
-    "question": "Ich nehme das ____ Paket. (schwer)",
+    "question": "Ich nehme das ____ Paket.",
     "translations": {
       "en": "I take the heavy package.",
       "uk": "Я беру важку посилку."
@@ -290,7 +290,7 @@
   },
   {
     "id": 18,
-    "question": "Sie schließt die ____ Tür. (alt)",
+    "question": "Sie schließt die ____ Tür.",
     "translations": {
       "en": "She closes the old door.",
       "uk": "Вона зачиняє старі двері."
@@ -307,7 +307,7 @@
   },
   {
     "id": 19,
-    "question": "Wir hören den ____ Podcast. (neu)",
+    "question": "Wir hören den ____ Podcast.",
     "translations": {
       "en": "We listen to the new podcast.",
       "uk": "Ми слухаємо новий подкаст."
@@ -324,7 +324,7 @@
   },
   {
     "id": 20,
-    "question": "Er fotografiert die ____ Gebäude. (hoch)",
+    "question": "Er fotografiert die ____ Gebäude.",
     "translations": {
       "en": "He photographs the tall buildings.",
       "uk": "Він фотографує високі будівлі."
@@ -342,7 +342,7 @@
 
 {
   "id": 21,
-  "question": "Ich sehe ____ neuen Film im Kino. (neu)",
+  "question": "Ich sehe ____ neuen Film im Kino.",
   "translations": {
     "en": "I see a new movie at the cinema.",
     "uk": "Я бачу новий фільм у кіно."
@@ -359,7 +359,7 @@
 },
 {
   "id": 22,
-  "question": "Sie kauft ____ frische Zeitung am Morgen. (frisch)",
+  "question": "Sie kauft ____ frische Zeitung am Morgen.",
   "translations": {
     "en": "She buys a fresh newspaper in the morning.",
     "uk": "Вона купує свіжу газету вранці."
@@ -376,7 +376,7 @@
 },
 {
   "id": 23,
-  "question": "Er sucht ____ guten Arzt in der Stadt. (gut)",
+  "question": "Er sucht ____ guten Arzt in der Stadt.",
   "translations": {
     "en": "He is looking for a good doctor in the city.",
     "uk": "Він шукає хорошого лікаря в місті."
@@ -393,7 +393,7 @@
 },
 {
   "id": 24,
-  "question": "Wir brauchen ____ größere Wohnung. (groß)",
+  "question": "Wir brauchen ____ größere Wohnung.",
   "translations": {
     "en": "We need a bigger apartment.",
     "uk": "Нам потрібна більша квартира."
@@ -410,7 +410,7 @@
 },
 {
   "id": 25,
-  "question": "Ich trinke ____ heißen Kaffee. (heiß)",
+  "question": "Ich trinke ____ heißen Kaffee.",
   "translations": {
     "en": "I drink a hot coffee.",
     "uk": "Я п’ю гарячу каву."
@@ -427,7 +427,7 @@
 },
 {
   "id": 26,
-  "question": "Sie hört ____ interessante Geschichte. (interessant)",
+  "question": "Sie hört ____ interessante Geschichte.",
   "translations": {
     "en": "She listens to an interesting story.",
     "uk": "Вона слухає цікаву історію."
@@ -444,7 +444,7 @@
 },
 {
   "id": 27,
-  "question": "Ich lese ____ spannendes Buch. (spannend)",
+  "question": "Ich lese ____ spannendes Buch.",
   "translations": {
     "en": "I read an exciting book.",
     "uk": "Я читаю захопливу книгу."
@@ -461,7 +461,7 @@
 },
 {
   "id": 28,
-  "question": "Sie trägt ____ schöne Jacke. (schön)",
+  "question": "Sie trägt ____ schöne Jacke.",
   "translations": {
     "en": "She is wearing a beautiful jacket.",
     "uk": "Вона носить гарну куртку."
@@ -478,7 +478,7 @@
 },
 {
   "id": 29,
-  "question": "Er bestellt ____ kalten Saft. (kalt)",
+  "question": "Er bestellt ____ kalten Saft.",
   "translations": {
     "en": "He orders a cold juice.",
     "uk": "Він замовляє холодний сік."
@@ -495,7 +495,7 @@
 },
 {
   "id": 30,
-  "question": "Wir planen ____ lange Reise. (lang)",
+  "question": "Wir planen ____ lange Reise.",
   "translations": {
     "en": "We are planning a long trip.",
     "uk": "Ми плануємо довгу подорож."
@@ -513,7 +513,7 @@
 
   {
   "id": 61,
-  "question": "Ich spreche mit ____ neuen Kollegen. (neu)",
+  "question": "Ich spreche mit ____ neuen Kollegen.",
   "translations": {
     "en": "I am talking to the new colleague.",
     "uk": "Я розмовляю з новим колегою."
@@ -530,7 +530,7 @@
 },
 {
   "id": 62,
-  "question": "Sie arbeitet bei ____ großen Firma. (groß)",
+  "question": "Sie arbeitet bei ____ großen Firma.",
   "translations": {
     "en": "She works at the big company.",
     "uk": "Вона працює у великій компанії."
@@ -547,7 +547,7 @@
 },
 {
   "id": 63,
-  "question": "Er kommt aus ____ kleinen Dorf. (klein)",
+  "question": "Er kommt aus ____ kleinen Dorf.",
   "translations": {
     "en": "He comes from the small village.",
     "uk": "Він родом з маленького села."
@@ -564,7 +564,7 @@
 },
 {
   "id": 64,
-  "question": "Wir fahren mit ____ alten Zug. (alt)",
+  "question": "Wir fahren mit ____ alten Zug.",
   "translations": {
     "en": "We are traveling by the old train.",
     "uk": "Ми їдемо старим поїздом."
@@ -581,7 +581,7 @@
 },
 {
   "id": 65,
-  "question": "Ich lerne von ____ erfahrenen Lehrer. (erfahren)",
+  "question": "Ich lerne von ____ erfahrenen Lehrer.",
   "translations": {
     "en": "I am learning from the experienced teacher.",
     "uk": "Я навчаюся у досвідченого вчителя."
@@ -598,7 +598,7 @@
 },
 {
   "id": 66,
-  "question": "Sie wohnt bei ____ netten Nachbarin. (nett)",
+  "question": "Sie wohnt bei ____ netten Nachbarin.",
   "translations": {
     "en": "She lives with the nice neighbor.",
     "uk": "Вона живе у приємної сусідки."
@@ -615,7 +615,7 @@
 },
 {
   "id": 67,
-  "question": "Er geht zu ____ wichtigen Termin. (wichtig)",
+  "question": "Er geht zu ____ wichtigen Termin.",
   "translations": {
     "en": "He is going to the important appointment.",
     "uk": "Він іде на важливу зустріч."
@@ -632,7 +632,7 @@
 },
 {
   "id": 68,
-  "question": "Wir essen bei ____ bekannten Bäcker. (bekannt)",
+  "question": "Wir essen bei ____ bekannten Bäcker.",
   "translations": {
     "en": "We eat at the well-known baker.",
     "uk": "Ми їмо у відомого пекаря."
@@ -666,7 +666,7 @@
 },
 {
   "id": 70,
-  "question": "Wir arbeiten bei ____ internationalen Organisation. (international)",
+  "question": "Wir arbeiten bei ____ internationalen Organisation.",
   "translations": {
     "en": "We work at the international organization.",
     "uk": "Ми працюємо в міжнародній організації."
@@ -684,7 +684,7 @@
 
   {
   "id": 71,
-  "question": "Ich helfe ____ neuen Kollegen. (neu)",
+  "question": "Ich helfe ____ neuen Kollegen.",
   "translations": {
     "en": "I help the new colleague.",
     "uk": "Я допомагаю новому колезі."
@@ -701,7 +701,7 @@
 },
 {
   "id": 72,
-  "question": "Sie antwortet ____ freundlichen Kundin. (freundlich)",
+  "question": "Sie antwortet ____ freundlichen Kundin.",
   "translations": {
     "en": "She answers the friendly customer.",
     "uk": "Вона відповідає привітній клієнтці."
@@ -752,7 +752,7 @@
 },
 {
   "id": 75,
-  "question": "Ich vertraue ____ erfahrenen Arzt. (erfahren)",
+  "question": "Ich vertraue ____ erfahrenen Arzt.",
   "translations": {
     "en": "I trust the experienced doctor.",
     "uk": "Я довіряю досвідченому лікарю."
@@ -769,7 +769,7 @@
 },
 {
   "id": 76,
-  "question": "Sie folgt ____ klaren Anleitung. (klar)",
+  "question": "Sie folgt ____ klaren Anleitung.",
   "translations": {
     "en": "She follows the clear instructions.",
     "uk": "Вона дотримується чіткої інструкції."
@@ -786,7 +786,7 @@
 },
 {
   "id": 77,
-  "question": "Wir begegnen ____ bekannten Autor. (bekannt)",
+  "question": "Wir begegnen ____ bekannten Autor.",
   "translations": {
     "en": "We meet the well-known author.",
     "uk": "Ми зустрічаємо відомого автора."
@@ -803,7 +803,7 @@
 },
 {
   "id": 78,
-  "question": "Er gehört ____ großen Familie an. (groß)",
+  "question": "Er gehört ____ großen Familie an.",
   "translations": {
     "en": "He belongs to the big family.",
     "uk": "Він належить до великої родини."
@@ -854,7 +854,7 @@
 },
 {
   "id": 81,
-  "question": "Wir danken ____ hilfsbereiten Mitarbeitern. (hilfsbereit)",
+  "question": "Wir danken ____ hilfsbereiten Mitarbeitern.",
   "translations": {
     "en": "We thank the helpful employees.",
     "uk": "Ми дякуємо корисним працівникам."
@@ -871,7 +871,7 @@
 },
 {
   "id": 82,
-  "question": "Er hilft ____ neuen Kollegen. (neu)",
+  "question": "Er hilft ____ neuen Kollegen.",
   "translations": {
     "en": "He helps the new colleagues.",
     "uk": "Він допомагає новим колегам."
@@ -888,7 +888,7 @@
 },
 {
   "id": 83,
-  "question": "Ich spreche mit ____ freundlichen Gästen. (freundlich)",
+  "question": "Ich spreche mit ____ freundlichen Gästen.",
   "translations": {
     "en": "I talk to the friendly guests.",
     "uk": "Я розмовляю з привітними гостями."
@@ -905,7 +905,7 @@
 },
 {
   "id": 84,
-  "question": "Sie vertraut ____ alten Freunden. (alt)",
+  "question": "Sie vertraut ____ alten Freunden.",
   "translations": {
     "en": "She trusts the old friends.",
     "uk": "Вона довіряє старим друзям."
@@ -922,7 +922,7 @@
 },
 {
   "id": 85,
-  "question": "Wir folgen ____ wichtigen Regeln. (wichtig)",
+  "question": "Wir folgen ____ wichtigen Regeln.",
   "translations": {
     "en": "We follow the important rules.",
     "uk": "Ми дотримуємося важливих правил."
@@ -939,7 +939,7 @@
 },
 {
   "id": 86,
-  "question": "Er antwortet ____ offenen Fragen. (offen)",
+  "question": "Er antwortet ____ offenen Fragen.",
   "translations": {
     "en": "He answers the open questions.",
     "uk": "Він відповідає на відкриті питання."
@@ -956,7 +956,7 @@
 },
 {
   "id": 87,
-  "question": "Ich gratuliere ____ erfolgreichen Team. (erfolgreich)",
+  "question": "Ich gratuliere ____ erfolgreichen Team.",
   "translations": {
     "en": "I congratulate the successful team.",
     "uk": "Я вітаю успішну команду."
@@ -973,7 +973,7 @@
 },
 {
   "id": 88,
-  "question": "Sie hilft ____ kranken Nachbarin. (krank)",
+  "question": "Sie hilft ____ kranken Nachbarin.",
   "translations": {
     "en": "She helps the sick neighbor.",
     "uk": "Вона допомагає хворій сусідці."
@@ -990,7 +990,7 @@
 },
 {
   "id": 89,
-  "question": "Wir hören ____ erfahrenen Trainer zu. (erfahren)",
+  "question": "Wir hören ____ erfahrenen Trainer zu.",
   "translations": {
     "en": "We listen to the experienced coach.",
     "uk": "Ми слухаємо досвідченого тренера."
@@ -1025,7 +1025,7 @@
 
   {
   "id": 91,
-  "question": "Ich helfe ____ guten Freund. (gut)",
+  "question": "Ich helfe ____ guten Freund.",
   "translations": {
     "en": "I help a good friend.",
     "uk": "Я допомагаю хорошому другові."
@@ -1042,7 +1042,7 @@
 },
 {
   "id": 92,
-  "question": "Sie antwortet ____ netten Kundin. (nett)",
+  "question": "Sie antwortet ____ netten Kundin.",
   "translations": {
     "en": "She answers a nice customer.",
     "uk": "Вона відповідає приємній клієнтці."
@@ -1059,7 +1059,7 @@
 },
 {
   "id": 93,
-  "question": "Wir danken ____ erfahrenen Lehrer. (erfahren)",
+  "question": "Wir danken ____ erfahrenen Lehrer.",
   "translations": {
     "en": "We thank an experienced teacher.",
     "uk": "Ми дякуємо досвідченому вчителю."
@@ -1093,7 +1093,7 @@
 },
 {
   "id": 95,
-  "question": "Ich vertraue ____ neuen Arzt. (neu)",
+  "question": "Ich vertraue ____ neuen Arzt.",
   "translations": {
     "en": "I trust a new doctor.",
     "uk": "Я довіряю новому лікарю."
@@ -1110,7 +1110,7 @@
 },
 {
   "id": 96,
-  "question": "Sie folgt ____ klaren Anleitung. (klar)",
+  "question": "Sie folgt ____ klaren Anleitung.",
   "translations": {
     "en": "She follows a clear instruction.",
     "uk": "Вона дотримується чіткої інструкції."
@@ -1127,7 +1127,7 @@
 },
 {
   "id": 97,
-  "question": "Wir begegnen ____ bekannten Autor. (bekannt)",
+  "question": "Wir begegnen ____ bekannten Autor.",
   "translations": {
     "en": "We meet a well-known author.",
     "uk": "Ми зустрічаємо відомого автора."
@@ -1144,7 +1144,7 @@
 },
 {
   "id": 98,
-  "question": "Er gehört ____ großen Familie an. (groß)",
+  "question": "Er gehört ____ großen Familie an.",
   "translations": {
     "en": "He belongs to a big family.",
     "uk": "Він належить до великої родини."
@@ -1195,7 +1195,7 @@
 },
 {
   "id": 101,
-  "question": "Wir danken ____ hilfsbereiten Mitarbeiter. (hilfsbereit)",
+  "question": "Wir danken ____ hilfsbereiten Mitarbeiter.",
   "translations": {
     "en": "We thank a helpful employee.",
     "uk": "Ми дякуємо корисному працівнику."
@@ -1212,7 +1212,7 @@
 },
 {
   "id": 102,
-  "question": "Er hilft ____ neuen Kollegin. (neu)",
+  "question": "Er hilft ____ neuen Kollegin.",
   "translations": {
     "en": "He helps a new colleague (female).",
     "uk": "Він допомагає новій колезі."
@@ -1229,7 +1229,7 @@
 },
 {
   "id": 103,
-  "question": "Ich spreche mit ____ freundlichen Gast. (freundlich)",
+  "question": "Ich spreche mit ____ freundlichen Gast.",
   "translations": {
     "en": "I talk to a friendly guest.",
     "uk": "Я розмовляю з привітним гостем."
@@ -1246,7 +1246,7 @@
 },
 {
   "id": 104,
-  "question": "Sie vertraut ____ alten Freundin. (alt)",
+  "question": "Sie vertraut ____ alten Freundin.",
   "translations": {
     "en": "She trusts an old friend (female).",
     "uk": "Вона довіряє давній подрузі."
@@ -1263,7 +1263,7 @@
 },
 {
   "id": 105,
-  "question": "Wir folgen ____ wichtigen Plan. (wichtig)",
+  "question": "Wir folgen ____ wichtigen Plan.",
   "translations": {
     "en": "We follow an important plan.",
     "uk": "Ми дотримуємося важливого плану."
