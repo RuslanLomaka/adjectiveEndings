@@ -1,45 +1,64 @@
 "use strict";
 
 /* =========================
-   Config & Constants
+   1. Config & Pedagogical Assets
 ========================= */
 const CONFIG = {
     QUESTIONS_PER_ROUND: 10,
     SUPPORTED_LANGS: ["en", "uk", "ro", "ar"],
     LANG_STORAGE_KEY: "adjQuizLang",
-    HINT_STEPS: 3
+    // Color coding aids mental categorization of grammar rules
+    COLORS: {
+        akkusativ: "#28a745", // Green
+        dativ: "#007bff",     // Blue
+        genitiv: "#dc3545",   // Red
+        neutral: "#6c757d"    // Grey
+    }
 };
 
 const GRAMMAR_RULES = {
-    akkusativ: `<table><tr><th></th><th>Mask.</th><th>Fem.</th><th>Neutr.</th><th>Plural</th></tr><tr><td>Bestimmt</td><td>den + <b>-en</b></td><td>die + <b>-e</b></td><td>das + <b>-e</b></td><td>die + <b>-en</b></td></tr><tr><td>Unbestimmt</td><td>einen + <b>-en</b></td><td>eine + <b>-e</b></td><td>ein + <b>-es</b></td><td>(keine) + <b>-en</b></td></tr><tr><td>Possessiv / kein</td><td>meinen/keinen + <b>-en</b></td><td>meine/keine + <b>-e</b></td><td>mein/kein + <b>-es</b></td><td>meine/keine + <b>-en</b></td></tr></table>`,
-    dativ: `<table><tr><th></th><th>Mask.</th><th>Fem.</th><th>Neutr.</th><th>Plural</th></tr><tr><td>Bestimmt</td><td>dem + <b>-en</b></td><td>der + <b>-en</b></td><td>dem + <b>-en</b></td><td>den + <b>-en</b> (+n am Nomen)</td></tr><tr><td>Unbestimmt</td><td>einem + <b>-en</b></td><td>einer + <b>-en</b></td><td>einem + <b>-en</b></td><td>(keine) + <b>-en</b> (+n am Nomen)</td></tr><tr><td>Possessiv / kein</td><td>meinem/keinem + <b>-en</b></td><td>meiner/keiner + <b>-en</b></td><td>meinem/keinem + <b>-en</b></td><td>meinen/keinen + <b>-en</b> (+n am Nomen)</td></tr></table>`,
-    genitiv: `<table><tr><th></th><th>Mask.</th><th>Fem.</th><th>Neutr.</th><th>Plural</th></tr><tr><td>Bestimmt</td><td>des + <b>-en</b></td><td>der + <b>-en</b></td><td>des + <b>-en</b></td><td>der + <b>-en</b></td></tr><tr><td>Unbestimmt</td><td>eines + <b>-en</b></td><td>einer + <b>-en</b></td><td>eines + <b>-en</b></td><td>(keine) + <b>-en</b></td></tr><tr><td>Possessiv / kein</td><td>meines/keines + <b>-en</b></td><td>meiner/keiner + <b>-en</b></td><td>meines/keines + <b>-en</b></td><td>meiner/keiner + <b>-en</b></td></tr></table>`,
+    akkusativ: `
+    <table class="rules-table">
+      <tr><th></th><th>Mask.</th><th>Fem.</th><th>Neutr.</th><th>Plural</th></tr>
+      <tr><td>Bestimmt</td><td>den + <b>-en</b></td><td>die + <b>-e</b></td><td>das + <b>-e</b></td><td>die + <b>-en</b></td></tr>
+      <tr><td>Unbestimmt</td><td>einen + <b>-en</b></td><td>eine + <b>-e</b></td><td>ein + <b>-es</b></td><td>(keine) + <b>-en</b></td></tr>
+      <tr><td>Possessiv</td><td>meinen + <b>-en</b></td><td>meine + <b>-e</b></td><td>mein + <b>-es</b></td><td>meine + <b>-en</b></td></tr>
+    </table>`,
+    dativ: `
+    <table class="rules-table">
+      <tr><th></th><th>Mask.</th><th>Fem.</th><th>Neutr.</th><th>Plural</th></tr>
+      <tr><td>Bestimmt</td><td>dem + <b>-en</b></td><td>der + <b>-en</b></td><td>dem + <b>-en</b></td><td>den + <b>-en</b> (+n)</td></tr>
+      <tr><td>Unbestimmt</td><td>einem + <b>-en</b></td><td>einer + <b>-en</b></td><td>einem + <b>-en</b></td><td>(keine) + <b>-en</b> (+n)</td></tr>
+      <tr><td>Possessiv</td><td>meinem + <b>-en</b></td><td>meiner + <b>-en</b></td><td>meinem + <b>-en</b></td><td>meinen + <b>-en</b> (+n)</td></tr>
+    </table>`,
+    genitiv: `
+    <table class="rules-table">
+      <tr><th></th><th>Mask.</th><th>Fem.</th><th>Neutr.</th><th>Plural</th></tr>
+      <tr><td>Bestimmt</td><td>des + <b>-en</b></td><td>der + <b>-en</b></td><td>des + <b>-en</b></td><td>der + <b>-en</b></td></tr>
+      <tr><td>Unbestimmt</td><td>eines + <b>-en</b></td><td>einer + <b>-en</b></td><td>eines + <b>-en</b></td><td>(keine) + <b>-en</b></td></tr>
+      <tr><td>Possessiv</td><td>meines + <b>-en</b></td><td>meiner + <b>-en</b></td><td>meines + <b>-en</b></td><td>meiner + <b>-en</b></td></tr>
+    </table>`
 };
 
 /* =========================
-   App State
+   2. Application State
 ========================= */
 const state = {
     lang: "en",
-    score: 0,
-    answeredCount: 0,
-    userAnswers: [],
     questions: [],
-    isScrollBound: false
+    userAnswers: [],
+    answeredCount: 0,
+    score: 0,
+    // Track case performance for final feedback
+    stats: {
+        akkusativ: { correct: 0, total: 0 },
+        dativ: { correct: 0, total: 0 },
+        genitiv: { correct: 0, total: 0 }
+    }
 };
 
 /* =========================
-   DOM Cache
-========================= */
-const elements = {
-    container: () => document.getElementById("questions-container"),
-    modal: () => document.getElementById("grammar-modal"),
-    scoreBox: () => document.getElementById("score-display"),
-    tryAgainBtn: () => document.getElementById("try-again-button")
-};
-
-/* =========================
-   Logic & Utilities
+   3. Utilities
 ========================= */
 const utils = {
     escape: (s) => String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#039;"}[m])),
@@ -54,56 +73,36 @@ const utils = {
 };
 
 /* =========================
-   Modal logic
-========================= */
-function openGrammarModal(fallRaw) {
-    const modal = elements.modal();
-    const fall = String(fallRaw || "").trim().toLowerCase();
-    
-    document.getElementById("modal-title").textContent = `${utils.capitalize(fall)} – Regeln`;
-    document.getElementById("grammar-content").innerHTML = GRAMMAR_RULES[fall] || `<p>Keine Regeln verfügbar.</p>`;
-
-    modal.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-}
-
-function closeGrammarModal() {
-    elements.modal().setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-}
-
-/* =========================
-   Quiz Core
+   4. Core Functions
 ========================= */
 async function loadAndStartQuiz() {
-    const container = elements.container();
-    container.innerHTML = `<div class="question-container">Laden...</div>`;
+    const container = document.getElementById("questions-container");
+    container.innerHTML = `<div class="loading">Wird geladen...</div>`;
 
     try {
-        const response = await fetch("data.json", { cache: "no-store" });
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const r = await fetch("data.json", { cache: "no-store" });
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        const data = await r.json();
         
-        const data = await response.json();
+        // Pick a fresh random set
         state.questions = utils.shuffle([...data]).slice(0, CONFIG.QUESTIONS_PER_ROUND);
         renderQuiz();
     } catch (err) {
-        container.innerHTML = `<div class="question-container">Fehler: ${utils.escape(err.message)}</div>`;
+        container.innerHTML = `<div class="error">Fehler: ${utils.escape(err.message)}</div>`;
     }
 }
 
 function renderQuiz() {
-    const container = elements.container();
+    const container = document.getElementById("questions-container");
     container.innerHTML = state.questions.map((q, idx) => {
         utils.shuffle(q.answers);
         return `
             <div class="question-container" id="qc-${idx}">
-                <div style="display:flex; justify-content:space-between; opacity:0.7; font-size:0.8rem;">
-                    <span>${idx + 1}/${state.questions.length}</span>
-                    <span>ID: ${utils.escape(q.id)}</span>
+                <div class="q-header">
+                    <span>Frage ${idx + 1}/${state.questions.length}</span>
+                    <span class="q-id">ID: ${utils.escape(q.id)}</span>
                 </div>
-                <div class="question-text" style="font-size:1.15rem; font-weight:700; margin: 10px 0;">
-                    ${utils.escape(q.question)}
-                </div>
+                <div class="question-text">${utils.escape(q.question)}</div>
                 <div class="choices" data-q-idx="${idx}">
                     ${q.answers.map(a => `
                         <button class="choice-btn" type="button" data-correct="${a.correct}">
@@ -111,79 +110,86 @@ function renderQuiz() {
                         </button>
                     `).join("")}
                 </div>
-                <div class="hint-section" style="margin-top:10px;">
+                <div class="hint-section">
                     <button class="hint-btn" type="button" data-idx="${idx}">Hinweis</button>
-                    <span id="hint-text-${idx}" style="margin-left:10px;"></span>
+                    <span id="hint-text-${idx}" class="hint-text"></span>
                 </div>
                 <div class="feedback" id="feedback-${idx}"></div>
             </div>`;
     }).join("");
-
-    bindQuizEvents();
+    bindEvents();
 }
 
-function bindQuizEvents() {
-    const container = elements.container();
+/* =========================
+   5. Interaction Logic
+========================= */
+function bindEvents() {
+    const container = document.getElementById("questions-container");
 
-    // Answer Selection
+    // Event Delegation: One listener for efficiency
     container.addEventListener("click", (e) => {
-        const btn = e.target.closest(".choice-btn");
-        if (!btn || btn.disabled) return;
-        handleAnswer(btn);
-    });
+        const target = e.target;
+        
+        // Handle Answer Selection
+        if (target.classList.contains("choice-btn") && !target.disabled) {
+            handleAnswer(target);
+        }
+        
+        // Handle Hints (Progressive Disclosure)
+        if (target.classList.contains("hint-btn") && !target.disabled) {
+            handleHint(target);
+        }
 
-    // Hints
-    container.addEventListener("click", (e) => {
-        const btn = e.target.closest(".hint-btn");
-        if (!btn || btn.disabled) return;
-        handleHint(btn);
-    });
-
-    // Grammar Links
-    container.addEventListener("click", (e) => {
-        const link = e.target.closest(".case-link");
-        if (!link) return;
-        e.preventDefault();
-        openGrammarModal(link.dataset.fall);
+        // Handle Grammar Modal Links
+        if (target.classList.contains("case-link")) {
+            e.preventDefault();
+            openGrammarModal(target.dataset.fall);
+        }
     });
 }
 
 function handleAnswer(btn) {
     const parent = btn.closest(".choices");
-    const qIdx = parent.dataset.q_idx;
+    const idx = parent.dataset.q_idx;
+    const q = state.questions[idx];
     const isCorrect = btn.dataset.correct === "true";
-    
-    state.userAnswers[qIdx] = { isCorrect, q: state.questions[qIdx], btn };
+
+    state.userAnswers[idx] = { isCorrect, q, btn };
     state.answeredCount++;
+    state.stats[q.case].total++;
 
     parent.querySelectorAll(".choice-btn").forEach(b => {
         b.disabled = true;
-        if (b !== btn) b.style.opacity = "0.5";
+        if (b !== btn) b.style.opacity = "0.4";
     });
 
-    btn.style.backgroundColor = "#17a2b8";
     btn.classList.add("selected");
+    btn.style.backgroundColor = "#17a2b8";
 
     if (state.answeredCount === state.questions.length) {
-        setTimeout(revealResults, 500);
+        setTimeout(revealResults, 600);
     }
 }
+
+
 
 function handleHint(btn) {
     const idx = btn.dataset.idx;
     const q = state.questions[idx];
-    const display = document.getElementById(`hint-text-${idx}`);
+    const textSpan = document.getElementById(`hint-text-${idx}`);
     
-    btn.dataset.clicks = (Number(btn.dataset.clicks) || 0) + 1;
-    const clicks = Number(btn.dataset.clicks);
+    // Track clicks to provide gradual help
+    let clicks = parseInt(btn.dataset.clicks || "0") + 1;
+    btn.dataset.clicks = clicks;
 
-    const fallLink = `<a class="case-link" href="#" data-fall="${utils.escape(q.case)}">${utils.escape(q.case)}</a>`;
-    const translation = q.translations[state.lang] || q.translations.en;
-
-    if (clicks === 1) display.textContent = `Geschlecht: ${q.gender}`;
-    if (clicks === 2) display.innerHTML += ` | Fall: ${fallLink}`;
-    if (clicks === 3) {
-        display.innerHTML += ` | Übersetzung: ${utils.escape(translation)}`;
+    if (clicks === 1) {
+        textSpan.innerHTML = `<strong>Genus:</strong> ${utils.escape(q.gender)}`;
+    } else if (clicks === 2) {
+        const color = CONFIG.COLORS[q.case] || CONFIG.COLORS.neutral;
+        textSpan.innerHTML += ` | <strong>Fall:</strong> <a class="case-link" style="color:${color}" data-fall="${q.case}">${q.case}</a>`;
+    } else if (clicks === 3) {
+        const trans = q.translations[state.lang] || q.translations.en;
+        textSpan.innerHTML += `<br><small>Übersetzung: ${utils.escape(trans)}</small>`;
         btn.disabled = true;
         btn.style.opacity = "0.5";
     }
@@ -194,79 +200,87 @@ function revealResults() {
     state.questions.forEach((q, idx) => {
         const ans = state.userAnswers[idx];
         const feedback = document.getElementById(`feedback-${idx}`);
-        const hintDisplay = document.getElementById(`hint-text-${idx}`);
-        const hintBtn = document.querySelector(`.hint-btn[data-idx="${idx}"]`);
+        const hintText = document.getElementById(`hint-text-${idx}`);
 
-        // Finalize feedback
+        // Immediate pedagogical feedback
         if (ans.isCorrect) {
             state.score++;
-            ans.btn.style.backgroundColor = "#28a745";
-            feedback.innerHTML = `<span class="correct">Richtig! 🎉 ${utils.escape(q.explanation)}</span>`;
+            state.stats[q.case].correct++;
+            ans.btn.style.backgroundColor = CONFIG.COLORS.akkusativ; // Green for success
+            feedback.innerHTML = `<span class="correct">Richtig! ${utils.escape(q.explanation)}</span>`;
         } else {
-            ans.btn.style.backgroundColor = "#dc3545";
-            feedback.innerHTML = `<span class="incorrect">Falsch! 😢 ${utils.escape(q.explanation)}</span>`;
+            ans.btn.style.backgroundColor = CONFIG.COLORS.genitiv; // Red for error
+            feedback.innerHTML = `<span class="incorrect">Falsch. Das ist ${q.case}. ${utils.escape(q.explanation)}</span>`;
         }
 
-        // Forced Hint Reveal
-        const fallLink = `<a class="case-link" href="#" data-fall="${utils.escape(q.case)}">${utils.escape(q.case)}</a>`;
-        hintDisplay.innerHTML = `Geschlecht: ${q.gender} | Fall: ${fallLink} | Übersetzung: ${utils.escape(q.translations[state.lang] || q.translations.en)}`;
-        if (hintBtn) hintBtn.disabled = true;
+        // Full disclosure after finish
+        const trans = q.translations[state.lang] || q.translations.en;
+        hintText.innerHTML = `Genus: ${q.gender} | Fall: ${q.case} | Übersetzung: ${utils.escape(trans)}`;
     });
 
-    document.getElementById("final-score").textContent = `Punktzahl: ${state.score} / ${state.questions.length}`;
-    elements.scoreBox().hidden = false;
-    enableTryAgain();
+    displayFinalSummary();
+}
+
+function displayFinalSummary() {
+    const scoreEl = document.getElementById("final-score");
+    const feedbackEl = document.getElementById("final-feedback");
+    
+    scoreEl.textContent = `Ergebnis: ${state.score} / ${state.questions.length}`;
+    
+    // Build performance breakdown per case (Metacognition)
+    let summary = "<strong>Deine Statistik nach Fällen:</strong><br>";
+    for (const [key, val] of Object.entries(state.stats)) {
+        if (val.total > 0) {
+            summary += `${utils.capitalize(key)}: ${val.correct}/${val.total}<br>`;
+        }
+    }
+    feedbackEl.innerHTML = summary;
+    
+    document.getElementById("score-display").hidden = false;
+    document.getElementById("try-again-button").hidden = false;
 }
 
 /* =========================
-   Language UI
+   6. Global Event Listeners
 ========================= */
-function initLanguage() {
-    const select = document.getElementById("language-select");
-    const saved = localStorage.getItem(CONFIG.LANG_STORAGE_KEY);
-    
-    state.lang = saved || (navigator.language.split('-')[0]) || "en";
-    if (!CONFIG.SUPPORTED_LANGS.includes(state.lang)) state.lang = "en";
-    
-    select.value = state.lang;
-    select.addEventListener("change", (e) => {
+document.addEventListener("DOMContentLoaded", () => {
+    // Language setup
+    const langSelect = document.getElementById("language-select");
+    state.lang = localStorage.getItem(CONFIG.LANG_STORAGE_KEY) || "en";
+    langSelect.value = state.lang;
+    langSelect.addEventListener("change", (e) => {
         state.lang = e.target.value;
         localStorage.setItem(CONFIG.LANG_STORAGE_KEY, state.lang);
     });
-}
+
+    // Start
+    loadAndStartQuiz();
+
+    // Try Again
+    document.getElementById("try-again-button").addEventListener("click", () => {
+        state.answeredCount = 0;
+        state.userAnswers = [];
+        state.stats = { akkusativ: { correct: 0, total: 0 }, dativ: { correct: 0, total: 0 }, genitiv: { correct: 0, total: 0 } };
+        document.getElementById("score-display").hidden = true;
+        loadAndStartQuiz();
+    });
+
+    // Modal behavior
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeGrammarModal(); });
+});
 
 /* =========================
-   Reset / Global Events
+   7. Grammar Modal Helpers
 ========================= */
-function resetQuiz() {
-    state.score = 0;
-    state.answeredCount = 0;
-    state.userAnswers = [];
-    elements.scoreBox().hidden = true;
-    elements.tryAgainBtn().hidden = true;
-    loadAndStartQuiz();
+function openGrammarModal(fall) {
+    const modal = document.getElementById("grammar-modal");
+    document.getElementById("modal-title").textContent = `${utils.capitalize(fall)} Regeln`;
+    document.getElementById("grammar-content").innerHTML = GRAMMAR_RULES[fall] || "Keine Regeln verfügbar.";
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
 }
 
-function enableTryAgain() {
-    const btn = elements.tryAgainBtn();
-    btn.hidden = false;
-    if (state.isScrollBound) return;
-    state.isScrollBound = true;
-    window.addEventListener("scroll", () => btn.classList.toggle("visible", window.scrollY < 100));
+function closeGrammarModal() {
+    document.getElementById("grammar-modal").setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-    initLanguage();
-    loadAndStartQuiz();
-    
-    // Modal Backdrop close
-    elements.modal().addEventListener("click", (e) => {
-        if (e.target.dataset.close || e.target === elements.modal()) closeGrammarModal();
-    });
-
-    elements.tryAgainBtn().addEventListener("click", resetQuiz);
-    
-    document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") closeGrammarModal();
-    });
-});
