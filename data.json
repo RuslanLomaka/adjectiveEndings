@@ -7,24 +7,12 @@
       "uk": "Я бачу старого чоловіка."
     },
     "answers": [
-      {
-        "text": "alte",
-        "correct": false
-      },
-      {
-        "text": "alten",
-        "correct": true
-      },
-      {
-        "text": "altes",
-        "correct": false
-      },
-      {
-        "text": "alter",
-        "correct": false
-      }
+      { "text": "alte", "correct": false },
+      { "text": "alten", "correct": true },
+      { "text": "altes", "correct": false },
+      { "text": "alter", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "explanation": "Akkusativ + Maskulin + Bestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -36,24 +24,12 @@
       "uk": "Вона купує нову сумку."
     },
     "answers": [
-      {
-        "text": "neue",
-        "correct": true
-      },
-      {
-        "text": "neuen",
-        "correct": false
-      },
-      {
-        "text": "neues",
-        "correct": false
-      },
-      {
-        "text": "neuer",
-        "correct": false
-      }
+      { "text": "neue", "correct": true },
+      { "text": "neuen", "correct": false },
+      { "text": "neues", "correct": false },
+      { "text": "neuer", "correct": false }
     ],
-    "explanation": "Akkusativ + Feminin + bestimmter Artikel (die) → Endung -e",
+    "explanation": "Akkusativ + Feminin + Bestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -65,24 +41,12 @@
       "uk": "Ми п'ємо холодну воду."
     },
     "answers": [
-      {
-        "text": "kalte",
-        "correct": true
-      },
-      {
-        "text": "kalten",
-        "correct": false
-      },
-      {
-        "text": "kaltes",
-        "correct": false
-      },
-      {
-        "text": "kalter",
-        "correct": false
-      }
+      { "text": "kalte", "correct": true },
+      { "text": "kalten", "correct": false },
+      { "text": "kaltes", "correct": false },
+      { "text": "kalter", "correct": false }
     ],
-    "explanation": "Akkusativ + Neutrum + bestimmter Artikel (das) → Endung -e",
+    "explanation": "Akkusativ + Neutrum + Bestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "neuter"
   },
@@ -94,24 +58,12 @@
       "uk": "Він знаходить правильний шлях."
     },
     "answers": [
-      {
-        "text": "richtige",
-        "correct": false
-      },
-      {
-        "text": "richtigen",
-        "correct": true
-      },
-      {
-        "text": "richtiges",
-        "correct": false
-      },
-      {
-        "text": "richtiger",
-        "correct": false
-      }
+      { "text": "richtige", "correct": false },
+      { "text": "richtigen", "correct": true },
+      { "text": "richtiges", "correct": false },
+      { "text": "richtiger", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "explanation": "Akkusativ + Maskulin + Bestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -123,24 +75,12 @@
       "uk": "Мені подобаються свіжі яблука."
     },
     "answers": [
-      {
-        "text": "frische",
-        "correct": true
-      },
-      {
-        "text": "frischen",
-        "correct": false
-      },
-      {
-        "text": "frisches",
-        "correct": false
-      },
-      {
-        "text": "frischer",
-        "correct": false
-      }
+      { "text": "frische", "correct": false },
+      { "text": "frischen", "correct": true },
+      { "text": "frisches", "correct": false },
+      { "text": "frischer", "correct": false }
     ],
-    "explanation": "Akkusativ + Plural + bestimmter Artikel (die) → Endung -e",
+    "explanation": "Akkusativ + Plural + Bestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "plural"
   },
@@ -152,24 +92,12 @@
       "uk": "Вона слухає гучну музику."
     },
     "answers": [
-      {
-        "text": "laute",
-        "correct": true
-      },
-      {
-        "text": "lauten",
-        "correct": false
-      },
-      {
-        "text": "lautes",
-        "correct": false
-      },
-      {
-        "text": "lauter",
-        "correct": false
-      }
+      { "text": "laute", "correct": true },
+      { "text": "lauten", "correct": false },
+      { "text": "lautes", "correct": false },
+      { "text": "lauter", "correct": false }
     ],
-    "explanation": "Akkusativ + Feminin + bestimmter Artikel (die) → Endung -e",
+    "explanation": "Akkusativ + Feminin + Bestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -181,24 +109,12 @@
       "uk": "Ми відвідуємо хворого друга."
     },
     "answers": [
-      {
-        "text": "kranke",
-        "correct": false
-      },
-      {
-        "text": "kranken",
-        "correct": true
-      },
-      {
-        "text": "krankes",
-        "correct": false
-      },
-      {
-        "text": "kranker",
-        "correct": false
-      }
+      { "text": "kranke", "correct": false },
+      { "text": "kranken", "correct": true },
+      { "text": "krankes", "correct": false },
+      { "text": "kranker", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "explanation": "Akkusativ + Maskulin + Bestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -210,24 +126,12 @@
       "uk": "Він читає цікаву книгу."
     },
     "answers": [
-      {
-        "text": "interessante",
-        "correct": true
-      },
-      {
-        "text": "interessanten",
-        "correct": false
-      },
-      {
-        "text": "interessantes",
-        "correct": false
-      },
-      {
-        "text": "interessanter",
-        "correct": false
-      }
+      { "text": "interessante", "correct": true },
+      { "text": "interessanten", "correct": false },
+      { "text": "interessantes", "correct": false },
+      { "text": "interessanter", "correct": false }
     ],
-    "explanation": "Akkusativ + Neutrum + bestimmter Artikel (das) → Endung -e",
+    "explanation": "Akkusativ + Neutrum + Bestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "neuter"
   },
@@ -239,24 +143,12 @@
       "uk": "Я прибираю брудний стіл."
     },
     "answers": [
-      {
-        "text": "schmutzige",
-        "correct": false
-      },
-      {
-        "text": "schmutzigen",
-        "correct": true
-      },
-      {
-        "text": "schmutziges",
-        "correct": false
-      },
-      {
-        "text": "schmutziger",
-        "correct": false
-      }
+      { "text": "schmutzige", "correct": false },
+      { "text": "schmutzigen", "correct": true },
+      { "text": "schmutziges", "correct": false },
+      { "text": "schmutziger", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "explanation": "Akkusativ + Maskulin + Bestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -268,24 +160,12 @@
       "uk": "Вона носить чорну куртку."
     },
     "answers": [
-      {
-        "text": "schwarze",
-        "correct": true
-      },
-      {
-        "text": "schwarzen",
-        "correct": false
-      },
-      {
-        "text": "schwarzes",
-        "correct": false
-      },
-      {
-        "text": "schwarzer",
-        "correct": false
-      }
+      { "text": "schwarze", "correct": true },
+      { "text": "schwarzen", "correct": false },
+      { "text": "schwarzes", "correct": false },
+      { "text": "schwarzer", "correct": false }
     ],
-    "explanation": "Akkusativ + Feminin + bestimmter Artikel (die) → Endung -e",
+    "explanation": "Akkusativ + Feminin + Bestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -297,24 +177,12 @@
       "uk": "Ми відкриваємо велике вікно."
     },
     "answers": [
-      {
-        "text": "große",
-        "correct": true
-      },
-      {
-        "text": "großen",
-        "correct": false
-      },
-      {
-        "text": "großes",
-        "correct": false
-      },
-      {
-        "text": "großer",
-        "correct": false
-      }
+      { "text": "große", "correct": true },
+      { "text": "großen", "correct": false },
+      { "text": "großes", "correct": false },
+      { "text": "großer", "correct": false }
     ],
-    "explanation": "Akkusativ + Neutrum + bestimmter Artikel (das) → Endung -e",
+    "explanation": "Akkusativ + Neutrum + Bestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "neuter"
   },
@@ -326,24 +194,12 @@
       "uk": "Він ремонтує зламаний комп’ютер."
     },
     "answers": [
-      {
-        "text": "kaputte",
-        "correct": false
-      },
-      {
-        "text": "kaputten",
-        "correct": true
-      },
-      {
-        "text": "kaputtes",
-        "correct": false
-      },
-      {
-        "text": "kaputter",
-        "correct": false
-      }
+      { "text": "kaputte", "correct": false },
+      { "text": "kaputten", "correct": true },
+      { "text": "kaputtes", "correct": false },
+      { "text": "kaputter", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "explanation": "Akkusativ + Maskulin + Bestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -355,24 +211,12 @@
       "uk": "Я бачу гарні квіти."
     },
     "answers": [
-      {
-        "text": "schöne",
-        "correct": true
-      },
-      {
-        "text": "schönen",
-        "correct": false
-      },
-      {
-        "text": "schönes",
-        "correct": false
-      },
-      {
-        "text": "schöner",
-        "correct": false
-      }
+      { "text": "schöne", "correct": false },
+      { "text": "schönen", "correct": true },
+      { "text": "schönes", "correct": false },
+      { "text": "schöner", "correct": false }
     ],
-    "explanation": "Akkusativ + Plural + bestimmter Artikel (die) → Endung -e",
+    "explanation": "Akkusativ + Plural + Bestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "plural"
   },
@@ -384,24 +228,12 @@
       "uk": "Вона замовляє гарячу їжу."
     },
     "answers": [
-      {
-        "text": "heiße",
-        "correct": true
-      },
-      {
-        "text": "heißen",
-        "correct": false
-      },
-      {
-        "text": "heißes",
-        "correct": false
-      },
-      {
-        "text": "heißer",
-        "correct": false
-      }
+      { "text": "heiße", "correct": true },
+      { "text": "heißen", "correct": false },
+      { "text": "heißes", "correct": false },
+      { "text": "heißer", "correct": false }
     ],
-    "explanation": "Akkusativ + Neutrum + bestimmter Artikel (das) → Endung -e",
+    "explanation": "Akkusativ + Neutrum + Bestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "neuter"
   },
@@ -413,24 +245,12 @@
       "uk": "Ми шукаємо вільне місце."
     },
     "answers": [
-      {
-        "text": "freie",
-        "correct": false
-      },
-      {
-        "text": "freien",
-        "correct": true
-      },
-      {
-        "text": "freies",
-        "correct": false
-      },
-      {
-        "text": "freier",
-        "correct": false
-      }
+      { "text": "freie", "correct": false },
+      { "text": "freien", "correct": true },
+      { "text": "freies", "correct": false },
+      { "text": "freier", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "explanation": "Akkusativ + Maskulin + Bestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -442,24 +262,12 @@
       "uk": "Він купує дешеві черевики."
     },
     "answers": [
-      {
-        "text": "billige",
-        "correct": true
-      },
-      {
-        "text": "billigen",
-        "correct": false
-      },
-      {
-        "text": "billiges",
-        "correct": false
-      },
-      {
-        "text": "billiger",
-        "correct": false
-      }
+      { "text": "billige", "correct": false },
+      { "text": "billigen", "correct": true },
+      { "text": "billiges", "correct": false },
+      { "text": "billiger", "correct": false }
     ],
-    "explanation": "Akkusativ + Plural + bestimmter Artikel (die) → Endung -e",
+    "explanation": "Akkusativ + Plural + Bestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "plural"
   },
@@ -471,24 +279,12 @@
       "uk": "Я беру важку посилку."
     },
     "answers": [
-      {
-        "text": "schwere",
-        "correct": true
-      },
-      {
-        "text": "schweren",
-        "correct": false
-      },
-      {
-        "text": "schweres",
-        "correct": false
-      },
-      {
-        "text": "schwerer",
-        "correct": false
-      }
+      { "text": "schwere", "correct": true },
+      { "text": "schweren", "correct": false },
+      { "text": "schweres", "correct": false },
+      { "text": "schwerer", "correct": false }
     ],
-    "explanation": "Akkusativ + Neutrum + bestimmter Artikel (das) → Endung -e",
+    "explanation": "Akkusativ + Neutrum + Bestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "neuter"
   },
@@ -500,24 +296,12 @@
       "uk": "Вона зачиняє старі двері."
     },
     "answers": [
-      {
-        "text": "alte",
-        "correct": true
-      },
-      {
-        "text": "alten",
-        "correct": false
-      },
-      {
-        "text": "altes",
-        "correct": false
-      },
-      {
-        "text": "alter",
-        "correct": false
-      }
+      { "text": "alte", "correct": true },
+      { "text": "alten", "correct": false },
+      { "text": "altes", "correct": false },
+      { "text": "alter", "correct": false }
     ],
-    "explanation": "Akkusativ + Feminin + bestimmter Artikel (die) → Endung -e",
+    "explanation": "Akkusativ + Feminin + Bestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -529,24 +313,12 @@
       "uk": "Ми слухаємо новий подкаст."
     },
     "answers": [
-      {
-        "text": "neue",
-        "correct": false
-      },
-      {
-        "text": "neuen",
-        "correct": true
-      },
-      {
-        "text": "neues",
-        "correct": false
-      },
-      {
-        "text": "neuer",
-        "correct": false
-      }
+      { "text": "neue", "correct": false },
+      { "text": "neuen", "correct": true },
+      { "text": "neues", "correct": false },
+      { "text": "neuer", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin + bestimmter Artikel (den) → Endung -en",
+    "explanation": "Akkusativ + Maskulin + Bestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -558,24 +330,12 @@
       "uk": "Він фотографує високі будівлі."
     },
     "answers": [
-      {
-        "text": "hohe",
-        "correct": false
-      },
-      {
-        "text": "hohen",
-        "correct": true
-      },
-      {
-        "text": "hohes",
-        "correct": false
-      },
-      {
-        "text": "hoher",
-        "correct": false
-      }
+      { "text": "hohe", "correct": false },
+      { "text": "hohen", "correct": true },
+      { "text": "hohes", "correct": false },
+      { "text": "hoher", "correct": false }
     ],
-    "explanation": "Akkusativ + Plural + bestimmter Artikel (die) → Endung -e",
+    "explanation": "Akkusativ + Plural + Bestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "plural"
   },
@@ -587,24 +347,12 @@
       "uk": "Я бачу новий фільм у кіно."
     },
     "answers": [
-      {
-        "text": "einen",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "einen", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "ein", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin + unbestimmter Artikel (ein → einen)",
+    "explanation": "Akkusativ + Maskulin + Unbestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -616,24 +364,12 @@
       "uk": "Вона купує свіжу газету вранці."
     },
     "answers": [
-      {
-        "text": "eine",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "eine", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "ein", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ + Feminin + unbestimmter Artikel (eine)",
+    "explanation": "Akkusativ + Feminin + Unbestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -645,24 +381,12 @@
       "uk": "Він шукає хорошого лікаря в місті."
     },
     "answers": [
-      {
-        "text": "einen",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "einen", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "ein", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin + unbestimmter Artikel (einen)",
+    "explanation": "Akkusativ + Maskulin + Unbestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -674,24 +398,12 @@
       "uk": "Нам потрібна більша квартира."
     },
     "answers": [
-      {
-        "text": "eine",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "eine", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "ein", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ + Feminin + unbestimmter Artikel (eine)",
+    "explanation": "Akkusativ + Feminin + Unbestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -703,24 +415,12 @@
       "uk": "Я п’ю гарячу каву."
     },
     "answers": [
-      {
-        "text": "einen",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "einen", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "ein", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin + unbestimmter Artikel (einen)",
+    "explanation": "Akkusativ + Maskulin + Unbestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -732,24 +432,12 @@
       "uk": "Вона слухає цікаву історію."
     },
     "answers": [
-      {
-        "text": "eine",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "eine", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "ein", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ + Feminin + unbestimmter Artikel (eine)",
+    "explanation": "Akkusativ + Feminin + Unbestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -761,24 +449,12 @@
       "uk": "Я читаю захопливу книгу."
     },
     "answers": [
-      {
-        "text": "ein",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "ein", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einen", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ + Neutrum + unbestimmter Artikel (ein)",
+    "explanation": "Akkusativ + Neutrum + Unbestimmter Artikel → Endung -es",
     "case": "akkusativ",
     "gender": "neuter"
   },
@@ -790,24 +466,12 @@
       "uk": "Вона носить гарну куртку."
     },
     "answers": [
-      {
-        "text": "eine",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "eine", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "ein", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ + Feminin + unbestimmter Artikel (eine)",
+    "explanation": "Akkusativ + Feminin + Unbestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -819,24 +483,12 @@
       "uk": "Він замовляє холодний сік."
     },
     "answers": [
-      {
-        "text": "einen",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "einen", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "ein", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ + Maskulin + unbestimmter Artikel (einen)",
+    "explanation": "Akkusativ + Maskulin + Unbestimmter Artikel → Endung -en",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -848,24 +500,12 @@
       "uk": "Ми плануємо довгу подорож."
     },
     "answers": [
-      {
-        "text": "eine",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "eine", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "ein", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ + Feminin + unbestimmter Artikel (eine)",
+    "explanation": "Akkusativ + Feminin + Unbestimmter Artikel → Endung -e",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -877,24 +517,12 @@
       "uk": "Я розмовляю з новим колегою."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Dativ nach Präposition „mit“ + bestimmter Artikel Maskulin → dem",
+    "explanation": "Dativ + Maskulin + Bestimmter Artikel → dem (+ n-Deklination)",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -906,24 +534,12 @@
       "uk": "Вона працює у великій компанії."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Dativ nach Präposition „bei“ + bestimmter Artikel Feminin → der",
+    "explanation": "Dativ + Feminin + Bestimmter Artikel → der",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -935,24 +551,12 @@
       "uk": "Він родом з маленького села."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Dativ nach Präposition „aus“ + Neutrum → dem",
+    "explanation": "Dativ + Neutrum + Bestimmter Artikel → dem",
     "case": "dativ",
     "gender": "neuter"
   },
@@ -964,24 +568,12 @@
       "uk": "Ми їдемо старим поїздом."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Dativ nach Präposition „mit“ + Maskulin → dem",
+    "explanation": "Dativ + Maskulin + Bestimmter Artikel → dem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -993,24 +585,12 @@
       "uk": "Я навчаюся у досвідченого вчителя."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Dativ nach Präposition „von“ + Maskulin → dem",
+    "explanation": "Dativ + Maskulin + Bestimmter Artikel → dem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -1022,24 +602,12 @@
       "uk": "Вона живе у приємної сусідки."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Dativ nach Präposition „bei“ + Feminin → der",
+    "explanation": "Dativ + Feminin + Bestimmter Artikel → der",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1051,24 +619,12 @@
       "uk": "Він іде на важливу зустріч."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Dativ nach Präposition „zu“ + Maskulin → dem",
+    "explanation": "Dativ + Maskulin + Bestimmter Artikel → dem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -1080,24 +636,12 @@
       "uk": "Ми їмо у відомого пекаря."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Dativ nach Präposition „bei“ + Maskulin → dem",
+    "explanation": "Dativ + Maskulin + Bestimmter Artikel → dem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -1109,24 +653,12 @@
       "uk": "Я розмовляю з лікаркою."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Dativ nach Präposition „mit“ + Feminin → der",
+    "explanation": "Dativ + Feminin + Bestimmter Artikel → der",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1138,24 +670,12 @@
       "uk": "Ми працюємо в міжнародній організації."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Dativ nach Präposition „bei“ + Feminin → der",
+    "explanation": "Dativ + Feminin + Bestimmter Artikel → der",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1167,24 +687,12 @@
       "uk": "Я допомагаю новому колезі."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Dativ + bestimmter Artikel Maskulin → dem",
+    "explanation": "Dativ + Maskulin + Bestimmter Artikel → dem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -1196,24 +704,12 @@
       "uk": "Вона відповідає привітній клієнтці."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Dativ + bestimmter Artikel Feminin → der",
+    "explanation": "Dativ + Feminin + Bestimmter Artikel → der",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1225,24 +721,12 @@
       "uk": "Ми дякуємо вчителю за допомогу."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Verb „danken“ requires Dativ → dem",
+    "explanation": "Dativ + Maskulin + Bestimmter Artikel → dem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -1254,24 +738,12 @@
       "uk": "Він дає сусідці ключ."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Dativ + bestimmter Artikel Feminin → der",
+    "explanation": "Dativ + Feminin + Bestimmter Artikel → der",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1283,24 +755,12 @@
       "uk": "Я довіряю досвідченому лікарю."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Verb „vertrauen“ requires Dativ → dem",
+    "explanation": "Dativ + Maskulin + Bestimmter Artikel → dem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -1312,24 +772,12 @@
       "uk": "Вона дотримується чіткої інструкції."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Verb „folgen“ + Dativ Feminin → der",
+    "explanation": "Dativ + Feminin + Bestimmter Artikel → der",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1341,24 +789,12 @@
       "uk": "Ми зустрічаємо відомого автора."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Verb „begegnen“ requires Dativ → dem",
+    "explanation": "Dativ + Maskulin + Bestimmter Artikel → dem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -1370,24 +806,12 @@
       "uk": "Він належить до великої родини."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Verb „gehören“ + Dativ Feminin → der",
+    "explanation": "Dativ + Feminin + Bestimmter Artikel → der",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1399,24 +823,12 @@
       "uk": "Я розповідаю дитині історію."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Dativ + bestimmter Artikel Neutrum → dem",
+    "explanation": "Dativ + Neutrum + Bestimmter Artikel → dem",
     "case": "dativ",
     "gender": "neuter"
   },
@@ -1428,24 +840,12 @@
       "uk": "Вона надсилає керівниці лист."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Dativ + bestimmter Artikel Feminin → der",
+    "explanation": "Dativ + Feminin + Bestimmter Artikel → der",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1454,27 +854,15 @@
     "question": "Wir danken ____ hilfsbereiten Mitarbeitern.",
     "translations": {
       "en": "We thank the helpful employees.",
-      "uk": "Ми дякуємо корисним працівникам."
+      "uk": "Ми дякуємо чуйним працівникам."
     },
     "answers": [
-      {
-        "text": "den",
-        "correct": true
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "die",
-        "correct": false
-      }
+      { "text": "den", "correct": true },
+      { "text": "dem", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "die", "correct": false }
     ],
-    "explanation": "Dativ Plural + bestimmter Artikel → den",
+    "explanation": "Dativ + Plural + Bestimmter Artikel → den",
     "case": "dativ",
     "gender": "plural"
   },
@@ -1486,24 +874,12 @@
       "uk": "Він допомагає новим колегам."
     },
     "answers": [
-      {
-        "text": "den",
-        "correct": true
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "die",
-        "correct": false
-      }
+      { "text": "den", "correct": true },
+      { "text": "dem", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "die", "correct": false }
     ],
-    "explanation": "Dativ Plural → den",
+    "explanation": "Dativ + Plural + Bestimmter Artikel → den",
     "case": "dativ",
     "gender": "plural"
   },
@@ -1515,24 +891,12 @@
       "uk": "Я розмовляю з привітними гостями."
     },
     "answers": [
-      {
-        "text": "den",
-        "correct": true
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "die",
-        "correct": false
-      }
+      { "text": "den", "correct": true },
+      { "text": "dem", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "die", "correct": false }
     ],
-    "explanation": "Dativ Plural nach „mit“ → den",
+    "explanation": "Dativ + Plural + Bestimmter Artikel → den",
     "case": "dativ",
     "gender": "plural"
   },
@@ -1544,24 +908,12 @@
       "uk": "Вона довіряє старим друзям."
     },
     "answers": [
-      {
-        "text": "den",
-        "correct": true
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "die",
-        "correct": false
-      }
+      { "text": "den", "correct": true },
+      { "text": "dem", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "die", "correct": false }
     ],
-    "explanation": "Dativ Plural → den",
+    "explanation": "Dativ + Plural + Bestimmter Artikel → den",
     "case": "dativ",
     "gender": "plural"
   },
@@ -1573,24 +925,12 @@
       "uk": "Ми дотримуємося важливих правил."
     },
     "answers": [
-      {
-        "text": "den",
-        "correct": true
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "die",
-        "correct": false
-      }
+      { "text": "den", "correct": true },
+      { "text": "dem", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "die", "correct": false }
     ],
-    "explanation": "Verb „folgen“ + Dativ Plural → den",
+    "explanation": "Dativ + Plural + Bestimmter Artikel → den",
     "case": "dativ",
     "gender": "plural"
   },
@@ -1602,24 +942,12 @@
       "uk": "Він відповідає на відкриті питання."
     },
     "answers": [
-      {
-        "text": "den",
-        "correct": true
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "die",
-        "correct": false
-      }
+      { "text": "den", "correct": true },
+      { "text": "dem", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "die", "correct": false }
     ],
-    "explanation": "Verb „antworten“ + Dativ Plural → den",
+    "explanation": "Dativ + Plural + Bestimmter Artikel → den",
     "case": "dativ",
     "gender": "plural"
   },
@@ -1631,24 +959,12 @@
       "uk": "Я вітаю успішну команду."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Verb „gratulieren“ + Dativ → dem",
+    "explanation": "Dativ + Neutrum + Bestimmter Artikel → dem",
     "case": "dativ",
     "gender": "neuter"
   },
@@ -1660,24 +976,12 @@
       "uk": "Вона допомагає хворій сусідці."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Dativ Feminin → der",
+    "explanation": "Dativ + Feminin + Bestimmter Artikel → der",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1689,24 +993,12 @@
       "uk": "Ми слухаємо досвідченого тренера."
     },
     "answers": [
-      {
-        "text": "dem",
-        "correct": true
-      },
-      {
-        "text": "den",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "das",
-        "correct": false
-      }
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "das", "correct": false }
     ],
-    "explanation": "Verb „zuhören“ + Dativ Maskulin → dem",
+    "explanation": "Dativ + Maskulin + Bestimmter Artikel → dem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -1718,24 +1010,12 @@
       "uk": "Він пише матері повідомлення."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Dativ Feminin → der",
+    "explanation": "Dativ + Feminin + Bestimmter Artikel → der",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1747,24 +1027,12 @@
       "uk": "Я допомагаю хорошому другові."
     },
     "answers": [
-      {
-        "text": "einem",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einer",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      }
+      { "text": "einem", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "einer", "correct": false },
+      { "text": "ein", "correct": false }
     ],
-    "explanation": "Dativ + unbestimmter Artikel Maskulin/Neutrum → einem",
+    "explanation": "Dativ + Maskulin + Unbestimmter Artikel → einem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -1776,24 +1044,12 @@
       "uk": "Вона відповідає приємній клієнтці."
     },
     "answers": [
-      {
-        "text": "einer",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      }
+      { "text": "einer", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einem", "correct": false },
+      { "text": "einen", "correct": false }
     ],
-    "explanation": "Dativ + unbestimmter Artikel Feminin → einer",
+    "explanation": "Dativ + Feminin + Unbestimmter Artikel → einer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1805,24 +1061,12 @@
       "uk": "Ми дякуємо досвідченому вчителю."
     },
     "answers": [
-      {
-        "text": "einem",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einer",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      }
+      { "text": "einem", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "einer", "correct": false },
+      { "text": "ein", "correct": false }
     ],
-    "explanation": "Verb „danken“ + Dativ + unbestimmter Artikel → einem",
+    "explanation": "Dativ + Maskulin + Unbestimmter Artikel → einem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -1834,24 +1078,12 @@
       "uk": "Він дає колезі пораду."
     },
     "answers": [
-      {
-        "text": "einer",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      }
+      { "text": "einer", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einem", "correct": false },
+      { "text": "einen", "correct": false }
     ],
-    "explanation": "Dativ Feminin + unbestimmter Artikel → einer",
+    "explanation": "Dativ + Feminin + Unbestimmter Artikel → einer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1863,24 +1095,12 @@
       "uk": "Я довіряю новому лікарю."
     },
     "answers": [
-      {
-        "text": "einem",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einer",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      }
+      { "text": "einem", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "einer", "correct": false },
+      { "text": "ein", "correct": false }
     ],
-    "explanation": "Verb „vertrauen“ + Dativ + unbestimmter Artikel → einem",
+    "explanation": "Dativ + Maskulin + Unbestimmter Artikel → einem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -1892,24 +1112,12 @@
       "uk": "Вона дотримується чіткої інструкції."
     },
     "answers": [
-      {
-        "text": "einer",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      }
+      { "text": "einer", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einem", "correct": false },
+      { "text": "einen", "correct": false }
     ],
-    "explanation": "Verb „folgen“ + Dativ Feminin → einer",
+    "explanation": "Dativ + Feminin + Unbestimmter Artikel → einer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1921,24 +1129,12 @@
       "uk": "Ми зустрічаємо відомого автора."
     },
     "answers": [
-      {
-        "text": "einem",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einer",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      }
+      { "text": "einem", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "einer", "correct": false },
+      { "text": "ein", "correct": false }
     ],
-    "explanation": "Verb „begegnen“ + Dativ Maskulin → einem",
+    "explanation": "Dativ + Maskulin + Unbestimmter Artikel → einem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -1950,24 +1146,12 @@
       "uk": "Він належить до великої родини."
     },
     "answers": [
-      {
-        "text": "einer",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      }
+      { "text": "einer", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einem", "correct": false },
+      { "text": "einen", "correct": false }
     ],
-    "explanation": "Verb „gehören“ + Dativ Feminin → einer",
+    "explanation": "Dativ + Feminin + Unbestimmter Artikel → einer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -1979,24 +1163,12 @@
       "uk": "Я розповідаю дитині історію."
     },
     "answers": [
-      {
-        "text": "einem",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einer",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      }
+      { "text": "einem", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "einer", "correct": false },
+      { "text": "ein", "correct": false }
     ],
-    "explanation": "Dativ Neutrum + unbestimmter Artikel → einem",
+    "explanation": "Dativ + Neutrum + Unbestimmter Artikel → einem",
     "case": "dativ",
     "gender": "neuter"
   },
@@ -2008,24 +1180,12 @@
       "uk": "Вона надсилає керівниці лист."
     },
     "answers": [
-      {
-        "text": "einer",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      }
+      { "text": "einer", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einem", "correct": false },
+      { "text": "einen", "correct": false }
     ],
-    "explanation": "Dativ Feminin + unbestimmter Artikel → einer",
+    "explanation": "Dativ + Feminin + Unbestimmter Artikel → einer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -2034,27 +1194,15 @@
     "question": "Wir danken ____ hilfsbereiten Mitarbeiter.",
     "translations": {
       "en": "We thank a helpful employee.",
-      "uk": "Ми дякуємо корисному працівнику."
+      "uk": "Ми дякуємо чуйному працівнику."
     },
     "answers": [
-      {
-        "text": "einem",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einer",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      }
+      { "text": "einem", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "einer", "correct": false },
+      { "text": "ein", "correct": false }
     ],
-    "explanation": "Verb „danken“ + Dativ Maskulin → einem",
+    "explanation": "Dativ + Maskulin + Unbestimmter Artikel → einem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -2066,24 +1214,12 @@
       "uk": "Він допомагає новій колезі."
     },
     "answers": [
-      {
-        "text": "einer",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      }
+      { "text": "einer", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einem", "correct": false },
+      { "text": "einen", "correct": false }
     ],
-    "explanation": "Verb „helfen“ + Dativ Feminin → einer",
+    "explanation": "Dativ + Feminin + Unbestimmter Artikel → einer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -2095,24 +1231,12 @@
       "uk": "Я розмовляю з привітним гостем."
     },
     "answers": [
-      {
-        "text": "einem",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einer",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      }
+      { "text": "einem", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "einer", "correct": false },
+      { "text": "ein", "correct": false }
     ],
-    "explanation": "Dativ nach „mit“ + Maskulin → einem",
+    "explanation": "Dativ + Maskulin + Unbestimmter Artikel → einem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -2124,24 +1248,12 @@
       "uk": "Вона довіряє давній подрузі."
     },
     "answers": [
-      {
-        "text": "einer",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      }
+      { "text": "einer", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einem", "correct": false },
+      { "text": "einen", "correct": false }
     ],
-    "explanation": "Verb „vertrauen“ + Dativ Feminin → einer",
+    "explanation": "Dativ + Feminin + Unbestimmter Artikel → einer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -2153,24 +1265,12 @@
       "uk": "Ми дотримуємося важливого плану."
     },
     "answers": [
-      {
-        "text": "einem",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einer",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      }
+      { "text": "einem", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "einer", "correct": false },
+      { "text": "ein", "correct": false }
     ],
-    "explanation": "Verb „folgen“ + Dativ Maskulin → einem",
+    "explanation": "Dativ + Maskulin + Unbestimmter Artikel → einem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -2182,24 +1282,12 @@
       "uk": "Він відповідає на відкрите питання."
     },
     "answers": [
-      {
-        "text": "einer",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      }
+      { "text": "einer", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einem", "correct": false },
+      { "text": "einen", "correct": false }
     ],
-    "explanation": "Verb „antworten“ + Dativ Feminin → einer",
+    "explanation": "Dativ + Feminin + Unbestimmter Artikel → einer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -2211,24 +1299,12 @@
       "uk": "Я вітаю успішну команду."
     },
     "answers": [
-      {
-        "text": "einem",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einer",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      }
+      { "text": "einem", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "einer", "correct": false },
+      { "text": "ein", "correct": false }
     ],
-    "explanation": "Verb „gratulieren“ + Dativ Neutrum → einem",
+    "explanation": "Dativ + Neutrum + Unbestimmter Artikel → einem",
     "case": "dativ",
     "gender": "neuter"
   },
@@ -2240,24 +1316,12 @@
       "uk": "Вона допомагає хворій сусідці."
     },
     "answers": [
-      {
-        "text": "einer",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      }
+      { "text": "einer", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einem", "correct": false },
+      { "text": "einen", "correct": false }
     ],
-    "explanation": "Verb „helfen“ + Dativ Feminin → einer",
+    "explanation": "Dativ + Feminin + Unbestimmter Artikel → einer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -2269,24 +1333,12 @@
       "uk": "Ми слухаємо досвідченого тренера."
     },
     "answers": [
-      {
-        "text": "einem",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einer",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      }
+      { "text": "einem", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "einer", "correct": false },
+      { "text": "ein", "correct": false }
     ],
-    "explanation": "Verb „zuhören“ + Dativ Maskulin → einem",
+    "explanation": "Dativ + Maskulin + Unbestimmter Artikel → einem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -2298,24 +1350,12 @@
       "uk": "Він пише матері повідомлення."
     },
     "answers": [
-      {
-        "text": "einer",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      }
+      { "text": "einer", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einem", "correct": false },
+      { "text": "einen", "correct": false }
     ],
-    "explanation": "Dativ Feminin + unbestimmter Artikel → einer",
+    "explanation": "Dativ + Feminin + Unbestimmter Artikel → einer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -2327,24 +1367,12 @@
       "uk": "Це автомобіль нового сусіда."
     },
     "answers": [
-      {
-        "text": "des",
-        "correct": true
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Genitiv Maskulin → des",
+    "explanation": "Genitiv + Maskulin + Bestimmter Artikel → des",
     "case": "genitiv",
     "gender": "masculine"
   },
@@ -2356,24 +1384,12 @@
       "uk": "Ми знаємо ім’я вчительки."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "des",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
     ],
-    "explanation": "Genitiv Feminin → der",
+    "explanation": "Genitiv + Feminin + Bestimmter Artikel → der",
     "case": "genitiv",
     "gender": "feminine"
   },
@@ -2385,24 +1401,12 @@
       "uk": "Мені подобається колір старого будинку."
     },
     "answers": [
-      {
-        "text": "des",
-        "correct": true
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Genitiv Neutrum → des",
+    "explanation": "Genitiv + Neutrum + Bestimmter Artikel → des",
     "case": "genitiv",
     "gender": "neuter"
   },
@@ -2414,24 +1418,12 @@
       "uk": "Мені подобається смак свіжого хліба."
     },
     "answers": [
-      {
-        "text": "des",
-        "correct": true
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Genitiv Neutrum → des",
+    "explanation": "Genitiv + Neutrum + Bestimmter Artikel → des",
     "case": "genitiv",
     "gender": "neuter"
   },
@@ -2443,24 +1435,12 @@
       "uk": "Кабінет шефа великий."
     },
     "answers": [
-      {
-        "text": "des",
-        "correct": true
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Genitiv Maskulin → des",
+    "explanation": "Genitiv + Maskulin + Bestimmter Artikel → des",
     "case": "genitiv",
     "gender": "masculine"
   },
@@ -2472,24 +1452,12 @@
       "uk": "Думка колеги важлива."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "des",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
     ],
-    "explanation": "Genitiv Feminin → der",
+    "explanation": "Genitiv + Feminin + Bestimmter Artikel → der",
     "case": "genitiv",
     "gender": "feminine"
   },
@@ -2501,53 +1469,29 @@
       "uk": "Ми відвідуємо батьків дитини."
     },
     "answers": [
-      {
-        "text": "des",
-        "correct": true
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Genitiv Neutrum → des",
+    "explanation": "Genitiv + Neutrum + Bestimmter Artikel → des",
     "case": "genitiv",
     "gender": "neuter"
   },
   {
     "id": 88,
-    "question": "Die Tür ____ Wohnung ist offen.",
+    "question": "Die Door ____ Wohnung ist offen.",
     "translations": {
       "en": "The door of the apartment is open.",
       "uk": "Двері квартири відкриті."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "des",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
     ],
-    "explanation": "Genitiv Feminin → der",
+    "explanation": "Genitiv + Feminin + Bestimmter Artikel → der",
     "case": "genitiv",
     "gender": "feminine"
   },
@@ -2559,24 +1503,12 @@
       "uk": "Початок фільму був захопливим."
     },
     "answers": [
-      {
-        "text": "des",
-        "correct": true
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Genitiv Maskulin → des",
+    "explanation": "Genitiv + Maskulin + Bestimmter Artikel → des",
     "case": "genitiv",
     "gender": "masculine"
   },
@@ -2588,24 +1520,12 @@
       "uk": "Голос співачки відомий."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "die",
-        "correct": false
-      },
-      {
-        "text": "des",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
     ],
-    "explanation": "Genitiv Feminin → der",
+    "explanation": "Genitiv + Feminin + Bestimmter Artikel → der",
     "case": "genitiv",
     "gender": "feminine"
   },
@@ -2617,24 +1537,12 @@
       "uk": "Це мій новий ноутбук."
     },
     "answers": [
-      {
-        "text": "mein",
-        "correct": true
-      },
-      {
-        "text": "meinen",
-        "correct": false
-      },
-      {
-        "text": "meine",
-        "correct": false
-      },
-      {
-        "text": "meinem",
-        "correct": false
-      }
+      { "text": "mein", "correct": true },
+      { "text": "meinen", "correct": false },
+      { "text": "meine", "correct": false },
+      { "text": "meinem", "correct": false }
     ],
-    "explanation": "Possessivartikel im Nominativ Maskulin → mein",
+    "explanation": "Nominativ + Maskulin + Possessivartikel → mein",
     "case": "nominativ",
     "gender": "masculine"
   },
@@ -2646,24 +1554,12 @@
       "uk": "Я бачу свого старого друга."
     },
     "answers": [
-      {
-        "text": "meinen",
-        "correct": true
-      },
-      {
-        "text": "mein",
-        "correct": false
-      },
-      {
-        "text": "meine",
-        "correct": false
-      },
-      {
-        "text": "meinem",
-        "correct": false
-      }
+      { "text": "meinen", "correct": true },
+      { "text": "mein", "correct": false },
+      { "text": "meine", "correct": false },
+      { "text": "meinem", "correct": false }
     ],
-    "explanation": "Possessivartikel im Akkusativ Maskulin → meinen",
+    "explanation": "Akkusativ + Maskulin + Possessivartikel → meinen",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -2675,24 +1571,12 @@
       "uk": "Вона п’є свою гарячу каву."
     },
     "answers": [
-      {
-        "text": "ihren",
-        "correct": true
-      },
-      {
-        "text": "ihr",
-        "correct": false
-      },
-      {
-        "text": "ihre",
-        "correct": false
-      },
-      {
-        "text": "ihrem",
-        "correct": false
-      }
+      { "text": "ihren", "correct": true },
+      { "text": "ihr", "correct": false },
+      { "text": "ihre", "correct": false },
+      { "text": "ihrem", "correct": false }
     ],
-    "explanation": "Possessivartikel im Akkusativ Maskulin → ihren",
+    "explanation": "Akkusativ + Maskulin + Possessivartikel → ihren",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -2704,24 +1588,12 @@
       "uk": "Ми відвідуємо нашу приємну сусідку."
     },
     "answers": [
-      {
-        "text": "unsere",
-        "correct": true
-      },
-      {
-        "text": "unser",
-        "correct": false
-      },
-      {
-        "text": "unseren",
-        "correct": false
-      },
-      {
-        "text": "unserem",
-        "correct": false
-      }
+      { "text": "unsere", "correct": true },
+      { "text": "unser", "correct": false },
+      { "text": "unseren", "correct": false },
+      { "text": "unserem", "correct": false }
     ],
-    "explanation": "Possessivartikel im Akkusativ Feminin → unsere",
+    "explanation": "Akkusativ + Feminin + Possessivartikel → unsere",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -2733,24 +1605,12 @@
       "uk": "Він швидко знаходить свій ключ."
     },
     "answers": [
-      {
-        "text": "seinen",
-        "correct": true
-      },
-      {
-        "text": "sein",
-        "correct": false
-      },
-      {
-        "text": "seine",
-        "correct": false
-      },
-      {
-        "text": "seinem",
-        "correct": false
-      }
+      { "text": "seinen", "correct": true },
+      { "text": "sein", "correct": false },
+      { "text": "seine", "correct": false },
+      { "text": "seinem", "correct": false }
     ],
-    "explanation": "Possessivartikel im Akkusativ Maskulin → seinen",
+    "explanation": "Akkusativ + Maskulin + Possessivartikel → seinen",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -2762,24 +1622,12 @@
       "uk": "Я купую свою свіжу газету."
     },
     "answers": [
-      {
-        "text": "meine",
-        "correct": true
-      },
-      {
-        "text": "mein",
-        "correct": false
-      },
-      {
-        "text": "meinen",
-        "correct": false
-      },
-      {
-        "text": "meinem",
-        "correct": false
-      }
+      { "text": "meine", "correct": true },
+      { "text": "mein", "correct": false },
+      { "text": "meinen", "correct": false },
+      { "text": "meinem", "correct": false }
     ],
-    "explanation": "Possessivartikel im Akkusativ Feminin → meine",
+    "explanation": "Akkusativ + Feminin + Possessivartikel → meine",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -2791,24 +1639,12 @@
       "uk": "Вона слухає свою улюблену музику."
     },
     "answers": [
-      {
-        "text": "ihre",
-        "correct": true
-      },
-      {
-        "text": "ihr",
-        "correct": false
-      },
-      {
-        "text": "ihren",
-        "correct": false
-      },
-      {
-        "text": "ihrem",
-        "correct": false
-      }
+      { "text": "ihre", "correct": true },
+      { "text": "ihr", "correct": false },
+      { "text": "ihren", "correct": false },
+      { "text": "ihrem", "correct": false }
     ],
-    "explanation": "Possessivartikel im Akkusativ Feminin → ihre",
+    "explanation": "Akkusativ + Feminin + Possessivartikel → ihre",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -2820,24 +1656,12 @@
       "uk": "Ми ремонтуємо наш зламаний принтер."
     },
     "answers": [
-      {
-        "text": "unseren",
-        "correct": true
-      },
-      {
-        "text": "unser",
-        "correct": false
-      },
-      {
-        "text": "unsere",
-        "correct": false
-      },
-      {
-        "text": "unserem",
-        "correct": false
-      }
+      { "text": "unseren", "correct": true },
+      { "text": "unser", "correct": false },
+      { "text": "unsere", "correct": false },
+      { "text": "unserem", "correct": false }
     ],
-    "explanation": "Possessivartikel im Akkusativ Maskulin → unseren",
+    "explanation": "Akkusativ + Maskulin + Possessivartikel → unseren",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -2849,24 +1673,12 @@
       "uk": "Він читає свою цікаву книгу."
     },
     "answers": [
-      {
-        "text": "sein",
-        "correct": true
-      },
-      {
-        "text": "seinen",
-        "correct": false
-      },
-      {
-        "text": "seine",
-        "correct": false
-      },
-      {
-        "text": "seinem",
-        "correct": false
-      }
+      { "text": "sein", "correct": true },
+      { "text": "seinen", "correct": false },
+      { "text": "seine", "correct": false },
+      { "text": "seinem", "correct": false }
     ],
-    "explanation": "Possessivartikel im Akkusativ Neutrum → sein",
+    "explanation": "Akkusativ + Neutrum + Possessivartikel → sein",
     "case": "akkusativ",
     "gender": "neuter"
   },
@@ -2878,24 +1690,12 @@
       "uk": "Я відкриваю свою важку сумку."
     },
     "answers": [
-      {
-        "text": "meine",
-        "correct": true
-      },
-      {
-        "text": "mein",
-        "correct": false
-      },
-      {
-        "text": "meinen",
-        "correct": false
-      },
-      {
-        "text": "meinem",
-        "correct": false
-      }
+      { "text": "meine", "correct": true },
+      { "text": "mein", "correct": false },
+      { "text": "meinen", "correct": false },
+      { "text": "meinem", "correct": false }
     ],
-    "explanation": "Possessivartikel im Akkusativ Feminin → meine",
+    "explanation": "Akkusativ + Feminin + Possessivartikel → meine",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -2907,24 +1707,12 @@
       "uk": "Я допомагаю своєму надійному колезі."
     },
     "answers": [
-      {
-        "text": "meinem",
-        "correct": true
-      },
-      {
-        "text": "meinen",
-        "correct": false
-      },
-      {
-        "text": "meine",
-        "correct": false
-      },
-      {
-        "text": "mein",
-        "correct": false
-      }
+      { "text": "meinem", "correct": true },
+      { "text": "meinen", "correct": false },
+      { "text": "meine", "correct": false },
+      { "text": "mein", "correct": false }
     ],
-    "explanation": "Possessivartikel + Dativ Maskulin → meinem",
+    "explanation": "Dativ + Maskulin + Possessivartikel → meinem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -2936,24 +1724,12 @@
       "uk": "Вона дякує своїй терплячій вчительці."
     },
     "answers": [
-      {
-        "text": "ihrer",
-        "correct": true
-      },
-      {
-        "text": "ihre",
-        "correct": false
-      },
-      {
-        "text": "ihrem",
-        "correct": false
-      },
-      {
-        "text": "ihren",
-        "correct": false
-      }
+      { "text": "ihrer", "correct": true },
+      { "text": "ihre", "correct": false },
+      { "text": "ihrem", "correct": false },
+      { "text": "ihren", "correct": false }
     ],
-    "explanation": "Possessivartikel + Dativ Feminin → ihrer",
+    "explanation": "Dativ + Feminin + Possessivartikel → ihrer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -2965,24 +1741,12 @@
       "uk": "Ми довіряємо нашому досвідченому консультанту."
     },
     "answers": [
-      {
-        "text": "unserem",
-        "correct": true
-      },
-      {
-        "text": "unseren",
-        "correct": false
-      },
-      {
-        "text": "unsere",
-        "correct": false
-      },
-      {
-        "text": "unser",
-        "correct": false
-      }
+      { "text": "unserem", "correct": true },
+      { "text": "unseren", "correct": false },
+      { "text": "unsere", "correct": false },
+      { "text": "unser", "correct": false }
     ],
-    "explanation": "Possessivartikel + Dativ Maskulin → unserem",
+    "explanation": "Dativ + Maskulin + Possessivartikel → unserem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -2994,24 +1758,12 @@
       "uk": "Він розмовляє зі своєю відповідальною співробітницею."
     },
     "answers": [
-      {
-        "text": "seiner",
-        "correct": true
-      },
-      {
-        "text": "seine",
-        "correct": false
-      },
-      {
-        "text": "seinem",
-        "correct": false
-      },
-      {
-        "text": "seinen",
-        "correct": false
-      }
+      { "text": "seiner", "correct": true },
+      { "text": "seine", "correct": false },
+      { "text": "seinem", "correct": false },
+      { "text": "seinen", "correct": false }
     ],
-    "explanation": "Possessivartikel + Dativ Feminin → seiner",
+    "explanation": "Dativ + Feminin + Possessivartikel → seiner",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -3020,27 +1772,15 @@
     "question": "Ich folge ____ ursprünglichen Plan.",
     "translations": {
       "en": "I follow my original plan.",
-      "uk": "Я дотримуюся свого початкового плану."
+      "uk": "Я дотримуємося свого початкового плану."
     },
     "answers": [
-      {
-        "text": "meinem",
-        "correct": true
-      },
-      {
-        "text": "meinen",
-        "correct": false
-      },
-      {
-        "text": "mein",
-        "correct": false
-      },
-      {
-        "text": "meine",
-        "correct": false
-      }
+      { "text": "meinem", "correct": true },
+      { "text": "meinen", "correct": false },
+      { "text": "mein", "correct": false },
+      { "text": "meine", "correct": false }
     ],
-    "explanation": "Verb „folgen“ + Dativ Maskulin → meinem",
+    "explanation": "Dativ + Maskulin + Possessivartikel → meinem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -3052,24 +1792,12 @@
       "uk": "Вона допомагає своїй хворій бабусі."
     },
     "answers": [
-      {
-        "text": "ihrer",
-        "correct": true
-      },
-      {
-        "text": "ihre",
-        "correct": false
-      },
-      {
-        "text": "ihrem",
-        "correct": false
-      },
-      {
-        "text": "ihren",
-        "correct": false
-      }
+      { "text": "ihrer", "correct": true },
+      { "text": "ihre", "correct": false },
+      { "text": "ihrem", "correct": false },
+      { "text": "ihren", "correct": false }
     ],
-    "explanation": "Verb „helfen“ + Dativ Feminin → ihrer",
+    "explanation": "Dativ + Feminin + Possessivartikel → ihrer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -3081,24 +1809,12 @@
       "uk": "Ми вітаємо нашу успішну команду."
     },
     "answers": [
-      {
-        "text": "unserem",
-        "correct": true
-      },
-      {
-        "text": "unseren",
-        "correct": false
-      },
-      {
-        "text": "unsere",
-        "correct": false
-      },
-      {
-        "text": "unser",
-        "correct": false
-      }
+      { "text": "unserem", "correct": true },
+      { "text": "unseren", "correct": false },
+      { "text": "unsere", "correct": false },
+      { "text": "unser", "correct": false }
     ],
-    "explanation": "Verb „gratulieren“ + Dativ Neutrum → unserem",
+    "explanation": "Dativ + Neutrum + Possessivartikel → unserem",
     "case": "dativ",
     "gender": "neuter"
   },
@@ -3110,24 +1826,12 @@
       "uk": "Він відповідає своєму безпосередньому керівнику."
     },
     "answers": [
-      {
-        "text": "seinem",
-        "correct": true
-      },
-      {
-        "text": "seinen",
-        "correct": false
-      },
-      {
-        "text": "seine",
-        "correct": false
-      },
-      {
-        "text": "sein",
-        "correct": false
-      }
+      { "text": "seinem", "correct": true },
+      { "text": "seinen", "correct": false },
+      { "text": "seine", "correct": false },
+      { "text": "sein", "correct": false }
     ],
-    "explanation": "Verb „antworten“ + Dativ Maskulin → seinem",
+    "explanation": "Dativ + Maskulin + Possessivartikel → seinem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -3139,24 +1843,12 @@
       "uk": "Я розповідаю своїй допитливій доньці історію."
     },
     "answers": [
-      {
-        "text": "meiner",
-        "correct": true
-      },
-      {
-        "text": "meine",
-        "correct": false
-      },
-      {
-        "text": "meinem",
-        "correct": false
-      },
-      {
-        "text": "meinen",
-        "correct": false
-      }
+      { "text": "meiner", "correct": true },
+      { "text": "meine", "correct": false },
+      { "text": "meinem", "correct": false },
+      { "text": "meinen", "correct": false }
     ],
-    "explanation": "Dativ Feminin + Possessivartikel → meiner",
+    "explanation": "Dativ + Feminin + Possessivartikel → meiner",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -3168,24 +1860,12 @@
       "uk": "Вона пише своєму багаторічному клієнту повідомлення."
     },
     "answers": [
-      {
-        "text": "ihrem",
-        "correct": true
-      },
-      {
-        "text": "ihren",
-        "correct": false
-      },
-      {
-        "text": "ihre",
-        "correct": false
-      },
-      {
-        "text": "ihr",
-        "correct": false
-      }
+      { "text": "ihrem", "correct": true },
+      { "text": "ihren", "correct": false },
+      { "text": "ihre", "correct": false },
+      { "text": "ihr", "correct": false }
     ],
-    "explanation": "Dativ Maskulin + Possessivartikel → ihrem",
+    "explanation": "Dativ + Maskulin + Possessivartikel → ihrem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -3197,24 +1877,12 @@
       "uk": "Ми зустрічаємо нашу колишню професорку."
     },
     "answers": [
-      {
-        "text": "unserer",
-        "correct": true
-      },
-      {
-        "text": "unsere",
-        "correct": false
-      },
-      {
-        "text": "unserem",
-        "correct": false
-      },
-      {
-        "text": "unseren",
-        "correct": false
-      }
+      { "text": "unserer", "correct": true },
+      { "text": "unsere", "correct": false },
+      { "text": "unserem", "correct": false },
+      { "text": "unseren", "correct": false }
     ],
-    "explanation": "Verb „begegnen“ + Dativ Feminin → unserer",
+    "explanation": "Dativ + Feminin + Possessivartikel → unserer",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -3226,24 +1894,12 @@
       "uk": "Він слухає свого уважного співрозмовника."
     },
     "answers": [
-      {
-        "text": "seinem",
-        "correct": true
-      },
-      {
-        "text": "seinen",
-        "correct": false
-      },
-      {
-        "text": "seine",
-        "correct": false
-      },
-      {
-        "text": "sein",
-        "correct": false
-      }
+      { "text": "seinem", "correct": true },
+      { "text": "seinen", "correct": false },
+      { "text": "seine", "correct": false },
+      { "text": "sein", "correct": false }
     ],
-    "explanation": "Verb „zuhören“ + Dativ Maskulin → seinem",
+    "explanation": "Dativ + Maskulin + Possessivartikel → seinem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -3252,27 +1908,15 @@
     "question": "Ich danke ____ hilfsbereiten Nachbarin.",
     "translations": {
       "en": "I thank my helpful neighbor.",
-      "uk": "Я дякую своїй корисній сусідці."
+      "uk": "Я дякую своїй чуйній сусідці."
     },
     "answers": [
-      {
-        "text": "meiner",
-        "correct": true
-      },
-      {
-        "text": "meine",
-        "correct": false
-      },
-      {
-        "text": "meinem",
-        "correct": false
-      },
-      {
-        "text": "meinen",
-        "correct": false
-      }
+      { "text": "meiner", "correct": true },
+      { "text": "meine", "correct": false },
+      { "text": "meinem", "correct": false },
+      { "text": "meinen", "correct": false }
     ],
-    "explanation": "Verb „danken“ + Dativ Feminin → meiner",
+    "explanation": "Dativ + Feminin + Possessivartikel → meiner",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -3284,24 +1928,12 @@
       "uk": "Вона довіряє своєму персональному тренеру."
     },
     "answers": [
-      {
-        "text": "ihrem",
-        "correct": true
-      },
-      {
-        "text": "ihren",
-        "correct": false
-      },
-      {
-        "text": "ihre",
-        "correct": false
-      },
-      {
-        "text": "ihr",
-        "correct": false
-      }
+      { "text": "ihrem", "correct": true },
+      { "text": "ihren", "correct": false },
+      { "text": "ihre", "correct": false },
+      { "text": "ihr", "correct": false }
     ],
-    "explanation": "Verb „vertrauen“ + Dativ Maskulin → ihrem",
+    "explanation": "Dativ + Maskulin + Possessivartikel → ihrem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -3313,24 +1945,12 @@
       "uk": "Ми дотримуємося наших внутрішніх правил."
     },
     "answers": [
-      {
-        "text": "unseren",
-        "correct": true
-      },
-      {
-        "text": "unserem",
-        "correct": false
-      },
-      {
-        "text": "unsere",
-        "correct": false
-      },
-      {
-        "text": "unser",
-        "correct": false
-      }
+      { "text": "unseren", "correct": true },
+      { "text": "unserem", "correct": false },
+      { "text": "unsere", "correct": false },
+      { "text": "unser", "correct": false }
     ],
-    "explanation": "Dativ Plural + Possessivartikel → unseren",
+    "explanation": "Dativ + Plural + Possessivartikel → unseren",
     "case": "dativ",
     "gender": "plural"
   },
@@ -3342,24 +1962,12 @@
       "uk": "Він допомагає своїм новим працівникам."
     },
     "answers": [
-      {
-        "text": "seinen",
-        "correct": true
-      },
-      {
-        "text": "seinem",
-        "correct": false
-      },
-      {
-        "text": "seine",
-        "correct": false
-      },
-      {
-        "text": "sein",
-        "correct": false
-      }
+      { "text": "seinen", "correct": true },
+      { "text": "seinem", "correct": false },
+      { "text": "seine", "correct": false },
+      { "text": "sein", "correct": false }
     ],
-    "explanation": "Dativ Plural + Possessivartikel → seinen",
+    "explanation": "Dativ + Plural + Possessivartikel → seinen",
     "case": "dativ",
     "gender": "plural"
   },
@@ -3371,24 +1979,12 @@
       "uk": "Я розмовляю зі своєю відповідальною лікаркою."
     },
     "answers": [
-      {
-        "text": "meiner",
-        "correct": true
-      },
-      {
-        "text": "meine",
-        "correct": false
-      },
-      {
-        "text": "meinem",
-        "correct": false
-      },
-      {
-        "text": "meinen",
-        "correct": false
-      }
+      { "text": "meiner", "correct": true },
+      { "text": "meine", "correct": false },
+      { "text": "meinem", "correct": false },
+      { "text": "meinen", "correct": false }
     ],
-    "explanation": "Dativ Feminin + Possessivartikel → meiner",
+    "explanation": "Dativ + Feminin + Possessivartikel → meiner",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -3400,24 +1996,12 @@
       "uk": "Вона вітає свого найкращого друга з днем народження."
     },
     "answers": [
-      {
-        "text": "ihrem",
-        "correct": true
-      },
-      {
-        "text": "ihren",
-        "correct": false
-      },
-      {
-        "text": "ihre",
-        "correct": false
-      },
-      {
-        "text": "ihr",
-        "correct": false
-      }
+      { "text": "ihrem", "correct": true },
+      { "text": "ihren", "correct": false },
+      { "text": "ihre", "correct": false },
+      { "text": "ihr", "correct": false }
     ],
-    "explanation": "Verb „gratulieren“ + Dativ Maskulin → ihrem",
+    "explanation": "Dativ + Maskulin + Possessivartikel → ihrem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -3429,24 +2013,12 @@
       "uk": "Ми відповідаємо нашим міжнародним партнерам."
     },
     "answers": [
-      {
-        "text": "unseren",
-        "correct": true
-      },
-      {
-        "text": "unserem",
-        "correct": false
-      },
-      {
-        "text": "unsere",
-        "correct": false
-      },
-      {
-        "text": "unser",
-        "correct": false
-      }
+      { "text": "unseren", "correct": true },
+      { "text": "unserem", "correct": false },
+      { "text": "unsere", "correct": false },
+      { "text": "unser", "correct": false }
     ],
-    "explanation": "Dativ Plural + Possessivartikel → unseren",
+    "explanation": "Dativ + Plural + Possessivartikel → unseren",
     "case": "dativ",
     "gender": "plural"
   },
@@ -3455,27 +2027,15 @@
     "question": "Er erklärt ____ skeptischen Publikum die Idee.",
     "translations": {
       "en": "He explains the idea to his skeptical audience.",
-      "uk": "Він пояснює ідею своєму скептичному публіці."
+      "uk": "Він пояснює ідею своїй скептичній публіці."
     },
     "answers": [
-      {
-        "text": "seinem",
-        "correct": true
-      },
-      {
-        "text": "seinen",
-        "correct": false
-      },
-      {
-        "text": "seine",
-        "correct": false
-      },
-      {
-        "text": "sein",
-        "correct": false
-      }
+      { "text": "seinem", "correct": true },
+      { "text": "seinen", "correct": false },
+      { "text": "seine", "correct": false },
+      { "text": "sein", "correct": false }
     ],
-    "explanation": "Dativ Neutrum + Possessivartikel → seinem",
+    "explanation": "Dativ + Neutrum + Possessivartikel → seinem",
     "case": "dativ",
     "gender": "neuter"
   },
@@ -3487,24 +2047,12 @@
       "uk": "У мене сьогодні немає вільного прийому."
     },
     "answers": [
-      {
-        "text": "keinen",
-        "correct": true
-      },
-      {
-        "text": "kein",
-        "correct": false
-      },
-      {
-        "text": "keine",
-        "correct": false
-      },
-      {
-        "text": "keinem",
-        "correct": false
-      }
+      { "text": "keinen", "correct": true },
+      { "text": "kein", "correct": false },
+      { "text": "keine", "correct": false },
+      { "text": "keinem", "correct": false }
     ],
-    "explanation": "Akkusativ Maskulin + Negativartikel → keinen",
+    "explanation": "Akkusativ + Maskulin + Negativartikel → keinen",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -3516,24 +2064,12 @@
       "uk": "Вона шукає нову роботу в місті."
     },
     "answers": [
-      {
-        "text": "einen",
-        "correct": true
-      },
-      {
-        "text": "ein",
-        "correct": false
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "einen", "correct": true },
+      { "text": "ein", "correct": false },
+      { "text": "eine", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ Maskulin + unbestimmter Artikel → einen",
+    "explanation": "Akkusativ + Maskulin + Unbestimmter Artikel → einen",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -3545,24 +2081,12 @@
       "uk": "Ми не знаходимо відповідного рішення для проблеми."
     },
     "answers": [
-      {
-        "text": "keine",
-        "correct": true
-      },
-      {
-        "text": "keinen",
-        "correct": false
-      },
-      {
-        "text": "kein",
-        "correct": false
-      },
-      {
-        "text": "keiner",
-        "correct": false
-      }
+      { "text": "keine", "correct": true },
+      { "text": "keinen", "correct": false },
+      { "text": "kein", "correct": false },
+      { "text": "keiner", "correct": false }
     ],
-    "explanation": "Akkusativ Feminin + Negativartikel → keine",
+    "explanation": "Akkusativ + Feminin + Negativartikel → keine",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -3574,24 +2098,12 @@
       "uk": "Він приносить свій власний ноутбук на роботу."
     },
     "answers": [
-      {
-        "text": "seinen",
-        "correct": true
-      },
-      {
-        "text": "sein",
-        "correct": false
-      },
-      {
-        "text": "seine",
-        "correct": false
-      },
-      {
-        "text": "seinem",
-        "correct": false
-      }
+      { "text": "seinen", "correct": true },
+      { "text": "sein", "correct": false },
+      { "text": "seine", "correct": false },
+      { "text": "seinem", "correct": false }
     ],
-    "explanation": "Akkusativ Maskulin + Possessivartikel → seinen",
+    "explanation": "Akkusativ + Maskulin + Possessivartikel → seinen",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -3603,24 +2115,12 @@
       "uk": "Я не бачу великої різниці."
     },
     "answers": [
-      {
-        "text": "keinen",
-        "correct": true
-      },
-      {
-        "text": "kein",
-        "correct": false
-      },
-      {
-        "text": "keine",
-        "correct": false
-      },
-      {
-        "text": "keinem",
-        "correct": false
-      }
+      { "text": "keinen", "correct": true },
+      { "text": "kein", "correct": false },
+      { "text": "keine", "correct": false },
+      { "text": "keinem", "correct": false }
     ],
-    "explanation": "Akkusativ Maskulin + Negativartikel → keinen",
+    "explanation": "Akkusativ + Maskulin + Negativartikel → keinen",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -3632,24 +2132,12 @@
       "uk": "Вона купує свіжий хліб у пекаря."
     },
     "answers": [
-      {
-        "text": "ein",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "ein", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "eine", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ Neutrum + unbestimmter Artikel → ein",
+    "explanation": "Akkusativ + Neutrum + Unbestimmter Artikel → ein",
     "case": "akkusativ",
     "gender": "neuter"
   },
@@ -3661,24 +2149,12 @@
       "uk": "Ми не отримали важливої інформації."
     },
     "answers": [
-      {
-        "text": "keine",
-        "correct": true
-      },
-      {
-        "text": "keinen",
-        "correct": false
-      },
-      {
-        "text": "kein",
-        "correct": false
-      },
-      {
-        "text": "keiner",
-        "correct": false
-      }
+      { "text": "keine", "correct": true },
+      { "text": "keinen", "correct": false },
+      { "text": "kein", "correct": false },
+      { "text": "keiner", "correct": false }
     ],
-    "explanation": "Akkusativ Plural + Negativartikel → keine",
+    "explanation": "Akkusativ + Plural + Negativartikel → keine",
     "case": "akkusativ",
     "gender": "plural"
   },
@@ -3690,24 +2166,12 @@
       "uk": "Він користується своїм приватним паркувальним місцем."
     },
     "answers": [
-      {
-        "text": "seinen",
-        "correct": true
-      },
-      {
-        "text": "sein",
-        "correct": false
-      },
-      {
-        "text": "seine",
-        "correct": false
-      },
-      {
-        "text": "seinem",
-        "correct": false
-      }
+      { "text": "seinen", "correct": true },
+      { "text": "sein", "correct": false },
+      { "text": "seine", "correct": false },
+      { "text": "seinem", "correct": false }
     ],
-    "explanation": "Akkusativ Maskulin + Possessivartikel → seinen",
+    "explanation": "Akkusativ + Maskulin + Possessivartikel → seinen",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -3719,24 +2183,12 @@
       "uk": "Я не п’ю гарячу каву ввечері."
     },
     "answers": [
-      {
-        "text": "keinen",
-        "correct": true
-      },
-      {
-        "text": "kein",
-        "correct": false
-      },
-      {
-        "text": "keine",
-        "correct": false
-      },
-      {
-        "text": "keinem",
-        "correct": false
-      }
+      { "text": "keinen", "correct": true },
+      { "text": "kein", "correct": false },
+      { "text": "keine", "correct": false },
+      { "text": "keinem", "correct": false }
     ],
-    "explanation": "Akkusativ Maskulin + Negativartikel → keinen",
+    "explanation": "Akkusativ + Maskulin + Negativartikel → keinen",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -3748,24 +2200,12 @@
       "uk": "Вона читає цікаву фахову книгу."
     },
     "answers": [
-      {
-        "text": "ein",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "ein", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einen", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ Neutrum + unbestimmter Artikel → ein",
+    "explanation": "Akkusativ + Neutrum + Unbestimmter Artikel → ein",
     "case": "akkusativ",
     "gender": "neuter"
   },
@@ -3777,24 +2217,12 @@
       "uk": "Я бачу новий договір на столі."
     },
     "answers": [
-      {
-        "text": "den",
-        "correct": true
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "des",
-        "correct": false
-      },
-      {
-        "text": "der",
-        "correct": false
-      }
+      { "text": "den", "correct": true },
+      { "text": "dem", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "der", "correct": false }
     ],
-    "explanation": "Akkusativ Maskulin + bestimmter Artikel → den",
+    "explanation": "Akkusativ + Maskulin + Bestimmter Artikel → den",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -3806,24 +2234,12 @@
       "uk": "Вона передає колезі важливі документи."
     },
     "answers": [
-      {
-        "text": "einem",
-        "correct": true
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "ein",
-        "correct": false
-      }
+      { "text": "einem", "correct": true },
+      { "text": "einen", "correct": false },
+      { "text": "eine", "correct": false },
+      { "text": "ein", "correct": false }
     ],
-    "explanation": "Dativ Maskulin + unbestimmter Artikel → einem",
+    "explanation": "Dativ + Maskulin + Unbestimmter Artikel → einem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -3835,24 +2251,12 @@
       "uk": "Ми знаємо ім’я відповідального менеджера."
     },
     "answers": [
-      {
-        "text": "des",
-        "correct": true
-      },
-      {
-        "text": "der",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Genitiv Maskulin + bestimmter Artikel → des",
+    "explanation": "Genitiv + Maskulin + Bestimmter Artikel → des",
     "case": "genitiv",
     "gender": "masculine"
   },
@@ -3864,24 +2268,12 @@
       "uk": "У нього немає чіткої відповіді на питання."
     },
     "answers": [
-      {
-        "text": "keine",
-        "correct": true
-      },
-      {
-        "text": "keinen",
-        "correct": false
-      },
-      {
-        "text": "kein",
-        "correct": false
-      },
-      {
-        "text": "keiner",
-        "correct": false
-      }
+      { "text": "keine", "correct": true },
+      { "text": "keinen", "correct": false },
+      { "text": "kein", "correct": false },
+      { "text": "keiner", "correct": false }
     ],
-    "explanation": "Akkusativ Feminin + Negativartikel → keine",
+    "explanation": "Akkusativ + Feminin + Negativartikel → keine",
     "case": "akkusativ",
     "gender": "feminine"
   },
@@ -3893,24 +2285,12 @@
       "uk": "Я розмовляю зі своїм безпосереднім керівником."
     },
     "answers": [
-      {
-        "text": "meiner",
-        "correct": true
-      },
-      {
-        "text": "meine",
-        "correct": false
-      },
-      {
-        "text": "meinen",
-        "correct": false
-      },
-      {
-        "text": "mein",
-        "correct": false
-      }
+      { "text": "meiner", "correct": true },
+      { "text": "meine", "correct": false },
+      { "text": "meinen", "correct": false },
+      { "text": "mein", "correct": false }
     ],
-    "explanation": "Dativ Feminin + Possessivartikel → meiner",
+    "explanation": "Dativ + Feminin + Possessivartikel → meiner",
     "case": "dativ",
     "gender": "feminine"
   },
@@ -3922,24 +2302,12 @@
       "uk": "Вона купує новий телефон для роботи."
     },
     "answers": [
-      {
-        "text": "ein",
-        "correct": true
-      },
-      {
-        "text": "eine",
-        "correct": false
-      },
-      {
-        "text": "einen",
-        "correct": false
-      },
-      {
-        "text": "einem",
-        "correct": false
-      }
+      { "text": "ein", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einen", "correct": false },
+      { "text": "einem", "correct": false }
     ],
-    "explanation": "Akkusativ Neutrum + unbestimmter Artikel → ein",
+    "explanation": "Akkusativ + Neutrum + Unbestimmter Artikel → ein",
     "case": "akkusativ",
     "gender": "neuter"
   },
@@ -3951,24 +2319,12 @@
       "uk": "Ми чекаємо на рішення компанії."
     },
     "answers": [
-      {
-        "text": "der",
-        "correct": true
-      },
-      {
-        "text": "des",
-        "correct": false
-      },
-      {
-        "text": "dem",
-        "correct": false
-      },
-      {
-        "text": "den",
-        "correct": false
-      }
+      { "text": "der", "correct": true },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
     ],
-    "explanation": "Genitiv Feminin + bestimmter Artikel → der",
+    "explanation": "Genitiv + Feminin + Bestimmter Artikel → der",
     "case": "genitiv",
     "gender": "feminine"
   },
@@ -3980,24 +2336,12 @@
       "uk": "Він допомагає своєму старому другові з переїздом."
     },
     "answers": [
-      {
-        "text": "seinem",
-        "correct": true
-      },
-      {
-        "text": "seinen",
-        "correct": false
-      },
-      {
-        "text": "sein",
-        "correct": false
-      },
-      {
-        "text": "seiner",
-        "correct": false
-      }
+      { "text": "seinem", "correct": true },
+      { "text": "seinen", "correct": false },
+      { "text": "sein", "correct": false },
+      { "text": "seiner", "correct": false }
     ],
-    "explanation": "Dativ Maskulin + Possessivartikel → seinem",
+    "explanation": "Dativ + Maskulin + Possessivartikel → seinem",
     "case": "dativ",
     "gender": "masculine"
   },
@@ -4009,24 +2353,12 @@
       "uk": "Я не знаходжу підходящого часу цього тижня."
     },
     "answers": [
-      {
-        "text": "keinen",
-        "correct": true
-      },
-      {
-        "text": "kein",
-        "correct": false
-      },
-      {
-        "text": "keine",
-        "correct": false
-      },
-      {
-        "text": "keinem",
-        "correct": false
-      }
+      { "text": "keinen", "correct": true },
+      { "text": "kein", "correct": false },
+      { "text": "keine", "correct": false },
+      { "text": "keinem", "correct": false }
     ],
-    "explanation": "Akkusativ Maskulin + Negativartikel → keinen",
+    "explanation": "Akkusativ + Maskulin + Negativartikel → keinen",
     "case": "akkusativ",
     "gender": "masculine"
   },
@@ -4038,24 +2370,12 @@
       "uk": "Вона працює над проєктом своєї команди."
     },
     "answers": [
-      {
-        "text": "ihres",
-        "correct": true
-      },
-      {
-        "text": "ihrer",
-        "correct": false
-      },
-      {
-        "text": "ihrem",
-        "correct": false
-      },
-      {
-        "text": "ihren",
-        "correct": false
-      }
+      { "text": "ihres", "correct": true },
+      { "text": "ihrer", "correct": false },
+      { "text": "ihrem", "correct": false },
+      { "text": "ihren", "correct": false }
     ],
-    "explanation": "Genitiv Neutrum + Possessivartikel → ihres",
+    "explanation": "Genitiv + Neutrum + Possessivartikel → ihres",
     "case": "genitiv",
     "gender": "neuter"
   }
