@@ -560,11 +560,11 @@
     "answers": [
       {
         "text": "hohe",
-        "correct": true
+        "correct": false
       },
       {
         "text": "hohen",
-        "correct": false
+        "correct": true
       },
       {
         "text": "hohes",
