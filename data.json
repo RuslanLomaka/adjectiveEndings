@@ -1219,7 +1219,7 @@
   },
   {
     "id": 88,
-    "question": "Die Door ____ Wohnung ist offen.",
+    "question": "Die Tür ____ Wohnung ist offen.",
     "translations": { "en": "The door of the apartment is open.", "uk": "Двері квартири відкриті." },
     "answers": [
       { "text": "der", "correct": true },
