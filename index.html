@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Artikel & Adjektivendungen – Trainer</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deutsch Trainer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <header class="page-header">
     <h1>Artikel & Adjektivendungen</h1>
-    <p>Wählen Sie die richtige Form, um den Satz zu vervollständigen.</p>
+    <p>Vervollständigen Sie die Sätze.</p>
   </header>
 
-  <div id="meta-bar" class="meta-bar">
-    <div class="language-bar">
+  <div class="meta-bar">
+    <div class="language-picker">
       <label for="language-select">Hilfssprache:</label>
       <select id="language-select">
         <option value="en">English</option>
         <option value="uk">Ukrainian</option>
-        <option value="ro">Romanian</option>
-        <option value="ar">Arabic</option>
       </select>
     </div>
   </div>
 
   <main id="questions-container"></main>
 
-  <section id="score-display" class="score" hidden>
-    <h2>Runde abgeschlossen</h2>
+  <section id="score-display" class="score-card" hidden>
+    <h2>Runde beendet</h2>
     <p id="final-score"></p>
     <div id="final-feedback"></div>
-    <button id="try-again-button" class="try-again-btn">🔄 Neue Runde</button>
+    <button onclick="location.reload()" class="retry-btn">🔄 Neue Runde</button>
   </section>
 
   <div id="grammar-modal" class="modal" aria-hidden="true">
     <div class="modal__backdrop" data-close="1"></div>
     <div class="modal__card">
       <div class="modal__header">
-        <h3 id="modal-title" class="modal__title">Regeln</h3>
+        <h3 id="modal-title">Regeln</h3>
         <button class="modal__close" data-close="1">✕</button>
       </div>
       <div id="grammar-content" class="modal__body"></div>
       <div class="modal__footer">
-        <button class="modal__ok" data-close="1">OK</button>
+        <button data-close="1">Schließen</button>
       </div>
     </div>
   </div>
 
-  <script src="app.js" defer></script>
+  <script src="app.js"></script>
 </body>
 </html>
