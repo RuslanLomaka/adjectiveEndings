@@ -10,57 +10,40 @@
 <body>
   <header class="page-header">
     <h1>Artikel & Adjektivendungen</h1>
-    <p>Wählen Sie die richtige Form (Artikel/Endung), um den Satz zu vervollständigen.</p>
+    <p>Wählen Sie die richtige Form, um den Satz zu vervollständigen.</p>
   </header>
 
-  <div id="meta-bar" class="meta-bar" aria-live="polite">
-    <div class="stats-container">
-      <span id="live-progress">Frage: 0 / 10</span>
-      <span id="live-score">Richtig: 0</span>
+  <div id="meta-bar" class="meta-bar">
+    <div class="language-bar">
+      <label for="language-select">Hilfssprache:</label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="uk">Ukrainian</option>
+        <option value="ro">Romanian</option>
+        <option value="ar">Arabic</option>
+      </select>
     </div>
-    <div class="progress-wrapper">
-      <div id="progress-fill" class="progress-fill" style="width: 0%;"></div>
-    </div>
-  </div>
-
-  <button id="try-again-button" class="try-again-btn" type="button" hidden>
-    🔄 Neue Runde starten
-  </button>
-
-  <div class="language-bar">
-    <label for="language-select">Hilfssprache:</label>
-    <select id="language-select">
-      <option value="en">English</option>
-      <option value="uk">Ukrainian</option>
-      <option value="ro">Romanian</option>
-      <option value="ar">Arabic</option>
-    </select>
   </div>
 
   <main id="questions-container"></main>
 
-  <section id="score-display" class="score" hidden aria-live="polite">
-    <div class="result-card">
-      <h2>Runde abgeschlossen 🎉</h2>
-      <p id="final-score" class="final-score-text"></p>
-      <div id="final-feedback" class="final-feedback-stats"></div>
-    </div>
+  <section id="score-display" class="score" hidden>
+    <h2>Runde abgeschlossen</h2>
+    <p id="final-score"></p>
+    <div id="final-feedback"></div>
+    <button id="try-again-button" class="try-again-btn">🔄 Neue Runde</button>
   </section>
 
   <div id="grammar-modal" class="modal" aria-hidden="true">
     <div class="modal__backdrop" data-close="1"></div>
-
-    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__card">
       <div class="modal__header">
         <h3 id="modal-title" class="modal__title">Regeln</h3>
-        <button class="modal__close" type="button" data-close="1" aria-label="Close">✕</button>
+        <button class="modal__close" data-close="1">✕</button>
       </div>
-
-      <div id="grammar-content" class="modal__body">
-        </div>
-
+      <div id="grammar-content" class="modal__body"></div>
       <div class="modal__footer">
-        <button class="modal__ok" type="button" data-close="1">Verstanden</button>
+        <button class="modal__ok" data-close="1">OK</button>
       </div>
     </div>
   </div>
