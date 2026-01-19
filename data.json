@@ -1958,5 +1958,1265 @@
     "explanation": "Genitiv (Besitz) + Neutrum + Possessivartikel → ihres",
     "case": "genitiv",
     "gender": "neuter"
+  },
+  {
+    "id": 141,
+    "question": "Ich sehe den ____ Mann.",
+    "translations": { "en": "I see the old man.", "uk": "Я бачу старого чоловіка." },
+    "answers": [
+      { "text": "alten", "correct": true },
+      { "text": "alte", "correct": false },
+      { "text": "altes", "correct": false },
+      { "text": "alter", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: sehen) + Maskulin + Bestimmter Artikel → Endung -en",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 142,
+    "question": "Sie kauft die ____ Tasche.",
+    "translations": { "en": "She is buying the new bag.", "uk": "Вона купує нову сумку." },
+    "answers": [
+      { "text": "neue", "correct": true },
+      { "text": "neuen", "correct": false },
+      { "text": "neues", "correct": false },
+      { "text": "neuer", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: kaufen) + Feminin + Bestimmter Artikel → Endung -e",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 143,
+    "question": "Wir trinken das ____ Wasser.",
+    "translations": { "en": "We drink the cold water.", "uk": "Ми п'ємо холодну воду." },
+    "answers": [
+      { "text": "kalte", "correct": true },
+      { "text": "kalten", "correct": false },
+      { "text": "kaltes", "correct": false },
+      { "text": "kalter", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: trinken) + Neutrum + Bestimmter Artikel → Endung -e",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 144,
+    "question": "Er findet den ____ Weg.",
+    "translations": { "en": "He finds the right way.", "uk": "Він знаходить правильний шлях." },
+    "answers": [
+      { "text": "richtigen", "correct": true },
+      { "text": "richtige", "correct": false },
+      { "text": "richtiges", "correct": false },
+      { "text": "richtiger", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: finden) + Maskulin + Bestimmter Artikel → Endung -en",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 145,
+    "question": "Ich mag die ____ Äpfel.",
+    "translations": { "en": "I like the fresh apples.", "uk": "Мені подобаються свіжі яблука." },
+    "answers": [
+      { "text": "frischen", "correct": true },
+      { "text": "frische", "correct": false },
+      { "text": "frisches", "correct": false },
+      { "text": "frischer", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: mögen) + Plural + Bestimmter Artikel → Endung -en",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 146,
+    "question": "Sie hört die ____ Musik.",
+    "translations": { "en": "She listens to the loud music.", "uk": "Вона слухає гучну музику." },
+    "answers": [
+      { "text": "laute", "correct": true },
+      { "text": "lauten", "correct": false },
+      { "text": "lautes", "correct": false },
+      { "text": "lauter", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: hören) + Feminin + Bestimmter Artikel → Endung -e",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 147,
+    "question": "Wir besuchen den ____ Freund.",
+    "translations": { "en": "We visit the sick friend.", "uk": "Ми відвідуємо хворого друга." },
+    "answers": [
+      { "text": "kranken", "correct": true },
+      { "text": "kranke", "correct": false },
+      { "text": "krankes", "correct": false },
+      { "text": "kranker", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: besuchen) + Maskulin + Bestimmter Artikel → Endung -en",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 148,
+    "question": "Er liest das ____ Buch.",
+    "translations": { "en": "He reads the interesting book.", "uk": "Він читає цікаву книгу." },
+    "answers": [
+      { "text": "interessante", "correct": true },
+      { "text": "interessanten", "correct": false },
+      { "text": "interessantes", "correct": false },
+      { "text": "interessanter", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: lesen) + Neutrum + Bestimmter Artikel → Endung -e",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 149,
+    "question": "Ich putze den ____ Tisch.",
+    "translations": { "en": "I clean the dirty table.", "uk": "Я прибираю брудний стіл." },
+    "answers": [
+      { "text": "schmutzigen", "correct": true },
+      { "text": "schmutzige", "correct": false },
+      { "text": "schmutziges", "correct": false },
+      { "text": "schmutziger", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: putzen) + Maskulin + Bestimmter Artikel → Endung -en",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 150,
+    "question": "Sie trägt die ____ Jacke.",
+    "translations": { "en": "She is wearing the black jacket.", "uk": "Вона носить чорну куртку." },
+    "answers": [
+      { "text": "schwarze", "correct": true },
+      { "text": "schwarzen", "correct": false },
+      { "text": "schwarzes", "correct": false },
+      { "text": "schwarzer", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: tragen) + Feminin + Bestimmter Artikel → Endung -e",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 151,
+    "question": "Wir öffnen das ____ Fenster.",
+    "translations": { "en": "We open the big window.", "uk": "Ми відкриваємо велике вікно." },
+    "answers": [
+      { "text": "große", "correct": true },
+      { "text": "großen", "correct": false },
+      { "text": "großes", "correct": false },
+      { "text": "großer", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: öffnen) + Neutrum + Bestimmter Artikel → Endung -e",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 152,
+    "question": "Er repariert den ____ Computer.",
+    "translations": { "en": "He repairs the broken computer.", "uk": "Він ремонтує зламаний комп’ютер." },
+    "answers": [
+      { "text": "kaputten", "correct": true },
+      { "text": "kaputte", "correct": false },
+      { "text": "kaputtes", "correct": false },
+      { "text": "kaputter", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: reparieren) + Maskulin + Bestimmter Artikel → Endung -en",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 153,
+    "question": "Ich sehe die ____ Blumen.",
+    "translations": { "en": "I see the beautiful flowers.", "uk": "Я бачу гарні квіти." },
+    "answers": [
+      { "text": "schönen", "correct": true },
+      { "text": "schöne", "correct": false },
+      { "text": "schönes", "correct": false },
+      { "text": "schöner", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: sehen) + Plural + Bestimmter Artikel → Endung -en",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 154,
+    "question": "Sie bestellt das ____ Essen.",
+    "translations": { "en": "She orders the hot food.", "uk": "Вона замовляє гарячу їжу." },
+    "answers": [
+      { "text": "heiße", "correct": true },
+      { "text": "heißen", "correct": false },
+      { "text": "heißes", "correct": false },
+      { "text": "heißer", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: bestellen) + Neutrum + Bestimmter Artikel → Endung -e",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 155,
+    "question": "Wir suchen den ____ Platz.",
+    "translations": { "en": "We are looking for the free seat.", "uk": "Ми шукаємо вільне місце." },
+    "answers": [
+      { "text": "freien", "correct": true },
+      { "text": "freie", "correct": false },
+      { "text": "freies", "correct": false },
+      { "text": "freier", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: suchen) + Maskulin + Bestimmter Artikel → Endung -en",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 156,
+    "question": "Er kauft die ____ Schuhe.",
+    "translations": { "en": "He buys the cheap shoes.", "uk": "Він купує дешеві черевики." },
+    "answers": [
+      { "text": "billigen", "correct": true },
+      { "text": "billige", "correct": false },
+      { "text": "billiges", "correct": false },
+      { "text": "billiger", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: kaufen) + Plural + Bestimmter Artikel → Endung -en",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 157,
+    "question": "Ich nehme das ____ Paket.",
+    "translations": { "en": "I take the heavy package.", "uk": "Я беру важку посилку." },
+    "answers": [
+      { "text": "schwere", "correct": true },
+      { "text": "schweren", "correct": false },
+      { "text": "schweres", "correct": false },
+      { "text": "schwerer", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: nehmen) + Neutrum + Bestimmter Artikel → Endung -e",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 158,
+    "question": "Sie schließt die ____ Tür.",
+    "translations": { "en": "She closes the old door.", "uk": "Вона зачиняє старі двері." },
+    "answers": [
+      { "text": "alte", "correct": true },
+      { "text": "alten", "correct": false },
+      { "text": "altes", "correct": false },
+      { "text": "alter", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: schließen) + Feminin + Bestimmter Artikel → Endung -e",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 159,
+    "question": "Wir hören den ____ Podcast.",
+    "translations": { "en": "We listen to the new podcast.", "uk": "Ми слухаємо новий подкаст." },
+    "answers": [
+      { "text": "neuen", "correct": true },
+      { "text": "neue", "correct": false },
+      { "text": "neues", "correct": false },
+      { "text": "neuer", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: hören) + Maskulin + Bestimmter Artikel → Endung -en",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 160,
+    "question": "Er fotografiert die ____ Gebäude.",
+    "translations": { "en": "He photographs the tall buildings.", "uk": "Він фотографує високі будівлі." },
+    "answers": [
+      { "text": "hohen", "correct": true },
+      { "text": "hohe", "correct": false },
+      { "text": "hohes", "correct": false },
+      { "text": "hoher", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: fotografieren) + Plural + Bestimmter Artikel → Endung -en",
+    "case": "akkusativ",
+    "gender": "plural"
+  },
+  {
+    "id": 161,
+    "question": "Ich sehe ____ neuen Film.",
+    "translations": { "en": "I see a new movie.", "uk": "Я бачу новий фільм." },
+    "answers": [
+      { "text": "einen", "correct": true },
+      { "text": "ein", "correct": false },
+      { "text": "eine", "correct": false },
+      { "text": "einer", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: sehen) + Maskulin + Unbestimmter Artikel → einen",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 162,
+    "question": "Sie kauft ____ frische Zeitung.",
+    "translations": { "en": "She buys a fresh newspaper.", "uk": "Вона купує свіжу газету." },
+    "answers": [
+      { "text": "eine", "correct": true },
+      { "text": "einer", "correct": false },
+      { "text": "einen", "correct": false },
+      { "text": "ein", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: kaufen) + Feminin + Unbestimmter Artikel → eine",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 163,
+    "question": "Er sucht ____ guten Arzt.",
+    "translations": { "en": "He is looking for a good doctor.", "uk": "Він шукає хорошого лікаря." },
+    "answers": [
+      { "text": "einen", "correct": true },
+      { "text": "ein", "correct": false },
+      { "text": "eine", "correct": false },
+      { "text": "einer", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: suchen) + Maskulin + Unbestimmter Artikel → einen",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 164,
+    "question": "Wir brauchen ____ größere Wohnung.",
+    "translations": { "en": "We need a bigger apartment.", "uk": "Нам потрібна більша квартира." },
+    "answers": [
+      { "text": "eine", "correct": true },
+      { "text": "einer", "correct": false },
+      { "text": "einen", "correct": false },
+      { "text": "ein", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: brauchen) + Feminin + Unbestimmter Artikel → eine",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 165,
+    "question": "Ich trinke ____ heißen Kaffee.",
+    "translations": { "en": "I drink a hot coffee.", "uk": "Я п’ю гарячу каву." },
+    "answers": [
+      { "text": "einen", "correct": true },
+      { "text": "ein", "correct": false },
+      { "text": "eine", "correct": false },
+      { "text": "einer", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: trinken) + Maskulin + Unbestimmter Artikel → einen",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 166,
+    "question": "Sie hört ____ interessante Geschichte.",
+    "translations": { "en": "She listens to an interesting story.", "uk": "Вона слухає цікаву історію." },
+    "answers": [
+      { "text": "eine", "correct": true },
+      { "text": "einer", "correct": false },
+      { "text": "einen", "correct": false },
+      { "text": "ein", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: hören) + Feminin + Unbestimmter Artikel → eine",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 167,
+    "question": "Ich lese ____ spannendes Buch.",
+    "translations": { "en": "I read an exciting book.", "uk": "Я читаю захопливу книгу." },
+    "answers": [
+      { "text": "ein", "correct": true },
+      { "text": "eine", "correct": false },
+      { "text": "einen", "correct": false },
+      { "text": "einer", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: lesen) + Neutrum + Unbestimmter Artikel → ein",
+    "case": "akkusativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 168,
+    "question": "Sie trägt ____ schöne Jacke.",
+    "translations": { "en": "She is wearing a beautiful jacket.", "uk": "Вона носить гарну куртку." },
+    "answers": [
+      { "text": "eine", "correct": true },
+      { "text": "einer", "correct": false },
+      { "text": "einen", "correct": false },
+      { "text": "ein", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: tragen) + Feminin + Unbestimmter Artikel → eine",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 169,
+    "question": "Er bestellt ____ kalten Saft.",
+    "translations": { "en": "He orders a cold juice.", "uk": "Він замовляє холодний сік." },
+    "answers": [
+      { "text": "einen", "correct": true },
+      { "text": "ein", "correct": false },
+      { "text": "eine", "correct": false },
+      { "text": "einer", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: bestellen) + Maskulin + Unbestimmter Artikel → einen",
+    "case": "akkusativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 170,
+    "question": "Wir planen ____ lange Reise.",
+    "translations": { "en": "We are planning a long trip.", "uk": "Ми плануємо довгу подорож." },
+    "answers": [
+      { "text": "eine", "correct": true },
+      { "text": "einer", "correct": false },
+      { "text": "einen", "correct": false },
+      { "text": "ein", "correct": false }
+    ],
+    "explanation": "Akkusativ (Verb: planen) + Feminin + Unbestimmter Artikel → eine",
+    "case": "akkusativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 171,
+    "question": "Ich spreche mit ____ neuen Kollegen.",
+    "translations": { "en": "I am talking to the new colleague.", "uk": "Я розмовляю з новим колегою." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "des", "correct": false }
+    ],
+    "explanation": "Dativ (Präposition: mit) + Maskulin + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 172,
+    "question": "Sie arbeitet bei ____ großen Firma.",
+    "translations": { "en": "She works at the big company.", "uk": "Вона працює у великій компанії." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Dativ (Präposition: bei) + Feminin + Bestimmter Artikel → der",
+    "case": "dativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 173,
+    "question": "Er kommt aus ____ kleinen Dorf.",
+    "translations": { "en": "He comes from the small village.", "uk": "Він родом з маленького села." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "das", "correct": false },
+      { "text": "der", "correct": false }
+    ],
+    "explanation": "Dativ (Präposition: aus) + Neutrum + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 174,
+    "question": "Wir fahren mit ____ alten Zug.",
+    "translations": { "en": "We are traveling by the old train.", "uk": "Ми їдемо старим поїздом." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "des", "correct": false }
+    ],
+    "explanation": "Dativ (Präposition: mit) + Maskulin + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 175,
+    "question": "Ich lerne von ____ erfahrenen Lehrer.",
+    "translations": { "en": "I am learning from the experienced teacher.", "uk": "Я навчаюся у досвідченого вчителя." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "des", "correct": false }
+    ],
+    "explanation": "Dativ (Präposition: von) + Maskulin + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 176,
+    "question": "Sie wohnt bei ____ netten Nachbarin.",
+    "translations": { "en": "She lives with the nice neighbor.", "uk": "Вона живе у приємної сусідки." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Dativ (Präposition: bei) + Feminin + Bestimmter Artikel → der",
+    "case": "dativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 177,
+    "question": "Er geht zu ____ wichtigen Termin.",
+    "translations": { "en": "He is going to the important appointment.", "uk": "Він іде na важливу зустріч." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "des", "correct": false }
+    ],
+    "explanation": "Dativ (Präposition: zu) + Maskulin + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 178,
+    "question": "Wir essen bei ____ bekannten Bäcker.",
+    "translations": { "en": "We eat at the well-known baker.", "uk": "Ми їмо у відомого пекаря." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "des", "correct": false }
+    ],
+    "explanation": "Dativ (Präposition: bei) + Maskulin + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 179,
+    "question": "Ich telefoniere mit ____ Ärztin.",
+    "translations": { "en": "I am talking to the doctor.", "uk": "Я розмовляю з лікаркою." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Dativ (Präposition: mit) + Feminin + Bestimmter Artikel → der",
+    "case": "dativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 180,
+    "question": "Wir arbeiten bei ____ internationalen Organisation.",
+    "translations": { "en": "We work at the international organization.", "uk": "Ми працюємо в міжнародній організації." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Dativ (Präposition: bei) + Feminin + Bestimmter Artikel → der",
+    "case": "dativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 181,
+    "question": "Ich helfe ____ neuen Kollegen.",
+    "translations": { "en": "I help the new colleague.", "uk": "Я допомагаю новому колезі." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "des", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: helfen) + Maskulin + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 182,
+    "question": "Sie antwortet ____ freundlichen Kundin.",
+    "translations": { "en": "She answers the friendly customer.", "uk": "Вона відповідає привітній клієнтці." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: antworten) + Feminin + Bestimmter Artikel → der",
+    "case": "dativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 183,
+    "question": "Wir danken ____ Lehrer für die Hilfe.",
+    "translations": { "en": "We thank the teacher for the help.", "uk": "Ми дякуємо вчителю за допомогу." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "des", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: danken) + Maskulin + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 184,
+    "question": "Er gibt ____ Nachbarin den Schlüssel.",
+    "translations": { "en": "He gives the neighbor the key.", "uk": "Він дає сусідці ключ." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: geben) + Feminin + Bestimmter Artikel → der",
+    "case": "dativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 185,
+    "question": "Ich vertraue ____ erfahrenen Arzt.",
+    "translations": { "en": "I trust the experienced doctor.", "uk": "Я довіряю досвідченому лікарю." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "des", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: vertrauen) + Maskulin + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 186,
+    "question": "Sie folgt ____ klaren Anleitung.",
+    "translations": { "en": "She follows the clear instructions.", "uk": "Вона дотримується чіткої інструкції." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: folgen) + Feminin + Bestimmter Artikel → der",
+    "case": "dativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 187,
+    "question": "Wir begegnen ____ bekannten Autor.",
+    "translations": { "en": "We meet the well-known author.", "uk": "Ми зустрічаємо відомого автора." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "des", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: begegnen) + Maskulin + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 188,
+    "question": "Er gehört ____ großen Familie an.",
+    "translations": { "en": "He belongs to the big family.", "uk": "Він належить до великої родини." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: angehören) + Feminin + Bestimmter Artikel → der",
+    "case": "dativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 189,
+    "question": "Ich erzähle ____ Kind eine Geschichte.",
+    "translations": { "en": "I tell the child a story.", "uk": "Я розповідаю дитині історію." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "das", "correct": false },
+      { "text": "der", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: erzählen) + Neutrum + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 190,
+    "question": "Sie schickt ____ Chefin eine E-Mail.",
+    "translations": { "en": "She sends the boss an email.", "uk": "Вона надсилає керівниці лист." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: schicken) + Feminin + Bestimmter Artikel → der",
+    "case": "dativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 191,
+    "question": "Wir danken ____ hilfsbereiten Mitarbeitern.",
+    "translations": { "en": "We thank the helpful employees.", "uk": "Ми дякуємо чуйним працівникам." },
+    "answers": [
+      { "text": "den", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: danken) + Plural + Bestimmter Artikel → den",
+    "case": "dativ",
+    "gender": "plural"
+  },
+  {
+    "id": 192,
+    "question": "Er hilft ____ neuen Kollegen.",
+    "translations": { "en": "He helps the new colleagues.", "uk": "Він допомагає новим колегам." },
+    "answers": [
+      { "text": "den", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: helfen) + Plural + Bestimmter Artikel → den",
+    "case": "dativ",
+    "gender": "plural"
+  },
+  {
+    "id": 193,
+    "question": "Ich spreche mit ____ freundlichen Gästen.",
+    "translations": { "en": "I talk to the friendly guests.", "uk": "Я розмовляю з привітними гостями." },
+    "answers": [
+      { "text": "den", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Dativ (Präposition: mit) + Plural + Bestimmter Artikel → den",
+    "case": "dativ",
+    "gender": "plural"
+  },
+  {
+    "id": 194,
+    "question": "Sie vertraut ____ alten Freunden.",
+    "translations": { "en": "She trusts the old friends.", "uk": "Вона довіряє старим друзям." },
+    "answers": [
+      { "text": "den", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: vertrauen) + Plural + Bestimmter Artikel → den",
+    "case": "dativ",
+    "gender": "plural"
+  },
+  {
+    "id": 195,
+    "question": "Wir folgen ____ wichtigen Regeln.",
+    "translations": { "en": "We follow the important rules.", "uk": "Ми дотримуємося важливих правил." },
+    "answers": [
+      { "text": "den", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: folgen) + Plural + Bestimmter Artikel → den",
+    "case": "dativ",
+    "gender": "plural"
+  },
+  {
+    "id": 196,
+    "question": "Er antwortet ____ offenen Fragen.",
+    "translations": { "en": "He answers the open questions.", "uk": "Він відповідає na відкриті питання." },
+    "answers": [
+      { "text": "den", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: antworten) + Plural + Bestimmter Artikel → den",
+    "case": "dativ",
+    "gender": "plural"
+  },
+  {
+    "id": 197,
+    "question": "Ich gratuliere ____ erfolgreichen Team.",
+    "translations": { "en": "I congratulate the successful team.", "uk": "Я вітаю успішну команду." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "das", "correct": false },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: gratulieren) + Neutrum + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "neuter"
+  },
+  {
+    "id": 198,
+    "question": "Sie hilft ____ kranken Nachbarin.",
+    "translations": { "en": "She helps the sick neighbor.", "uk": "Вона допомагає хворій сусідці." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: helfen) + Feminin + Bestimmter Artikel → der",
+    "case": "dativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 199,
+    "question": "Wir hören ____ erfahrenen Trainer zu.",
+    "translations": { "en": "We listen to the experienced coach.", "uk": "Ми слухаємо досвідченого тренера." },
+    "answers": [
+      { "text": "dem", "correct": true },
+      { "text": "den", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "des", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: zuhören) + Maskulin + Bestimmter Artikel → dem",
+    "case": "dativ",
+    "gender": "masculine"
+  },
+  {
+    "id": 200,
+    "question": "Er schreibt ____ Mutter eine Nachricht.",
+    "translations": { "en": "He writes the mother a message.", "uk": "Він пише матері повідомлення." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Dativ (Verb: schreiben) + Feminin + Bestimmter Artikel → der",
+    "case": "dativ",
+    "gender": "feminine"
+  },
+  {
+    "id": 201,
+    "question": "Das ist das Auto ____ neuen Nachbarn.",
+    "translations": { "en": "This is the car of the new neighbor.", "uk": "Це автомобіль нового сусіда." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Maskulin + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "masculine"
+  },
+  {
+    "id": 202,
+    "question": "Wir kennen den Namen ____ Lehrerin.",
+    "translations": { "en": "We know the name of the teacher.", "uk": "Ми знаємо іm’я вчительки." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
+  },
+  {
+    "id": 203,
+    "question": "Die Farbe ____ alten Hauses gefällt mir.",
+    "translations": { "en": "I like the color of the old house.", "uk": "Мені подобається колір старого будинку." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Neutrum + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "neuter"
+  },
+  {
+    "id": 204,
+    "question": "Ich mag den Geschmack ____ frischen Brotes.",
+    "translations": { "en": "I like the taste of the fresh bread.", "uk": "Мені подобається смак свіжого хліба." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Neutrum + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "neuter"
+  },
+  {
+    "id": 205,
+    "question": "Das Büro ____ Chefs ist groß.",
+    "translations": { "en": "The boss’s office is big.", "uk": "Кабінет шефа великий." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Maskulin + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "masculine"
+  },
+  {
+    "id": 206,
+    "question": "Die Meinung ____ Kollegin ist wichtig.",
+    "translations": { "en": "The colleague’s opinion is important.", "uk": "Думка колеги важлива." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
+  },
+  {
+    "id": 207,
+    "question": "Wir besuchen die Eltern ____ Kindes.",
+    "translations": { "en": "We visit the parents of the child.", "uk": "Ми відвідуємо батьків дитини." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Neutrum + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "neuter"
+  },
+  {
+    "id": 208,
+    "question": "Die Tür ____ Wohnung ist offen.",
+    "translations": { "en": "The door of the apartment is open.", "uk": "Двері квартири відкриті." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
+  },
+  {
+    "id": 209,
+    "question": "Der Anfang ____ Films war spannend.",
+    "translations": { "en": "The beginning of the movie was exciting.", "uk": "Початок фільму був захопливим." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Maskulin + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "masculine"
+  },
+  {
+    "id": 210,
+    "question": "Die Stimme ____ Sängerin ist bekannt.",
+    "translations": { "en": "The singer’s voice is well known.", "uk": "Голос співачки відомий." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
+  },
+  {
+    "id": 211,
+    "question": "Das ist der Schlüssel ____ kleinen Zimmers.",
+    "translations": { "en": "This is the key of the small room.", "uk": "Це ключ mаленького кіmнати." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "der", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Neutrum + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "neuter"
+  },
+  {
+    "id": 212,
+    "question": "Der Preis ____ roten Tasche ist hoch.",
+    "translations": { "en": "The price of the red bag is high.", "uk": "Ціна червоної суmки висока." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
+  },
+  {
+    "id": 213,
+    "question": "Die Blätter ____ hohen Baumes fallen.",
+    "translations": { "en": "The leaves of the tall tree are falling.", "uk": "Листя високого дерева падають." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Maskulin + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "masculine"
+  },
+  {
+    "id": 214,
+    "question": "Der Erfolg ____ jungen Sportlers ist groß.",
+    "translations": { "en": "The success of the young athlete is great.", "uk": "Успіх mолодого спортисmа великий." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Maskulin + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "masculine"
+  },
+  {
+    "id": 215,
+    "question": "Die Qualität ____ teuren Kleidung ist gut.",
+    "translations": { "en": "The quality of the expensive clothing is good.", "uk": "Якість дорогого одягу хороша." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
+  },
+  {
+    "id": 216,
+    "question": "Das Licht ____ hellen Tages blendet.",
+    "translations": { "en": "The light of the bright day is blinding.", "uk": "Світло яскравого дня засліплює." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Maskulin + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "masculine"
+  },
+  {
+    "id": 217,
+    "question": "Der Duft ____ frischen Blumen ist herrlich.",
+    "translations": { "en": "The scent of the fresh flowers is wonderful.", "uk": "Ароmат свіжих квітів чудовий." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Plural + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "plural"
+  },
+  {
+    "id": 218,
+    "question": "Die Fenster ____ modernen Gebäudes sind sauber.",
+    "translations": { "en": "The windows of the modern building are clean.", "uk": "Вікна сучасної будівлі чисті." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Neutrum + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "neuter"
+  },
+  {
+    "id": 219,
+    "question": "Das Ende ____ langen Reise war schön.",
+    "translations": { "en": "The end of the long journey was nice.", "uk": "Кінець довгої подорожі був гарниm." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
+  },
+  {
+    "id": 220,
+    "question": "Die Antwort ____ netten Frau war hilfreich.",
+    "translations": { "en": "The answer of the nice woman was helpful.", "uk": "Відповідь приєmної жінки була корисною." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
+  },
+  {
+    "id": 221,
+    "question": "Der Hut ____ alten Mannes ist braun.",
+    "translations": { "en": "The hat of the old man is brown.", "uk": "Капелюх старого чоловіка коричневий." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Maskulin + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "masculine"
+  },
+  {
+    "id": 222,
+    "question": "Die Küste ____ kleinen Insel ist steinig.",
+    "translations": { "en": "The coast of the small island is stony.", "uk": "Узбережжя mаленького острова каm'янисmе." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
+  },
+  {
+    "id": 223,
+    "question": "Der Inhalt ____ neuen Buches ist lehrreich.",
+    "translations": { "en": "The content of the new book is instructive.", "uk": "Зmісm нової книги повчальний." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Neutrum + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "neuter"
+  },
+  {
+    "id": 224,
+    "question": "Die Kraft ____ warmen Sonne ist spürbar.",
+    "translations": { "en": "The power of the warm sun is noticeable.", "uk": "Сила mеплого сонця відчуmна." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
+  },
+  {
+    "id": 225,
+    "question": "Der Motor ____ schnellen Autos ist laut.",
+    "translations": { "en": "The engine of the fast car is loud.", "uk": "Двигун швидкого авто гучний." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Neutrum + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "neuter"
+  },
+  {
+    "id": 226,
+    "question": "Die Ruhe ____ stillen Nacht entspannt.",
+    "translations": { "en": "The peace of the quiet night is relaxing.", "uk": "Спокій тихої ночі розслабляє." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
+  },
+  {
+    "id": 227,
+    "question": "Der Koffer ____ jungen Frau ist schwer.",
+    "translations": { "en": "The suitcase of the young woman is heavy.", "uk": "Валіза mолодої жінки важка." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
+  },
+  {
+    "id": 228,
+    "question": "Die Wurzeln ____ alten Baumes sind tief.",
+    "translations": { "en": "The roots of the old tree are deep.", "uk": "Коріння старого дерева глибоке." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Maskulin + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "masculine"
+  },
+  {
+    "id": 229,
+    "question": "Der Besitzer ____ großen Gartens ist freundlich.",
+    "translations": { "en": "The owner of the big garden is friendly.", "uk": "Власник великого саду привітний." },
+    "answers": [
+      { "text": "des", "correct": true },
+      { "text": "der", "correct": false },
+      { "text": "dem", "correct": false },
+      { "text": "den", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Maskulin + Bestimmter Artikel → des",
+    "case": "genitiv",
+    "gender": "masculine"
+  },
+  {
+    "id": 230,
+    "question": "Die Aufgaben ____ täglichen Arbeit sind wichtig.",
+    "translations": { "en": "The tasks of the daily work are important.", "uk": "Завдання щоденної роботи важливі." },
+    "answers": [
+      { "text": "der", "correct": true },
+      { "text": "die", "correct": false },
+      { "text": "des", "correct": false },
+      { "text": "dem", "correct": false }
+    ],
+    "explanation": "Genitiv (Besitz) + Feminin + Bestimmter Artikel → der",
+    "case": "genitiv",
+    "gender": "feminine"
   }
 ]
