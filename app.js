@@ -1,112 +1,82 @@
 "use strict";
 
 const QUESTIONS_PER_ROUND = 10;
-const SUPPORTED_LANGS = ["en", "uk", "ro", "ar"];
-
-const GRAMMAR_RULES = {
-    akkusativ: `<table>...</table>`, // (Keep your existing tables here)
-    dativ: `<table>...</table>`,
-    genitiv: `<table>...</table>`
-};
-
-let selectedLanguage = "en";
-let score = 0;
-let answeredCount = 0;
+let selectedLanguage = localStorage.getItem("adjQuizLang") || "en";
 let currentQuestions = [];
-const userAnswers = [];
+let answeredCount = 0;
+let score = 0;
+
+const COLORS = { akkusativ: "#28a745", dativ: "#007bff", genitiv: "#dc3545" };
 
 document.addEventListener("DOMContentLoaded", () => {
-    initLanguageUI();
-    wireModalHandlers();
-    loadAndStartQuiz();
-    document.getElementById("try-again-button").onclick = () => location.reload();
-});
-
-function initLanguageUI() {
-    const select = document.getElementById("language-select");
-    selectedLanguage = localStorage.getItem("adjQuizLang") || "en";
-    select.value = selectedLanguage;
-    select.onchange = (e) => {
+    const langSelect = document.getElementById("language-select");
+    langSelect.value = selectedLanguage;
+    langSelect.onchange = (e) => {
         selectedLanguage = e.target.value;
         localStorage.setItem("adjQuizLang", selectedLanguage);
     };
-}
 
-function loadAndStartQuiz() {
     fetch("data.json")
         .then(r => r.json())
         .then(data => {
             currentQuestions = data.sort(() => 0.5 - Math.random()).slice(0, QUESTIONS_PER_ROUND);
-            renderQuestions(currentQuestions);
+            renderQuiz();
         });
-}
 
-function renderQuestions(questions) {
+    // Close modal logic
+    document.addEventListener("click", e => {
+        if (e.target.dataset.close) document.getElementById("grammar-modal").setAttribute("aria-hidden", "true");
+    });
+});
+
+function renderQuiz() {
     const container = document.getElementById("questions-container");
-    container.innerHTML = questions.map((q, idx) => `
-        <div class="question-container" id="qc-${idx}">
-            <div class="q-header">Frage ID: ${q.id}</div>
-            <div class="question-text">${q.question}</div>
-            <div class="choices" data-qidx="${idx}">
-                ${q.answers.map(a => `<button class="choice-btn" data-correct="${a.correct}">${a.text}</button>`).join("")}
-            </div>
-            <div class="hint-section">
-                <button class="hint-btn" data-idx="${idx}">Hinweis</button>
-                <span id="hint-text-${idx}" class="hint-text"></span>
-            </div>
-            <div class="feedback" id="feedback-${idx}"></div>
+    container.innerHTML = currentQuestions.map((q, idx) => `
+        <div class="question-card" id="card-${idx}">
+          <div class="card-meta">Frage ID: ${q.id}</div>
+          <div class="question-text">${q.question}</div>
+          <div class="choices" id="choices-${idx}">
+            ${q.answers.map(a => `<button class="btn-choice" onclick="checkAnswer(${idx}, ${a.correct}, this)">${a.text}</button>`).join('')}
+          </div>
+          <div class="hint-zone">
+            <button class="btn-hint" onclick="provideHint(${idx}, this)">Hinweis</button>
+            <span id="hint-text-${idx}" class="hint-display"></span>
+          </div>
+          <div id="feedback-${idx}" class="feedback-text"></div>
         </div>
-    `).join("");
-
-    container.onclick = (e) => {
-        if (e.target.classList.contains("choice-btn")) handleSelection(e.target);
-        if (e.target.classList.contains("hint-btn")) handleHint(e.target);
-        if (e.target.classList.contains("case-link")) openGrammarModal(e.target.dataset.fall);
-    };
+    `).join('');
 }
 
-function handleSelection(btn) {
-    const parent = btn.closest(".choices");
-    if (parent.dataset.answered) return;
-    
-    parent.dataset.answered = "true";
-    const qIdx = parent.dataset.qidx;
-    const isCorrect = btn.dataset.correct === "true";
-    const q = currentQuestions[qIdx];
-
-    answeredCount++;
-    if (isCorrect) score++;
-
-    btn.classList.add(isCorrect ? "correct-selection" : "incorrect-selection");
-    
-    // Reveal info immediately on answer
-    const feedback = document.getElementById(`feedback-${qIdx}`);
-    feedback.innerHTML = `<span class="${isCorrect ? 'correct' : 'incorrect'}">
-        ${isCorrect ? 'Richtig!' : 'Falsch.'} ${q.explanation}
-    </span>`;
-
-    if (answeredCount === currentQuestions.length) revealFinalScore();
-}
-
-function handleHint(btn) {
-    const idx = btn.dataset.idx;
+function provideHint(idx, btn) {
     const q = currentQuestions[idx];
     const span = document.getElementById(`hint-text-${idx}`);
     let step = parseInt(btn.dataset.step || "0") + 1;
     btn.dataset.step = step;
 
     if (step === 1) span.innerHTML = `Genus: <b>${q.gender}</b>`;
-    if (step === 2) span.innerHTML += ` | Fall: <b>${q.case}</b>`;
+    if (step === 2) span.innerHTML += ` | Fall: <span style="color:${COLORS[q.case]}">${q.case}</span>`;
     if (step === 3) {
-        const trans = q.translations[selectedLanguage] || q.translations.en;
-        span.innerHTML += `<br><small>Übersetzung: ${trans}</small>`;
+        span.innerHTML += `<br><small>Transl: ${q.translations[selectedLanguage]}</small>`;
         btn.disabled = true;
     }
 }
 
-function revealFinalScore() {
-    document.getElementById("score-display").hidden = false;
-    document.getElementById("final-score").textContent = `Du hast ${score} von ${QUESTIONS_PER_ROUND} richtig beantwortet.`;
-}
+function checkAnswer(qIdx, isCorrect, btn) {
+    const choiceContainer = document.getElementById(`choices-${qIdx}`);
+    if (choiceContainer.dataset.answered) return;
+    choiceContainer.dataset.answered = "true";
 
-// ... wireModalHandlers and openGrammarModal remain same as previous working version ...
+    answeredCount++;
+    if (isCorrect) score++;
+
+    btn.style.backgroundColor = isCorrect ? COLORS.akkusativ : COLORS.genitiv;
+    btn.style.color = "white";
+
+    const feedback = document.getElementById(`feedback-${qIdx}`);
+    feedback.innerHTML = `<strong>${isCorrect ? 'Richtig!' : 'Falsch.'}</strong> ${currentQuestions[qIdx].explanation}`;
+
+    if (answeredCount === QUESTIONS_PER_ROUND) {
+        document.getElementById("score-display").hidden = false;
+        document.getElementById("final-score").innerText = `Ergebnis: ${score} von ${QUESTIONS_PER_ROUND} richtig.`;
+    }
+}
