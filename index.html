@@ -13,34 +13,40 @@
     <p>Wählen Sie die richtige Form (Artikel/Endung), um den Satz zu vervollständigen.</p>
   </header>
 
-  <!-- Try Again Button -->
+  <div id="meta-bar" class="meta-bar" aria-live="polite">
+    <div class="stats-container">
+      <span id="live-progress">Frage: 0 / 10</span>
+      <span id="live-score">Richtig: 0</span>
+    </div>
+    <div class="progress-wrapper">
+      <div id="progress-fill" class="progress-fill" style="width: 0%;"></div>
+    </div>
+  </div>
+
   <button id="try-again-button" class="try-again-btn" type="button" hidden>
-    🔄 Versuchen Sie es erneut
+    🔄 Neue Runde starten
   </button>
 
-  <!-- Language selection -->
   <div class="language-bar">
     <label for="language-select">Hilfssprache:</label>
     <select id="language-select">
-      <option value="en">Englisch</option>
-      <option value="uk">Ukrainisch</option>
+      <option value="en">English</option>
+      <option value="uk">Ukrainian</option>
+      <option value="ro">Romanian</option>
+      <option value="ar">Arabic</option>
     </select>
   </div>
 
-  <!-- Optional: global info (can stay empty) -->
-  <div id="meta-bar" class="meta-bar" aria-live="polite"></div>
-
-  <!-- Questions -->
   <main id="questions-container"></main>
 
-  <!-- Score Display -->
   <section id="score-display" class="score" hidden aria-live="polite">
-    <h2>Runde abgeschlossen 🎉</h2>
-    <p id="final-score"></p>
-    <p id="final-feedback"></p>
+    <div class="result-card">
+      <h2>Runde abgeschlossen 🎉</h2>
+      <p id="final-score" class="final-score-text"></p>
+      <div id="final-feedback" class="final-feedback-stats"></div>
+    </div>
   </section>
 
-  <!-- Grammar modal -->
   <div id="grammar-modal" class="modal" aria-hidden="true">
     <div class="modal__backdrop" data-close="1"></div>
 
@@ -51,11 +57,10 @@
       </div>
 
       <div id="grammar-content" class="modal__body">
-        <!-- filled by JS -->
-      </div>
+        </div>
 
       <div class="modal__footer">
-        <button class="modal__ok" type="button" data-close="1">OK</button>
+        <button class="modal__ok" type="button" data-close="1">Verstanden</button>
       </div>
     </div>
   </div>
