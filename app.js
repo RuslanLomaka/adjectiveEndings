@@ -8,33 +8,32 @@ const SUPPORTED_LANGS = ["en", "uk", "ro", "ar"];
 const LANG_STORAGE_KEY = "adjQuizLang";
 
 const COLORS = {
-    akkusativ: "#28a745",
-    dativ: "#007bff",
-    genitiv: "#dc3545",
+    akkusativ: "#28a745", // Green
+    dativ: "#007bff",     // Blue
+    genitiv: "#dc3545",   // Red
     neutral: "#6c757d"
 };
 
 const GRAMMAR_RULES = {
     akkusativ: `
+    <div class="modal-hint"><b>Trigger:</b> durch, für, gegen, ohne, um | Verben: sehen, haben, kaufen...</div>
     <table>
       <tr><th></th><th>Mask.</th><th>Fem.</th><th>Neutr.</th><th>Plural</th></tr>
       <tr><td>Bestimmt</td><td>den + <b>-en</b></td><td>die + <b>-e</b></td><td>das + <b>-e</b></td><td>die + <b>-en</b></td></tr>
       <tr><td>Unbestimmt</td><td>einen + <b>-en</b></td><td>eine + <b>-e</b></td><td>ein + <b>-es</b></td><td>(keine) + <b>-en</b></td></tr>
-      <tr><td>Possessiv</td><td>meinen + <b>-en</b></td><td>meine + <b>-e</b></td><td>mein + <b>-es</b></td><td>meine + <b>-en</b></td></tr>
     </table>`,
     dativ: `
+    <div class="modal-hint"><b>Trigger:</b> aus, bei, mit, nach, von, zu | Verben: helfen, danken, folgen...</div>
     <table>
       <tr><th></th><th>Mask.</th><th>Fem.</th><th>Neutr.</th><th>Plural</th></tr>
       <tr><td>Bestimmt</td><td>dem + <b>-en</b></td><td>der + <b>-en</b></td><td>dem + <b>-en</b></td><td>den + <b>-en</b> (+n)</td></tr>
       <tr><td>Unbestimmt</td><td>einem + <b>-en</b></td><td>einer + <b>-en</b></td><td>einem + <b>-en</b></td><td>(keine) + <b>-en</b> (+n)</td></tr>
-      <tr><td>Possessiv</td><td>meinem + <b>-en</b></td><td>meiner + <b>-en</b></td><td>meinem + <b>-en</b></td><td>meinen + <b>-en</b> (+n)</td></tr>
     </table>`,
     genitiv: `
+    <div class="modal-hint"><b>Trigger:</b> während, wegen, trotz, statt | Zeigt Besitz an.</div>
     <table>
       <tr><th></th><th>Mask.</th><th>Fem.</th><th>Neutr.</th><th>Plural</th></tr>
       <tr><td>Bestimmt</td><td>des + <b>-en</b></td><td>der + <b>-en</b></td><td>des + <b>-en</b></td><td>der + <b>-en</b></td></tr>
-      <tr><td>Unbestimmt</td><td>eines + <b>-en</b></td><td>einer + <b>-en</b></td><td>eines + <b>-en</b></td><td>(keine) + <b>-en</b></td></tr>
-      <tr><td>Possessiv</td><td>meines + <b>-en</b></td><td>meiner + <b>-en</b></td><td>meines + <b>-en</b></td><td>meiner + <b>-en</b></td></tr>
     </table>`
 };
 
@@ -43,23 +42,24 @@ const GRAMMAR_RULES = {
 ========================= */
 let selectedLanguage = "en";
 let score = 0;
-let answeredQuestions = 0;
+let answeredCount = 0;
 let currentQuestions = [];
-const userAnswers = []; // Your original array-based tracking
+const userAnswers = [];
 
 /* =========================
-   3. Boot & Initialization
+   3. Initialization
 ========================= */
 document.addEventListener("DOMContentLoaded", () => {
     initLanguageUI();
-    wireModalCloseHandlers();
+    wireModalHandlers();
     loadAndStartQuiz();
-    wireTryAgain();
+    
+    // Global listener for Try Again
+    document.getElementById("try-again-button").addEventListener("click", resetQuiz);
 });
 
 function initLanguageUI() {
     const select = document.getElementById("language-select");
-    if (!select) return;
     const saved = localStorage.getItem(LANG_STORAGE_KEY);
     selectedLanguage = (saved && SUPPORTED_LANGS.includes(saved)) ? saved : "en";
     select.value = selectedLanguage;
@@ -77,122 +77,115 @@ function loadAndStartQuiz() {
         .then(r => r.json())
         .then(data => {
             currentQuestions = getRandomSubset(data, Math.min(QUESTIONS_PER_ROUND, data.length));
-            displayAllQuestions(currentQuestions);
+            renderQuestions(currentQuestions);
+            updateProgressBar();
         })
-        .catch(err => console.error("Quiz load error:", err));
+        .catch(err => console.error("Load error:", err));
 }
 
-function displayAllQuestions(questions) {
+function renderQuestions(questions) {
     const container = document.getElementById("questions-container");
-    if (!container) return;
-    container.innerHTML = "";
-
-    questions.forEach((q, index) => {
+    container.innerHTML = questions.map((q, idx) => {
         shuffleArray(q.answers);
-        const html = `
-            <div class="question-container" id="qc-${index}">
-                <div style="display:flex; justify-content:space-between; opacity:0.6; font-size:0.8rem;">
-                    <span>${index + 1}/${questions.length}</span>
-                    <span>ID: ${q.id}</span>
+        const borderColor = COLORS[q.case] || COLORS.neutral;
+        return `
+            <div class="question-container" id="qc-${idx}" style="border-left: 8px solid ${borderColor}">
+                <div class="q-meta">
+                    <span>${idx + 1}/${questions.length}</span>
+                    <span class="case-label" style="background:${borderColor}">${q.case}</span>
                 </div>
-                <div class="question-text" style="font-size:1.1rem; font-weight:bold; margin:10px 0;">
-                    ${escapeHtml(q.question)}
+                <div class="question-text">${escapeHtml(q.question)}</div>
+                <div class="choices" data-qidx="${idx}">
+                    ${q.answers.map(a => `<button class="choice-btn" data-correct="${a.correct}">${escapeHtml(a.text)}</button>`).join("")}
                 </div>
-                <div class="choices">
-                    ${q.answers.map(a => `
-                        <button class="choice-btn" type="button" 
-                                data-correct="${a.correct}" 
-                                data-qidx="${index}">
-                            ${escapeHtml(a.text)}
-                        </button>
-                    `).join("")}
+                <div class="hint-section">
+                    <button class="hint-btn" data-idx="${idx}">Hinweis</button>
+                    <span id="hint-text-${idx}" class="hint-text"></span>
                 </div>
-                <div class="hint-section" style="margin-top:10px;">
-                    <button class="hint-btn" type="button" data-idx="${index}">Hinweis</button>
-                    <span id="hint-text-${index}" style="margin-left:10px;"></span>
-                </div>
-                <div class="feedback" id="feedback-${index}"></div>
+                <div class="feedback" id="feedback-${idx}"></div>
             </div>`;
-        container.insertAdjacentHTML("beforeend", html);
-    });
-
+    }).join("");
+    
     bindInteractions();
 }
 
 function bindInteractions() {
-    // Answer Buttons
-    document.querySelectorAll(".choice-btn").forEach(btn => {
-        btn.addEventListener("click", (e) => handleSelection(e.currentTarget));
-    });
+    const container = document.getElementById("questions-container");
 
-    // Hint Buttons (Pedagogical Scaffolding)
-    document.querySelectorAll(".hint-btn").forEach(btn => {
-        let clicks = 0;
-        btn.addEventListener("click", () => {
-            clicks++;
-            const idx = btn.dataset.idx;
-            const q = currentQuestions[idx];
-            const span = document.getElementById(`hint-text-${idx}`);
-            
-            if (clicks === 1) span.innerHTML = `Genus: <b>${q.gender}</b>`;
-            if (clicks === 2) {
-                const color = COLORS[q.case] || COLORS.neutral;
-                span.innerHTML += ` | Fall: <a href="#" class="case-link" style="color:${color}" data-fall="${q.case}">${q.case}</a>`;
-            }
-            if (clicks === 3) {
-                span.innerHTML += ` | Translation: ${q.translations[selectedLanguage] || q.translations.en}`;
-                btn.disabled = true;
-                btn.style.opacity = 0.5;
-            }
-        });
-    });
+    // Event Delegation for efficiency
+    container.onclick = (e) => {
+        const target = e.target;
 
-    // Case Links
-    document.getElementById("questions-container").addEventListener("click", (e) => {
-        if (e.target.classList.contains("case-link")) {
-            e.preventDefault();
-            openGrammarModal(e.target.dataset.fall);
+        // Answer Selection
+        if (target.classList.contains("choice-btn") && !target.disabled) {
+            handleSelection(target);
         }
-    });
+
+        // Progressive Hints
+        if (target.classList.contains("hint-btn")) {
+            handleHint(target);
+        }
+
+        // Case Link in results
+        if (target.classList.contains("case-link")) {
+            e.preventDefault();
+            openGrammarModal(target.dataset.fall);
+        }
+    };
 }
 
-function handleSelection(button) {
-    const qIdx = Number(button.dataset.qidx);
-    const isCorrect = button.dataset.correct === "true";
-    const parent = button.closest(".question-container");
+function handleSelection(btn) {
+    const parent = btn.closest(".choices");
+    const qIdx = Number(parent.dataset.qidx);
+    const isCorrect = btn.dataset.correct === "true";
 
-    // Disable buttons in this container
+    // Update State
+    userAnswers[qIdx] = { isCorrect, q: currentQuestions[qIdx], button: btn };
+    answeredCount++;
+    if (isCorrect) score++;
+
+    // UI Update
     parent.querySelectorAll(".choice-btn").forEach(b => {
         b.disabled = true;
-        if (b !== button) b.style.opacity = "0.5";
+        if (b !== btn) b.style.opacity = "0.4";
     });
+    btn.classList.add("selected");
+    
+    updateProgressBar();
 
-    button.classList.add("selected");
-    button.style.backgroundColor = "#17a2b8";
+    if (answeredCount === currentQuestions.length) {
+        setTimeout(revealResults, 600);
+    }
+}
 
-    // Track answer
-    userAnswers[qIdx] = { isCorrect, q: currentQuestions[qIdx], button };
-    answeredQuestions++;
 
-    if (answeredQuestions === currentQuestions.length) {
-        setTimeout(revealResults, 500);
+
+function handleHint(btn) {
+    const idx = btn.dataset.idx;
+    const q = currentQuestions[idx];
+    const span = document.getElementById(`hint-text-${idx}`);
+    let step = parseInt(btn.dataset.step || "0") + 1;
+    btn.dataset.step = step;
+
+    if (step === 1) span.innerHTML = `Genus: <b>${q.gender}</b>`;
+    if (step === 2) span.innerHTML += ` | Fall: <b>${q.case}</b>`;
+    if (step === 3) {
+        const trans = q.translations[selectedLanguage] || q.translations.en;
+        span.innerHTML += `<br><small>Übersetzung: ${escapeHtml(trans)}</small>`;
+        btn.disabled = true;
     }
 }
 
 function revealResults() {
-    score = 0;
-    // Metacognition stats
     const stats = { akkusativ: 0, dativ: 0, genitiv: 0, total: { akkusativ: 0, dativ: 0, genitiv: 0 } };
 
-    userAnswers.forEach((ans, index) => {
-        const feedback = document.getElementById(`feedback-${index}`);
-        const hintText = document.getElementById(`hint-text-${index}`);
+    userAnswers.forEach((ans, idx) => {
+        const feedback = document.getElementById(`feedback-${idx}`);
+        const hintText = document.getElementById(`hint-text-${idx}`);
         const q = ans.q;
 
         stats.total[q.case]++;
-        
         if (ans.isCorrect) {
-            score++;
             stats[q.case]++;
             ans.button.style.backgroundColor = COLORS.akkusativ;
             feedback.innerHTML = `<span class="correct">Richtig! ${escapeHtml(q.explanation)}</span>`;
@@ -201,52 +194,64 @@ function revealResults() {
             feedback.innerHTML = `<span class="incorrect">Falsch. ${escapeHtml(q.explanation)}</span>`;
         }
 
-        // Show all hints automatically at end
-        hintText.innerHTML = `Genus: ${q.gender} | Fall: ${q.case} | Translation: ${q.translations[selectedLanguage] || q.translations.en}`;
+        const trans = q.translations[selectedLanguage] || q.translations.en;
+        const caseLink = `<a href="#" class="case-link" data-fall="${q.case}">${q.case}</a>`;
+        hintText.innerHTML = `Genus: ${q.gender} | Fall: ${caseLink} | Übersetzung: ${escapeHtml(trans)}`;
     });
 
-    // Display score and performance breakdown
-    document.getElementById("final-score").textContent = `Score: ${score} / ${currentQuestions.length}`;
+    displaySummary(stats);
+}
+
+function displaySummary(stats) {
+    document.getElementById("final-score").textContent = `Ergebnis: ${score} / ${currentQuestions.length}`;
     
-    let breakdown = "Performance per case:<br>";
-    for(let c in stats.total) {
-        if(stats.total[c] > 0) breakdown += `${capitalize(c)}: ${stats[c]}/${stats.total[c]}<br>`;
+    let breakdown = "<b>Statistik nach Fällen:</b><br>";
+    for (let c in stats.total) {
+        if (stats.total[c] > 0) {
+            breakdown += `${capitalize(c)}: ${stats[c]}/${stats.total[c]}<br>`;
+        }
     }
+    
     document.getElementById("final-feedback").innerHTML = breakdown;
     document.getElementById("score-display").hidden = false;
     document.getElementById("try-again-button").hidden = false;
 }
 
 /* =========================
-   5. Modal & Helpers
+   5. Helpers & UI
 ========================= */
-function openGrammarModal(fallRaw) {
+function updateProgressBar() {
+    const progress = (answeredCount / QUESTIONS_PER_ROUND) * 100;
+    document.getElementById("progress-fill").style.width = `${progress}%`;
+    document.getElementById("live-progress").textContent = `Frage: ${answeredCount} / ${QUESTIONS_PER_ROUND}`;
+    document.getElementById("live-score").textContent = `Richtig: ${score}`;
+}
+
+function resetQuiz() {
+    score = 0;
+    answeredCount = 0;
+    userAnswers.length = 0;
+    document.getElementById("score-display").hidden = true;
+    document.getElementById("try-again-button").hidden = true;
+    loadAndStartQuiz();
+}
+
+function openGrammarModal(fall) {
     const modal = document.getElementById("grammar-modal");
-    const fall = fallRaw.toLowerCase();
     document.getElementById("modal-title").textContent = `${capitalize(fall)} Regeln`;
-    document.getElementById("grammar-content").innerHTML = GRAMMAR_RULES[fall] || "No rules found.";
+    document.getElementById("grammar-content").innerHTML = GRAMMAR_RULES[fall.toLowerCase()] || "Regeln nicht gefunden.";
     modal.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
 }
 
-function wireModalCloseHandlers() {
+function wireModalHandlers() {
     const modal = document.getElementById("grammar-modal");
-    modal.addEventListener("click", (e) => {
+    modal.onclick = (e) => {
         if (e.target.dataset.close || e.target === modal) {
             modal.setAttribute("aria-hidden", "true");
             document.body.style.overflow = "";
         }
-    });
-}
-
-function wireTryAgain() {
-    document.getElementById("try-again-button").addEventListener("click", () => {
-        score = 0;
-        answeredQuestions = 0;
-        userAnswers.length = 0;
-        document.getElementById("score-display").hidden = true;
-        loadAndStartQuiz();
-    });
+    };
 }
 
 function shuffleArray(a) {
