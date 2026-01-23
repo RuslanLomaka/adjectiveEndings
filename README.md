@@ -40,18 +40,6 @@ No frameworks, no dependencies — fast and lightweight.
 
 ---
 
-## 📂 Project Structure
-
-/adjectiveEndings
-├── index.html
-├── styles.css
-├── app.js
-├── data.json
-└── README.md
-
-
----
-
 ## 🚀 How to Use
 
 1. Open `index.html` in a browser **or**
