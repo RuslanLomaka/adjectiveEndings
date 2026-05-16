@@ -32,6 +32,31 @@ body {
   color: var(--text);
 }
 
+.credits-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto 18px;
+  color: #34506c;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.credits-top a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.credits-top a:hover {
+  text-decoration: underline;
+}
+
+.credits-separator {
+  opacity: 0.55;
+}
+
 /* Hide elements using HTML hidden */
 [hidden] {
   display: none !important;
